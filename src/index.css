@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/*Common Tailwind CSS Start Here*/
+
+.Container {
+  @apply w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1320px] px-2 md:px-3 lg:px-4 xl:px-5 mx-auto;
+}
+
+.primary-btn {
+  @apply flex items-center gap-2 overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-10 py-[18px] relative rounded-full text-base text-white font-medium font-FiraSans before:bg-HeadingColor-0 before:h-full before:w-0 before:-skew-x-[25deg] before:absolute before:top-0 before:-right-5 before:-z-10 after:bg-[#86b6b6] after:h-[2px] after:w-[26px] after:absolute after:bottom-[17px] after:left-10 after:z-10 before:transition-all before:duration-500 hover:before:w-[125%] hover:before:-left-5;
+}
+
+.primary-btn2 {
+  @apply flex items-center gap-2 overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-10 py-[18px] relative rounded-full text-base text-white font-medium font-FiraSans before:bg-HeadingColor-0 before:h-full before:w-0 before:-skew-x-[25deg] before:absolute before:top-0 before:-right-5 before:-z-10 before:transition-all before:duration-500 hover:before:w-[125%] hover:before:-left-5;
+}
+
+.is-sticky {
+  @apply fixed top-0 left-0 w-full z-[99999] shadow-lg bg-white backdrop-blur-md animate-headerSlideDown;
+}
+
+.navbar2.is-sticky {
+  @apply fixed top-0 left-0 w-full z-[99999] shadow-lg bg-HeadingColor-0 backdrop-blur-md animate-headerSlideDown;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .is-sticky {
+    @apply relative top-0 left-0 w-full z-[99999] shadow-lg bg-white backdrop-blur-md animate-headerSlideDown;
+  }
+
+  .navbar2.is-sticky {
+    @apply relative top-0 left-0 w-full z-[99999] shadow-lg bg-HeadingColor-0 backdrop-blur-md animate-headerSlideDown;
+  }
+}
+
+/* Progress Bar */
+
+.progress-bar-rect-wrap-container {
+  position: relative;
+  z-index: 999;
+}
+
+.rect-progress-bar-percent {
+  @apply !m-0 leading-[10px] !text-HeadingColor-0 font-FiraSans;
+}
+
+.skill-section h2.rect-progress-bar-percent {
+    position: absolute;
+    top: -28px;
+    right: 0;
+}
+
+/* React Tab */
+
+.react-tabs__tab--selected::before {
+  width: 20px !important;
+}
+
+/* Project */
+
+.swiper-slide:hover .project-thumb-title,
+.swiper-slide.swiper-slide-active .project-thumb-title {
+  left: 25px;
+  opacity: 1;
+}
+
+/* Project */
+
+.swiper-slide:hover .project-content,
+.swiper-slide.swiper-slide-active .project-content {
+  bottom: 0px;
+}
+
+.swiper-slide:hover .project-content3,
+.swiper-slide.swiper-slide-active .project-content3 {
+  bottom: 0;
+}
+
+/* Pagination */
+
+.swiper-pagination {
+  bottom: inherit !important;
+  top: 50% !important;
+  left: 94% !important;
+  transform: translatex(-50%) !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  flex-direction: column !important;
+}
+
+span.swiper-pagination-bullet {
+  background: transparent !important;
+  opacity: 0.7 !important;
+  border: 2px solid #0c59db;
+  border-radius: 50%;
+  height: 14px !important;
+  width: 14px !important;
+  position: relative;
+}
+
+span.swiper-pagination-bullet::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: -10px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid #0c59db;
+  transition: 0.5s;
+  transform: scale(0);
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+  transform: scale(1);
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  height: 10px !important;
+  width: 10px !important;
+  background: #0c59db !important;
+}
+
+.blog .swiper-pagination {
+  bottom: 0 !important;
+  top: inherit !important;
+  left: 50% !important;
+  transform: translatex(-50%) !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8px !important;
+  flex-direction: row !important;
+}
+
+.blog .swiper-pagination-bullet {
+  background: transparent !important;
+  opacity: 1 !important;
+  background: #b5d3d3 !important;
+  border: none !important;
+  border-radius: 50%;
+  height: 10px !important;
+  width: 10px !important;
+  position: relative;
+}
+
+.blog .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  height: 12px !important;
+  width: 12px !important;
+  background: #0c6e6d !important;
+}
+
+.blog span.swiper-pagination-bullet::before {
+  scale: 0;
+}
+
+/* Testimonial */
+
+.testimonial .swiper-pagination {
+  top: 5px !important;
+  bottom: inherit !important;
+  left: 50% !important;
+  flex-direction: row !important;
+  justify-content: center;
+}
+
+.testimonial span.swiper-pagination-bullet {
+  width: 92px !important;
+  height: 92px !important;
+  border-radius: 50% !important;
+  opacity: 1 !important;
+  border: none !important;
+}
+
+.testimonial span.swiper-pagination-bullet:nth-of-type(1) {
+  background: url(../public/images/testi-5.png) no-repeat center/cover !important;
+}
+
+.testimonial span.swiper-pagination-bullet:nth-of-type(2) {
+  background: url(../public/images/testi-2.png) no-repeat center/cover !important;
+}
+
+.testimonial span.swiper-pagination-bullet:nth-of-type(3) {
+  background: url(../public/images/testi-3.png) no-repeat center/cover !important;
+}
+
+.testimonial span.swiper-pagination-bullet:nth-of-type(4) {
+  background: url(../public/images/testi-4.png) no-repeat center/cover !important;
+}
+
+.testimonial span.swiper-pagination-bullet:nth-of-type(5) {
+  background: url(../public/images/testi-1.png) no-repeat center/cover !important;
+}
+
+.testimonial span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  height: 110px !important;
+  width: 110px !important;
+  transform: scale(1.1) !important;
+  border: 5px solid #fff !important;
+}
+
+.testimonial
+  span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+  transform: scale(0);
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .testimonial .swiper-pagination {
+    gap: 5px !important;
+  }
+
+  .testimonial span.swiper-pagination-bullet {
+    width: 38px !important;
+    height: 38px !important;
+  }
+
+  .testimonial span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 45px !important;
+    height: 45px !important;
+    transform: scale(1.1) !important;
+    border: 2px solid #fff !important;
+  }
+}
+
+.project .swiper-pagination {
+  bottom: 0 !important;
+  top: inherit !important;
+  left: 50% !important;
+  transform: translatex(-50%) !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8px !important;
+  flex-direction: row !important;
+}
+
+.project .swiper-pagination-bullet {
+  background: transparent !important;
+  opacity: 1 !important;
+  background: #cddff7 !important;
+  border: none !important;
+  border-radius: 50%;
+  height: 10px !important;
+  width: 10px !important;
+  position: relative;
+}
+
+.project .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  height: 12px !important;
+  width: 12px !important;
+  background: #0c59db !important;
+}
+
+.project span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+  transform: scale(0);
+}
+
+/* Faq */
+
+.faq-button[aria-expanded="true"],
+.faq-button:hover {
+  border-radius: 5px;
+  background: #0c59db;
+  border-color: transparent;
+  padding: 0 20px 0 30px;
+}
+
+.faq-button2[aria-expanded="true"],
+.faq-button2:hover {
+  border-radius: 5px 5px 0 0;
+  border-color: #83a8ff;
+}
+
+/* Pricing */
+
+.pricing-box.active::before {
+  height: 100%;
+}
+
+.pricing-box.active .pricing-icon::before {
+  transform: scale(1);
+}
+
+.pricing-box.active .pricing-btn {
+  color: #fff;
+}
+
+.pricing-box.active .pricing-btn::before {
+  transform: scale(1);
+}
+
+.pricing-box2.active::before {
+  height: 100%;
+}
+
+.pricing-box2.active .pricing-icon::before {
+  transform: scale(1);
+}
+
+.pricing-box2.active .pricing-icon img {
+  filter: brightness(0) invert(1);
+}
+
+.pricing-box2.active .pricing-btn,
+.pricing-box2.active .pricing-title {
+  color: #fff;
+  border-color: #119695;
+}
+
+.pricing-box2.active .pricing-desc,
+.pricing-box2.active .pricing-list {
+  color: #a3b7b7;
+  border-color: #ffffff33;
+}
+
+.pricing-box2.active .pricing-list img {
+  filter: brightness(0) invert(1);
+}
+
+.pricing-box2.active .pricing-price {
+  color: #fff;
+}
+
+.pricing-box2.active .pricing-price-date {
+  color: #a3b7b7;
+}
+
+.pricing-box2.active .pricing-btn::before {
+  transform: scale(1);
+}
+
+/* Why Choose */
+
+.choose-box.active::before,
+.choose-box:hover::before {
+  left: 0;
+  width: 100%;
+}
+
+.choose-box.active .choose-icon,
+.choose-box:hover .choose-icon {
+  color: #0c59db !important;
+}
+
+.choose-box.active .choose-price,
+.choose-box.active .choose-title,
+.choose-box.active .choose-desc,
+.choose-box.active .choose-list,
+.choose-box:hover .choose-price,
+.choose-box:hover .choose-title,
+.choose-box:hover .choose-desc,
+.choose-box:hover .choose-list {
+  color: #fff;
+}
+
+.choose-box.active .choose-btn,
+.choose-box:hover .choose-btn {
+  color: white;
+  background: #0c59db;
+}
+
+/* Project */
+
+.project-box2.active .project-content {
+  top: 34px;
+  opacity: 1;
+}
+
+.project-box2.active .project-btn {
+  bottom: 40px;
+  opacity: 1;
+}
+
+.project-box2.active .project-shape {
+  left: 66.66%;
+  opacity: 1;
+}
+
+.project-box2.active .project-bg {
+  background: hsla(179, 80%, 24%, 0.9);
+}
+
+
+/* Portfolio */
+
+.latest-work .swiper-slide.swiper-slide-active .latest-work-box {
+  padding: 20px;
+}
+
+.latest-work .swiper-slide.swiper-slide-active .latest-work-img {
+  filter: saturate(0);
+}
+
+.latest-work .swiper-slide.swiper-slide-active .latest-work-content {
+  left: 20px;
+  bottom: 20px;
+}
+
+.latest-work .swiper-slide.swiper-slide-active .latest-work-btn {
+  left: 50%;
+  opacity: 1;
+}
+
+/* Project */
+
+.project .swiper-slide.swiper-slide-active .project-btn {
+  right: -25px;
+  opacity: 1;
+}
+
+/* Feature */
+
+.feature-box:nth-child(2n + 2) {
+  margin-top: 30px;
+}
+
+/* Team Member */
+
+.team-member:nth-child(2n + 2) {
+  margin-top: 30px;
+}

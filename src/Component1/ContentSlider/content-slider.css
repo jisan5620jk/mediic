@@ -1,0 +1,107 @@
+.content-slider-section {
+  padding: 36px 0;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  --duration: 30s;
+  --gap: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  gap: 50px;
+}
+
+.content-slider {
+  text-align: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  gap: 50px;
+  min-width: 100%;
+  -webkit-animation: scroll 50s linear infinite;
+  animation: scroll 50s linear infinite;
+}
+
+.content-slider-content {
+  position: relative;
+  --duration: 50s;
+  --gap: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  gap: 0px;
+}
+
+.content-slider-content h1 {
+  font-size: 120px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #0c6e6d;
+  transition: 0.5s;
+  font-family: "Fira Sans", "sans-serif";
+}
+
+.content-slider-content2 h1 {
+  font-size: 120px;
+  font-weight: 700;
+  letter-spacing: 0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #0c6e6d;
+  color: transparent;
+  transition: 0.5s;
+  font-family: "Fira Sans", "sans-serif";
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-100% - var(--gap)));
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-100% - var(--gap)));
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@media (max-width: 767px) {
+  .content-slider-section {
+    gap: 20px;
+  }
+
+  .content-slider {
+    gap: 20px;
+  }
+
+  .content-slider-content h1,
+  .content-slider-content2 h1 {
+    font-size: 30px;
+  }
+}

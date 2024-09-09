@@ -1,0 +1,37 @@
+.banner-content > *:nth-child(n + 1):nth-child(-n + 4) {
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transform: translateY(100px);
+  transform: translateY(100px);
+  opacity: 0;
+}
+.banner-content > *:nth-child(1) {
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.banner-content > *:nth-child(2) {
+  -webkit-transition-delay: 0.9s;
+  transition-delay: 0.9s;
+}
+
+.banner-content > *:nth-child(3) {
+  -webkit-transition-delay: 1.3s;
+  transition-delay: 1.3s;
+}
+
+.banner-content > *:nth-child(4) {
+  -webkit-transition-delay: 1.7s;
+  transition-delay: 1.7s;
+}
+
+/* Active Slide Animation */
+.swiper-slide-active .banner-content > *:nth-child(n + 1):nth-child(-n + 4) {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
