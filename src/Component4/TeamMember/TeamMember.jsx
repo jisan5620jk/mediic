@@ -51,12 +51,12 @@ const TeamMember = () => {
     <section className="py-28 bg-HeadingColor-0">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-FiraSans text-lg font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
+          <h5 className="font-AlbertSans text-lg font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
             <PiStarFourFill size={"14"} />
             TEAM MEMBER
             <PiStarFourFill size={"14"} />
           </h5>
-          <h1 className="font-FiraSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[46px] 2xl:leading-[56px] text-white mt-4 mb-4 pb-1">
+          <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[46px] 2xl:leading-[56px] text-white mt-4 mb-4 pb-1">
             Meet Our Leadership Team
           </h1>
         </div>
@@ -87,7 +87,7 @@ const TeamMember = () => {
           )}
         </div>
         <div className="flex justify-center mt-[70px] relative z-10 before:absolute before:top-1/2 before:left-0 before:w-1/3 before:h-[1px] before:-translate-y-1/2 before:bg-[linear-gradient(90deg,_rgba(12,89,219,1)_20%,_rgba(255,255,255,0)_80%)] after:absolute after:top-1/2 after:right-0 after:w-1/3 after:h-[1px] after:-translate-y-1/2 after:bg-[linear-gradient(-90deg,_rgba(12,89,219,1)_20%,_rgba(255,255,255,0)_80%)]">
-          <p className="font-FiraSans text-white font-medium">
+          <p className="font-AlbertSans text-white font-medium">
             You can also find our Consultant Service to{" "}
             <Link to={"/contact"} className="text-PrimaryColor-0 font-semibold">
               Contact

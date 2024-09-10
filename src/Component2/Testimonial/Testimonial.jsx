@@ -51,15 +51,16 @@ const Testimonial = () => {
       <div className="Container">
         <div className="grid grid-cols-6 gap-10 lg:gap-0 lg:grid-cols-12">
           <div className="col-span-6 lg:col-span-5">
-            <h5 className="font-FiraSans font-medium text-sm sm:text-base text-white uppercase mb-3">
+            <h5 className="font-AlbertSans font-medium text-sm sm:text-base text-white uppercase mb-3">
               Testimonial
             </h5>
-            <h1 className="font-FiraSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
+            <h1 className="font-AlbertSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
               Trusted By The Genius <br /> People With Cosult
             </h1>
-            <p className="font-FiraSans text-TextColor-0 mb-7">
-              Media leadership skills before cross-media innovation <br className="hidden sm:block lg:hidden xl:block"/>{" "}
-              develop standardized platforms without
+            <p className="font-AlbertSans text-TextColor-0 mb-7">
+              Media leadership skills before cross-media innovation{" "}
+              <br className="hidden sm:block lg:hidden xl:block" /> develop
+              standardized platforms without
             </p>
             <div className="relative flex items-center gap-5 border-t border-BorderColor2-0 sm:mr-10 pt-8">
               <div className="border-r border-BorderColor2-0 pr-5">
@@ -68,7 +69,7 @@ const Testimonial = () => {
                   prefix="4."
                   end={98}
                   suffix={""}
-                  className="font-FiraSans text-4xl leading-[26px] md:text-[56px] md:leading-[40px] text-white font-medium"
+                  className="font-AlbertSans text-4xl leading-[26px] md:text-[56px] md:leading-[40px] text-white font-medium"
                 />
               </div>
               <div>
@@ -89,7 +90,7 @@ const Testimonial = () => {
                     <FaStarHalfAlt size={"18"} />
                   </li>
                 </ul>
-                <p className="font-FiraSans sm:text-lg text-TextColor-0 capitalize mt-2">
+                <p className="font-AlbertSans sm:text-lg text-TextColor-0 capitalize mt-2">
                   Avg. Clients Ratings
                 </p>
               </div>

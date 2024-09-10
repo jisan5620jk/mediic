@@ -17,10 +17,10 @@ const TeamInnerCard = ({
         <img src={teamThumb} className="w-full xl:w-[inherit] m-auto" />
       </div>
       <div className="bg-white relative transition-all duration-500 [clip-path:polygon(0_0,_100%_0%,_100%_100%,_50%_84%,_0_100%)] rounded-md text-center pt-[22px] pb-10 rounded-b-md before:absolute before:bottom-0 before:left-0 before:w-full before:h-1/2 before:bg-[url('/images/team-shape.png')] before:bg-no-repeat before:bg-cover before:-z-10 before:rounded-md group-hover:bg-PrimaryColor-0 group-hover:-mt-9">
-        <h5 className="font-FiraSans font-semibold text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white pb-[2px]">
+        <h5 className="font-AlbertSans font-semibold text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white pb-[2px]">
           {teamTitle}
         </h5>
-        <p className="font-FiraSans text-TextColor2-0 transition-all duration-500 group-hover:text-white">
+        <p className="font-AlbertSans text-TextColor2-0 transition-all duration-500 group-hover:text-white">
           {teamDesc}
         </p>
         <ul className="flex gap-4 justify-center mb-[6px]  transition-all duration-500 group-hover:mb-7 group-hover:mt-[14px]">

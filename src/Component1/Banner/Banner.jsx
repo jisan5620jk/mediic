@@ -8,12 +8,12 @@ import { IoPlayOutline } from "react-icons/io5";
 const Banner = () => {
   const [toggler, setToggler] = useState(false);
   return (
-    <div className="bg-BodyBg-0 px-2 lg:px-5">
-      <section className="bg-[url('/images/hero-bg.png')]  bg-cover bg-center bg-no-repeat h-[600px] sm:h-[700px] md:h-[1100px] lg:h-[700px] xl:h-[790px] 2xl:h-[790px] flex items-center relative z-10 overflow-hidden rounded-t-[40px]">
+    <div className="bg-BodyBg-0 px-2 lg:px-[30px]">
+      <section className="bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[700px] md:h-[1100px] lg:h-[700px] xl:h-[790px] 2xl:h-[790px] flex items-center relative z-10 overflow-hidden rounded-t-[40px]">
         <div className="Container">
           <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0 mt-[72px]">
             <div className="relative">
-              <h1 className="font-FiraSans font-semibold text-white text-[30px] leading-[36px] sm:text-[46px] sm:leading-[52px] md:text-[68x] lg:text-[50px] xl:text-[54px] xl:leading-[68px] 2xl:text-[56px] 2xl:leading-[70px]">
+              <h1 className="font-AlbertSans font-semibold text-white text-[30px] leading-[36px] sm:text-[46px] sm:leading-[52px] md:text-[68x] lg:text-[50px] xl:text-[54px] xl:leading-[68px] 2xl:text-[56px] 2xl:leading-[70px]">
                 Crafting the Digital
                 <br />
                 Solutions for your
@@ -22,7 +22,7 @@ const Banner = () => {
                   Business
                 </span>
               </h1>
-              <p className="font-FiraSans text-TextColor-0 mb-[38px] mt-[22px]">
+              <p className="font-AlbertSans text-TextColor-0 mb-[38px] mt-[22px]">
                 Continually plagiarize virtual web services with resource{" "}
                 <br className="hidden xl:block 2xl:hidden" />
                 maximizing <br className="hidden 2xl:block" /> action items.
@@ -33,7 +33,7 @@ const Banner = () => {
                   <button className="primary-btn">{`Get Started now`}</button>
                 </Link>
                 <Link to={"/about"}>
-                  <button className="flex items-center gap-3 text-white font-FiraSans font-medium">
+                  <button className="flex items-center gap-3 text-white font-AlbertSans font-medium">
                     <FaPhoneAlt />
                     {`CALL : +123 (45678) 000`}
                   </button>

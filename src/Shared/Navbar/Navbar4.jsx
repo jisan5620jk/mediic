@@ -91,7 +91,7 @@ const Navbar2 = () => {
               <ul
                 className={`${
                   isOpen ? "block" : "hidden"
-                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0 flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-FiraSans font-medium sm:text-base text-HeadingColor-0 transition-all duration-500
+                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0 flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-AlbertSans font-medium sm:text-base text-HeadingColor-0 transition-all duration-500
                 `}
               >
                 <NavLink
@@ -346,7 +346,7 @@ const Navbar2 = () => {
                   Get A Quote
                 </Link>
                 <div className="flex gap-2 items-center lg:hidden xl:flex">
-                  <h5 className="font-FiraSans text-HeadingColor-0 text-lg font-medium">
+                  <h5 className="font-AlbertSans text-HeadingColor-0 text-lg font-medium">
                     Share :{" "}
                   </h5>
                   <ul className="flex items-center gap-4">

@@ -22,18 +22,18 @@ const TestimonialCard = ({
             <li className="text-[#ffb609] text-xl">{testiRatingIcon}</li>
             <li className="text-[#ffb609] text-xl">{testiRatingIcon}</li>
           </ul>
-          <h5 className="font-FiraSans font-semibold text-HeadingColor-0 transition-all duration-500 group-hover:text-white text-2xl mt-2 mb-[6px]">
+          <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 transition-all duration-500 group-hover:text-white text-2xl mt-2 mb-[6px]">
             {testiName}
           </h5>
-          <p className="font-FiraSans text-TextColor-0 transition-all duration-500 group-hover:text-white">
+          <p className="font-AlbertSans text-TextColor-0 transition-all duration-500 group-hover:text-white">
             {testiDesignation}
           </p>
         </div>
       </div>
-      <p className="font-FiraSans text-lg text-TextColor-0 transition-all duration-500 group-hover:text-white pt-7 pb-4">
+      <p className="font-AlbertSans text-lg text-TextColor-0 transition-all duration-500 group-hover:text-white pt-7 pb-4">
         {testiDesc}
       </p>
-      <h5 className="font-FiraSans font-medium text-lg text-PrimaryColor-0">
+      <h5 className="font-AlbertSans font-medium text-lg text-PrimaryColor-0">
         {testiTitle}
       </h5>
       <div className="absolute top-10 right-8">

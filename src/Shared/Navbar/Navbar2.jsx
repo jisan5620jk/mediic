@@ -232,21 +232,21 @@ const Navbar2 = () => {
         <div className="Container flex items-center justify-between h-[52px]">
           <div className="flex items-center gap-8">
             <div className=" sm:flex items-center gap-2 hidden">
-              <h6 className="font-FiraSans text-[15px] text-white">Mial :</h6>
+              <h6 className="font-AlbertSans text-[15px] text-white">Mial :</h6>
               <Link
                 to={"/"}
-                className="font-FiraSans text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white"
+                className="font-AlbertSans text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white"
               >
                 example@gmail.com
               </Link>
             </div>
             <div className=" md:flex items-center gap-2 hidden">
-              <h6 className="font-FiraSans text-[15px] text-white">
+              <h6 className="font-AlbertSans text-[15px] text-white">
                 Call Us :
               </h6>
               <Link
                 to={"/"}
-                className="font-FiraSans text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white"
+                className="font-AlbertSans text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white"
               >
                 +980 123 (4587) 584
               </Link>
@@ -463,7 +463,7 @@ const Navbar2 = () => {
                 <div className="hidden lg:block">
                   <Link
                     to={"/"}
-                    className="font-FiraSans font-medium capitalize text-white flex items-center gap-1"
+                    className="font-AlbertSans font-medium capitalize text-white flex items-center gap-1"
                   >
                     get a quote<span></span>
                     <LuMoveRight size={"19"} />

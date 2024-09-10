@@ -15,14 +15,14 @@ const CounterCard = ({
             start={-15}
             end={counterNumber}
             suffix={counterSuffex}
-            className="font-FiraSans text-[70px] leading-10 text-white font-bold"
+            className="font-AlbertSans text-[70px] leading-10 text-white font-bold"
           />
         </div>
         <div className="!block text-left">
-          <p className="font-FiraSans text-[22px] text-white font-semibold uppercase">
+          <p className="font-AlbertSans text-[22px] text-white font-semibold uppercase">
             {counterTitle}
           </p>
-          <p className="font-FiraSans text-TextColor-0 pt-2">{counterDesc}</p>
+          <p className="font-AlbertSans text-TextColor-0 pt-2">{counterDesc}</p>
         </div>
       </div>
     </div>

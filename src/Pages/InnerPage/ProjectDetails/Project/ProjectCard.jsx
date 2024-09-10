@@ -22,15 +22,15 @@ const ProjectCard = ({
           className="absolute bottom-0 right-10 animate-dance2 -z-10 opacity-0 transition-all
            duration-500 group-hover:opacity-100"
         />
-        <h6 className="font-FiraSans font-medium text-TextColor2-0 transition-all duration-500 group-hover:text-PrimaryColor-0 pt-[30px]">
+        <h6 className="font-AlbertSans font-medium text-TextColor2-0 transition-all duration-500 group-hover:text-PrimaryColor-0 pt-[30px]">
           {projectSubTitle}
         </h6>
-        <h5 className="font-FiraSans font-semibold text-HeadingColor-0 text-[26px] lg:text-2xl xl:text-[26px] transition-all duration-500 group-hover:text-white pt-1">
+        <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 text-[26px] lg:text-2xl xl:text-[26px] transition-all duration-500 group-hover:text-white pt-1">
           {projectTitle}
         </h5>
         <div className="-mt-[42px] transition-all duration-500 opacity-0 group-hover:mt-0 group-hover:border-white group-hover:opacity-100">
           <Link to={projectUrl}>
-            <button className="font-FiraSans text-white text-[17px] flex gap-2 items-center pt-3">
+            <button className="font-AlbertSans text-white text-[17px] flex gap-2 items-center pt-3">
               {buttonTitle}
               <span className="text-PrimaryColor-0">{buttonIcon}</span>
             </button>

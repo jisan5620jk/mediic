@@ -20,14 +20,14 @@ const About = () => {
             <img src={aboutThumb} draggable="false" />
           </div>
           <div className="relative">
-            <h5 className="font-FiraSans text-[19px] font-semibold text-PrimaryColor-0 relative pl-5 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[10px] before:w-[10px] before:bg-PrimaryColor-0 before:rounded-full">
+            <h5 className="font-AlbertSans text-[19px] font-semibold text-PrimaryColor-0 relative pl-5 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[10px] before:w-[10px] before:bg-PrimaryColor-0 before:rounded-full">
               WHO WE ARE
             </h5>
-            <h1 className="font-FiraSans font-bold text-2xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-HeadingColor-0 mt-3 mb-4">
+            <h1 className="font-AlbertSans font-bold text-2xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-HeadingColor-0 mt-3 mb-4">
               Get Exclusive It Solutions & <br />
               Services With <span className="text-PrimaryColor-0">TopTech</span>
             </h1>
-            <p className="font-FiraSans text-TextColor2-0 pb-8">
+            <p className="font-AlbertSans text-TextColor2-0 pb-8">
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
               injected humour, or randomised words which is best for IT solution
@@ -38,10 +38,10 @@ const About = () => {
                 <img src={aboutIcon} />
               </div>
               <div className="flex-1">
-                <h6 className="font-FiraSans font-bold text-[22px] text-HeadingColor-0">
+                <h6 className="font-AlbertSans font-bold text-[22px] text-HeadingColor-0">
                   Certified Company
                 </h6>
-                <p className="font-FiraSans text-TextColor2-0">
+                <p className="font-AlbertSans text-TextColor2-0">
                   Contrary to popular belief, Lorem Ipsum is not simply random
                   text. It has roots in a piece of classical Latin lorem
                   awesome.
@@ -53,10 +53,10 @@ const About = () => {
                 <img src={aboutIcon2} />
               </div>
               <div className="flex-1">
-                <h6 className="font-FiraSans font-bold text-[22px] text-HeadingColor-0">
+                <h6 className="font-AlbertSans font-bold text-[22px] text-HeadingColor-0">
                   Internet Networking
                 </h6>
-                <p className="font-FiraSans text-TextColor2-0">
+                <p className="font-AlbertSans text-TextColor2-0">
                   Contrary to popular belief, Lorem Ipsum is not simply random
                   text. It has roots in a piece of classical Latin lorem
                   awesome.
@@ -75,10 +75,10 @@ const About = () => {
                   <img src={aboutAuthor} />
                 </div>
                 <div className="flex-1">
-                  <h6 className="font-FiraSans font-semibold text-xl text-HeadingColor-0">
+                  <h6 className="font-AlbertSans font-semibold text-xl text-HeadingColor-0">
                     Kevin Martin
                   </h6>
-                  <p className="font-FiraSans text-TextColor2-0">
+                  <p className="font-AlbertSans text-TextColor2-0">
                     CEO & Founder
                   </p>
                 </div>

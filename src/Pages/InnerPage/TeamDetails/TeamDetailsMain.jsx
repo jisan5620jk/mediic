@@ -19,13 +19,13 @@ const TeamDetailsMain = () => {
             <img src={teamDetailsImg} draggable="false" />
           </div>
           <div>
-            <h2 className="font-FiraSans font-bold text-4xl text-HeadingColor-0 mb-1">
+            <h2 className="font-AlbertSans font-bold text-4xl text-HeadingColor-0 mb-1">
               Dillur Rahman
             </h2>
-            <p className="font-FiraSans text-TextColor2-0">
+            <p className="font-AlbertSans text-TextColor2-0">
               Dream Land Founder & CEO
             </p>
-            <p className="font-FiraSans text-TextColor2-0 mt-9 mb-10">
+            <p className="font-AlbertSans text-TextColor2-0 mt-9 mb-10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor creative labore et dolore magna aliqua ipsum
               suspendisse ultrices gravida commodo viverra accu eiusmod tempor
@@ -37,10 +37,10 @@ const TeamDetailsMain = () => {
                   <FaPhoneAlt />
                 </div>
                 <div className="flex-1">
-                  <h5 className="font-FiraSans font-semibold text-xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white mb-2">
+                  <h5 className="font-AlbertSans font-semibold text-xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white mb-2">
                     Call Us Anytime
                   </h5>
-                  <p className="font-FiraSans text-PrimaryColor-0 font-semibold md:text-2xl lg:text-xl 2xl:text-2xl transition-all duration-500 group-hover:text-white">
+                  <p className="font-AlbertSans text-PrimaryColor-0 font-semibold md:text-2xl lg:text-xl 2xl:text-2xl transition-all duration-500 group-hover:text-white">
                     +123 (4547) 563
                   </p>
                 </div>
@@ -50,17 +50,17 @@ const TeamDetailsMain = () => {
                   <MdOutlineMail />
                 </div>
                 <div className="flex-1">
-                  <h5 className="font-FiraSans font-semibold text-xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white mb-2">
+                  <h5 className="font-AlbertSans font-semibold text-xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white mb-2">
                     Send E-Mail
                   </h5>
-                  <p className="font-FiraSans text-PrimaryColor-0 font-semibold md:text-2xl lg:text-xl 2xl:text-2x transition-all duration-500 group-hover:text-white">
+                  <p className="font-AlbertSans text-PrimaryColor-0 font-semibold md:text-2xl lg:text-xl 2xl:text-2x transition-all duration-500 group-hover:text-white">
                     info@gmail.com
                   </p>
                 </div>
               </div>
             </div>
             <div className="flex items-center gap-6 my-[50px]">
-              <h5 className="font-FiraSans font-semibold text-2xl text-HeadingColor-0">
+              <h5 className="font-AlbertSans font-semibold text-2xl text-HeadingColor-0">
                 Social Media :
               </h5>
               <ul className="flex gap-3">
@@ -91,23 +91,23 @@ const TeamDetailsMain = () => {
                 <TfiLocationPin />
               </div>
               <div className="flex-1">
-                <h5 className="font-FiraSans font-semibold text-lg text-HeadingColor-0 transition-all duration-500 group-hover:text-white mb-1">
+                <h5 className="font-AlbertSans font-semibold text-lg text-HeadingColor-0 transition-all duration-500 group-hover:text-white mb-1">
                   Location
                 </h5>
-                <p className="font-FiraSans text-PrimaryColor-0 text-lg transition-all duration-500 group-hover:text-white">
+                <p className="font-AlbertSans text-PrimaryColor-0 text-lg transition-all duration-500 group-hover:text-white">
                   21 King Street 5th Floor Hamilton, Ontario Canada
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <h1 className="font-FiraSans font-bold text-4xl text-HeadingColor-0 mb-12 mt-28">
+        <h1 className="font-AlbertSans font-bold text-4xl text-HeadingColor-0 mb-12 mt-28">
           My Skills
         </h1>
         <div className="grid grid-cols-2 gap-[72px]">
           <div>
             <div>
-              <h6 className="font-FiraSans font-medium text-lg text-TextColor2-0 pb-2">
+              <h6 className="font-AlbertSans font-medium text-lg text-TextColor2-0 pb-2">
                 Design Analytics
               </h6>
               <ProgressBar
@@ -133,7 +133,7 @@ const TeamDetailsMain = () => {
               />
             </div>
             <div className="mt-8">
-              <h6 className="font-FiraSans font-medium text-lg text-TextColor2-0 pb-2">
+              <h6 className="font-AlbertSans font-medium text-lg text-TextColor2-0 pb-2">
                 Digital Marketing
               </h6>
               <ProgressBar
@@ -161,7 +161,7 @@ const TeamDetailsMain = () => {
           </div>
           <div>
             <div>
-              <h6 className="font-FiraSans font-medium text-lg text-TextColor2-0 pb-2">
+              <h6 className="font-AlbertSans font-medium text-lg text-TextColor2-0 pb-2">
                 UI / UX Design & Development
               </h6>
               <ProgressBar
@@ -187,7 +187,7 @@ const TeamDetailsMain = () => {
               />
             </div>
             <div className="mt-8">
-              <h6 className="font-FiraSans font-medium text-lg text-TextColor2-0 pb-2">
+              <h6 className="font-AlbertSans font-medium text-lg text-TextColor2-0 pb-2">
                 Content Strategy
               </h6>
               <ProgressBar

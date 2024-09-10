@@ -7,10 +7,10 @@ const ProcessCard = ({ processImg, processTitle, processDesc }) => {
           <img src={processImg} draggable="false" />
         </div>
       </div>
-      <h5 className="font-FiraSans font-semibold text-HeadingColor-0 text-2xl mt-9 mb-4">
+      <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 text-2xl mt-9 mb-4">
         {processTitle}
       </h5>
-      <p className="font-FiraSans text-TextColor2-0 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto">
+      <p className="font-AlbertSans text-TextColor2-0 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto">
         {processDesc}
       </p>
     </div>

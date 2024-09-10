@@ -10,10 +10,10 @@ const FeatureCard = ({ featureIcon, featureTitle, featureDesc }) => {
           className="m-auto transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]"
         />
       </div>
-      <h4 className="font-FiraSans font-semibold text-2xl sm:text-[22px] lg:text-xl 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-8 mb-2">
+      <h4 className="font-AlbertSans font-semibold text-2xl sm:text-[22px] lg:text-xl 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-8 mb-2">
         {featureTitle}
       </h4>
-      <p className="font-FiraSans text-TextColor2-0 transition-all duration-500 group-hover:text-white mb-1">
+      <p className="font-AlbertSans text-TextColor2-0 transition-all duration-500 group-hover:text-white mb-1">
         {featureDesc}
       </p>
     </div>

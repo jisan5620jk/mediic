@@ -18,10 +18,10 @@ const TeamCard = ({
           className="w-full -z-10 rounded-md"
         />
         <div className="text-center rounded-t-md pt-[22px] pb-[26px bg-PrimaryColor-0 w-10/12 transition-all duration-500 pb-5 absolute z-10 -bottom-[76px] opacity-0 left-1/2 -translate-x-1/2 group-hover:bottom-0 group-hover:opacity-100">
-          <h5 className="font-FiraSans font-bold text-[22px] text-white">
+          <h5 className="font-AlbertSans font-bold text-[22px] text-white">
             {teamTitle}
           </h5>
-          <p className="font-FiraSans text-white">{teamDesc}</p>
+          <p className="font-AlbertSans text-white">{teamDesc}</p>
         </div>
       </div>
       <ul className="flex justify-center gap-3 pt-4 pb-5 rounded-b-md bg-HeadingColor-0 w-10/12 absolute -bottom-0 left-1/2 -translate-x-1/2 transition-all duration-500 group-hover:-bottom-[76px]">

@@ -13,13 +13,13 @@ const Contact = () => {
             <div className="w-[82px] h-[82px] rounded-full bg-[#1e1e8c] text-white flex items-center justify-center relative before:absolute before:-left-[9px] before:-top-[9px] before:w-[100px] before:h-[100px] before:rounded-full before:border-2 before:border-PrimaryColor-0 before:border-dashed before:animate-rotational">
               <FaPhoneAlt size={"26"} />
             </div>
-            <h5 className="font-FiraSans font-medium text-white text-[22px] mt-8 mb-4">
+            <h5 className="font-AlbertSans font-medium text-white text-[22px] mt-8 mb-4">
               Call Us Anytime
             </h5>
-            <h1 className="font-FiraSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white">
+            <h1 className="font-AlbertSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white">
               +980 123 (4567) 890
             </h1>
-            <p className="font-FiraSans text-TextColor-0 text-lg mt-6 mb-2">
+            <p className="font-AlbertSans text-TextColor-0 text-lg mt-6 mb-2">
               Professionally optimize interdependent intellectual interoperable{" "}
               <br className="hidden sm:block lg:hidden xl:block" />
               best practices. Progressively fabricate

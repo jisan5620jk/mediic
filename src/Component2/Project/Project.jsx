@@ -41,15 +41,15 @@ const Project = () => {
       <div className="Container">
         <div className="grid grid-cols-6 lg:grid-cols-12 items-center mb-10 lg:mb-0">
           <div className="col-span-6 lg:col-span-7">
-            <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
+            <h5 className="font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
               LATEST WORKS
             </h5>
-            <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
+            <h1 className="font-AlbertSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
               Visit the Real Results of <br /> Latest Case Studies
             </h1>
           </div>
           <div className="col-span-6 lg:col-span-5">
-            <p className="font-FiraSans text-TextColor2-0">
+            <p className="font-AlbertSans text-TextColor2-0">
               Globally engage cross-media leadership skills before cross-media
               develop standardized platforms without robust applications are go
               forward collaboration
@@ -63,21 +63,21 @@ const Project = () => {
           <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
             <div className="relative z-10 h-full w-full">
               <div className="project-content absolute -top-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:top-[34px] left-7 lg:left-2 xl:left-4 2xl:left-10">
-                <h6 className="font-FiraSans text-[15px] text-white text-opacity-80 mb-2">
+                <h6 className="font-AlbertSans text-[15px] text-white text-opacity-80 mb-2">
                   Technology
                 </h6>
                 <Link to={"/project_details"}>
-                  <button className="font-FiraSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left">
+                  <button className="font-AlbertSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left">
                     Business Implement
                   </button>
                 </Link>
-                <p className="font-FiraSans text-white text-opacity-80 mt-3 lg:hidden 2xl:block">
+                <p className="font-AlbertSans text-white text-opacity-80 mt-3 lg:hidden 2xl:block">
                   Media leadership skill before cross platforms without done
                 </p>
               </div>
               <div className="project-btn absolute -bottom-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:bottom-10 left-7 lg:left-2 xl:left-4 2xl:left-10">
                 <Link to={"project_details"}>
-                  <button className="rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-FiraSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100">
+                  <button className="rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-AlbertSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100">
                     View Details
                   </button>
                 </Link>
@@ -95,21 +95,21 @@ const Project = () => {
           <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
             <div className="relative z-10 h-full w-full">
               <div className="project-content absolute -top-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:top-[34px] left-7 lg:left-2 xl:left-4 2xl:left-10">
-                <h6 className="font-FiraSans text-[15px] text-white text-opacity-80 mb-2">
+                <h6 className="font-AlbertSans text-[15px] text-white text-opacity-80 mb-2">
                   Technology
                 </h6>
                 <Link to={"/project_details"}>
-                  <button className="font-FiraSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left">
+                  <button className="font-AlbertSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left">
                     Business Implement
                   </button>
                 </Link>
-                <p className="font-FiraSans text-white text-opacity-80 mt-3 lg:hidden 2xl:block">
+                <p className="font-AlbertSans text-white text-opacity-80 mt-3 lg:hidden 2xl:block">
                   Media leadership skill before cross platforms without done
                 </p>
               </div>
               <div className="project-btn absolute -bottom-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:bottom-10 left-7 lg:left-2 xl:left-4 2xl:left-10">
                 <Link to={"project_details"}>
-                  <button className="rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-FiraSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100">
+                  <button className="rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-AlbertSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100">
                     View Details
                   </button>
                 </Link>
@@ -127,21 +127,21 @@ const Project = () => {
           <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
             <div className="relative z-10 h-full w-full">
               <div className="project-content absolute -top-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:top-[34px] left-7 lg:left-2 xl:left-4 2xl:left-10">
-                <h6 className="font-FiraSans text-[15px] text-white text-opacity-80 mb-2">
+                <h6 className="font-AlbertSans text-[15px] text-white text-opacity-80 mb-2">
                   Technology
                 </h6>
                 <Link to={"/project_details"}>
-                  <button className="font-FiraSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left">
+                  <button className="font-AlbertSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left">
                     Business Implement
                   </button>
                 </Link>
-                <p className="font-FiraSans text-white text-opacity-80 mt-3 lg:hidden 2xl:block">
+                <p className="font-AlbertSans text-white text-opacity-80 mt-3 lg:hidden 2xl:block">
                   Media leadership skill before cross platforms without done
                 </p>
               </div>
               <div className="project-btn absolute -bottom-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:bottom-10 left-7 lg:left-2 xl:left-4 2xl:left-10">
                 <Link to={"project_details"}>
-                  <button className="rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-FiraSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100">
+                  <button className="rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-AlbertSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100">
                     View Details
                   </button>
                 </Link>
@@ -159,21 +159,21 @@ const Project = () => {
           <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
             <div className="relative z-10 h-full w-full">
               <div className="project-content absolute -top-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:top-[34px] left-7 lg:left-2 xl:left-4 2xl:left-10">
-                <h6 className="font-FiraSans text-[15px] text-white text-opacity-80 mb-2">
+                <h6 className="font-AlbertSans text-[15px] text-white text-opacity-80 mb-2">
                   Technology
                 </h6>
                 <Link to={"/project_details"}>
-                  <button className="font-FiraSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left">
+                  <button className="font-AlbertSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left">
                     Business Implement
                   </button>
                 </Link>
-                <p className="font-FiraSans text-white text-opacity-80 mt-3 lg:hidden 2xl:block">
+                <p className="font-AlbertSans text-white text-opacity-80 mt-3 lg:hidden 2xl:block">
                   Media leadership skill before cross platforms without done
                 </p>
               </div>
               <div className="project-btn absolute -bottom-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:bottom-10 left-7 lg:left-2 xl:left-4 2xl:left-10">
                 <Link to={"project_details"}>
-                  <button className="rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-FiraSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100">
+                  <button className="rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-AlbertSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100">
                     View Details
                   </button>
                 </Link>
@@ -191,21 +191,21 @@ const Project = () => {
           <div className="project-bg absolute top-0 left-0 bg-PrimaryColor-0 bg-opacity-0 transition-all duration-500 group-hover:bg-opacity-90 h-full w-full">
             <div className="relative z-10 h-full w-full">
               <div className="project-content absolute -top-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:top-[34px] left-7 lg:left-2 xl:left-4 2xl:left-10">
-                <h6 className="font-FiraSans text-[15px] text-white text-opacity-80 mb-2">
+                <h6 className="font-AlbertSans text-[15px] text-white text-opacity-80 mb-2">
                   Technology
                 </h6>
                 <Link to={"/project_details"}>
-                  <button className="font-FiraSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left">
+                  <button className="font-AlbertSans font-medium text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-white text-left">
                     Business Implement
                   </button>
                 </Link>
-                <p className="font-FiraSans text-white text-opacity-80 mt-3 lg:hidden 2xl:block">
+                <p className="font-AlbertSans text-white text-opacity-80 mt-3 lg:hidden 2xl:block">
                   Media leadership skill before cross platforms without done
                 </p>
               </div>
               <div className="project-btn absolute -bottom-1/3 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:bottom-10 left-7 lg:left-2 xl:left-4 2xl:left-10">
                 <Link to={"project_details"}>
-                  <button className="rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-FiraSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100">
+                  <button className="rounded-full flex items-center justify-center px-7 py-3 bg-BodyBg4-0 text-HeadingColor-0 font-AlbertSans text-[15px] transition-all duration-500 hover:text-white font-medium relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100">
                     View Details
                   </button>
                 </Link>

@@ -76,10 +76,10 @@ const Service = () => {
     <section className="pt-28 pb-[120px] bg-[url('/images/service-bg.jpg')] bg-cover bg-no-repeat bg-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-HeadingColor-0 before:-z-10 before:opacity-80">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-FiraSans text-[19px] font-semibold text-PrimaryColor-0 inline-block relative pl-5 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[10px] before:w-[10px] before:bg-PrimaryColor-0 before:rounded-full">
+          <h5 className="font-AlbertSans text-[19px] font-semibold text-PrimaryColor-0 inline-block relative pl-5 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[10px] before:w-[10px] before:bg-PrimaryColor-0 before:rounded-full">
             SERVICE WE PROVIDE
           </h5>
-          <h1 className="font-FiraSans font-bold text-lg leading-6 sm:text-[32px] sm:leading-[42px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-white mt-3 mb-4">
+          <h1 className="font-AlbertSans font-bold text-lg leading-6 sm:text-[32px] sm:leading-[42px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-white mt-3 mb-4">
             All Professional We’re Offering Best & <br />
             IT Solutions & <span className="text-PrimaryColor-0">Services</span>
           </h1>

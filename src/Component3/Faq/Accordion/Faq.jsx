@@ -38,7 +38,7 @@ const Faq = () => {
       <section className="relative overflow-hidden bg-[#e6eefb] rounded-xl p-2 sm:p-5 md:p-10">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 items-center">
           <div className="bg-[#083c92] rounded-xl px-3 sm:px-[50px] pt-7 sm:pt-16 pb-8 sm:pb-[76px]">
-            <h1 className="font-FiraSans font-bold text-2xl sm:text-3xl md:text-[38px] lg:text-3xl xl:text-[38px] text-white mb-5">
+            <h1 className="font-AlbertSans font-bold text-2xl sm:text-3xl md:text-[38px] lg:text-3xl xl:text-[38px] text-white mb-5">
               Get Free Estimate
             </h1>
             <form action="#" method="post" className="flex flex-col gap-y-5">
@@ -49,7 +49,7 @@ const Faq = () => {
                   id="name"
                   placeholder="Enter Name*"
                   required
-                  className="font-FiraSans text-white placeholder:text-white font-light bg-[#3a7ae4] border-none rounded py-2 px-6 h-[50px] w-full focus:outline-PrimaryColor-0"
+                  className="font-AlbertSans text-white placeholder:text-white font-light bg-[#3a7ae4] border-none rounded py-2 px-6 h-[50px] w-full focus:outline-PrimaryColor-0"
                 />
                 <FaUser
                   size={"14"}
@@ -63,7 +63,7 @@ const Faq = () => {
                   id="email"
                   placeholder="Enter E-Mail*"
                   required
-                  className="font-FiraSans text-white placeholder:text-white font-light bg-[#3a7ae4] border-none rounded py-2 px-6 h-[50px] w-full focus:outline-PrimaryColor-0"
+                  className="font-AlbertSans text-white placeholder:text-white font-light bg-[#3a7ae4] border-none rounded py-2 px-6 h-[50px] w-full focus:outline-PrimaryColor-0"
                 />
                 <HiOutlineMailOpen
                   size={"16"}
@@ -77,7 +77,7 @@ const Faq = () => {
                   id="name"
                   placeholder="Enter Name*"
                   required
-                  className="font-FiraSans text-white placeholder:text-white font-light bg-[#3a7ae4] border-none rounded py-2 px-6 h-[50px] w-full focus:outline-PrimaryColor-0"
+                  className="font-AlbertSans text-white placeholder:text-white font-light bg-[#3a7ae4] border-none rounded py-2 px-6 h-[50px] w-full focus:outline-PrimaryColor-0"
                 />
                 <MdCall
                   size={"16"}
@@ -88,7 +88,7 @@ const Faq = () => {
                 name="message"
                 id="message"
                 placeholder="Write a short meassage..."
-                className="font-FiraSans text-white placeholder:text-white font-light bg-[#3a7ae4] border-none rounded py-2 px-6 h-[120px] w-full focus:outline-PrimaryColor-0 resize-none"
+                className="font-AlbertSans text-white placeholder:text-white font-light bg-[#3a7ae4] border-none rounded py-2 px-6 h-[120px] w-full focus:outline-PrimaryColor-0 resize-none"
               ></textarea>
               <button
                 type="submit"
@@ -99,10 +99,10 @@ const Faq = () => {
             </form>
           </div>
           <div className="relative w-full mx-auto">
-            <h5 className="font-FiraSans text-[19px] font-semibold text-PrimaryColor-0 relative pl-5 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[10px] before:w-[10px] before:bg-PrimaryColor-0 before:rounded-full">
+            <h5 className="font-AlbertSans text-[19px] font-semibold text-PrimaryColor-0 relative pl-5 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[10px] before:w-[10px] before:bg-PrimaryColor-0 before:rounded-full">
               FAQ
             </h5>
-            <h1 className="font-FiraSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-HeadingColor-0 mt-3 mb-12">
+            <h1 className="font-AlbertSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-HeadingColor-0 mt-3 mb-12">
               Frequently Asked Any Kind <br />
               Of <span className="text-PrimaryColor-0">Questions</span>
             </h1>

@@ -19,11 +19,11 @@ const LatestWorkCard = ({
       </div>
       <div className="latest-work-content pl-6 pt-[30px] pb-8 pr-10 lg:pr-5 xl:pr-10  absolute -bottom-full left-0 group-hover:left-5 group-hover:bottom-5 z-10 rounded-se-lg bg-PrimaryColor-0 lg:w-9/12 xl:w-[300px] transition-all duration-500">
         <Link to={latestWorkUrl}>
-          <button className="font-FiraSans font-medium text-xl lg:text-lg xl:text-[22px] text-white text-left">
+          <button className="font-AlbertSans font-medium text-xl lg:text-lg xl:text-[22px] text-white text-left">
             {latestWorkTitle}
           </button>
         </Link>
-        <p className="font-FiraSans text-[15px] text-white opacity-80 transition-all duration-500 mt-1">
+        <p className="font-AlbertSans text-[15px] text-white opacity-80 transition-all duration-500 mt-1">
           {latestWorkDesc}
         </p>
       </div>

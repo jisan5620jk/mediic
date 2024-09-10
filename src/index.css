@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -21,11 +21,11 @@ body {
 }
 
 .primary-btn {
-  @apply flex items-center gap-2 overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-10 py-[18px] relative rounded-full text-base text-white font-medium font-FiraSans before:bg-HeadingColor-0 before:h-full before:w-0 before:-skew-x-[25deg] before:absolute before:top-0 before:-right-5 before:-z-10 after:bg-[#86b6b6] after:h-[2px] after:w-[26px] after:absolute after:bottom-[17px] after:left-10 after:z-10 before:transition-all before:duration-500 hover:before:w-[125%] hover:before:-left-5;
+  @apply flex items-center gap-2 overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-10 py-[18px] relative rounded-full text-base text-white font-medium font-AlbertSans before:bg-HeadingColor-0 before:h-full before:w-0 before:-skew-x-[25deg] before:absolute before:top-0 before:-right-5 before:-z-10 after:bg-[#86b6b6] after:h-[2px] after:w-[26px] after:absolute after:bottom-[17px] after:left-10 after:z-10 before:transition-all before:duration-500 hover:before:w-[125%] hover:before:-left-5;
 }
 
 .primary-btn2 {
-  @apply flex items-center gap-2 overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-10 py-[18px] relative rounded-full text-base text-white font-medium font-FiraSans before:bg-HeadingColor-0 before:h-full before:w-0 before:-skew-x-[25deg] before:absolute before:top-0 before:-right-5 before:-z-10 before:transition-all before:duration-500 hover:before:w-[125%] hover:before:-left-5;
+  @apply flex items-center gap-2 overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-10 py-[18px] relative rounded-full text-base text-white font-medium font-AlbertSans before:bg-HeadingColor-0 before:h-full before:w-0 before:-skew-x-[25deg] before:absolute before:top-0 before:-right-5 before:-z-10 before:transition-all before:duration-500 hover:before:w-[125%] hover:before:-left-5;
 }
 
 .is-sticky {
@@ -54,13 +54,13 @@ body {
 }
 
 .rect-progress-bar-percent {
-  @apply !m-0 leading-[10px] !text-HeadingColor-0 font-FiraSans;
+  @apply !m-0 leading-[10px] !text-HeadingColor-0 font-AlbertSans;
 }
 
 .skill-section h2.rect-progress-bar-percent {
-    position: absolute;
-    top: -28px;
-    right: 0;
+  position: absolute;
+  top: -28px;
+  right: 0;
 }
 
 /* React Tab */
@@ -399,7 +399,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 .project-box2.active .project-bg {
   background: hsla(179, 80%, 24%, 0.9);
 }
-
 
 /* Portfolio */
 

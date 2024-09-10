@@ -43,32 +43,32 @@ const WhyChooseUs = () => {
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 2xl:gap-24 lg:items-center mb-[100px]">
           <div>
-            <h5 className="font-FiraSans text-lg font-semibold text-PrimaryColor-0">
+            <h5 className="font-AlbertSans text-lg font-semibold text-PrimaryColor-0">
               IT Support For Business
             </h5>
-            <h1 className="font-FiraSans font-bold text-[20px] text-HeadingColor-0 leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] mt-[18px]">
+            <h1 className="font-AlbertSans font-bold text-[20px] text-HeadingColor-0 leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] mt-[18px]">
               The Toptech IT Services Promise
             </h1>
-            <p className="font-FiraSans text-TextColor2-0 mt-3 mb-7">
+            <p className="font-AlbertSans text-TextColor2-0 mt-3 mb-7">
               Monotonectally synergize granular markets and front markets
               collaboratively task state of the art infrastructures for granular
               Maecenas varius sem dui buildings semper ante a viverra posuere
               maecenas fermentum.
             </p>
             <ul>
-              <li className="flex items-center gap-3 font-FiraSans text-lg text-HeadingColor-0">
+              <li className="flex items-center gap-3 font-AlbertSans text-lg text-HeadingColor-0">
                 <FaCircle size={"9"} className="text-PrimaryColor-0" />
                 Achieve your goals and exceed expectations.
               </li>
-              <li className="flex items-center gap-3 font-FiraSans text-lg text-HeadingColor-0 mt-4">
+              <li className="flex items-center gap-3 font-AlbertSans text-lg text-HeadingColor-0 mt-4">
                 <FaCircle size={"9"} className="text-PrimaryColor-0" />
                 Building a website, mobile app or software.
               </li>
-              <li className="flex items-center gap-3 font-FiraSans text-lg text-HeadingColor-0 mt-4">
+              <li className="flex items-center gap-3 font-AlbertSans text-lg text-HeadingColor-0 mt-4">
                 <FaCircle size={"9"} className="text-PrimaryColor-0" />
                 Our platform is designed to help you.
               </li>
-              <li className="flex items-center gap-3 font-FiraSans text-lg text-HeadingColor-0 mt-4">
+              <li className="flex items-center gap-3 font-AlbertSans text-lg text-HeadingColor-0 mt-4">
                 <FaCircle size={"9"} className="text-PrimaryColor-0" />
                 Our platform places emphasis on user experience.
               </li>

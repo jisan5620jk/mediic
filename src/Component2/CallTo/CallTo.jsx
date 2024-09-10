@@ -12,10 +12,10 @@ const CallTo = () => {
             <div className="absolute top-2 right-10 animate-swing hidden xl:block">
               <img src={callShape} draggable="false" />
             </div>
-            <h5 className="font-FiraSans font-medium text-sm sm:text-base text-white uppercase mb-3">
+            <h5 className="font-AlbertSans font-medium text-sm sm:text-base text-white uppercase mb-3">
               CALL TO ACTION
             </h5>
-            <h1 className="font-FiraSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[32px] lg:leading-[42px] mb-4">
+            <h1 className="font-AlbertSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[32px] lg:leading-[42px] mb-4">
               Get A Free Finance Consultant
             </h1>
           </div>
@@ -26,11 +26,11 @@ const CallTo = () => {
                   <LuPhone size={"24"} />
                 </div>
                 <div className="flex-1">
-                  <h6 className="font-FiraSans text-white text-opacity-70 text-[15px]">
+                  <h6 className="font-AlbertSans text-white text-opacity-70 text-[15px]">
                     CALL US ANYTIME
                   </h6>
                   <Link to={"/"}>
-                    <button className="font-FiraSans font-medium text-left text-lg 2xl:text-xl text-white">
+                    <button className="font-AlbertSans font-medium text-left text-lg 2xl:text-xl text-white">
                       +980 123 (4567) 890
                     </button>
                   </Link>

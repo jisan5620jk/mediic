@@ -5,13 +5,13 @@ const BlogCard = ({ blogNumber, blogTitle, blogThumb, blogBtn }) => {
   return (
     <div className="blog-box group rounded-md py-10 lg:mb-0 border-b border-BorderColor2-0 flex items-center gap-6 sm:gap-[55px]">
       <div>
-        <h5 className="font-FiraSans font-semibold text-HeadingColor-0 text-xl size-11 rounded-full bg-white border-2 border-BorderColor2-0 flex justify-center items-center">
+        <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 text-xl size-11 rounded-full bg-white border-2 border-BorderColor2-0 flex justify-center items-center">
           {blogNumber}
         </h5>
       </div>
       <div className="relative flex justify-between items-center w-full">
         <Link to={"blogUrl"}>
-          <button className="blog-title relative z-10 font-FiraSans font-semibold text-xl sm:text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
+          <button className="blog-title relative z-10 font-AlbertSans font-semibold text-xl sm:text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
             {blogTitle}
           </button>
         </Link>

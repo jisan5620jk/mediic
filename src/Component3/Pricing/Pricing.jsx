@@ -66,11 +66,11 @@ const Pricing = () => {
     <section className="py-28 bg-[#f5f8ed]">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-FiraSans font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
+          <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
             <FaStarOfLife />
             PRICING PLAN <FaStarOfLife />
           </h5>
-          <h1 className="font-FiraSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-2 mb-6">
+          <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-2 mb-6">
             A Customizable Approach
             <br /> for Your Business
           </h1>

@@ -9,15 +9,15 @@ const Banner = () => {
       <div className="Container">
         <div className="grid gap-16 lg:gap-0 lg:grid-cols-12 items-center">
           <div className="col-span-9 relative">
-            <h5 className="font-FiraSans text-white text-xl sm:text-2xl uppercase font-medium flex items-center gap-2 mb-5">
+            <h5 className="font-AlbertSans text-white text-xl sm:text-2xl uppercase font-medium flex items-center gap-2 mb-5">
               Welcome to Toptech
             </h5>
-            <h1 className="font-FiraSans font-extrabold text-white text-[26px] leading-[30px] sm:text-[48px] sm:leading-[50px] md:text-[62px] md:leading-[62px] lg:text-[50px] lg:leading-[50px] xl:text-[74px] xl:leading-[74px]">
+            <h1 className="font-AlbertSans font-extrabold text-white text-[26px] leading-[30px] sm:text-[48px] sm:leading-[50px] md:text-[62px] md:leading-[62px] lg:text-[50px] lg:leading-[50px] xl:text-[74px] xl:leading-[74px]">
               TOP IT SOLUTIONS AGENCY
               <br />
               IN THE WORLD
             </h1>
-            <p className="font-FiraSans sm:text-[17px] text-white mb-[50px] mt-6">
+            <p className="font-AlbertSans sm:text-[17px] text-white mb-[50px] mt-6">
               Play In Order To Make A Business, Brand Advertising And Marketing
               Plays An
               <br className="hidden md:block" /> Important Role. Similarly, In
@@ -37,7 +37,7 @@ const Banner = () => {
           <div className="col-span-3 flex justify-center">
             <button className="size-[120px] border-2 border-white rounded-full bg-transparent flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
               <span
-                className="text-white uppercase font-FiraSans text-2xl"
+                className="text-white uppercase font-AlbertSans text-2xl"
                 onClick={() => setToggler(!toggler)}
               >
                 Play

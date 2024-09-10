@@ -18,7 +18,7 @@ const Appointment = () => {
             <div className="w-[110px] h-[110px] text-white relative rounded-full flex justify-center items-center m-auto before:absolute before:top-0 before:left-0 before:w-full before:h-full before:border before:text-white before:border-dashed before:border-white before:rounded-full before:animate-rotational">
               <FiPhoneCall size={"50"} />
             </div>
-            <h1 className="font-FiraSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-white mt-9 mb-11">
+            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-white mt-9 mb-11">
               Dial for a Consultation
               <br />
               on the House!
@@ -33,7 +33,7 @@ const Appointment = () => {
             </div>
           </div>
           <div className="mr-2">
-            <h2 className="font-FiraSans font-bold text-3xl md:text-[40px] mb-11">
+            <h2 className="font-AlbertSans font-bold text-3xl md:text-[40px] mb-11">
               Request A Quote
             </h2>
             <form action="#" method="post" className="flex flex-col gap-7">

@@ -19,11 +19,11 @@ const ServiceCard = ({
           />
         </div>
         <div className="bg-Secondarycolor-0 px-5 sm:px-10 md:px-5 xl:px-10 relative z-10 before:absolute before:bottom-0 before:left-0 before:bg-[url(/images/service-content-bg.png)] before:bg-no-repeat before:bg-cover before:bg-right before:w-full before:h-0 before:transition-all before:duration-500 before:-z-10 group-hover:before:h-full pb-5 sm:pb-9">
-          <h4 className="font-FiraSans font-medium text-lg sm:text-xl 2xl:text-[23px] text-white transition-all duration-500 group-hover:text-HeadingColor-0 pt-8 mb-4">
+          <h4 className="font-AlbertSans font-medium text-lg sm:text-xl 2xl:text-[23px] text-white transition-all duration-500 group-hover:text-HeadingColor-0 pt-8 mb-4">
             {serviceTitle}
           </h4>
           <Link to={serviceUrl} className="inline-block relative">
-            <button className="flex items-center gap-2 font-FiraSans overflow-hidden font-medium text-sm">
+            <button className="flex items-center gap-2 font-AlbertSans overflow-hidden font-medium text-sm">
               <span className="-ml-[76px] text-HeadingColor-0 transition-all duration-500 group-hover:ml-0">
                 {serviceBtn}
               </span>

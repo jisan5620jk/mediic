@@ -8,10 +8,10 @@ const Video = () => {
     <section className="bg-[url('/images/video-bg.jpg')] bg-no-repeat bg-cover bg-center pt-[144px] pb-[150px]">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-FiraSans text-lg font-semibold text-PrimaryColor-0">
+          <h5 className="font-AlbertSans text-lg font-semibold text-PrimaryColor-0">
             Watch Now
           </h5>
-          <h1 className="font-FiraSans font-bold text-lg leading-7 sm:text-[32px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[18px]">
+          <h1 className="font-AlbertSans font-bold text-lg leading-7 sm:text-[32px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[18px]">
             Our Best Working Process System <br />
             with Team Expert Leaders
           </h1>

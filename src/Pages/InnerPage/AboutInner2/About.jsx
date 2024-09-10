@@ -29,15 +29,15 @@ const About = () => {
             </div>
           </div>
           <div className="relative">
-            <h5 className="font-FiraSans text-lg font-semibold text-PrimaryColor-0">
+            <h5 className="font-AlbertSans text-lg font-semibold text-PrimaryColor-0">
               IT Support for Business
             </h5>
-            <h1 className="font-FiraSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-3">
+            <h1 className="font-AlbertSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-3">
               About is Over 291+ Company
               <br />
               Business Solution.
             </h1>
-            <p className="font-FiraSans text-TextColor2-0">
+            <p className="font-AlbertSans text-TextColor2-0">
               Monotonectally synergize granular markets and front markets.
               Collaboratively visualize strategic infomediaries after multimedia
               based models. Synergistically task state of the art
@@ -50,12 +50,12 @@ const About = () => {
                     <img src={aboutIcon} draggable="false" />
                   </div>
                   <div className="flex-1">
-                    <h5 className="font-FiraSans font-semibold text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0">
+                    <h5 className="font-AlbertSans font-semibold text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0">
                       IT Management
                     </h5>
                   </div>
                 </div>
-                <p className="font-FiraSans text-TextColor2-0">
+                <p className="font-AlbertSans text-TextColor2-0">
                   Proved granular markets dream team more based models clean.
                 </p>
               </div>
@@ -65,21 +65,21 @@ const About = () => {
                     <img src={aboutIcon} draggable="false" />
                   </div>
                   <div className="flex-1">
-                    <h5 className="font-FiraSans font-semibold text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0">
+                    <h5 className="font-AlbertSans font-semibold text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0">
                       Award Ceremony
                     </h5>
                   </div>
                 </div>
-                <p className="font-FiraSans text-TextColor2-0">
+                <p className="font-AlbertSans text-TextColor2-0">
                   Proved granular markets dream team more based models clean.
                 </p>
               </div>
             </div>
             <div className="flex items-center gap-5">
-              <button className="px-8 py-[6px] rounded-full bg-PrimaryColor-0 text-white font-FiraSans">
+              <button className="px-8 py-[6px] rounded-full bg-PrimaryColor-0 text-white font-AlbertSans">
                 Mission
               </button>
-              <button className="px-8 py-[6px] rounded-full bg-PrimaryColor-0 text-white font-FiraSans">
+              <button className="px-8 py-[6px] rounded-full bg-PrimaryColor-0 text-white font-AlbertSans">
                 Vission
               </button>
             </div>

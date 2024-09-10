@@ -41,10 +41,10 @@ const Process = () => {
     <section className="pb-10 relative bg-HeadingColor-0 z-10 ">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-FiraSans text-lg font-semibold text-PrimaryColor-0">
+          <h5 className="font-AlbertSans text-lg font-semibold text-PrimaryColor-0">
             Working Process
           </h5>
-          <h1 className="font-FiraSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[18px]">
+          <h1 className="font-AlbertSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[18px]">
             We Follow the Easy Working Steps
           </h1>
         </div>

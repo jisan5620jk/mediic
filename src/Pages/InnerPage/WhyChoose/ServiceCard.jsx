@@ -5,10 +5,10 @@ const ServiceCard = ({ serviceIcon, serviceTitle, serviceDesc }) => {
       <div>
         <img src={serviceIcon} draggable="false" className="m-auto" />
       </div>
-      <h5 className="font-FiraSans font-semibold text-2xl lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0 mt-6">
+      <h5 className="font-AlbertSans font-semibold text-2xl lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0 mt-6">
         {serviceTitle}
       </h5>
-      <p className="font-FiraSans text-TextColor2-0 pt-4">{serviceDesc}</p>
+      <p className="font-AlbertSans text-TextColor2-0 pt-4">{serviceDesc}</p>
     </div>
   );
 };

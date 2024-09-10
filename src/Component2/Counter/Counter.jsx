@@ -13,10 +13,10 @@ const Counter = () => {
                 start={-11}
                 end={5}
                 suffix={"K+"}
-                className="font-FiraSans text-3xl leading-[22px] sm:text-[50px] sm:leading-[42px] xl:text-[60px] xl:leading-[52px] text-HeadingColor-0 font-medium"
+                className="font-AlbertSans text-3xl leading-[22px] sm:text-[50px] sm:leading-[42px] xl:text-[60px] xl:leading-[52px] text-HeadingColor-0 font-medium"
               />
             </div>
-            <p className="font-FiraSans text-lg text-TextColor2-0 capitalize">
+            <p className="font-AlbertSans text-lg text-TextColor2-0 capitalize">
               Completed Works <br /> with Satisfaction
             </p>
           </div>
@@ -27,7 +27,7 @@ const Counter = () => {
                 prefix="4."
                 end={98}
                 suffix={""}
-                className="font-FiraSanstext-3xl leading-[22px] sm:text-[50px] sm:leading-[42px] xl:text-[60px] xl:leading-[52px] text-HeadingColor-0 font-medium"
+                className="font-AlbertSanstext-3xl leading-[22px] sm:text-[50px] sm:leading-[42px] xl:text-[60px] xl:leading-[52px] text-HeadingColor-0 font-medium"
               />
             </div>
             <div>
@@ -48,7 +48,7 @@ const Counter = () => {
                   <FaStarHalfAlt size={"18"} />
                 </li>
               </ul>
-              <p className="font-FiraSans text-lg text-TextColor2-0 capitalize mt-2">
+              <p className="font-AlbertSans text-lg text-TextColor2-0 capitalize mt-2">
                 Avg. Clients Ratings
               </p>
             </div>
@@ -59,10 +59,10 @@ const Counter = () => {
                 start={-11}
                 end={99}
                 suffix={"%"}
-                className="font-FiraSanstext-3xl leading-[22px] sm:text-[50px] sm:leading-[42px] xl:text-[60px] xl:leading-[52px] text-HeadingColor-0 font-medium"
+                className="font-AlbertSanstext-3xl leading-[22px] sm:text-[50px] sm:leading-[42px] xl:text-[60px] xl:leading-[52px] text-HeadingColor-0 font-medium"
               />
             </div>
-            <p className="font-FiraSans text-lg text-TextColor2-0 capitalize">
+            <p className="font-AlbertSans text-lg text-TextColor2-0 capitalize">
               Track and analyze <br /> business reports.
             </p>
           </div>

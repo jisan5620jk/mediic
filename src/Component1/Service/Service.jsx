@@ -38,10 +38,10 @@ const Service = () => {
       </div>
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase flex items-center justify-center gap-2 mb-3">
+          <h5 className="font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase flex items-center justify-center gap-2 mb-3">
             SOLUTION APPROACH
           </h5>
-          <h1 className="font-FiraSans font-semibold text-white text-sm leading-[24px] sm:text-2xl sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px]">
+          <h1 className="font-AlbertSans font-semibold text-white text-sm leading-[24px] sm:text-2xl sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px]">
             Individuals offer Professional Services
             <br />
             in the field of business Consulting

@@ -17,7 +17,7 @@ const TestimonialCard = ({
         <li className="text-[#ffb609] text-xl">{testiRatingIcon}</li>
         <li className="text-[#ffb609] text-xl">{testiRatingIcon}</li>
       </ul>
-      <p className="font-FiraSans font-normal sm:text-2xl lg:text-lg xl:text-2xl text-white opacity-95 italic">
+      <p className="font-AlbertSans font-normal sm:text-2xl lg:text-lg xl:text-2xl text-white opacity-95 italic">
         {testiDesc}
       </p>
       <div className="flex items-center gap-5 mt-12 lg:mt-8 xl:mt-12">
@@ -25,10 +25,10 @@ const TestimonialCard = ({
           <img src={testiProfile} />
         </div>
         <div>
-          <h5 className="font-FiraSans inline-block text-white text-xl mb-1">
+          <h5 className="font-AlbertSans inline-block text-white text-xl mb-1">
             {testiName}
           </h5>
-          <p className="font-FiraSans text-[15px] font-light text-white opacity-95">
+          <p className="font-AlbertSans text-[15px] font-light text-white opacity-95">
             {testiDesignation}
           </p>
         </div>

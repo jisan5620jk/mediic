@@ -25,11 +25,13 @@ const PortfolioCard = ({
           </Link>
           <div className="bg-PrimaryColor-0 px-5 py-6">
             <Link to={portfolioUrl}>
-              <button className="font-FiraSans font-semibold text-xl lg:text-lg xl:text-[26px] text-white text-left">
+              <button className="font-AlbertSans font-semibold text-xl lg:text-lg xl:text-[26px] text-white text-left">
                 {portfolioTitle}
               </button>
             </Link>
-            <p className="font-FiraSans text-white mt-1">{portfolioSubTilte}</p>
+            <p className="font-AlbertSans text-white mt-1">
+              {portfolioSubTilte}
+            </p>
           </div>
         </div>
       </div>

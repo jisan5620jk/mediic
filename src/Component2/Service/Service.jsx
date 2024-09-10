@@ -95,10 +95,10 @@ const Service = () => {
       </div>
       <div className="Container">
         <div className="mb-4 md:-mb-[100px] lg:-mb-[120px]">
-          <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
+          <h5 className="font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
             SERVICES WE PROVIDE
           </h5>
-          <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
+          <h1 className="font-AlbertSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
             Individuals offer Professional <br /> Services we Provide
           </h1>
         </div>
@@ -119,7 +119,10 @@ const Service = () => {
             }) => {
               return (
                 <>
-                  <SwiperSlide key={id} className="pt-24 md:pt-[120px] lg:pt-[150px]">
+                  <SwiperSlide
+                    key={id}
+                    className="pt-24 md:pt-[120px] lg:pt-[150px]"
+                  >
                     <ServiceCard
                       serviceIcon={serviceIcon}
                       serviceSubTilte={serviceSubTitle}

@@ -87,10 +87,10 @@ const LatestWork = () => {
     <section className="latest-work px-2 lg:px-0 relative z-10 pt-28 pb-[120px]">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase flex items-center justify-center gap-2 mb-3">
+          <h5 className="font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase flex items-center justify-center gap-2 mb-3">
             LATEST WORKS
           </h5>
-          <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px]">
+          <h1 className="font-AlbertSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px]">
             Recently We’ve Finishd those works
             <br />
             With highly Satisfaction

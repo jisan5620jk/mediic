@@ -24,11 +24,11 @@ const Footer2 = () => {
                 <FaRegEnvelope size={"22"} />
               </div>
               <div>
-                <h6 className="font-FiraSans text-[15px] text-white">
+                <h6 className="font-AlbertSans text-[15px] text-white">
                   Say Hello
                 </h6>
                 <Link to={"/"}>
-                  <button className="font-FiraSans text-xl text-white font-medium">
+                  <button className="font-AlbertSans text-xl text-white font-medium">
                     example@gmail.com
                   </button>
                 </Link>
@@ -81,10 +81,10 @@ const Footer2 = () => {
       <div className="Container">
         <div className="grid gap-y-7 grid-cols-12">
           <div className="col-span-12 md:col-span-6 lg:col-span-4">
-            <h4 className="font-FiraSans text-[22px] text-white font-medium mb-[33px]">
+            <h4 className="font-AlbertSans text-[22px] text-white font-medium mb-[33px]">
               About Us
             </h4>
-            <p className="font-FiraSans text-[15px] text-TextColor-0 opacity-80 mt-7 mb-6">
+            <p className="font-AlbertSans text-[15px] text-TextColor-0 opacity-80 mt-7 mb-6">
               Continually plagiarize virtual web service{" "}
               <br className="hidden lg:block xl:hidden" /> pro{" "}
               <br className="hidden xl:block" /> with planning maximizing action
@@ -97,13 +97,13 @@ const Footer2 = () => {
                   id="email"
                   placeholder="Enter Your E-Mail*"
                   required
-                  className="w-full h-[56px] outline-none font-FiraSans border-b border-BorderColor2-0 bg-transparent py-4 text-white placeholder:text-white mb-4"
+                  className="w-full h-[56px] outline-none font-AlbertSans border-b border-BorderColor2-0 bg-transparent py-4 text-white placeholder:text-white mb-4"
                 />
               </label>
               <div className="absolute top-3 right-0">
                 <button
                   type="submit"
-                  className="rounded-full border border-PrimaryColor-0 bg-PrimaryColor-0 size-9 text-white font-FiraSans flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-full before:bg-HeadingColor-0 before:-z-10 before:scale-0 before:transition-all before:duration-500 hover:before:scale-100"
+                  className="rounded-full border border-PrimaryColor-0 bg-PrimaryColor-0 size-9 text-white font-AlbertSans flex items-center justify-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-full before:bg-HeadingColor-0 before:-z-10 before:scale-0 before:transition-all before:duration-500 hover:before:scale-100"
                 >
                   <IoIosSend size={"20"} />
                 </button>
@@ -111,13 +111,13 @@ const Footer2 = () => {
             </form>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-2">
-            <h4 className="font-FiraSans text-[22px] text-white font-medium mb-[33px]">
+            <h4 className="font-AlbertSans text-[22px] text-white font-medium mb-[33px]">
               Company
             </h4>
             <ul className="overflow-hidden">
               <li>
                 <Link to={"/"} className="inline-block">
-                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
+                  <button className="flex items-center justify-start gap-2 font-AlbertSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     About Us
                   </button>
@@ -125,7 +125,7 @@ const Footer2 = () => {
               </li>
               <li>
                 <Link to={"/"} className="inline-block">
-                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
+                  <button className="flex items-center justify-start gap-2 font-AlbertSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     Our Team
                   </button>
@@ -133,7 +133,7 @@ const Footer2 = () => {
               </li>
               <li>
                 <Link to={"/"} className="inline-block">
-                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
+                  <button className="flex items-center justify-start gap-2 font-AlbertSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     Pricing Plan
                   </button>
@@ -141,7 +141,7 @@ const Footer2 = () => {
               </li>
               <li className="block">
                 <Link to={"/"}>
-                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
+                  <button className="flex items-center justify-start gap-2 font-AlbertSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     Latest Blog
                   </button>
@@ -149,7 +149,7 @@ const Footer2 = () => {
               </li>
               <li className="block">
                 <Link to={"/"}>
-                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1">
+                  <button className="flex items-center justify-start gap-2 font-AlbertSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1">
                     <FaAnglesRight className="text-xs text-white" />
                     Careers
                   </button>
@@ -158,13 +158,13 @@ const Footer2 = () => {
             </ul>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-3">
-            <h4 className="font-FiraSans text-[22px] text-white font-medium mb-[33px]">
+            <h4 className="font-AlbertSans text-[22px] text-white font-medium mb-[33px]">
               Services
             </h4>
             <ul className="overflow-hidden">
               <li>
                 <Link to={"/"} className="inline-block">
-                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
+                  <button className="flex items-center justify-start gap-2 font-AlbertSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     IT Solutions
                   </button>
@@ -172,7 +172,7 @@ const Footer2 = () => {
               </li>
               <li>
                 <Link to={"/"} className="inline-block">
-                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
+                  <button className="flex items-center justify-start gap-2 font-AlbertSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     Cyber Security
                   </button>
@@ -180,7 +180,7 @@ const Footer2 = () => {
               </li>
               <li>
                 <Link to={"/"} className="inline-block">
-                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
+                  <button className="flex items-center justify-start gap-2 font-AlbertSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     Digital Marketing
                   </button>
@@ -188,7 +188,7 @@ const Footer2 = () => {
               </li>
               <li>
                 <Link to={"/"} className="inline-block">
-                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
+                  <button className="flex items-center justify-start gap-2 font-AlbertSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1 mb-4">
                     <FaAnglesRight className="text-xs text-white" />
                     Brand Identity
                   </button>
@@ -196,7 +196,7 @@ const Footer2 = () => {
               </li>
               <li>
                 <Link to={"/"} className="inline-block">
-                  <button className="flex items-center justify-start gap-2 font-FiraSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1">
+                  <button className="flex items-center justify-start gap-2 font-AlbertSans -ml-5 hover:ml-0 text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white hover:gap-1">
                     <FaAnglesRight className="text-xs text-white" />
                     SEO Marketing
                   </button>
@@ -205,7 +205,7 @@ const Footer2 = () => {
             </ul>
           </div>
           <div className="col-span-12 md:col-span-6 lg:col-span-3">
-            <h4 className="font-FiraSans text-[22px] text-white font-medium mb-[33px]">
+            <h4 className="font-AlbertSans text-[22px] text-white font-medium mb-[33px]">
               Latest Blog
             </h4>
             <div className="flex gap-5 lg:gap-3 xl:gap-5 pt-1 mb-6">
@@ -214,11 +214,11 @@ const Footer2 = () => {
               </Link>
               <div className="flex-1 -mt-1">
                 <Link to={"/"}>
-                  <button className="font-FiraSans text-left lg:text-sm xl:text-base text-white transition-all duration-500 hover:text-PrimaryColor-0">
+                  <button className="font-AlbertSans text-left lg:text-sm xl:text-base text-white transition-all duration-500 hover:text-PrimaryColor-0">
                     Sustainable Consulting for Business Planning
                   </button>
                 </Link>
-                <p className="font-FiraSans text-sm text-TextColor-0 flex items-center gap-2 mt-2">
+                <p className="font-AlbertSans text-sm text-TextColor-0 flex items-center gap-2 mt-2">
                   <FaCircle size={"8"} className="text-PrimaryColor-0" />
                   Nov 12, 2024
                 </p>
@@ -230,11 +230,11 @@ const Footer2 = () => {
               </Link>
               <div className="flex-1 -mt-1">
                 <Link to={"/"}>
-                  <button className="font-FiraSans text-left lg:text-sm xl:text-base text-white transition-all duration-500 hover:text-PrimaryColor-0">
+                  <button className="font-AlbertSans text-left lg:text-sm xl:text-base text-white transition-all duration-500 hover:text-PrimaryColor-0">
                     Globally Services for IT Solution Planning
                   </button>
                 </Link>
-                <p className="font-FiraSans text-sm text-TextColor-0 flex items-center gap-2 mt-2">
+                <p className="font-AlbertSans text-sm text-TextColor-0 flex items-center gap-2 mt-2">
                   <FaCircle size={"8"} className="text-PrimaryColor-0" />
                   Nov 24, 2024
                 </p>
@@ -244,24 +244,24 @@ const Footer2 = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-8 mt-[94px] border-t border-BorderColor2-0">
           <div>
-            <p className="font-FiraSans text-[15px] flex items-center text-white">
+            <p className="font-AlbertSans text-[15px] flex items-center text-white">
               Copyright &copy; 2024 Consalt. Designed & Developed by Dream-IT
             </p>
           </div>
           <div>
             <ul className="flex gap-3 sm:gap-6">
               <li>
-                <button className="font-FiraSans text-[15px] flex items-center transition-all duration text-TextColor-0 hover:text-white uppercase">
+                <button className="font-AlbertSans text-[15px] flex items-center transition-all duration text-TextColor-0 hover:text-white uppercase">
                   Facebook
                 </button>
               </li>
               <li>
-                <button className="font-FiraSans text-[15px] flex items-center transition-all duration text-TextColor-0 hover:text-white uppercase">
+                <button className="font-AlbertSans text-[15px] flex items-center transition-all duration text-TextColor-0 hover:text-white uppercase">
                   Pinterest
                 </button>
               </li>
               <li>
-                <button className="font-FiraSans text-[15px] flex items-center transition-all duration text-TextColor-0 hover:text-white uppercase">
+                <button className="font-AlbertSans text-[15px] flex items-center transition-all duration text-TextColor-0 hover:text-white uppercase">
                   LinkedIn
                 </button>
               </li>

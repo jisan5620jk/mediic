@@ -48,10 +48,10 @@ const TeamCard = ({
         </div>
       </div>
       <div className="relative transition-all duration-500rounded-md text-center pt-[22px] rounded-b-md">
-        <h5 className="font-FiraSans font-semibold text-2xl text-HeadingColor-0 transition-all duration-500 pb-1">
+        <h5 className="font-AlbertSans font-semibold text-2xl text-HeadingColor-0 transition-all duration-500 pb-1">
           {teamTitle}
         </h5>
-        <p className="font-FiraSans text-TextColor2-0 transition-all duration-500">
+        <p className="font-AlbertSans text-TextColor2-0 transition-all duration-500">
           {teamDesc}
         </p>
       </div>

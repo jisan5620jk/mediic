@@ -10,10 +10,10 @@ const ContactBoxCard = ({
         {contactBoxIcon}
       </div>
       <div className="flex-1">
-        <h5 className="font-FiraSans font-semibold text-xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white mb-2">
+        <h5 className="font-AlbertSans font-semibold text-xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white mb-2">
           {contactBoxSubTitle}
         </h5>
-        <p className="font-FiraSans text-PrimaryColor-0 font-semibold text-2xl transition-all duration-500 group-hover:text-white">
+        <p className="font-AlbertSans text-PrimaryColor-0 font-semibold text-2xl transition-all duration-500 group-hover:text-white">
           {contactBoxTitle}
         </p>
       </div>

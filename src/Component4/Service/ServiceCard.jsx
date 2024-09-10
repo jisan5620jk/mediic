@@ -18,15 +18,15 @@ const ServiceCard = ({
         />
       </div>
       <Link to={serviceUrl}>
-        <button className="font-FiraSans text-left font-semibold text-[22px] sm:text-2xl lg:text-xl xl:text-2xl pb-4 text-white">
+        <button className="font-AlbertSans text-left font-semibold text-[22px] sm:text-2xl lg:text-xl xl:text-2xl pb-4 text-white">
           {serviceTitle}
         </button>
       </Link>
-      <p className="font-FiraSans text-TextColor-0 transition-all duration-500 group-hover:text-white pb-7">
+      <p className="font-AlbertSans text-TextColor-0 transition-all duration-500 group-hover:text-white pb-7">
         {serviceDesc}
       </p>
       <Link to={serviceUrl}>
-        <button className="header-btn !bg-[#ffffff1a] !border-none !px-7 !rounded-full uppercase font-FiraSans !flex gap-2 items-center group-hover:before:w-full group-hover:before:left-0">
+        <button className="header-btn !bg-[#ffffff1a] !border-none !px-7 !rounded-full uppercase font-AlbertSans !flex gap-2 items-center group-hover:before:w-full group-hover:before:left-0">
           {serviceBtn}
         </button>
       </Link>

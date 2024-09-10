@@ -125,7 +125,7 @@
   font-size: 24px;
   color: #ffffff;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Albert Sans", sans-serif;
   margin-bottom: 30px;
   display: inline-block;
 }
@@ -137,7 +137,7 @@
 
 .offcanvas_contact-info ul li a {
   color: #ffffff;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Albert Sans", sans-serif;
 }
 
 .offcanvas_contact-info ul li i {
@@ -148,7 +148,7 @@
   font-size: 24px;
   color: #ffffff;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Albert Sans", sans-serif;
   margin-bottom: 30px;
   display: inline-block;
 }
@@ -361,8 +361,15 @@
   }
 }
 
-.header-logo {
-  margin: 30px 0 0;
+nav.main-menu-content {
+  padding: 20px 0;
+}
+
+nav.main-menu-content > ul {
+  padding: 0 24px 0 36px;
+  background: #d4e5f9;
+  border-radius: 30px;
+  display: inline-block;
 }
 
 nav.main-menu-content > ul > li {
@@ -371,20 +378,37 @@ nav.main-menu-content > ul > li {
 }
 
 nav.main-menu-content > ul > li > a {
-  font-size: 16px;
-  font-family: "Fira Sans", sans-serif;
-  text-transform: capitalize;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: block;
+  padding: 17px 18px;
   transition: 0.5s;
-  padding: 30px 28px;
-  color: #063232;
+  color: #002570;
+  font-weight: 500;
+  font-family: "Albert Sans";
   position: relative;
-  display: flex;
-  gap: 4px;
-  align-items: center;
+}
+
+nav.main-menu-content ul li a::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%) scale(0);
+  width: 6px;
+  height: 6px;
+  background: #007eff;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+nav.main-menu-content ul li a.active:before,
+nav.main-menu-content ul li a:hover:before {
+  left: 3px;
+  transform: translateY(-50%) scale(1);
 }
 
 @media only screen and (max-width: 991px) {
-
 }
 
 nav.main-menu-content > ul > li > a:hover {
@@ -404,41 +428,67 @@ nav.main-menu-content > ul > li > a:hover > span {
   top: 26px;
 }
 
-.header-btn {
-  margin: 28px 0 0;
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1399px) {
-  .header-btn {
-    margin: 0;
-  }
-}
-
 .header-btn a {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 16px;
-  color: #ffffff;
+  font-size: 15px;
+  font-family: "Albert Sans";
+  padding: 14px 30px;
   font-weight: 500;
-  text-transform: capitalize;
-  font-family: "Fira Sans", sans-serif;
+  color: #fff;
+  background: #002570;
+  text-transform: uppercase;
+  border-radius: 30px;
+  display: inline-block;
   position: relative;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 0 9px 0 14px;
+  overflow: hidden;
 }
 
-.header-btn a::before {
+.header-btn a span {
+  background-color: #007eff;
+  height: 100%;
+  top: 0;
+  opacity: 0;
   position: absolute;
-  content: "";
-  bottom: -2px;
-  left: 0;
-  width: 26px;
-  height: 2px;
-  background: #557570;
-  transition: all 0.5s;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  width: 25%;
+  z-index: -1;
 }
 
-.header-btn a:hover::before {
-  width: 100%;
+.header-btn a span:nth-of-type(1) {
+  left: 0;
+  -webkit-transition-delay: 0.105s;
+  transition-delay: 0.105s;
+  border-radius: 30px 0 0px 30px;
+}
+
+.header-btn a span:nth-of-type(2) {
+  left: 25%;
+  -webkit-transition-delay: 0.105s;
+  transition-delay: 0.105s;
+}
+
+.header-btn a span:nth-of-type(3) {
+  left: 50%;
+  -webkit-transition-delay: 0.105s;
+  transition-delay: 0.105s;
+}
+
+.header-btn a span:nth-of-type(4) {
+  left: 75%;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  border-radius: 0 30px 30px 0;
+}
+
+.header-btn a:hover span {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 .header-btn a svg {
@@ -449,7 +499,7 @@ nav.main-menu-content > ul > li > a:hover > span {
 
 .header-main-menu nav ul li .submenu {
   position: absolute;
-  top: 66px;
+  top: 57px;
   left: -5px;
   width: 240px;
   z-index: 99;
@@ -485,16 +535,15 @@ nav.main-menu-content > ul > li > a:hover > span {
 
 .header-main-menu nav ul li .submenu > li a {
   padding: 10px 24px;
-  font-family: "Fira Sans", sans-serif;
-  font-size: 16px;
   text-transform: uppercase;
   color: #053131;
   position: relative;
   width: 100%;
   display: inline-block;
   z-index: 1;
+  font-size: 15px;
   transition: 0.5s;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .header-main-menu nav ul li .submenu > li a::after {
@@ -542,7 +591,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   margin-bottom: 0;
   color: #000000;
   display: inline-block;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Albert Sans", sans-serif;
 }
 
 .homemenu-title:hover {
@@ -664,7 +713,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   position: relative;
   padding: 10px 0;
   padding-right: 20px;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Albert Sans", sans-serif;
 }
 
 .main-menu-mobile ul li > a svg {
@@ -776,12 +825,6 @@ nav.main-menu-content > ul > li > a:hover > span {
   filter: drop-shadow(0 0 10px rgba(156, 156, 156, 0.25));
 }
 
-@media only screen and (max-width: 1399px) {
-  .header-logo {
-    margin: 15px 0;
-  }
-}
-
 @media only screen and (max-width: 991px) {
   .header-btn {
     margin: 0;
@@ -817,28 +860,6 @@ nav.main-menu-content > ul > li > a:hover > span {
 .main-menu-mobile * ul,
 .main-menu-mobile * li {
   transition: none !important;
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  nav.main-menu-content > ul > li > a {
-    padding: 18px 12px 28px;
-  }
-
-  nav.main-menu-content > ul > li > a > span {
-    top: 24px;
-    right: -1px;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  nav.main-menu-content > ul > li > a {
-    padding: 18px 12px 28px;
-  }
-
-  nav.main-menu-content > ul > li > a > span {
-    top: 24px;
-    right: -1px;
-  }
 }
 
 /* Header Style Two */
@@ -978,7 +999,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   font-size: 24px;
   color: #ffffff;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Albert Sans", sans-serif;
   margin-bottom: 30px;
   display: inline-block;
 }
@@ -990,7 +1011,7 @@ nav.main-menu-content > ul > li > a:hover > span {
 
 .sidebar_contact-info ul li a {
   color: #ffffff;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Albert Sans", sans-serif;
 }
 
 .sidebar_contact-info ul li i {
@@ -1001,7 +1022,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   font-size: 24px;
   color: #ffffff;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Albert Sans", sans-serif;
   margin-bottom: 30px;
   display: inline-block;
 }

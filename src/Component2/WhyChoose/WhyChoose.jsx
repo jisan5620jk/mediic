@@ -41,20 +41,20 @@ const WhyChoose = () => {
       <div className="Container">
         <div className="grid grid-cols-1 gap-10 lg:gap-16 xl:gap-24 2xl:gap-[110px] lg:grid-cols-2 items-center">
           <div className="relative">
-            <h5 className="font-FiraSans text-lg font-semibold text-PrimaryColor-0">
+            <h5 className="font-AlbertSans text-lg font-semibold text-PrimaryColor-0">
               Why Choose Us?
             </h5>
-            <h1 className="font-FiraSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[28px] lg:leading-[38px] xl:text-[32px] xl:leading-[42px] 2xl:text-[37px] 2xl:leading-[47px] text-HeadingColor-0 mt-[18px] mb-3">
+            <h1 className="font-AlbertSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[28px] lg:leading-[38px] xl:text-[32px] xl:leading-[42px] 2xl:text-[37px] 2xl:leading-[47px] text-HeadingColor-0 mt-[18px] mb-3">
               Building your Path to Success <br />
               with a Reliable IT Service
             </h1>
-            <p className="font-FiraSans text-TextColor2-0 mt-4 mb-5">
+            <p className="font-AlbertSans text-TextColor2-0 mt-4 mb-5">
               Monotonectally synergize granular markets front markets.
               Collaboratively visualize strategic infomediaries after multimedia
               based.Synergistically to task state of the art infrastructures
             </p>
             <div className="mb-5">
-              <h6 className="font-FiraSans font-semibold text-lg text-HeadingColor-0 pb-3">
+              <h6 className="font-AlbertSans font-semibold text-lg text-HeadingColor-0 pb-3">
                 It Solution
               </h6>
               <ProgressBar
@@ -80,7 +80,7 @@ const WhyChoose = () => {
               />
             </div>
             <div>
-              <h6 className="font-FiraSans font-semibold text-lg text-HeadingColor-0 pb-3">
+              <h6 className="font-AlbertSans font-semibold text-lg text-HeadingColor-0 pb-3">
                 Development
               </h6>
               <ProgressBar
@@ -122,15 +122,15 @@ const WhyChoose = () => {
               <div className="choose-icon flex justify-center text-PrimaryColor-0 transition-all duration-500">
                 <IoDiamondOutline size={"70px"} />
               </div>
-              <h6 className="choose-title text-[26px] rounded font-FiraSans text-HeadingColor-0 font-semibold transition-all duration-500 mt-4 mb-1">
+              <h6 className="choose-title text-[26px] rounded font-AlbertSans text-HeadingColor-0 font-semibold transition-all duration-500 mt-4 mb-1">
                 Business Plan
               </h6>
-              <p className="choose-desc font-FiraSans text-TextColor2-0 transition-all duration-500 mb-4">
+              <p className="choose-desc font-AlbertSans text-TextColor2-0 transition-all duration-500 mb-4">
                 The markets and front market
               </p>
               <div className="flex items-end justify-center gap-1 border-b border-BorderColor2-0 pb-5">
                 <div className="flex gap-1">
-                  <h6 className="choose-price transition-all duration-500 font-FiraSans font-semibold text-2xl text-HeadingColor-0">
+                  <h6 className="choose-price transition-all duration-500 font-AlbertSans font-semibold text-2xl text-HeadingColor-0">
                     $
                   </h6>
                   <CountUp
@@ -138,29 +138,29 @@ const WhyChoose = () => {
                     end={49}
                     prefix=""
                     suffix=""
-                    className="choose-price text-[50px] leading-[50px] font-FiraSans font-semibold text-HeadingColor-0 transition-all duration-500"
+                    className="choose-price text-[50px] leading-[50px] font-AlbertSans font-semibold text-HeadingColor-0 transition-all duration-500"
                   />
                 </div>
-                <h6 className="choose-price font-FiraSans text-TextColor2-0 text-lg transition-all duration-500">
+                <h6 className="choose-price font-AlbertSans text-TextColor2-0 text-lg transition-all duration-500">
                   / Month
                 </h6>
               </div>
               <ul className="flex flex-col gap-3 mt-6 mb-9">
-                <li className="choose-list font-FiraSans text-TextColor2-0 transition-all duration-500">
+                <li className="choose-list font-AlbertSans text-TextColor2-0 transition-all duration-500">
                   10+ user Account
                 </li>
-                <li className="choose-list font-FiraSans text-TextColor2-0 transition-all duration-500">
+                <li className="choose-list font-AlbertSans text-TextColor2-0 transition-all duration-500">
                   Moneyback Gaurentee
                 </li>
-                <li className="choose-list font-FiraSans text-TextColor2-0 transition-all duration-500">
+                <li className="choose-list font-AlbertSans text-TextColor2-0 transition-all duration-500">
                   Unlimited Database
                 </li>
-                <li className="choose-list font-FiraSans text-TextColor2-0 transition-all duration-500">
+                <li className="choose-list font-AlbertSans text-TextColor2-0 transition-all duration-500">
                   24/7 Supports
                 </li>
               </ul>
               <Link to={"/"}>
-                <button className="choose-btn font-FiraSans font-medium bg-[#e6eefb] text-lg text-HeadingColor-0 rounded px-8 py-[10px] transition-all duration-500">
+                <button className="choose-btn font-AlbertSans font-medium bg-[#e6eefb] text-lg text-HeadingColor-0 rounded px-8 py-[10px] transition-all duration-500">
                   Purchaces
                 </button>
               </Link>
@@ -169,15 +169,15 @@ const WhyChoose = () => {
               <div className="choose-icon flex justify-center text-PrimaryColor-0 transition-all duration-500">
                 <IoDiamondOutline size={"70px"} />
               </div>
-              <h6 className="choose-title text-[26px] rounded font-FiraSans text-HeadingColor-0 font-semibold transition-all duration-500 mt-4 mb-1">
+              <h6 className="choose-title text-[26px] rounded font-AlbertSans text-HeadingColor-0 font-semibold transition-all duration-500 mt-4 mb-1">
                 Premium Plan
               </h6>
-              <p className="choose-desc font-FiraSans text-TextColor2-0 transition-all duration-500 mb-4">
+              <p className="choose-desc font-AlbertSans text-TextColor2-0 transition-all duration-500 mb-4">
                 The markets and front market
               </p>
               <div className="flex items-end justify-center gap-1 border-b border-BorderColor2-0 pb-5">
                 <div className="flex gap-1">
-                  <h6 className="choose-price transition-all duration-500 font-FiraSans font-semibold text-2xl text-HeadingColor-0">
+                  <h6 className="choose-price transition-all duration-500 font-AlbertSans font-semibold text-2xl text-HeadingColor-0">
                     $
                   </h6>
                   <CountUp
@@ -185,29 +185,29 @@ const WhyChoose = () => {
                     end={99}
                     prefix=""
                     suffix=""
-                    className="choose-price text-[50px] leading-[50px] font-FiraSans font-semibold text-HeadingColor-0 transition-all duration-500"
+                    className="choose-price text-[50px] leading-[50px] font-AlbertSans font-semibold text-HeadingColor-0 transition-all duration-500"
                   />
                 </div>
-                <h6 className="choose-price font-FiraSans text-TextColor2-0 text-lg transition-all duration-500">
+                <h6 className="choose-price font-AlbertSans text-TextColor2-0 text-lg transition-all duration-500">
                   / Month
                 </h6>
               </div>
               <ul className="flex flex-col gap-3 mt-6 mb-9">
-                <li className="choose-list font-FiraSans text-TextColor2-0 transition-all duration-500">
+                <li className="choose-list font-AlbertSans text-TextColor2-0 transition-all duration-500">
                   10+ user Account
                 </li>
-                <li className="choose-list font-FiraSans text-TextColor2-0 transition-all duration-500">
+                <li className="choose-list font-AlbertSans text-TextColor2-0 transition-all duration-500">
                   Moneyback Gaurentee
                 </li>
-                <li className="choose-list font-FiraSans text-TextColor2-0 transition-all duration-500">
+                <li className="choose-list font-AlbertSans text-TextColor2-0 transition-all duration-500">
                   Unlimited Database
                 </li>
-                <li className="choose-list font-FiraSans text-TextColor2-0 transition-all duration-500">
+                <li className="choose-list font-AlbertSans text-TextColor2-0 transition-all duration-500">
                   24/7 Supports
                 </li>
               </ul>
               <Link to={"/"}>
-                <button className="choose-btn font-FiraSans font-medium bg-[#e6eefb] text-lg text-HeadingColor-0 rounded px-8 py-[10px] transition-all duration-500">
+                <button className="choose-btn font-AlbertSans font-medium bg-[#e6eefb] text-lg text-HeadingColor-0 rounded px-8 py-[10px] transition-all duration-500">
                   Purchaces
                 </button>
               </Link>

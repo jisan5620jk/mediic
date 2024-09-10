@@ -14,10 +14,10 @@ const TestimonialCard = ({
           <img src={testiImg} draggable="false" />
         </div>
         <div className="flex-1">
-          <h5 className="font-FiraSans font-semibold text-HeadingColor-0 text-2xl transition-all duration-500 group-hover:text-white">
+          <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 text-2xl transition-all duration-500 group-hover:text-white">
             {testiName}
           </h5>
-          <p className="font-FiraSans text-TextColor2-0 transition-all duration-500 group-hover:text-white">
+          <p className="font-AlbertSans text-TextColor2-0 transition-all duration-500 group-hover:text-white">
             {testiDesignation}
           </p>
         </div>
@@ -40,11 +40,11 @@ const TestimonialCard = ({
             {testiRatingIcon}
           </li>
         </ul>
-        <p className="font-FiraSans text-[15px] text-TextColor2-0 transition-all duration-500 group-hover:text-white">
+        <p className="font-AlbertSans text-[15px] text-TextColor2-0 transition-all duration-500 group-hover:text-white">
           20 July, 2024
         </p>
       </div>
-      <p className="font-FiraSans text-[17px] text-TextColor2-0 transition-all duration-500 group-hover:text-white pt-8">
+      <p className="font-AlbertSans text-[17px] text-TextColor2-0 transition-all duration-500 group-hover:text-white pt-8">
         {testiDesc}
       </p>
     </div>

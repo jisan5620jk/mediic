@@ -28,20 +28,20 @@ const Skill = () => {
             />
           </div>
           <div className="relative">
-            <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
+            <h5 className="font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
               COMPANY OVERVIEW
             </h5>
-            <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[32px] lg:leading-[42px] xl:text-[38px] xl:leading-[48px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
+            <h1 className="font-AlbertSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[32px] lg:leading-[42px] xl:text-[38px] xl:leading-[48px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
               Financial Journey to Elevating <br /> Your Business Destiny
             </h1>
-            <p className="font-FiraSans text-TextColor2-0">
+            <p className="font-AlbertSans text-TextColor2-0">
               Globally engage cross-media leadership skills before cross-media
               innovation develop standardized platforms without robust
               applications. Conveniently go forward collaboration and
               idea-sharing
             </p>
             <div className="mb-6 mt-7">
-              <h6 className="font-FiraSans text-HeadingColor-0 pb-3">
+              <h6 className="font-AlbertSans text-HeadingColor-0 pb-3">
                 Finance Consulting
               </h6>
               <ProgressBar
@@ -67,7 +67,7 @@ const Skill = () => {
               />
             </div>
             <div className="mb-10">
-              <h6 className="font-FiraSans text-HeadingColor-0 pb-3">
+              <h6 className="font-AlbertSans text-HeadingColor-0 pb-3">
                 Business Consulting
               </h6>
               <ProgressBar
@@ -98,10 +98,10 @@ const Skill = () => {
                   <img src={skillProfile} draggable="false" />
                 </div>
                 <div>
-                  <h5 className="font-FiraSans inline-block text-HeadingColor-0 text-xl mb-1">
+                  <h5 className="font-AlbertSans inline-block text-HeadingColor-0 text-xl mb-1">
                     Jhon D. Alexon
                   </h5>
-                  <p className="font-FiraSans text-[15px] font-light text-TextColor2-0">
+                  <p className="font-AlbertSans text-[15px] font-light text-TextColor2-0">
                     CEO & Founder
                   </p>
                 </div>

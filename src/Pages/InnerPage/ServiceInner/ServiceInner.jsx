@@ -105,10 +105,10 @@ const ServiceInner = () => {
       <section className="pt-28 pb-[120px] p relative z-10 bg-[#f3f3f7]">
         <div className="Container">
           <div className="text-center">
-            <h5 className="font-FiraSans text-lg font-semibold text-PrimaryColor-0">
+            <h5 className="font-AlbertSans text-lg font-semibold text-PrimaryColor-0">
               IT Support For Business
             </h5>
-            <h1 className="font-FiraSans font-bold text-[20px] text-HeadingColor-0 leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] mt-[18px]">
+            <h1 className="font-AlbertSans font-bold text-[20px] text-HeadingColor-0 leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] mt-[18px]">
               Ensuring Your Success Trusted <br />
               IT Services Source
             </h1>

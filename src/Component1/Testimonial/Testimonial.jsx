@@ -62,12 +62,16 @@ const Testimonial = () => {
       <div className="Container">
         <div className="grid grid-cols-1 gap-10 2xl:gap-0 lg:grid-cols-2 lg:items-center">
           <div className="relative">
-            <img src={testThumb} draggable="false" className="2xl:-ml-[16rem] 2xl:max-w-[inherit]" />
+            <img
+              src={testThumb}
+              draggable="false"
+              className="2xl:-ml-[16rem] 2xl:max-w-[inherit]"
+            />
             <div className="sm:flex items-center gap-2 absolute right-0 2xl:right-20 bottom-2 hidden">
               <h6 className="size-[42px] lg:size-7 xl:size-8 2xl:size-[42px] lg:text-base xl:text-lg 2xl:text-xl rounded-full bg-[#ff9c01] text-xl flex items-center justify-center text-white">
                 <MdOutlineStarPurple500 />
               </h6>
-              <p className="font-FiraSans font-medium text-[22px] lg:text-base xl:text-lg 2xl:text-[22px] text-white">
+              <p className="font-AlbertSans font-medium text-[22px] lg:text-base xl:text-lg 2xl:text-[22px] text-white">
                 Avg Ratings 4.9
               </p>
             </div>

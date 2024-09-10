@@ -19,6 +19,8 @@ import { FaPhoneAlt, FaTimes } from "react-icons/fa";
 import { MdLocationPin } from "react-icons/md";
 import { IoMdPaperPlane } from "react-icons/io";
 import { LuMoveRight } from "react-icons/lu";
+import { IoSearch } from "react-icons/io5";
+import { CgMenuGridO } from "react-icons/cg";
 
 const Navbar = () => {
   const menuBarRef = useRef(null);
@@ -189,25 +191,22 @@ const Navbar = () => {
       </div>
       <div ref={bodyOverlayRef} className="body-overlay"></div>
       <div id="header-sticky" className="header-area">
-        <div className="Container">
+        <div className="px-2 lg:px-[30px]">
           <div className="flex items-center justify-between lg:grid lg:grid-cols-12">
-            <div className="col-span-2">
+            <div className="col-span-3">
               <div className="header-logo">
                 <Link to={"/"}>
                   <img src={Logo} draggable="false" />
                 </Link>
               </div>
             </div>
-            <div className="col-span-8 hidden lg:block">
+            <div className="col-span-6 hidden lg:block">
               <div className="header-main-menu text-center">
                 <nav className="main-menu-content">
                   <ul>
                     <li className="has-dropdown">
-                      <Link to={"/"}>
+                      <Link to={"/"} className="active">
                         Home
-                        <span>
-                          <FaChevronDown />
-                        </span>
                       </Link>
                       <div className="submenu has-homemenu mega-menu">
                         <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-3">
@@ -247,12 +246,10 @@ const Navbar = () => {
                       </div>
                     </li>
                     <li className="has-dropdown">
-                      <Link to={"/"}>
-                        Pages
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
+                      <Link to={"/"}>About</Link>
+                    </li>
+                    <li className="has-dropdown">
+                      <Link to={"/"}>Pages</Link>
                       <ul className="submenu">
                         <li>
                           <Link to={"/"}>about us</Link>
@@ -275,12 +272,7 @@ const Navbar = () => {
                       </ul>
                     </li>
                     <li className="has-dropdown">
-                      <Link to={"/"}>
-                        Service
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
+                      <Link to={"/"}>Services</Link>
                       <ul className="submenu">
                         <li>
                           <Link to={"/"}>service</Link>
@@ -291,50 +283,7 @@ const Navbar = () => {
                       </ul>
                     </li>
                     <li className="has-dropdown">
-                      <Link to={"/"}>
-                        Project
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className="submenu">
-                        <li>
-                          <Link to={"/"}>project</Link>
-                        </li>
-                        <li>
-                          <Link to={"/"}>project details</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="has-dropdown">
-                      <Link to={"/"}>
-                        Shop
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className="submenu">
-                        <li>
-                          <Link to={"/"}>shop</Link>
-                        </li>
-                        <li>
-                          <Link to={"/"}>shop details</Link>
-                        </li>
-                        <li>
-                          <Link to={"/"}>cart</Link>
-                        </li>
-                        <li>
-                          <Link to={"/"}>checkout</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="has-dropdown">
-                      <Link to={"/"}>
-                        Blog
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
+                      <Link to={"/"}>Blog</Link>
                       <ul className="submenu">
                         <li>
                           <Link to={"/"}>blog grid</Link>
@@ -357,13 +306,26 @@ const Navbar = () => {
                 </nav>
               </div>
             </div>
-            <div className="col-span-2">
+            <div className="col-span-3">
               <div className="header-right-box flex items-center gap-10 lg:gap-0 justify-end">
+                <div className="size-[50px] rounded-full bg-BodyBg2-0 flex items-center justify-center text-HeadingColor-0 relative z-10 transition-all duration-500 hover:text-white before:absolute before:left-0 before:top-0 before:w-full before:rounded-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100">
+                  <button>
+                    <IoSearch size={"18"} />
+                  </button>
+                </div>
                 <div className="header-btn hidden lg:block">
                   <Link to={"/"}>
-                    get a quote<span></span>
+                    get Appiontment<span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                     <LuMoveRight />
                   </Link>
+                </div>
+                <div className="size-[50px] rounded-full bg-PrimaryColor-0 flex items-center justify-center text-white relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:rounded-full before:h-full before:bg-Secondarycolor-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100">
+                  <button>
+                    <CgMenuGridO size={"30"}/>
+                  </button>
                 </div>
                 <div className="header-bar lg:hidden">
                   <button ref={menuBarRef} className="menu-bar">

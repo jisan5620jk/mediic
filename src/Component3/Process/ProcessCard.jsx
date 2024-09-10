@@ -15,14 +15,14 @@ const ProcessCard = ({
           draggable="false"
           className="absolute top-1/2 -translate-y-1/2 -right-[150px] 2xl:-right-[180px] hidden xl:block"
         />
-        <h6 className="w-[40px] h-[40px] rounded-full bg-PrimaryColor-0 text-white font-FiraSans text-lg flex justify-center items-center absolute -top-8 -right-7">
+        <h6 className="w-[40px] h-[40px] rounded-full bg-PrimaryColor-0 text-white font-AlbertSans text-lg flex justify-center items-center absolute -top-8 -right-7">
           {boxNumber1}
         </h6>
       </div>
-      <h5 className="font-FiraSans font-bold text-HeadingColor-0 text-2xl mt-14 mb-4">
+      <h5 className="font-AlbertSans font-bold text-HeadingColor-0 text-2xl mt-14 mb-4">
         {processTitle}
       </h5>
-      <p className="font-FiraSans text-TextColor2-0 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto">
+      <p className="font-AlbertSans text-TextColor2-0 sm:w-2/3 md:w-full 2xl:w-3/4 mx-auto">
         {processDesc}
       </p>
     </div>

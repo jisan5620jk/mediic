@@ -27,38 +27,40 @@ const PricingCard = ({
       <div className="absolute bottom-10 right-10 animate-zoomInOut -z-10">
         <img src={pricingShape2} draggable="false" />
       </div>
-      <h4 className="font-FiraSans font-medium text-lg text-PrimaryColor-0 pl-8 pr-10 py-2 bg-[#f5f8ed] rounded-r-full inline-block transition-all duration-500 mt-10">
+      <h4 className="font-AlbertSans font-medium text-lg text-PrimaryColor-0 pl-8 pr-10 py-2 bg-[#f5f8ed] rounded-r-full inline-block transition-all duration-500 mt-10">
         {pricingTitle}
       </h4>
-      <div className="font-FiraSans flex items-baseline gap-3 px-[30px] mt-6 pb-4">
+      <div className="font-AlbertSans flex items-baseline gap-3 px-[30px] mt-6 pb-4">
         <div className="flex items-center gap-1">
-          <h6 className="font-FiraSans font-bold text-[50px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
+          <h6 className="font-AlbertSans font-bold text-[50px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
             {currency}
           </h6>
           <CountUp
             start={-11}
             end={price}
             suffix=""
-            className="text-[50px] font-bold font-FiraSans text-HeadingColor-0 transition-all duration-500 group-hover:text-white"
+            className="text-[50px] font-bold font-AlbertSans text-HeadingColor-0 transition-all duration-500 group-hover:text-white"
           />
         </div>
-        <p className="text-TextColor-0 font-FiraSans">{pricingDateLine}</p>
+        <p className="text-TextColor-0 font-AlbertSans">{pricingDateLine}</p>
       </div>
-      <p className="font-FiraSans text-TextColor-0 px-[30px]">{pricingDesc}</p>
+      <p className="font-AlbertSans text-TextColor-0 px-[30px]">
+        {pricingDesc}
+      </p>
       <ul>
-        <li className="flex gap-2 items-center font-FiraSans text-TextColor-0 transition-all duration-500 group-hover:text-white px-[30px] mb-3 mt-9">
+        <li className="flex gap-2 items-center font-AlbertSans text-TextColor-0 transition-all duration-500 group-hover:text-white px-[30px] mb-3 mt-9">
           <div className="text-[10px] text-PrimaryColor-0">{pricingIcon}</div>
           {pricingContent1}
         </li>
-        <li className="flex gap-2 items-center font-FiraSans text-TextColor-0 transition-all duration-500 group-hover:text-white px-[30px] mb-3">
+        <li className="flex gap-2 items-center font-AlbertSans text-TextColor-0 transition-all duration-500 group-hover:text-white px-[30px] mb-3">
           <div className="text-[10px] text-PrimaryColor-0">{pricingIcon}</div>
           {pricingContent2}
         </li>
-        <li className="flex gap-2 items-center font-FiraSans text-TextColor-0 transition-all duration-500 group-hover:text-white px-[30px] mb-3">
+        <li className="flex gap-2 items-center font-AlbertSans text-TextColor-0 transition-all duration-500 group-hover:text-white px-[30px] mb-3">
           <div className="text-[10px] text-PrimaryColor-0">{pricingIcon}</div>
           {pricingContent3}
         </li>
-        <li className="flex gap-2 items-center font-FiraSans text-TextColor-0 transition-all duration-500 group-hover:text-white px-[30px] mb-1">
+        <li className="flex gap-2 items-center font-AlbertSans text-TextColor-0 transition-all duration-500 group-hover:text-white px-[30px] mb-1">
           <div className="text-[10px] text-PrimaryColor-0">{pricingIcon}</div>
           {pricingContent4}
         </li>

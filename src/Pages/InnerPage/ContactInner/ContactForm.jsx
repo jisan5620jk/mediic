@@ -14,10 +14,10 @@ const ContactForm = () => {
         <div className="col-span-1 rounded-md overflow-hidden inline-block">
           <img src={contactFormImg} className="w-full" draggable="false" />
           <div className="bg-PrimaryColor-0 pl-9 pt-7 pb-9">
-            <h4 className="font-FiraSans font-semibold text-[28px] leading-[34px] text-white">
+            <h4 className="font-AlbertSans font-semibold text-[28px] leading-[34px] text-white">
               Feel Free to Contact & Hire Us for Your Solution
             </h4>
-            <h6 className="font-FiraSans font-semibold text-xl text-white mt-6 mb-5">
+            <h6 className="font-AlbertSans font-semibold text-xl text-white mt-6 mb-5">
               Follow US :
             </h6>
             <ul className="flex items-center gap-3">
@@ -53,10 +53,10 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="col-span-2 pl-[120px]">
-          <h5 className="font-FiraSans text-lg font-semibold text-PrimaryColor-0">
+          <h5 className="font-AlbertSans text-lg font-semibold text-PrimaryColor-0">
             Have Any Consultation....?
           </h5>
-          <h1 className="font-FiraSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-12">
+          <h1 className="font-AlbertSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-12">
             Get In Touch Your Nearest Local <br />
             Business Sales Executive
           </h1>

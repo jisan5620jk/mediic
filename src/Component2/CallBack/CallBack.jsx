@@ -9,13 +9,13 @@ const CallBack = () => {
       <div className="Container">
         <div className="grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-2 lg:items-center">
           <div>
-            <h5 className="font-FiraSans font-medium text-sm sm:text-base text-white uppercase mb-3">
+            <h5 className="font-AlbertSans font-medium text-sm sm:text-base text-white uppercase mb-3">
               Call Back
             </h5>
-            <h1 className="font-FiraSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
+            <h1 className="font-AlbertSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
               Request A Free Consulting
             </h1>
-            <p className="font-FiraSans text-TextColor-0">
+            <p className="font-AlbertSans text-TextColor-0">
               Media leadership skills before cross-media innovation testing
               <br />
               develop standardized platforms without
@@ -34,7 +34,7 @@ const CallBack = () => {
                   id="name"
                   placeholder="Your Name*"
                   required
-                  className="h-[56px] w-full rounded px-6 py-2 font-FiraSans text-sm placeholder:text-TextColor2-0 text-HeadingColor-0 bg-white border-none outline-none"
+                  className="h-[56px] w-full rounded px-6 py-2 font-AlbertSans text-sm placeholder:text-TextColor2-0 text-HeadingColor-0 bg-white border-none outline-none"
                 />
                 <span className="absolute top-1/2 -translate-y-1/2 right-6 text-TextColor2-0">
                   <FaRegUser />
@@ -47,7 +47,7 @@ const CallBack = () => {
                   id="email"
                   placeholder="Your E-Mail*"
                   required
-                  className="h-[56px] w-full rounded px-6 py-2 font-FiraSans text-sm placeholder:text-TextColor2-0 text-HeadingColor-0 bg-white border-none outline-none"
+                  className="h-[56px] w-full rounded px-6 py-2 font-AlbertSans text-sm placeholder:text-TextColor2-0 text-HeadingColor-0 bg-white border-none outline-none"
                 />
                 <span className="absolute top-1/2 -translate-y-1/2 right-6 text-TextColor2-0">
                   <FaRegEnvelope />
@@ -60,7 +60,7 @@ const CallBack = () => {
                   id="phone"
                   placeholder="Phone No.*"
                   required
-                  className="h-[56px] w-full rounded px-6 py-2 font-FiraSans text-sm placeholder:text-TextColor2-0 text-HeadingColor-0 bg-white border-none outline-none"
+                  className="h-[56px] w-full rounded px-6 py-2 font-AlbertSans text-sm placeholder:text-TextColor2-0 text-HeadingColor-0 bg-white border-none outline-none"
                 />
                 <span className="absolute top-1/2 -translate-y-1/2 right-6 text-TextColor2-0">
                   <FaPhoneAlt size={"15"} />
@@ -68,7 +68,7 @@ const CallBack = () => {
               </label>
               <button
                 type="submit"
-                className="h-[56px] w-full bg-PrimaryColor-0 text-white font-FiraSans
+                className="h-[56px] w-full bg-PrimaryColor-0 text-white font-AlbertSans
                            rounded relative z-10 before:absolute before:left-1/2 before:top-0 before:bg-Secondarycolor-0 before:w-0 before:h-full before:transition-all before:duration-500 before:rounded before:-z-10 hover:before:w-full hover:before:left-0"
               >
                 Request Call Back

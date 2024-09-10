@@ -8,12 +8,16 @@ const About = () => {
   return (
     <section className="mx-2 xl:mx-5 mt-5 rounded-[40px] py-[120px] bg-BodyBg-0 relative">
       <div className="Container">
-        <h1 className="font-FiraSans font-semibold text-center text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px] mb-[58px]">
+        <h1 className="font-AlbertSans font-semibold text-center text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px] mb-[58px]">
           Perform Market Research to gain <br /> Insights into Industry Trends
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-28 items-center">
           <div className="relative z-10">
-            <img src={aboutThumb} draggable="false" className="w-full 2xl:w-[inherit]"/>
+            <img
+              src={aboutThumb}
+              draggable="false"
+              className="w-full 2xl:w-[inherit]"
+            />
             <div className="absolute top-0 right-0 2xl:right-[36px] size-[74px] sm:size-[142px] lg:size-[120px] xl:size-[142px] bg-PrimaryColor-0 rounded-full flex items-center justify-center">
               <div className="text-inner size-14 sm:size-24 lg:size-20 xl:size-24 animate-rotational relative before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:size-[15px] before:rounded-full before:bg-white">
                 <svg
@@ -26,7 +30,7 @@ const About = () => {
                     id="e-path-35ee1b2"
                     className="fill-transparent"
                   ></path>
-                  <text className="font-FiraSans text-[38px]">
+                  <text className="font-AlbertSans text-[38px]">
                     <textPath
                       id="e-text-path-35ee1b2"
                       href="#e-path-35ee1b2"
@@ -41,32 +45,32 @@ const About = () => {
             </div>
           </div>
           <div className="relative">
-            <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
+            <h5 className="font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
               ABOUT COMPANY
             </h5>
-            <h1 className="font-FiraSans font-medium text-HeadingColor-0 text-[20px] leading-[30px] sm:text-[22px] sm:leading-[32px] md:text-[28px] lg:text-[22px] lg:leading-[32px] xl:text-[26px] xl:leading-[36px] 2xl:text-[28px] 2xl:leading-[38px]">
+            <h1 className="font-AlbertSans font-medium text-HeadingColor-0 text-[20px] leading-[30px] sm:text-[22px] sm:leading-[32px] md:text-[28px] lg:text-[22px] lg:leading-[32px] xl:text-[26px] xl:leading-[36px] 2xl:text-[28px] 2xl:leading-[38px]">
               Since 2007, We’re working Consulting agency
               <br className="hidden sm:block" />
               group of more than 120+ talented peoples
               <br className="hidden sm:block" />
               helps companies
             </h1>
-            <p className="font-FiraSans text-TextColor2-0 mt-6">
+            <p className="font-AlbertSans text-TextColor2-0 mt-6">
               Globally engage cross-media leadership skills before cross-media
               innovation develop standardized platforms without robust
               applications. Conveniently go forward collaboration and
               idea-sharing
             </p>
             <ul className="mt-5">
-              <li className="flex items-center gap-4 font-FiraSans font-medium text-lg text-HeadingColor-0">
+              <li className="flex items-center gap-4 font-AlbertSans font-medium text-lg text-HeadingColor-0">
                 <FaCheck size={"22"} className="text-PrimaryColor-0" />
                 Professional Team Member
               </li>
-              <li className="flex items-center gap-4 font-FiraSans font-medium text-lg text-HeadingColor-0 mt-3">
+              <li className="flex items-center gap-4 font-AlbertSans font-medium text-lg text-HeadingColor-0 mt-3">
                 <FaCheck size={"22"} className="text-PrimaryColor-0" />
                 Any Problem Solving
               </li>
-              <li className="flex items-center gap-4 font-FiraSans font-medium text-lg text-HeadingColor-0 mt-3">
+              <li className="flex items-center gap-4 font-AlbertSans font-medium text-lg text-HeadingColor-0 mt-3">
                 <FaCheck size={"22"} className="text-PrimaryColor-0" />
                 Implement Business
               </li>
@@ -76,7 +80,7 @@ const About = () => {
                 <button className="primary-btn">{`Discover More`}</button>
               </Link>
               <Link to={"/"}>
-                <button className="flex items-center gap-2 font-FiraSans font-medium text-HeadingColor-0">
+                <button className="flex items-center gap-2 font-AlbertSans font-medium text-HeadingColor-0">
                   <FaEnvelopeOpen />
                   example@gmail.com
                 </button>

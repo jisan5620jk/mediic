@@ -16,17 +16,17 @@ const FeatureCard = ({
         </div>
       </div>
       <div className="overflow-hidden relative">
-        <h5 className="font-FiraSans font-semibold text-HeadingColor-0 text-xl sm:text-[22px] lg:text-lg xl:text-[22px] transition-all duration-500 group-hover:text-white pt-9 pb-3">
+        <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 text-xl sm:text-[22px] lg:text-lg xl:text-[22px] transition-all duration-500 group-hover:text-white pt-9 pb-3">
           {featureTitle}
         </h5>
-        <p className="font-FiraSans text-TextColor2-0 mb-8 transition-all duration-500 group-hover:text-TextColor-0">
+        <p className="font-AlbertSans text-TextColor2-0 mb-8 transition-all duration-500 group-hover:text-TextColor-0">
           {featureDesc}
         </p>
         <Link
           to={featureUrl}
           className="absolute -bottom-14 -right-14 transition-all duration-500 group-hover:bottom-0 group-hover:right-0"
         >
-          <button className="font-FiraSans rounded-ss-md font-medium bg-PrimaryColor-0 text-white flex items-center justify-center transition-all duration-500 size-10 gap-2 overflow-hidden">
+          <button className="font-AlbertSans rounded-ss-md font-medium bg-PrimaryColor-0 text-white flex items-center justify-center transition-all duration-500 size-10 gap-2 overflow-hidden">
             <span>{featureBtnIcon}</span>
           </button>
         </Link>

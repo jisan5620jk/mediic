@@ -22,22 +22,22 @@ const BlogCard = ({
       </div>
       <div className="rounded-md relative z-20 bg-white transition-all duration-500 pt-8">
         <div>
-          <p className="font-FiraSans text-TextColor2-0 flex gap-2 items-center leading-[15px] mb-2">
+          <p className="font-AlbertSans text-TextColor2-0 flex gap-2 items-center leading-[15px] mb-2">
             <span className="text-PrimaryColor-0">{blogDateIcon}</span>
             {blogDate}
           </p>
           <Link to={blogUrl}>
-            <button className="font-FiraSans text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-2">
+            <button className="font-AlbertSans text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-2">
               {blogTitle}
             </button>
           </Link>
           <div className="flex flex-col justify-between sm:flex-row lg:flex-col xl:flex-row gap-6 border-t border-BorderColor2-0 mt-7 pt-5">
-            <p className="font-FiraSans text-TextColor2-0 flex gap-2 items-center leading-[15px]">
+            <p className="font-AlbertSans text-TextColor2-0 flex gap-2 items-center leading-[15px]">
               <span className="text-PrimaryColor-0 text-xl">{blogTagIcon}</span>
               {blogTag}
             </p>
             <Link to={blogUrl} className="inline-block ">
-              <button className="flex items-center gap-2 text-HeadingColor-0 text-lg font-FiraSans font-medium transition-all duration-500 group-hover:text-PrimaryColor-0">
+              <button className="flex items-center gap-2 text-HeadingColor-0 text-lg font-AlbertSans font-medium transition-all duration-500 group-hover:text-PrimaryColor-0">
                 {blogBtn}
                 {blogBtnIcon}
               </button>

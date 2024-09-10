@@ -27,13 +27,13 @@ const TestimonialCard = ({
           <li className="text-[#ffb609] text-[22px]">{testiRatingIcon}</li>
           <li className="text-[#ffb609] text-[22px]">{testiRatingIcon}</li>
         </ul>
-        <p className="font-FiraSans text-TextColor2-0 mt-4 text-sm sm:text-base">
+        <p className="font-AlbertSans text-TextColor2-0 mt-4 text-sm sm:text-base">
           {testiDesc}
         </p>
-        <h5 className="font-FiraSans font-semibold text-HeadingColor-0 text-xl mt-5 mb-2">
+        <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 text-xl mt-5 mb-2">
           {testiName}
         </h5>
-        <p className="font-FiraSans text-TextColor2-0">{testiDesignation}</p>
+        <p className="font-AlbertSans text-TextColor2-0">{testiDesignation}</p>
       </div>
     </div>
   );

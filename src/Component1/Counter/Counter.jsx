@@ -31,7 +31,7 @@ const Counter = () => {
       <div className="Container">
         <div className="grid lg:grid-cols-2 lg:items-center gap-8 lg:gap-0 pb-7">
           <div>
-            <h1 className="font-FiraSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px]">
+            <h1 className="font-AlbertSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px]">
               Get The Latest Achivement <br /> for Business Consult
             </h1>
           </div>

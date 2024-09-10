@@ -47,15 +47,15 @@ const TeamMember = () => {
     <section className="pb-28 relative">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-FiraSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase flex items-center justify-center gap-2 mb-3">
+          <h5 className="font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase flex items-center justify-center gap-2 mb-3">
             MEET OUR TEAM
           </h5>
-          <h1 className="font-FiraSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px]">
+          <h1 className="font-AlbertSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px]">
             {`We’ve`} 36+ Active & Dedicated Members
             <br />
             for Helping the Customers
           </h1>
-          <p className="font-FiraSans text-TextColor2-0 pt-4">
+          <p className="font-AlbertSans text-TextColor2-0 pt-4">
             Globally engage cross-media leadership skills before cross-media
             innovation forward
             <br className="hidden md:block" /> develope standardized platforms

@@ -15,11 +15,11 @@ const WorkCard = ({ workThumb, workTitle, workDesc, workUrl, workBtn }) => {
       </Link>
       <div className="absolute left-7 bottom-6">
         <Link to={workUrl}>
-          <button className="font-FiraSans text-left font-medium text-[22px] sm:text-2xl lg:text-xl xl:text-2xl text-white">
+          <button className="font-AlbertSans text-left font-medium text-[22px] sm:text-2xl lg:text-xl xl:text-2xl text-white">
             {workTitle}
           </button>
         </Link>
-        <p className="font-FiraSans text-white opacity-80">{workDesc}</p>
+        <p className="font-AlbertSans text-white opacity-80">{workDesc}</p>
       </div>
     </div>
   );

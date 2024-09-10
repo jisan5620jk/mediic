@@ -119,10 +119,10 @@ const TeamInner = () => {
         <div className="Container">
           <div className="grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-2 lg:items-center">
             <div>
-              <h5 className="font-FiraSans text-lg font-semibold text-PrimaryColor-0">
+              <h5 className="font-AlbertSans text-lg font-semibold text-PrimaryColor-0">
                 Dedicated Team
               </h5>
-              <h1 className="font-FiraSans font-bold text-xl leading-7 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px]">
+              <h1 className="font-AlbertSans font-bold text-xl leading-7 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px]">
                 Meet Our Dedicated Member <br />
                 For Any Enquery
               </h1>

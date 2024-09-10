@@ -6,10 +6,10 @@ const ContactCard = ({ contactIcon, contactSubTitle, contactTitle }) => {
         {contactIcon}
       </div>
       <div className="flex-1">
-        <h6 className="font-FiraSans font-semibold text-lg text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
+        <h6 className="font-AlbertSans font-semibold text-lg text-HeadingColor-0 transition-all duration-500 group-hover:text-white">
           {contactSubTitle}
         </h6>
-        <h4 className="font-FiraSans font-semibold text-xl sm:text-[22px] lg:text-xl xl:text-[22px] 2xl:text-[26px] text-PrimaryColor-0 transition-all duration-500 group-hover:text-white mt-[2px]">
+        <h4 className="font-AlbertSans font-semibold text-xl sm:text-[22px] lg:text-xl xl:text-[22px] 2xl:text-[26px] text-PrimaryColor-0 transition-all duration-500 group-hover:text-white mt-[2px]">
           {contactTitle}
         </h4>
       </div>

@@ -25,9 +25,9 @@ const About = () => {
                   start={-9}
                   end={283}
                   suffix="k+"
-                  className="text-3xl sm:text-[45px] font-FiraSans font-bold text-white mt-2 mb-2"
+                  className="text-3xl sm:text-[45px] font-AlbertSans font-bold text-white mt-2 mb-2"
                 />
-                <h6 className="font-FiraSans font-semibold text-white">
+                <h6 className="font-AlbertSans font-semibold text-white">
                   Complete Projects
                 </h6>
               </div>
@@ -37,10 +37,10 @@ const About = () => {
                 <img src={aboutAward} draggable={false} />
               </div>
               <div>
-                <h5 className="font-FiraSans font-semibold text-xl leading-8 text-white">
+                <h5 className="font-AlbertSans font-semibold text-xl leading-8 text-white">
                   Award Wining
                 </h5>
-                <h5 className="font-FiraSans font-semibold text-xl leading-8 text-white border-t">
+                <h5 className="font-AlbertSans font-semibold text-xl leading-8 text-white border-t">
                   Best Services
                 </h5>
               </div>
@@ -52,14 +52,14 @@ const About = () => {
             />
           </div>
           <div className="relative">
-            <h5 className="font-FiraSans text-lg font-semibold text-PrimaryColor-0">
+            <h5 className="font-AlbertSans text-lg font-semibold text-PrimaryColor-0">
               IT Support For Business
             </h5>
-            <h1 className="font-FiraSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-4">
+            <h1 className="font-AlbertSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-4">
               Ensuring Your Success Trusted <br />
               IT Services Source
             </h1>
-            <p className="font-FiraSans text-TextColor2-0 pb-8">
+            <p className="font-AlbertSans text-TextColor2-0 pb-8">
               Monotonectally synergize granular markets and front markets.
               Collaboratively visualize strategic infomediaries after multimedia
               based models. Synergistically task state of the art
@@ -67,13 +67,13 @@ const About = () => {
             </p>
             <div className="grid grid-cols-2 items-center mb-8">
               <ul>
-                <li className="font-FiraSans font-medium text-HeadingColor-0 flex items-center gap-2 mb-3">
+                <li className="font-AlbertSans font-medium text-HeadingColor-0 flex items-center gap-2 mb-3">
                   <span className="text-PrimaryColor-0">
                     <RiCheckFill size={"24"} />
                   </span>
                   Company and Research
                 </li>
-                <li className="font-FiraSans font-medium text-HeadingColor-0 flex items-center gap-2 mb-3">
+                <li className="font-AlbertSans font-medium text-HeadingColor-0 flex items-center gap-2 mb-3">
                   <span className="text-PrimaryColor-0">
                     <RiCheckFill size={"24"} />
                   </span>
@@ -85,14 +85,14 @@ const About = () => {
                   start={-9}
                   end={45}
                   suffix="%"
-                  className="text-xl sm:text-[22px] font-FiraSans flex items-center justify-center
+                  className="text-xl sm:text-[22px] font-AlbertSans flex items-center justify-center
                  font-semibold text-PrimaryColor-0 size-[65px] rounded-full border-2 border-PrimaryColor-0"
                 />
                 <div>
-                  <h4 className="font-FiraSans font-semibold text-2xl text-HeadingColor-0">
+                  <h4 className="font-AlbertSans font-semibold text-2xl text-HeadingColor-0">
                     Solution Business
                   </h4>
-                  <p className="font-FiraSans text-lg text-TextColor2-0">
+                  <p className="font-AlbertSans text-lg text-TextColor2-0">
                     Level is high
                   </p>
                 </div>
@@ -102,7 +102,7 @@ const About = () => {
               <div>
                 <BiSolidQuoteLeft size={"32"} className="text-PrimaryColor-0" />
               </div>
-              <p className="italic font-FiraSans text-lg text-TextColor2-0">
+              <p className="italic font-AlbertSans text-lg text-TextColor2-0">
                 If you are accused of committing a crime, you will the very best
                 criminal defense attorneys.
               </p>

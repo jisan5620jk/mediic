@@ -38,10 +38,10 @@ const TeamCard = ({
         </ul>
       </div>
       <div className="text-center absolute z-20 bottom-5 left-1/2 -translate-x-1/2 w-full">
-        <h5 className="font-FiraSans font-semibold text-[22px] text-white">
+        <h5 className="font-AlbertSans font-semibold text-[22px] text-white">
           {teamTitle}
         </h5>
-        <p className="font-FiraSans text-TextColor-0">{teamDesc}</p>
+        <p className="font-AlbertSans text-TextColor-0">{teamDesc}</p>
       </div>
     </div>
   );

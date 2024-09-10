@@ -22,14 +22,14 @@ const MissionInner = () => {
               <img src={missionImg} draggable="false" />
             </div>
             <div className="mr-10">
-              <h2 className="font-FiraSans font-bold text-HeadingColor-0 text-[42px] mb-8">
+              <h2 className="font-AlbertSans font-bold text-HeadingColor-0 text-[42px] mb-8">
                 Our Mission
               </h2>
               <div className="flex gap-5 items-center">
                 <div className="size-11 rounded-full bg-white text-xl flex items-center justify-center">
                   <FiCheck />
                 </div>
-                <p className="font-FiraSans text-TextColor2-0 flex-1">
+                <p className="font-AlbertSans text-TextColor2-0 flex-1">
                   We Communicate clearly, because in a world crowded with
                   over-the-top marketing. simple wins.
                 </p>
@@ -38,7 +38,7 @@ const MissionInner = () => {
                 <div className="size-11 rounded-full bg-white text-xl flex items-center justify-center">
                   <FiCheck />
                 </div>
-                <p className="font-FiraSans text-TextColor2-0 flex-1">
+                <p className="font-AlbertSans text-TextColor2-0 flex-1">
                   We are not rock stars, ninjas or any other disingenuous buzz
                   term. We are creative professionals.
                 </p>
@@ -47,7 +47,7 @@ const MissionInner = () => {
                 <div className="size-11 rounded-full bg-white text-xl flex items-center justify-center">
                   <FiCheck />
                 </div>
-                <p className="font-FiraSans text-TextColor2-0 flex-1">
+                <p className="font-AlbertSans text-TextColor2-0 flex-1">
                   Before you can market a business, you need to know its story
                   support staff that’s always there when you need us.
                 </p>
@@ -59,14 +59,14 @@ const MissionInner = () => {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-10 2xl:gap-20 bg-BodyBg-0 rounded-md">
             <div className="ml-10">
-              <h2 className="font-FiraSans font-bold text-HeadingColor-0 text-[42px] mb-8">
+              <h2 className="font-AlbertSans font-bold text-HeadingColor-0 text-[42px] mb-8">
                 Our Vision
               </h2>
               <div className="flex gap-5 items-center">
                 <div className="size-11 rounded-full bg-white text-xl flex items-center justify-center">
                   <FiCheck />
                 </div>
-                <p className="font-FiraSans text-TextColor2-0 flex-1">
+                <p className="font-AlbertSans text-TextColor2-0 flex-1">
                   We Communicate clearly, because in a world crowded with
                   over-the-top marketing. simple wins.
                 </p>
@@ -75,7 +75,7 @@ const MissionInner = () => {
                 <div className="size-11 rounded-full bg-white text-xl flex items-center justify-center">
                   <FiCheck />
                 </div>
-                <p className="font-FiraSans text-TextColor2-0 flex-1">
+                <p className="font-AlbertSans text-TextColor2-0 flex-1">
                   We are not rock stars, ninjas or any other disingenuous buzz
                   term. We are creative professionals.
                 </p>
@@ -84,7 +84,7 @@ const MissionInner = () => {
                 <div className="size-11 rounded-full bg-white text-xl flex items-center justify-center">
                   <FiCheck />
                 </div>
-                <p className="font-FiraSans text-TextColor2-0 flex-1">
+                <p className="font-AlbertSans text-TextColor2-0 flex-1">
                   Before you can market a business, you need to know its story
                   support staff that’s always there when you need us.
                 </p>
@@ -102,14 +102,14 @@ const MissionInner = () => {
               <img src={missionImg} draggable="false" />
             </div>
             <div className="mr-10">
-              <h2 className="font-FiraSans font-bold text-HeadingColor-0 text-[42px] mb-8">
+              <h2 className="font-AlbertSans font-bold text-HeadingColor-0 text-[42px] mb-8">
                 Our Goal
               </h2>
               <div className="flex gap-5 items-center">
                 <div className="size-11 rounded-full bg-white text-xl flex items-center justify-center">
                   <FiCheck />
                 </div>
-                <p className="font-FiraSans text-TextColor2-0 flex-1">
+                <p className="font-AlbertSans text-TextColor2-0 flex-1">
                   We Communicate clearly, because in a world crowded with
                   over-the-top marketing. simple wins.
                 </p>
@@ -118,7 +118,7 @@ const MissionInner = () => {
                 <div className="size-11 rounded-full bg-white text-xl flex items-center justify-center">
                   <FiCheck />
                 </div>
-                <p className="font-FiraSans text-TextColor2-0 flex-1">
+                <p className="font-AlbertSans text-TextColor2-0 flex-1">
                   We are not rock stars, ninjas or any other disingenuous buzz
                   term. We are creative professionals.
                 </p>
@@ -127,7 +127,7 @@ const MissionInner = () => {
                 <div className="size-11 rounded-full bg-white text-xl flex items-center justify-center">
                   <FiCheck />
                 </div>
-                <p className="font-FiraSans text-TextColor2-0 flex-1">
+                <p className="font-AlbertSans text-TextColor2-0 flex-1">
                   Before you can market a business, you need to know its story
                   support staff that’s always there when you need us.
                 </p>

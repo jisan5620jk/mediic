@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        FiraSans: ["Fira Sans", "sans-serif"],
+        AlbertSans: ["Albert Sans", "sans-serif"],
       },
       colors: {
         PrimaryColor: ["#007eff"],
@@ -13,7 +13,7 @@ export default {
         TextColor: ["#97a9bf"],
         TextColor2: ["#65677a"],
         BodyBg: ["#e5f1ff"],
-        BodyBg2: ["#063232"],
+        BodyBg2: ["#d4e5f9"],
         BodyBg3: ["#0c6d6d"],
         BodyBg4: ["#f4f8f9"],
         BorderColor: ["#e6eaea"],
