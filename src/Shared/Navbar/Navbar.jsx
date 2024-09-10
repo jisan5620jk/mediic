@@ -1,9 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 import Logo from "/images/logo.png";
-import homeOne from "/images/blog.jpg";
-import homeTwo from "/images/blog2.jpg";
-import homeThree from "/images/blog3.jpg";
+import homeOne from "/images/home1.png";
+import homeTwo from "/images/home2.png";
+import homeThree from "/images/home3.png";
+import homeFour from "/images/home4.png";
 import "./navbar.css";
 import { useEffect, useState, useRef } from "react";
 import {
@@ -209,7 +210,7 @@ const Navbar = () => {
                         </span>
                       </Link>
                       <div className="submenu has-homemenu mega-menu">
-                        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-3">
+                        <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-3">
                           <div className="homemenu">
                             <div className="homemenu-thumb">
                               <Link to={"/"}>
@@ -217,7 +218,7 @@ const Navbar = () => {
                                 <h6>Live Demo</h6>
                               </Link>
                             </div>
-                          </div>{" "}
+                          </div>
                           <div className="homemenu">
                             <div className="homemenu-thumb">
                               <Link to={"/home2"}>
@@ -225,11 +226,19 @@ const Navbar = () => {
                                 <h6>Live Demo</h6>
                               </Link>
                             </div>
-                          </div>{" "}
+                          </div>
                           <div className="homemenu">
                             <div className="homemenu-thumb">
                               <Link to={"/"}>
                                 <img src={homeThree} />
+                                <h6>Live Demo</h6>
+                              </Link>
+                            </div>
+                          </div>
+                          <div className="homemenu">
+                            <div className="homemenu-thumb">
+                              <Link to={"/"}>
+                                <img src={homeFour} />
                                 <h6>Live Demo</h6>
                               </Link>
                             </div>
