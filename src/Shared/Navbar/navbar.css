@@ -389,7 +389,7 @@ nav.main-menu-content > ul > li > a {
   position: relative;
 }
 
-nav.main-menu-content ul li a::before {
+nav.main-menu-content > ul > li > a::before {
   position: absolute;
   content: "";
   top: 50%;
@@ -402,8 +402,8 @@ nav.main-menu-content ul li a::before {
   transition: all 0.5s;
 }
 
-nav.main-menu-content ul li a.active:before,
-nav.main-menu-content ul li a:hover:before {
+nav.main-menu-content > ul > li > a.active:before,
+nav.main-menu-content > ul > li > a:hover:before {
   left: 3px;
   transform: translateY(-50%) scale(1);
 }
@@ -437,7 +437,9 @@ nav.main-menu-content > ul > li > a:hover > span {
   background: #002570;
   text-transform: uppercase;
   border-radius: 30px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   position: relative;
   z-index: 1;
   transition: 0.5s;
@@ -489,10 +491,6 @@ nav.main-menu-content > ul > li > a:hover > span {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
-}
-
-.header-btn a svg {
-  font-size: 18px;
 }
 
 /* Submenu Start Here */

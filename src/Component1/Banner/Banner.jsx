@@ -1,66 +1,30 @@
-import { Link } from "react-router-dom";
 import bannerThumb from "/images/hero-img.png";
-import { FaPhoneAlt } from "react-icons/fa";
-import { useState } from "react";
-import FsLightbox from "fslightbox-react";
-import { IoPlayOutline } from "react-icons/io5";
+import bannerHeart from "/images/banner-heart.png";
+import bannerTeam from "/images/team-img.png";
 
 const Banner = () => {
-  const [toggler, setToggler] = useState(false);
   return (
     <div className="bg-BodyBg-0 px-2 lg:px-[30px]">
       <section className="bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[700px] md:h-[1100px] lg:h-[700px] xl:h-[790px] 2xl:h-[790px] flex items-center relative z-10 overflow-hidden rounded-t-[40px]">
-        <div className="Container">
-          <div className="grid lg:grid-cols-2 items-center gap-16 lg:gap-0 mt-[72px]">
-            <div className="relative">
-              <h1 className="font-AlbertSans font-semibold text-white text-[30px] leading-[36px] sm:text-[46px] sm:leading-[52px] md:text-[68x] lg:text-[50px] xl:text-[54px] xl:leading-[68px] 2xl:text-[56px] 2xl:leading-[70px]">
-                Crafting the Digital
-                <br />
-                Solutions for your
-                <br />
-                <span className="relative before:absolute before:bottom-3 before:left-0 before:w-full before:h-[10px] before:bg-PrimaryColor-0 before:-z-10">
-                  Business
-                </span>
+        <div className="flex justify-center items-center m-auto">
+          <div className="relative z-10">
+            <div className="flex items-center justify-center gap-5">
+              <h1 className="font-AlbertSans font-extrabold text-[110px] text-white uppercase">
+                HealthCare
               </h1>
-              <p className="font-AlbertSans text-TextColor-0 mb-[38px] mt-[22px]">
-                Continually plagiarize virtual web services with resource{" "}
-                <br className="hidden xl:block 2xl:hidden" />
-                maximizing <br className="hidden 2xl:block" /> action items.
-                Globally build front-end
-              </p>
-              <div className="flex flex-col sm:flex-row sm:items-center gap-8">
-                <Link to={"/contact"}>
-                  <button className="primary-btn">{`Get Started now`}</button>
-                </Link>
-                <Link to={"/about"}>
-                  <button className="flex items-center gap-3 text-white font-AlbertSans font-medium">
-                    <FaPhoneAlt />
-                    {`CALL : +123 (45678) 000`}
-                  </button>
-                </Link>
-              </div>
+              <img src={bannerHeart} draggable="false" />
             </div>
-            <div className="relative md:flex justify-end hidden">
-              <img
-                src={bannerThumb}
-                draggable="false"
-                className="md:w-11/12 xl:w-[inherit] 2xl:max-w-[inherit] "
-              />
-              <div className="absolute top-[54%] -left-[58px] md:left-0 lg:-left-[40px] xl:-left-[58px] 2xl:-left-[42px] -translate-y-1/2">
-                <button className="h-14 w-14 sm:h-[90px] sm:w-[90px] rounded-full bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
-                  <IoPlayOutline
-                    size={"30"}
-                    className="text-white"
-                    onClick={() => setToggler(!toggler)}
-                  />
-                </button>
-                <FsLightbox
-                  toggler={toggler}
-                  sources={[
-                    "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-                  ]}
-                />
+            <div className="absolute z-10">
+              <img src={bannerThumb} draggable="false" />
+            </div>
+            <div className="flex items-center justify-center gap-6 relative z-20 -mt-8">
+              <div className="bg-white bg-opacity-20 backdrop-filter filter-blur-[5px] backdrop-blur-lg flex items-center gap-[15px] rounded-full py-[14px] px-5">
+                <img src={bannerTeam} draggable="false" />
+                <h5 className="font-AlbertSans font-semibold text-white text-lg uppercase">Memebers</h5>
               </div>
+              <h1 className="font-AlbertSans font-extrabold text-[110px] text-white uppercase">
+                Doctors
+              </h1>
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ import homeOne from "/images/home1.png";
 import homeTwo from "/images/home2.png";
 import homeThree from "/images/home3.png";
 import homeFour from "/images/home4.png";
+import btnArrow from "/images/arrow.png";
 import "./navbar.css";
 import { useEffect, useState, useRef } from "react";
 import {
@@ -319,10 +320,10 @@ const Navbar = () => {
                     <span></span>
                     <span></span>
                     <span></span>
-                    <LuMoveRight />
+                    <img src={btnArrow}  draggable="false"/>
                   </Link>
                 </div>
-                <div className="size-[50px] rounded-full bg-PrimaryColor-0 flex items-center justify-center text-white relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:rounded-full before:h-full before:bg-Secondarycolor-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100">
+                <div className="size-[50px] rounded-full bg-PrimaryColor-0 2xl:flex items-center justify-center text-white relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:rounded-full before:h-full before:bg-Secondarycolor-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100 hidden">
                   <button>
                     <CgMenuGridO size={"30"}/>
                   </button>
