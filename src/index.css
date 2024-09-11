@@ -438,3 +438,16 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 .team-member:nth-child(2n + 2) {
   margin-top: 30px;
 }
+
+/* Custom Animations */
+@keyframes mask_animation_2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
