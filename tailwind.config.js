@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         AlbertSans: ["Albert Sans", "sans-serif"],
+        DMSans: ["DM Sans", "sans-serif"],
       },
       colors: {
         PrimaryColor: ["#007eff"],
