@@ -28,6 +28,54 @@ body {
   @apply flex items-center gap-2 overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-10 py-[18px] relative rounded-full text-base text-white font-medium font-AlbertSans before:bg-HeadingColor-0 before:h-full before:w-0 before:-skew-x-[25deg] before:absolute before:top-0 before:-right-5 before:-z-10 before:transition-all before:duration-500 hover:before:w-[125%] hover:before:-left-5;
 }
 
+.banner-btn {
+  padding: 16px 35px;
+  font-size: 18px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  font-family: "Albert Sans";
+  border-radius: 32px;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+  overflow: hidden;
+  border: 1px solid #007eff;
+  background-color: #fff;
+}
+
+.banner-btn:hover {
+  color: #007eff;
+}
+
+.banner-btn:after {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: #fff;
+  position: absolute;
+  content: attr(data-text);
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #007eff;
+  background-image: url(../public/images/mask-btn2.png);
+  -webkit-mask: url(../public/images/mask-btn2.png);
+  mask: url(../public/images/mask-btn2.png);
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  animation: mask_animation_2 0.7s steps(22) forwards;
+  z-index: -1;
+}
+
+.banner-btn:hover:after {
+  animation: mask_animation 0.7s steps(22) forwards;
+}
+
 .is-sticky {
   @apply fixed top-0 left-0 w-full z-[99999] shadow-lg bg-white backdrop-blur-md animate-headerSlideDown;
 }
@@ -439,7 +487,21 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   margin-top: 30px;
 }
 
+
 /* Custom Animations */
+
+@keyframes mask_animation {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
 @keyframes mask_animation_2 {
   from {
     -webkit-mask-position: 100% 0;

@@ -95,12 +95,18 @@ export default {
           from: { transform: "rotate(0deg)" },
           to: { transform: "rotate(360deg)" },
         },
+        rotateX: {
+          "0%":{transform :"rotate3d(0, 0, 0)"},
+          "50%":{transform :"rotate3d(0, 1, 0, 180deg)"},
+          "100%":{transform :"rotate3d(0, 1, 0, 360deg)"},
+        }
       },
       animation: {
         movebtn: "movebtn 3s linear infinite",
         wiggle: "wiggle 5s ease-in-out infinite",
         rotational: "rotational 10s linear infinite",
         rotate: "rotate 20s linear infinite",
+        rotateX: "rotateX 5s linear infinite",
         zoomInOut: "zoomInOut 2s alternate infinite",
         dance2: "dance2 3s alternate infinite",
         dance3: "dance3 2s alternate infinite",

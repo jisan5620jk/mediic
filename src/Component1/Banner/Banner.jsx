@@ -2,6 +2,8 @@ import bannerThumb from "/images/hero-img.png";
 import bannerHeart from "/images/banner-heart.png";
 import bannerTeam from "/images/team-img.png";
 import bannerCheck from "/images/tick.png";
+import bannerPlus from "/images/plus.png";
+import bannerShape from "/images/banner-arrow.png";
 import { Link } from "react-router-dom";
 import { GoArrowRight } from "react-icons/go";
 import { FaInstagram, FaLinkedinIn, FaPinterestP, FaSquareFacebook } from "react-icons/fa6";
@@ -20,11 +22,18 @@ const Banner = () => {
         <div className="flex justify-center items-center m-auto">
           <div className="Container">
             <div className="relative z-10">
+              <div className="absolute top-0 -left-10  -z-10">
+                <img
+                  src={bannerPlus}
+                  draggable="false"
+                  className="animate-rotational"
+                />
+              </div>
               <div className="flex items-center justify-center gap-5">
                 <h1 className="font-AlbertSans font-extrabold text-[110px] text-white uppercase">
                   HealthCare
                 </h1>
-                <img src={bannerHeart} draggable="false" />
+                <img src={bannerHeart} draggable="false" className="animate-rotateX"/>
               </div>
               <div className="absolute z-10 left-1/2 -translate-x-1/2 -top-28">
                 <img
@@ -61,11 +70,25 @@ const Banner = () => {
               </div>
               <div>
                 <Link to={"/appiontment"}>
-                  <button className="font-AlbertSans font-medium text-lg text-white flex items-center gap-[4px] bg-PrimaryColor-0 px-9 py-[18px] rounded-full relative z-10">
+                  <button className="banner-btn">
                     Free Consultation
                     <GoArrowRight size={"22"} className="-rotate-45" />
                   </button>
                 </Link>
+              </div>
+              <div className="absolute -bottom-10 -right-10  -z-10">
+                <img
+                  src={bannerPlus}
+                  draggable="false"
+                  className="animate-rotational"
+                />
+              </div>
+              <div className="absolute bottom-24 right-0  -z-10">
+                <img
+                  src={bannerShape}
+                  draggable="false"
+                  className="animate-swing"
+                />
               </div>
             </div>
           </div>
