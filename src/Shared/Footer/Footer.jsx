@@ -194,7 +194,7 @@ const Footer = () => {
           </div>
           <div>
             <p className="font-DMSans flex items-center text-TextColor-0">
-              This is a sample website - mediic ©2024 - All Rights Reserved
+              This is a sample website - Mediic © 2024 - All Rights Reserved
             </p>
           </div>
         </div>

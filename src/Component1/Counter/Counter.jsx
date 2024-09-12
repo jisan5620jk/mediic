@@ -1,68 +1,56 @@
-import { Link } from "react-router-dom";
-import CounterCard from "./CounterCard";
-import counterShape from "/images/star_icon.png";
-
-const counterData = [
-  {
-    id: 1,
-    counterShape: counterShape,
-    counterNumber: 12,
-    counterDesc: "Total Projects Complated",
-    counterSuffex: "K+",
-  },
-  {
-    id: 2,
-    counterShape: counterShape,
-    counterNumber: 950,
-    counterDesc: "SATIFIED ACTIVE CUSTOMERS",
-    counterSuffex: "+",
-  },
-  {
-    id: 3,
-    counterNumber: 4,
-    counterDesc: "AVERAGE CLIENTS RATINGS",
-    counterSuffex: ".7*",
-  },
-];
+import CountUp from "react-countup";
+import counterImg from "/images/counter-img.png";
 
 const Counter = () => {
   return (
-    <section className="mx-2 sm:mx-5 lg:mx-2 xl:mx-5 my-5 rounded-[40px] pt-[74px] pb-[54px] bg-BodyBg2-0 bg-no-repeat bg-cover bg-center">
-      <div className="Container">
-        <div className="grid lg:grid-cols-2 lg:items-center gap-8 lg:gap-0 pb-7">
-          <div>
-            <h1 className="font-AlbertSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px]">
-              Get The Latest Achivement <br /> for Business Consult
-            </h1>
-          </div>
-          <Link to={"/about"} className="flex lg:justify-end">
-            <button className="primary-btn !bg-BodyBg-0 !text-PrimaryColor-0">{`Get Started Now`}</button>
-          </Link>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-7 xl:gap-10 lg:grid-cols-3 items-center justify-center border-t-[2px] border-BorderColor2-0 pt-4">
-          {counterData.map(
-            ({
-              id,
-              counterShape,
-              counterNumber,
-              counterDesc,
-              counterSuffex,
-            }) => {
-              return (
-                <div key={id}>
-                  <CounterCard
-                    counterShape={counterShape}
-                    counterNumber={counterNumber}
-                    counterDesc={counterDesc}
-                    counterSuffex={counterSuffex}
-                  />
+    <div className="bg-BodyBg-0 px-2 lg:px-[30px]">
+      <section className="rounded-b-[30px] pt-[74px] pb-[54px] bg-[url(/images/counter-bg.png)] bg-no-repeat bg-cover bg-center">
+        <div className="Container">
+          <div className="grid gap-7 grid-cols-12 items-center justify-center">
+            <div className="col-span-12 lg:col-span-7">
+              <div className="flex items-center gap-6">
+                <div>
+                  <img src={counterImg} draggable="false" />
                 </div>
-              );
-            }
-          )}
+                <h2 className="font-AlbertSans font-bold text-white text-[34px] leading-[40px]">
+                  Medical Achivement <br /> Health Protection
+                </h2>
+              </div>
+            </div>
+            <div className="col-span-12 lg:col-span-5">
+              <div className="grid grid-cols-2 gap-20">
+                <div>
+                  <div>
+                    <CountUp
+                      start={-11}
+                      end={"12"}
+                      suffix={"K+"}
+                      className="font-AlbertSans text-3xl sm:text-4xl md:text-[50px] text-white font-bold"
+                    />
+                  </div>
+                  <p className="font-AlbertSans font-medium text-xl text-white pt-3 mt-3 border-t-2 border-BorderColor-0 border-opacity-25">
+                    Satisfied Patients
+                  </p>
+                </div>
+                <div>
+                  <div>
+                    <CountUp
+                      start={-11}
+                      end={"100"}
+                      suffix={"%"}
+                      className="font-AlbertSans text-3xl sm:text-4xl md:text-[50px] text-white font-bold"
+                    />
+                  </div>
+                  <p className="font-AlbertSans font-medium text-xl text-white pt-3 mt-3 border-t-2 border-BorderColor-0 border-opacity-25">
+                    Satisfaction Rates
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

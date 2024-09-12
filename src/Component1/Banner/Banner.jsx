@@ -11,7 +11,7 @@ import { FaInstagram, FaLinkedinIn, FaPinterestP, FaSquareFacebook } from "react
 const Banner = () => {
   return (
     <div className="bg-BodyBg-0 px-2 lg:px-[30px]">
-      <section className="bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[700px] md:h-[1100px] lg:h-[700px] xl:h-[790px] 2xl:h-[790px] flex items-center relative z-10 overflow-hidden rounded-t-[40px]">
+      <section className="bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[700px] md:h-[1100px] lg:h-[700px] xl:h-[790px] 2xl:h-[790px] flex items-center relative z-10 overflow-hidden rounded-t-[30px]">
         <div className="absolute top-1/2 -translate-y-1/2 -left-10">
           <Link to={"/"}>
             <button className="font-AlbertSans font-medium inline-block text-lg text-white rotate-90 relative before:absolute before:-left-[72px] before:-bottom-[35px] before:rotate-90 before:w-[2px] before:h-[100px] before:bg-[linear-gradient(_180deg,_rgba(255,_255,_255,_0.9999999999999999)_0%,_rgba(27,_31,_73,_0)_100%_)]">

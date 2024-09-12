@@ -7,7 +7,7 @@ import homeThree from "/images/home3.png";
 import homeFour from "/images/home4.png";
 import btnArrow from "/images/arrow.png";
 import "./navbar.css";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useRef } from "react";
 import {
   FaChevronDown,
   FaEnvelope,
@@ -19,7 +19,6 @@ import {
 import { FaPhoneAlt, FaTimes } from "react-icons/fa";
 import { MdLocationPin } from "react-icons/md";
 import { IoMdPaperPlane } from "react-icons/io";
-import { LuMoveRight } from "react-icons/lu";
 import { IoSearch } from "react-icons/io5";
 import { CgMenuGridO } from "react-icons/cg";
 
@@ -122,7 +121,7 @@ const Navbar = () => {
               <FaTimes />
             </button>
           </div>
-          <div className="offcanvas_logo">
+          <div className="offcanvas_logo inline-block">
             <Link to={"/"}>
               <img src={Logo} draggable="false" />
             </Link>
@@ -195,7 +194,7 @@ const Navbar = () => {
         <div className="px-2 lg:px-[30px]">
           <div className="flex items-center justify-between lg:grid lg:grid-cols-12">
             <div className="col-span-3">
-              <div className="header-logo">
+              <div className="header-logo inline-block">
                 <Link to={"/"}>
                   <img src={Logo} draggable="false" />
                 </Link>
