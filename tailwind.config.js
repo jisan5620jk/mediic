@@ -19,6 +19,7 @@ export default {
         BodyBg4: ["#f4f8f9"],
         BorderColor: ["#e6eaea"],
         BorderColor2: ["#ffffff33"],
+        BorderColor3: ["#1c20491a"],
       },
       screens: {
         sm: "576px",
@@ -96,10 +97,10 @@ export default {
           to: { transform: "rotate(360deg)" },
         },
         rotateX: {
-          "0%":{transform :"rotate3d(0, 0, 0)"},
-          "50%":{transform :"rotate3d(0, 1, 0, 180deg)"},
-          "100%":{transform :"rotate3d(0, 1, 0, 360deg)"},
-        }
+          "0%": { transform: "rotate3d(0, 0, 0)" },
+          "50%": { transform: "rotate3d(0, 1, 0, 180deg)" },
+          "100%": { transform: "rotate3d(0, 1, 0, 360deg)" },
+        },
       },
       animation: {
         movebtn: "movebtn 3s linear infinite",

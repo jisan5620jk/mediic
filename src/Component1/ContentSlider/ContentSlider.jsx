@@ -1,46 +1,83 @@
 import "./content-slider.css";
+import contentShape from "/images/star.png";
 
 const ContentSlider = () => {
   return (
-    <div className="mx-2 sm:mx-5 lg:mx-2 xl:mx-5 content-slider-section">
+    <div className="content-slider-section">
       <div className="content-slider">
         <div className="content-slider-content">
-          <h1>Business</h1>
-        </div>
-        <div className="content-slider-content2">
-          <h1>Consulting</h1>
+          <img src={contentShape} draggable="false" className="animate-rotational" />
         </div>
         <div className="content-slider-content">
-          <h1>Marketing</h1>
-        </div>
-        <div className="content-slider-content2">
-          <h1>Business</h1>
+          <h1>GYNOCLOGIST</h1>
         </div>
         <div className="content-slider-content">
-          <h1>Consulting</h1>
+          <img src={contentShape} draggable="false" className="animate-rotational" />
         </div>
-        <div className="content-slider-content2">
-          <h1>Marketing</h1>
+        <div className="content-slider-content">
+          <h1>CARDIOLOGIST</h1>
+        </div>
+        <div className="content-slider-content">
+          <img src={contentShape} draggable="false" className="animate-rotational" />
+        </div>
+        <div className="content-slider-content">
+          <h1>NUEROLOGIST</h1>
+        </div>
+        <div className="content-slider-content">
+          <img src={contentShape} draggable="false" className="animate-rotational" />
+        </div>
+        <div className="content-slider-content">
+          <h1>GYNOCLOGIST</h1>
+        </div>
+        <div className="content-slider-content">
+          <img src={contentShape} draggable="false" className="animate-rotational" />
+        </div>
+        <div className="content-slider-content">
+          <h1>CARDIOLOGIST</h1>
+        </div>
+        <div className="content-slider-content">
+          <img src={contentShape} draggable="false" className="animate-rotational" />
+        </div>
+        <div className="content-slider-content">
+          <h1>NUEROLOGIST</h1>
         </div>
       </div>
       <div className="content-slider">
         <div className="content-slider-content">
-          <h1>Business</h1>
-        </div>
-        <div className="content-slider-content2">
-          <h1>Consulting</h1>
+          <img src={contentShape} draggable="false" className="animate-rotational" />
         </div>
         <div className="content-slider-content">
-          <h1>Marketing</h1>
-        </div>
-        <div className="content-slider-content2">
-          <h1>Business</h1>
+          <h1>GYNOCLOGIST</h1>
         </div>
         <div className="content-slider-content">
-          <h1>Consulting</h1>
+          <img src={contentShape} draggable="false" className="animate-rotational" />
         </div>
-        <div className="content-slider-content2">
-          <h1>Marketing</h1>
+        <div className="content-slider-content">
+          <h1>CARDIOLOGIST</h1>
+        </div>
+        <div className="content-slider-content">
+          <img src={contentShape} draggable="false" className="animate-rotational" />
+        </div>
+        <div className="content-slider-content">
+          <h1>NUEROLOGIST</h1>
+        </div>
+        <div className="content-slider-content">
+          <img src={contentShape} draggable="false" className="animate-rotational" />
+        </div>
+        <div className="content-slider-content">
+          <h1>GYNOCLOGIST</h1>
+        </div>
+        <div className="content-slider-content">
+          <img src={contentShape} draggable="false" className="animate-rotational" />
+        </div>
+        <div className="content-slider-content">
+          <h1>CARDIOLOGIST</h1>
+        </div>
+        <div className="content-slider-content">
+          <img src={contentShape} draggable="false" className="animate-rotational" />
+        </div>
+        <div className="content-slider-content">
+          <h1>NUEROLOGIST</h1>
         </div>
       </div>
     </div>

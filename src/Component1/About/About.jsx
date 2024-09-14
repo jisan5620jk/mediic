@@ -1,25 +1,51 @@
-import aboutThumb from "/images/about_thumb.png";
-import aboutShape from "/images/about_shape.png";
+import aboutThumb from "/images/about.png";
+import heart from "/images/heart.png";
+import aboutShape from "/images/star.png";
 import { Link } from "react-router-dom";
-import { FaCheck } from "react-icons/fa6";
-import { FaEnvelopeOpen } from "react-icons/fa";
+import CountUp from "react-countup";
+import { FaCircleCheck } from "react-icons/fa6";
+import { GoArrowRight } from "react-icons/go";
 
 const About = () => {
   return (
-    <section className="mx-2 xl:mx-5 mt-5 rounded-[40px] py-[120px] bg-BodyBg-0 relative">
+    <section className="pt-[138px] pb-[120px] bg-BodyBg-0 relative">
       <div className="Container">
-        <h1 className="font-AlbertSans font-semibold text-center text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[38px] lg:leading-[48px] xl:text-[42px] xl:leading-[52px] mb-[58px]">
-          Perform Market Research to gain <br /> Insights into Industry Trends
-        </h1>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-28 items-center">
+        <div className="grid grid-cols-1 gap-8 lg:items-center lg:grid-cols-2 border-b border-B">
+          <div className="flex items-center gap-7">
+            <h1 className="font-AlbertSans font-bold uppercase text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]">
+              About Medical
+            </h1>
+            <img
+              src={aboutShape}
+              draggable="false"
+              className="animate-rotational"
+            />
+          </div>
+          <div className="flex justify-end">
+            <div className="flex items-center gap-8 ">
+              <div>
+                <CountUp
+                  start={-11}
+                  end={"10"}
+                  suffix={"+"}
+                  className="font-AlbertSans text-3xl sm:text-4xl md:text-[60px] leading-[50px] text-HeadingColor-0 font-bold"
+                />
+              </div>
+              <p className="font-AlbertSans font-medium text-lg text-HeadingColor-0 uppercase">
+                Years Of <br /> Experiences
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-16 mt-16 items-center">
           <div className="relative z-10">
             <img
               src={aboutThumb}
               draggable="false"
               className="w-full 2xl:w-[inherit]"
             />
-            <div className="absolute top-0 right-0 2xl:right-[36px] size-[74px] sm:size-[142px] lg:size-[120px] xl:size-[142px] bg-PrimaryColor-0 rounded-full flex items-center justify-center">
-              <div className="text-inner size-14 sm:size-24 lg:size-20 xl:size-24 animate-rotational relative before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:size-[15px] before:rounded-full before:bg-white">
+            <div className="absolute -top-4 sm:-top-16 right-9 md:-top-8 sm:right-12 md:right-24 xl:top-0 xl:right-0 2xl:-top-[70px] 2xl:right-[56px] size-[74px] sm:size-[142px] lg:size-[120px] xl:size-[170px] 2xl:size-[200px] bg-PrimaryColor-0 rounded-[30px] flex items-center justify-center">
+              <div className="size-14 sm:size-24 lg:size-28 xl:size-[120px] 2xl:size-[130px] animate-rotational ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 250.5 250.5"
@@ -30,67 +56,106 @@ const About = () => {
                     id="e-path-35ee1b2"
                     className="fill-transparent"
                   ></path>
-                  <text className="font-AlbertSans text-[38px]">
+                  <text className="font-AlbertSans text-[32px] uppercase">
                     <textPath
                       id="e-text-path-35ee1b2"
                       href="#e-path-35ee1b2"
                       startOffset="0%"
                       className="fill-white"
                     >
-                      * Business Consultant * Marketing * Vissions
+                      NEOROLOGIST * GYNOCLOGIST * HEALTHCARE *
                     </textPath>
                   </text>
                 </svg>
               </div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <img src={heart} draggable="false" />
+              </div>
             </div>
           </div>
           <div className="relative">
-            <h5 className="font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
-              ABOUT COMPANY
+            <h5 className="font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-4">
+              FINANCE CONSULTING
             </h5>
-            <h1 className="font-AlbertSans font-medium text-HeadingColor-0 text-[20px] leading-[30px] sm:text-[22px] sm:leading-[32px] md:text-[28px] lg:text-[22px] lg:leading-[32px] xl:text-[26px] xl:leading-[36px] 2xl:text-[28px] 2xl:leading-[38px]">
-              Since 2007, We’re working Consulting agency
-              <br className="hidden sm:block" />
-              group of more than 120+ talented peoples
-              <br className="hidden sm:block" />
-              helps companies
+            <h1 className="font-AlbertSans font-bold text-HeadingColor-0 text-[16px] leading-[23px] sm:text-[22px] sm:leading-[35px] md:text-[30px] md:leading-[35px] lg:text-[28px] lg:leading-[35px] xl:text-[32px] xl:leading-[39px] 2xl:text-[32px] 2xl:leading-[39px]">
+              Since 2007 We’re working Medical group of more than 1200+ Patients
+              help from our medical
             </h1>
-            <p className="font-AlbertSans text-TextColor2-0 mt-6">
-              Globally engage cross-media leadership skills before cross-media
-              innovation develop standardized platforms without robust
-              applications. Conveniently go forward collaboration and
-              idea-sharing
-            </p>
-            <ul className="mt-5">
-              <li className="flex items-center gap-4 font-AlbertSans font-medium text-lg text-HeadingColor-0">
-                <FaCheck size={"22"} className="text-PrimaryColor-0" />
-                Professional Team Member
-              </li>
-              <li className="flex items-center gap-4 font-AlbertSans font-medium text-lg text-HeadingColor-0 mt-3">
-                <FaCheck size={"22"} className="text-PrimaryColor-0" />
-                Any Problem Solving
-              </li>
-              <li className="flex items-center gap-4 font-AlbertSans font-medium text-lg text-HeadingColor-0 mt-3">
-                <FaCheck size={"22"} className="text-PrimaryColor-0" />
-                Implement Business
-              </li>
-            </ul>
-            <div className="flex flex-col md:flex-row lg:flex-col 2xl:flex-row md:items-center lg:items-start 2xl:items-center gap-7 mt-9">
-              <Link to={"/about"}>
-                <button className="primary-btn">{`Discover More`}</button>
-              </Link>
-              <Link to={"/"}>
-                <button className="flex items-center gap-2 font-AlbertSans font-medium text-HeadingColor-0">
-                  <FaEnvelopeOpen />
-                  example@gmail.com
-                </button>
-              </Link>
+            <h5 className="font-AlbertSans font-semibold text-[22px] text-HeadingColor-0 mt-10 mb-6">
+              We’re Putting your Comfort List
+            </h5>
+            <div className="grid items-center grid-cols-1 gap-7 sm:grid-cols-2 border-t border-dashed border-HeadingColor-0 border-opacity-25 pb-[18px] pt-4">
+              <div className="flex items-center gap-2">
+                <div className="text-PrimaryColor-0">
+                  <FaCircleCheck size={"20"} />
+                </div>
+                <div className="flex-1">
+                  <h5 className="font-DMSans text-HeadingColor-0">
+                    Completely to syndicate
+                  </h5>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="text-PrimaryColor-0">
+                  <FaCircleCheck size={"20"} />
+                </div>
+                <div className="flex-1">
+                  <h5 className="font-DMSans text-HeadingColor-0">
+                    24 Hrs Aumbulance Service
+                  </h5>
+                </div>
+              </div>
             </div>
-            <img
-              src={aboutShape}
-              draggable="false"
-              className="absolute bottom-0 right-0 2xl:-right-20 animate-movebtn hidden sm:block"
-            />
+            <div className="grid items-center grid-cols-1 gap-7 sm:grid-cols-2 border-t border-dashed border-HeadingColor-0 border-opacity-25 pb-[18px] pt-4">
+              <div className="flex items-center gap-2">
+                <div className="text-PrimaryColor-0">
+                  <FaCircleCheck size={"20"} />
+                </div>
+                <div className="flex-1">
+                  <h5 className="font-DMSans text-HeadingColor-0">
+                    Medical Surgical Services
+                  </h5>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="text-PrimaryColor-0">
+                  <FaCircleCheck size={"20"} />
+                </div>
+                <div className="flex-1">
+                  <h5 className="font-DMSans text-HeadingColor-0">
+                    100% Satisfaction Rate
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div className="grid items-center grid-cols-1 gap-7 sm:grid-cols-2 border-y border-dashed border-HeadingColor-0 border-opacity-25 pb-[18px] pt-4 mb-12">
+              <div className="flex items-center gap-2">
+                <div className="text-PrimaryColor-0">
+                  <FaCircleCheck size={"20"} />
+                </div>
+                <div className="flex-1">
+                  <h5 className="font-DMSans text-HeadingColor-0">
+                    Instant Operations System
+                  </h5>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="text-PrimaryColor-0">
+                  <FaCircleCheck size={"20"} />
+                </div>
+                <div className="flex-1">
+                  <h5 className="font-DMSans text-HeadingColor-0">
+                    Professional Doctors
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <Link to={"/appiontment"}>
+              <button className="banner-btn mt-3">
+                More About
+                <GoArrowRight size={"22"} className="-rotate-45" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>
