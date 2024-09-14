@@ -40,9 +40,14 @@ const Footer = () => {
               </div>
               <label
                 htmlFor="checkbox"
-                className="font-DMSans text-TextColor-0 flex items-center gap-2 cursor-pointer"
+                className="font-DMSans text-TextColor-0 inline-block gap-2 cursor-pointer"
               >
-                <input type="checkbox" id="checkbox" name="checkbox" />
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  name="checkbox"
+                  className="mr-2"
+                />
                 Agree Terms & Conditions
               </label>
             </form>
