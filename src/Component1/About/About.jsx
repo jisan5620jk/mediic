@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section className="pt-[138px] pb-[120px] bg-BodyBg-0 relative">
       <div className="Container">
-        <div className="grid grid-cols-1 gap-8 lg:items-center lg:grid-cols-2 border-b border-B">
+        <div className="grid grid-cols-1 gap-8 lg:items-center lg:grid-cols-2 border-b border-BorderColor3-0 pb-7">
           <div className="flex items-center gap-7">
             <h1 className="font-AlbertSans font-bold uppercase text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]">
               About Medical
@@ -37,7 +37,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-16 mt-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-16 mt-[60px] items-center">
           <div className="relative z-10">
             <img
               src={aboutThumb}
