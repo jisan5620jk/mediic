@@ -101,8 +101,10 @@ const Service = () => {
         </div>
         <div className="col-span-5 flex justify-center">
           <p className="font-DMSans text-lg text-TextColor-0">
-            Enthusiastically orchestrate competitive e-services whereas superior <br className="hidden 2xl:block"/>
-            Conveniently disintermediate innovative solutions through impactfuls <br className="hidden 2xl:block"/>
+            Enthusiastically orchestrate competitive e-services whereas superior{" "}
+            <br className="hidden 2xl:block" />
+            Conveniently disintermediate innovative solutions through impactfuls{" "}
+            <br className="hidden 2xl:block" />
             tailers without seamless markets network .
           </p>
         </div>
@@ -117,32 +119,32 @@ const Service = () => {
       </div>
       <div className="relative z-10 mt-[60px] before:absolute before:z-40 before:left-[25px] before:bottom-[302px] before:rotate-0 before:w-[2px] 2xl:before:h-[170px] before:bg-gradient-to-t before:from-PrimaryColor-0 before:to-transparent">
         <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
-            {ServiceData.map(
-              ({
-                id,
-                serviceThumb,
-                serviceShape,
-                serviceSubTitle,
-                serviceTitle,
-                serviceUrl,
-                btnIcon,
-              }) => {
-                return (
-                  <SwiperSlide key={id}>
-                    <div className="pb-[60px] service-box">
-                      <ServiceCard
-                        serviceThumb={serviceThumb}
-                        serviceShape={serviceShape}
-                        serviceSubTitle={serviceSubTitle}
-                        serviceTitle={serviceTitle}
-                        serviceUrl={serviceUrl}
-                        btnIcon={btnIcon}
-                      />
-                    </div>
-                  </SwiperSlide>
-                );
-              }
-            )}
+          {ServiceData.map(
+            ({
+              id,
+              serviceThumb,
+              serviceShape,
+              serviceSubTitle,
+              serviceTitle,
+              serviceUrl,
+              btnIcon,
+            }) => {
+              return (
+                <SwiperSlide key={id}>
+                  <div className="pb-[60px] service-box">
+                    <ServiceCard
+                      serviceThumb={serviceThumb}
+                      serviceShape={serviceShape}
+                      serviceSubTitle={serviceSubTitle}
+                      serviceTitle={serviceTitle}
+                      serviceUrl={serviceUrl}
+                      btnIcon={btnIcon}
+                    />
+                  </div>
+                </SwiperSlide>
+              );
+            }
+          )}
           <ServiceNavigation />
         </Swiper>
       </div>
