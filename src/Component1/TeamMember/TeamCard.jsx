@@ -10,7 +10,7 @@ const TeamCard = ({
   teamTitle,
 }) => {
   return (
-    <div className="team-box group relative p-[30px] rounded-2xl bg-white bg-opacity-10 border-2 border-white transition-all duration-500 hover:border-PrimaryColor-0">
+    <div className="team-box group relative p-[30px] rounded-2xl bg-white bg-opacity-25 border-2 border-white transition-all duration-500 hover:border-PrimaryColor-0">
       <div className="team-thumb relative overflow-hidden rounded-xl after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-t after:from-PrimaryColor-0 after:from-20% after:via-PrimaryColor-0 after:via-10% after:to-transparent after:w-full after:h-0 after:transition-all after:duration-500 group-hover:after:h-1/3">
         <img src={teamThumb} className="w-full xl:w-[inherit] m-auto" />
         <div className="team-icon absolute z-10 bottom-1/2 left-1/2 -translate-x-1/2 opacity-0 transition-all duration-500 group-hover:bottom-[34px] group-hover:opacity-100">
