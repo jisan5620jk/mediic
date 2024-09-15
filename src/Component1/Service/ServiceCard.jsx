@@ -3,35 +3,37 @@ import { Link } from "react-router-dom";
 
 const ServiceCard = ({
   serviceThumb,
+  serviceShape,
+  serviceSubTitle,
   serviceTitle,
   serviceUrl,
-  serviceBtn,
   btnIcon,
 }) => {
   return (
-    <div className="relative z-10 flex justify-end group overflow-hidden rounded-t-3xl before:absolute before:top-0 before:left-0 before:w-full before:h-[290px] before:bg-Secondarycolor-0 before:rounded-2xl before:-z-20 after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:bg-PrimaryColor-0 after:rounded-2xl after:-z-10 after:transition-all after:duration-500 hover:after:h-[290px]">
-      <div className="mt-5 ml-5 sm:mt-10 sm:ml-10  lg:mt-5 md:ml-5 xl:mt-10 xl:ml-10 overflow-hidden rounded-2xl">
-        <div className="relative z-10 rounded-t-2xl overflow-hidden">
-          <img
-            src={serviceThumb}
-            draggable="false"
-            className="w-full transition-all duration-500 group-hover:scale-110"
-          />
-        </div>
-        <div className="bg-Secondarycolor-0 px-5 sm:px-10 md:px-5 xl:px-10 relative z-10 before:absolute before:bottom-0 before:left-0 before:bg-[url(/images/service-content-bg.png)] before:bg-no-repeat before:bg-cover before:bg-right before:w-full before:h-0 before:transition-all before:duration-500 before:-z-10 group-hover:before:h-full pb-5 sm:pb-9">
-          <h4 className="font-AlbertSans font-medium text-lg sm:text-xl 2xl:text-[23px] text-white transition-all duration-500 group-hover:text-HeadingColor-0 pt-8 mb-4">
+    <div className="relative z-10 rounded-3xl overflow-hidden group">
+      <div className="absolute z-20 -top-[95px] -right-[95px] opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:right-0 group-hover:top-0">
+        <img src={serviceShape} draggable="false" />
+      </div>
+      <div className="absolute z-30 right-1/3 top-1/3 transition-all duration-500 opacity-0 group-hover:right-0 group-hover:top-0 group-hover:opacity-100">
+        <Link to={serviceUrl} className="inline-block relative">
+          <button className="size-[60px] rounded-full bg-PrimaryColor-0 flex items-center justify-center text-2xl text-white">
+            {btnIcon}
+          </button>
+        </Link>
+      </div>
+      <div className="relative z-10 rounded-t-2xl overflow-hidden before:absolute before:bottom-0 before:left-0 before:bg-gradient-to-t before:from-Secondarycolor-0 before:from-20% before:via-Secondarycolor-0 before:via-10% before:to-transparent before:w-full before:h-1/3 before:transition-all before:duration-1000 group-hover:before:h-0 after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-t after:from-PrimaryColor-0 after:from-20% after:via-PrimaryColor-0 after:via-10% after:to-transparent after:w-full after:h-0 after:transition-all after:duration-500 group-hover:after:h-1/3">
+        <img
+          src={serviceThumb}
+          draggable="false"
+          className="w-full transition-all duration-500 group-hover:scale-110"
+        />
+        <div className="absolute left-10 bottom-10 z-10">
+          <h6 className="font-AlbertSans font-medium text-white">
+            {serviceSubTitle}
+          </h6>
+          <h4 className="font-AlbertSans font-medium text-xl sm:text-2xl 2xl:text-[28px] text-white mt-1">
             {serviceTitle}
           </h4>
-          <Link to={serviceUrl} className="inline-block relative">
-            <button className="flex items-center gap-2 font-AlbertSans overflow-hidden font-medium text-sm">
-              <span className="-ml-[76px] text-HeadingColor-0 transition-all duration-500 group-hover:ml-0">
-                {serviceBtn}
-              </span>
-              <span className="text-lg text-white transition-all duration-500 group-hover:text-HeadingColor-0">
-                {btnIcon}
-              </span>
-            </button>
-          </Link>
         </div>
       </div>
     </div>

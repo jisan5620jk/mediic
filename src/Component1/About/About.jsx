@@ -1,6 +1,7 @@
 import aboutThumb from "/images/about.png";
 import heart from "/images/heart.png";
 import aboutShape from "/images/star.png";
+import aboutContentShape from "/images/dctr.png";
 import { Link } from "react-router-dom";
 import CountUp from "react-countup";
 import { FaCircleCheck } from "react-icons/fa6";
@@ -8,7 +9,10 @@ import { GoArrowRight } from "react-icons/go";
 
 const About = () => {
   return (
-    <section className="pt-[138px] pb-[120px] bg-BodyBg-0 relative">
+    <section className="pt-[138px] pb-[120px] bg-BodyBg-0 relative z-10">
+      <div className="absolute top-1/3 right-24 -z-10 hidden xl:block">
+        <img src={aboutContentShape} draggable="false" className="animate-wiggle"/>
+      </div>
       <div className="Container">
         <div className="grid grid-cols-1 gap-8 lg:items-center lg:grid-cols-2 border-b border-BorderColor3-0 pb-7">
           <div className="flex items-center gap-7">
@@ -150,7 +154,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <Link to={"/appiontment"}>
+            <Link to={"/about"}>
               <button className="banner-btn mt-3">
                 More About
                 <GoArrowRight size={"22"} className="-rotate-45" />
