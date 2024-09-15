@@ -6,54 +6,46 @@ const TeamCard = ({
   socialIcon,
   socialIcon2,
   socialIcon3,
-  socialIcon4,
+  teamSubTitle,
   teamTitle,
-  teamDesc,
 }) => {
   return (
-    <div className="group relative">
-      <div className="relative overflow-hidden before:absolute before:bottom-0 before:left-0 before:bg-[#f5f8ed] before:w-full before:h-1/2 before:rounded-t-md before:-z-10">
+    <div className="team-box group relative p-[30px] rounded-2xl bg-white bg-opacity-10 border-2 border-white transition-all duration-500 hover:border-PrimaryColor-0">
+      <div className="team-thumb relative overflow-hidden rounded-xl after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-t after:from-PrimaryColor-0 after:from-20% after:via-PrimaryColor-0 after:via-10% after:to-transparent after:w-full after:h-0 after:transition-all after:duration-500 group-hover:after:h-1/3">
         <img src={teamThumb} className="w-full xl:w-[inherit] m-auto" />
-        <div className="absolute z-10 -top-1/3 -right-10 transition-all duration-500 group-hover:top-[112px]">
-          <ul className="flex gap-3 -rotate-90">
+        <div className="team-icon absolute z-10 bottom-1/2 left-1/2 -translate-x-1/2 opacity-0 transition-all duration-500 group-hover:bottom-[34px] group-hover:opacity-100">
+          <ul className="flex gap-3">
             <li>
               <Link to={"/"}>
-                <button className="size-10 rotate-90 flex justify-center items-center rounded-full overflow-hidden relative bg-HeadingColor-0 border border-white text-white text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                <button className="size-10 flex justify-center items-center rounded-full overflow-hidden relative bg-white transition-all duration-500 hover:text-white text-PrimaryColor-0 z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
                   {socialIcon}
                 </button>
               </Link>
             </li>
             <li>
               <Link to={"/"}>
-                <button className="size-10 rotate-90 flex justify-center items-center rounded-full overflow-hidden relative bg-HeadingColor-0 border border-white text-white text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                <button className="size-10 flex justify-center items-center rounded-full overflow-hidden relative bg-white transition-all duration-500 hover:text-white text-PrimaryColor-0 z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
                   {socialIcon2}
                 </button>
               </Link>
             </li>
             <li>
               <Link to={"/"}>
-                <button className="size-10 rotate-90 flex justify-center items-center rounded-full overflow-hidden relative bg-HeadingColor-0 border border-white text-white text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+                <button className="size-10 flex justify-center items-center rounded-full overflow-hidden relative bg-white transition-all duration-500 hover:text-white text-PrimaryColor-0 z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-Secondarycolor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
                   {socialIcon3}
-                </button>
-              </Link>
-            </li>
-            <li>
-              <Link to={"/"}>
-                <button className="size-10 rotate-90 flex justify-center items-center rounded-full overflow-hidden relative bg-HeadingColor-0 border border-white text-white text-sm z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-                  {socialIcon4}
                 </button>
               </Link>
             </li>
           </ul>
         </div>
       </div>
-      <div className="relative transition-all duration-500rounded-md text-center pt-[22px] rounded-b-md">
-        <h5 className="font-AlbertSans font-semibold text-2xl text-HeadingColor-0 transition-all duration-500 pb-1">
+      <div className="relative transition-all duration-500rounded-md text-center pt-8">
+        <h6 className="font-AlbertSans uppercase text-HeadingColor-0 font-medium transition-all duration-500 mb-2">
+          {teamSubTitle}
+        </h6>
+        <h4 className="font-AlbertSans font-semibold text-[28px] lg:text-2xl xl:text-[28px] text-HeadingColor-0 transition-all duration-500">
           {teamTitle}
-        </h5>
-        <p className="font-AlbertSans text-TextColor2-0 transition-all duration-500">
-          {teamDesc}
-        </p>
+        </h4>
       </div>
     </div>
   );

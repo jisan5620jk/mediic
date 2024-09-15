@@ -3,10 +3,18 @@ import featureImg2 from "/images/call.png";
 import featureImg3 from "/images/location.png";
 import { Link } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
+import circleShape from "/images/crcle-bg.png";
 
 const Feature = () => {
   return (
-    <section className="pt-[120px] bg-BodyBg-0 bg-cover bg-no-repeat bg-left lg:bg-bottom relative z-10">
+    <section className="pt-[120px] bg-BodyBg-0 bg-cover bg-no-repeat bg-left lg:bg-bottom relative z-10 overflow-hidden">
+      <div className="absolute -z-10 top-16 -translate-y-1/2 left-1/2 -translate-x-1/2">
+        <img
+          src={circleShape}
+          draggable="false"
+          className="max-w-[inherit] w-[inherit]"
+        />
+      </div>
       <div className="Container relative">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           <div className="group px-10 lg:px-5 xl:px-8 2xl:px-10 pt-10 pb-11 bg-white bg-opacity-30 text-center rounded-3xl border-2 border-white relative z-10 overflow-hidden transition-all duration-500 hover:border-PrimaryColor-0">

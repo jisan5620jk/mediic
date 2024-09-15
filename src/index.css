@@ -185,6 +185,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   background: #0c59db !important;
 }
 
+/* Blog */
+
 .blog .swiper-pagination {
   bottom: 0 !important;
   top: inherit !important;
@@ -219,6 +221,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 .blog span.swiper-pagination-bullet::before {
   scale: 0;
 }
+
+/* Service */
 
 .service .swiper-pagination {
   bottom: 0 !important;
@@ -266,6 +270,60 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
     margin-left: 130px;  
   }  
 }
+
+/* Team Member */
+
+.team-members .swiper-pagination {
+  bottom: 0 !important;
+  top: inherit !important;
+  left: 50% !important;
+  transform: translatex(-50%) !important;
+  width: 90% !important;
+  max-width: 1320px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 12px !important;
+  flex-direction: row !important;
+}
+
+.team-members  .swiper-pagination-bullet {
+  background: transparent !important;
+  opacity: 1 !important;
+  background: transparent !important;
+  border: 1px solid #007eff !important;
+  border-radius: 50%;
+  height: 12px !important;
+  width: 12px !important;
+  position: relative;
+  margin: 0 !important;
+}
+
+.team-members  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  height: 12px !important;
+  width: 12px !important;
+  background: #007eff !important;
+}
+
+.team-members  span.swiper-pagination-bullet::before {
+  scale: 0;
+}
+
+.team-members  .swiper-slide-active .team-box{
+  border-color: #007eff;
+}
+
+.team-members  .swiper-slide-active .team-thumb::after{
+  height: 33.33%;
+}
+
+.team-members  .swiper-slide-active .team-icon{
+  bottom: 34px;
+  opacity: 1;
+}
+
+
 
 /* Testimonial */
 

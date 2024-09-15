@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { MdOutlineStarPurple500 } from "react-icons/md";

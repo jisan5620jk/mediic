@@ -1,9 +1,11 @@
 import About from "../../Component1/About/About";
+import Appoinment from "../../Component1/Appoinment/Appionment";
 import Banner from "../../Component1/Banner/Banner";
 import ContentSlider from "../../Component1/ContentSlider/ContentSlider";
 import Counter from "../../Component1/Counter/Counter";
 import Feature from "../../Component1/Feature/Feature";
 import Service from "../../Component1/Service/Service";
+import TeamMember from "../../Component1/TeamMember/TeamMember";
 
 const Home1 = () => {
   return (
@@ -14,6 +16,8 @@ const Home1 = () => {
       <About />
       <ContentSlider />
       <Service />
+      <Appoinment />
+      <TeamMember/>
     </>
   );
 };

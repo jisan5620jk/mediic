@@ -28,7 +28,7 @@ const ServiceCard = ({
           className="w-full transition-all duration-500 group-hover:scale-110"
         />
         <div className="absolute left-10 bottom-10 z-10">
-          <h6 className="font-AlbertSans font-medium text-white">
+          <h6 className="font-AlbertSans font-medium text-white uppercase">
             {serviceSubTitle}
           </h6>
           <h4 className="font-AlbertSans font-medium text-xl sm:text-2xl 2xl:text-[28px] text-white mt-1">
