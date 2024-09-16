@@ -6,6 +6,7 @@ import Counter from "../../Component1/Counter/Counter";
 import Feature from "../../Component1/Feature/Feature";
 import Service from "../../Component1/Service/Service";
 import TeamMember from "../../Component1/TeamMember/TeamMember";
+import Testimonial from "../../Component1/Testimonial/Testimonial";
 
 const Home1 = () => {
   return (
@@ -18,6 +19,7 @@ const Home1 = () => {
       <Service />
       <Appoinment />
       <TeamMember/>
+      <Testimonial />
     </>
   );
 };
