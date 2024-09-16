@@ -3,7 +3,7 @@ import counterImg from "/images/counter-img.png";
 
 const Counter = () => {
   return (
-    <div className="bg-BodyBg-0 px-2 lg:px-[30px]">
+    <div className="bg-BodyBg-0 px-2 lg:px-5">
       <section className="rounded-b-[30px] pt-[74px] pb-[54px] bg-[url(/images/counter-bg.png)] bg-no-repeat bg-cover bg-center">
         <div className="Container">
           <div className="grid gap-7 grid-cols-12 items-center justify-center">
