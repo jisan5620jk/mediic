@@ -123,7 +123,7 @@ const TeamMember = () => {
             </div>
           </div>
         </div>
-        <div className="mt-[60px]">
+        <div className="mt-10">
           <Swiper
             {...settings}
             pagination={pagination}
@@ -142,7 +142,7 @@ const TeamMember = () => {
               }) => {
                 return (
                   <SwiperSlide key={id}>
-                    <div className="pb-[60px]">
+                    <div className="pb-[60px] pt-5">
                       <TeamCard
                         teamThumb={teamThumb}
                         teamTitle={teamTitle}

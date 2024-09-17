@@ -1,36 +1,40 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { MdOutlineStarPurple500 } from "react-icons/md";
-import TestimonialCard from "./TestimonialCard";
-import testThumb from "/images/testi_thumb.png";
-import testiProfile from "/images/testi_author.png";
-import { RiDoubleQuotesR } from "react-icons/ri";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { EffectCards } from 'swiper/modules';
+import { MdOutlineStarPurple500 } from 'react-icons/md';
+import TestimonialCard from './TestimonialCard';
+import testThumb from '/images/testi.jpg';
+import testiProfile from '/images/people.png';
+import testiShape from '/images/circle2.png';
+import { RiDoubleQuotesR } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
+import { GoArrowRight } from 'react-icons/go';
 
 const testiData = [
   {
     id: 1,
     testiQuote: <RiDoubleQuotesR />,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiDesc: `“Conveniently transform error-free architectures whereas
-									maximizing collaboration and idea-sharing. Intrinsicly
-									team driven web-readiness vis-a-vis equity invested
-									Appropriately underwhelm  proactive leadership skills 
-									without future-proof applications”`,
-    testiName: "Jhon D. Alexon",
-    testiDesignation: "Web Developer",
+    testiDesc: `Quickly fashion backend strategic theme areas with
+                virtual growth strategies. Authoritatively
+                formulate competitive experiences rather than
+                granular manufactured products granular intelle
+                capital without equity invested`,
+    testiName: 'Jhon D. Alexon',
+    testiDesignation: 'Psycologist',
     testiProfile: testiProfile,
   },
   {
     id: 2,
     testiQuote: <RiDoubleQuotesR />,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiDesc: `“Conveniently transform error-free architectures whereas
-									maximizing collaboration and idea-sharing. Intrinsicly
-									team driven web-readiness vis-a-vis equity invested
-									Appropriately underwhelm  proactive leadership skills 
-									without future-proof applications”`,
-    testiName: "Jhon D. Alexon",
-    testiDesignation: "Web Developer",
+    testiDesc: `Quickly fashion backend strategic theme areas with
+                virtual growth strategies. Authoritatively
+                formulate competitive experiences rather than
+                granular manufactured products granular intelle
+                capital without equity invested`,
+    testiName: 'Jhon D. Alexon',
+    testiDesignation: 'Psycologist',
     testiProfile: testiProfile,
   },
 ];
@@ -39,8 +43,11 @@ const Testimonial = () => {
   const settings = {
     loop: true,
     spaceBetween: 30,
-    speed: 1500,
+    speed: 1000,
+    initialSlide: 1,
     autoplay: true,
+    effect: 'cards',
+    slideShadows: false,
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -57,26 +64,47 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className="py-[30px] bg-PrimaryColor-0 rounded-[40px] mx-2 xl:mx-5 relative z-10 overflow-hidden">
-      <div className="Container">
-        <div className="grid grid-cols-1 gap-10 2xl:gap-0 lg:grid-cols-2 lg:items-center">
-          <div className="relative">
-            <img
-              src={testThumb}
-              draggable="false"
-              className="2xl:-ml-[16rem] 2xl:max-w-[inherit]"
-            />
-            <div className="sm:flex items-center gap-2 absolute right-0 2xl:right-20 bottom-2 hidden">
-              <h6 className="size-[42px] lg:size-7 xl:size-8 2xl:size-[42px] lg:text-base xl:text-lg 2xl:text-xl rounded-full bg-[#ff9c01] text-xl flex items-center justify-center text-white">
-                <MdOutlineStarPurple500 />
-              </h6>
-              <p className="font-AlbertSans font-medium text-[22px] lg:text-base xl:text-lg 2xl:text-[22px] text-white">
-                Avg Ratings 4.9
-              </p>
+    <section className='bg-Secondarycolor-0 py-28 relative z-10 overflow-hidden'>
+      <div className='absolute top-0 right-0'>
+        <img
+          src={testiShape}
+          draggable='false'
+        />
+      </div>
+      <div className='text-center pb-11'>
+        <h1 className='font-AlbertSans font-bold uppercase text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
+          Testimonial
+        </h1>
+      </div>
+      <div className='px-2 xl:px-[70px]'>
+        <div className='grid grid-cols-1 gap-[30px] lg:grid-cols-12 lg:items-center'>
+          <div className='col-span-8 relative rounded-[30px] overflow-hidden'>
+            <div className='relative z-10'>
+              <img
+                src={testThumb}
+                draggable='false'
+              />
+              <div className='absolute top-7 left-7 px-8 pb-10 pt-9 border-2 border-white bg-white bg-opacity-15 backdrop-filter backdrop-blur-md rounded-2xl'>
+                <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 pb-6'>
+                  Get Free Consultation
+                </h4>
+                <Link to={'/appointment'}>
+                  <button className='primary-btn mt-3'>
+                    Appointment
+                    <GoArrowRight
+                      size={'22'}
+                      className='-rotate-45'
+                    />
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
-          <div>
-            <Swiper {...settings}>
+          <div className='col-span-4'>
+            <Swiper
+              {...settings}
+              modules={[EffectCards]}
+            >
               <div>
                 {testiData.map(
                   ({

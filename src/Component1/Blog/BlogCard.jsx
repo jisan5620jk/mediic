@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const BlogCard = ({
   blogThumb,
@@ -8,43 +8,39 @@ const BlogCard = ({
   blogPostBy,
   blogUrl,
   blogTitle,
-  blogBtn,
-  blogBtnIcon,
+  blogPostByIcon,
 }) => {
   return (
-    <div className="group transition-all duration-500 rounded-lg bg-white shadow-shade">
-      <div className="relative rounded-xl overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 before:z-10 group-hover:before:opacity-0">
+    <div className='group transition-all duration-500 rounded-lg bg-white shadow-shade'>
+      <div className='relative rounded-[20px] overflow-hidden'>
+        <span className='absolute bg-PrimaryColor-0 left-[12.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:w-[25%] group-hover:left-0 group-hover:opacity-0'></span>
+        <span className='absolute bg-PrimaryColor-0 left-[27.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:w-[25%] group-hover:left-[25%] group-hover:opacity-0'></span>
+        <span className='absolute bg-PrimaryColor-0 left-[62.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:w-[25%] group-hover:left-1/2 group-hover:opacity-0'></span>
+        <span className='absolute bg-PrimaryColor-0 left-[87.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:w-[25%] group-hover:left-[75%] group-hover:opacity-0'></span>
         <img
           src={blogThumb}
-          className="transition-all duration-500 scale-100 group-hover:scale-110 w-full"
+          className='transition-all duration-500 scale-100 group-hover:scale-110 w-full'
         />
       </div>
-      <div className="rounded-b-lg relative z-20 flex justify-center transition-all duration-500 sm:px-[30px] lg:px-5 2xl:px-[30px] pt-9 pb-6">
+      <div className='rounded-b-lg relative z-20 flex justify-center transition-all duration-500 sm:px-[30px] lg:px-5 2xl:px-[30px] pt-9'>
         <div>
-          <div className="flex gap-6 mb-3">
-            <p className="font-AlbertSans text-white py-1 px-4 bg-PrimaryColor-0 inline-block rounded-r-full text-sm uppercase">
-              {blogPostBy}
-            </p>
-            <p className="font-AlbertSans text-TextColor2-0 flex gap-2 items-center leading-[15px]">
-              <span className="text-PrimaryColor-0 text-[10px]">
+          <div className='flex gap-6 mb-3'>
+            <p className='font-DMSans text-HeadingColor-0 flex gap-2 items-center uppercase'>
+              <span className='text-PrimaryColor-0 text-opacity-30 text-[10px]'>
                 {blogDateIcon}
               </span>
               {blogDate}
             </p>
+            <p className='font-DMSans text-HeadingColor-0 flex gap-2 items-center uppercase'>
+              <span className='text-PrimaryColor-0 text-opacity-30 text-[10px]'>
+                {blogPostByIcon}
+              </span>
+              {blogPostBy}
+            </p>
           </div>
           <Link to={blogUrl}>
-            <button className="font-AlbertSans text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0 mt-2 mb-5">
+            <button className='font-AlbertSans text-left font-semibold text-lg sm:text-[23px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-2'>
               {blogTitle}
-            </button>
-          </Link>
-          <Link to={blogUrl} className="inline-block relative">
-            <button className="flex items-center gap-2 font-AlbertSans uppercase overflow-hidden font-medium text-sm">
-              <span className="-ml-[76px] text-PrimaryColor-0 transition-all duration-500 group-hover:ml-0">
-                {blogBtn}
-              </span>
-              <span className="text-[22px] text-PrimaryColor-0">
-                {blogBtnIcon}
-              </span>
             </button>
           </Link>
         </div>

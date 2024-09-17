@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -21,14 +21,6 @@ body {
 }
 
 .primary-btn {
-  @apply flex items-center gap-2 overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-10 py-[18px] relative rounded-full text-base text-white font-medium font-AlbertSans before:bg-HeadingColor-0 before:h-full before:w-0 before:-skew-x-[25deg] before:absolute before:top-0 before:-right-5 before:-z-10 after:bg-[#86b6b6] after:h-[2px] after:w-[26px] after:absolute after:bottom-[17px] after:left-10 after:z-10 before:transition-all before:duration-500 hover:before:w-[125%] hover:before:-left-5;
-}
-
-.primary-btn2 {
-  @apply flex items-center gap-2 overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-10 py-[18px] relative rounded-full text-base text-white font-medium font-AlbertSans before:bg-HeadingColor-0 before:h-full before:w-0 before:-skew-x-[25deg] before:absolute before:top-0 before:-right-5 before:-z-10 before:transition-all before:duration-500 hover:before:w-[125%] hover:before:-left-5;
-}
-
-.banner-btn {
   padding: 16px 35px;
   font-size: 18px;
   color: #fff;
@@ -36,7 +28,7 @@ body {
   align-items: center;
   gap: 4px;
   font-weight: 500;
-  font-family: "Albert Sans";
+  font-family: 'Albert Sans';
   border-radius: 32px;
   position: relative;
   z-index: 1;
@@ -46,11 +38,11 @@ body {
   background-color: #fff;
 }
 
-.banner-btn:hover {
+.primary-btn:hover {
   color: #007eff;
 }
 
-.banner-btn:after {
+.primary-btn:after {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -72,8 +64,12 @@ body {
   z-index: -1;
 }
 
-.banner-btn:hover:after {
+.primary-btn:hover:after {
   animation: mask_animation 0.7s steps(22) forwards;
+}
+
+.primary-btn2 {
+  @apply flex items-center gap-2 overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-10 py-[18px] relative rounded-full text-base text-white font-medium font-AlbertSans before:bg-HeadingColor-0 before:h-full before:w-0 before:-skew-x-[25deg] before:absolute before:top-0 before:-right-5 before:-z-10 before:transition-all before:duration-500 hover:before:w-[125%] hover:before:-left-5;
 }
 
 .is-sticky {
@@ -163,7 +159,7 @@ span.swiper-pagination-bullet {
 
 span.swiper-pagination-bullet::before {
   position: absolute;
-  content: "";
+  content: '';
   top: -10px;
   left: -10px;
   width: 26px;
@@ -262,13 +258,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 }
 
 .service .swiper-wrapper {
-   width: 100% !important;
+  width: 100% !important;
 }
 
-@media screen and (min-width: 1400px) {  
-  .service .swiper-slide:first-child {  
-    margin-left: 130px;  
-  }  
+@media screen and (min-width: 1400px) {
+  .service .swiper-slide:first-child {
+    margin-left: 130px;
+  }
 }
 
 /* Team Member */
@@ -287,7 +283,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   flex-direction: row !important;
 }
 
-.team-members  .swiper-pagination-bullet {
+.team-members .swiper-pagination-bullet {
   background: transparent !important;
   opacity: 1 !important;
   background: transparent !important;
@@ -299,31 +295,29 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   margin: 0 !important;
 }
 
-.team-members  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.team-members .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1 !important;
   height: 12px !important;
   width: 12px !important;
   background: #007eff !important;
 }
 
-.team-members  span.swiper-pagination-bullet::before {
+.team-members span.swiper-pagination-bullet::before {
   scale: 0;
 }
 
-.team-members  .swiper-slide-active .team-box{
+.team-members .swiper-slide-active .team-box {
   border-color: #007eff;
 }
 
-.team-members  .swiper-slide-active .team-thumb::after{
+.team-members .swiper-slide-active .team-thumb::after {
   height: 33.33%;
 }
 
-.team-members  .swiper-slide-active .team-icon{
+.team-members .swiper-slide-active .team-icon {
   bottom: 34px;
   opacity: 1;
 }
-
-
 
 /* Testimonial */
 
@@ -430,7 +424,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 /* Faq */
 
-.faq-button[aria-expanded="true"],
+.faq-button[aria-expanded='true'],
 .faq-button:hover {
   border-radius: 5px;
   background: #0c59db;
@@ -438,7 +432,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   padding: 0 20px 0 30px;
 }
 
-.faq-button2[aria-expanded="true"],
+.faq-button2[aria-expanded='true'],
 .faq-button2:hover {
   border-radius: 5px 5px 0 0;
   border-color: #83a8ff;
