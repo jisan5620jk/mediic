@@ -15,7 +15,7 @@ import {
 
 const Banner = () => {
   return (
-    <div className='bg-BodyBg-0 px-2 lg:px-5'>
+    <div className='bg-BodyBg-0 px-2 lg:px-[30px]'>
       <section className="bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[700px] md:h-[1100px] lg:h-[700px] xl:h-[790px] 2xl:h-[790px] flex items-center relative z-10 overflow-hidden rounded-t-[30px]">
         <div className='absolute top-1/2 -translate-y-1/2 -left-10'>
           <Link to={'/'}>

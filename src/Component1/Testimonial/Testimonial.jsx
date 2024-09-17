@@ -76,7 +76,7 @@ const Testimonial = () => {
           Testimonial
         </h1>
       </div>
-      <div className='px-2 xl:px-[70px]'>
+      <div className='px-2 xl:px-20'>
         <div className='grid grid-cols-1 gap-[30px] lg:grid-cols-12 lg:items-center'>
           <div className='col-span-8 relative rounded-[30px] overflow-hidden'>
             <div className='relative z-10'>
