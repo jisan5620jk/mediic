@@ -170,7 +170,7 @@ const Navbar = () => {
           <div className='offcanvas_logo inline-block'>
             <Link to={'/'}>
               <img
-                src={Logo}
+                src={Logo2}
                 draggable='false'
               />
             </Link>
@@ -247,7 +247,7 @@ const Navbar = () => {
       ></div>
       <div
         id='header-sticky'
-        className='header-area'
+        className='header-area py-5 lg:py-0'
       >
         <div className='px-2 lg:px-[30px]'>
           <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
@@ -309,7 +309,7 @@ const Navbar = () => {
                         </div>
                       </div>
                     </li>
-                    <li className='has-dropdown'>
+                    <li>
                       <Link to={'/'}>About</Link>
                     </li>
                     <li className='has-dropdown'>
@@ -372,7 +372,7 @@ const Navbar = () => {
             </div>
             <div className='col-span-3'>
               <div className='header-right-box flex items-center gap-10 lg:gap-0 justify-end'>
-                <div className='size-[50px] rounded-full bg-BodyBg2-0 flex items-center justify-center text-HeadingColor-0 relative z-10 transition-all duration-500 hover:text-white before:absolute before:left-0 before:top-0 before:w-full before:rounded-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100'>
+                <div className='size-[50px] rounded-full bg-BodyBg2-0 hidden sm:flex items-center justify-center text-HeadingColor-0 relative z-10 transition-all duration-500 hover:text-white before:absolute before:left-0 before:top-0 before:w-full before:rounded-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100'>
                   <button>
                     <IoSearch size={'18'} />
                   </button>
@@ -520,28 +520,28 @@ const Navbar = () => {
                 </div>
               </form>
             </div>
-              <ul className='sidebar-social-icon'>
-                <li>
-                  <Link to={'/'}>
-                    <FaFacebookF />
-                  </Link>
-                </li>
-                <li>
-                  <Link to={'/'}>
-                    <FaXTwitter />
-                  </Link>
-                </li>
-                <li>
-                  <Link to={'/'}>
-                    <FaPinterestP />
-                  </Link>
-                </li>
-                <li>
-                  <Link to={'/'}>
-                    <FaLinkedinIn />
-                  </Link>
-                </li>
-              </ul>
+            <ul className='sidebar-social-icon'>
+              <li>
+                <Link to={'/'}>
+                  <FaFacebookF />
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <FaXTwitter />
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <FaPinterestP />
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <FaLinkedinIn />
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
         <div

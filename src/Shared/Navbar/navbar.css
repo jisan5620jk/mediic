@@ -6,8 +6,9 @@
   z-index: 50;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0);
   visibility: hidden;
+  backdrop-filter: blur(5px);
   opacity: 0;
   transition: 0.45s ease-in-out;
 }
@@ -30,10 +31,14 @@
 .menu-bar span {
   display: block;
   height: 2px;
-  background: #ffffff;
+  background: #002570;
   margin: 5px;
   transition: all 0.5s ease;
   border-radius: 30px;
+}
+
+.menu-bar:hover span {
+  background: #007eff;
 }
 
 .menu-bar:hover span:nth-child(1),
@@ -61,10 +66,10 @@
   position: fixed;
   top: 0;
   right: -100%;
-  width: 380px;
+  width: 400px;
   bottom: 0;
-  box-shadow: 0 16px -32px 0 rgba(0, 0, 0, 0.8);
-  background-color: #053131;
+  box-shadow: 0 16px -32px 0 rgba(0, 126, 255, 0.4);
+  background-color: #002570;
   z-index: 99;
   padding: 36px;
   scrollbar-width: none;
@@ -79,19 +84,30 @@
 }
 
 .offcanvas .main-menu-mobile {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
+
+.main-menu-mobile nav.main-menu-content > ul {
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+}
+
+.main-menu-mobile nav.main-menu-content > ul > li > a {
+    padding: 17px 18px 17px  0;
+    color: #ffffff;
+}
+
+.main-menu-mobile nav.main-menu-content > ul > li > a.active ,
+.main-menu-mobile nav.main-menu-content > ul > li > a:hover {
+  padding-left: 18px;
+}
+
+
 
 .offcanvas.opened {
   opacity: 1;
   visibility: visible;
-}
-
-@media (max-width: 767px) {
-  .offcanvas {
-    width: 300px;
-    padding: 30px 25px;
-  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -100,6 +116,14 @@
     padding: 25px;
   }
 }
+
+@media (max-width: 7576px) {
+  .offcanvas {
+    width: 300px;
+    padding: 30px 25px;
+  }
+}
+
 
 .offcanvas.opened {
   right: 0;
@@ -271,7 +295,7 @@
 .offcanvas_social .social-icon {
   display: flex;
   align-items: center;
-  gap: 3;
+  gap: 6px;
 }
 
 .offcanvas_social .social-icon a {
@@ -830,6 +854,7 @@ nav.main-menu-content > ul > li > a:hover > span {
 
   .submenu.has-homemenu.mega-menu {
     width: 100%;
+    margin-left: 0;
   }
 
   .homemenu-thumb a > h6 {
