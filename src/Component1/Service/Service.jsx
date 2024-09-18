@@ -92,14 +92,14 @@ const Service = () => {
   };
   return (
     <section className='service px-5 2xl:px-20 bg-Secondarycolor-0 bg-cover bg-bottom bg-no-repeat py-[120px] relative'>
-      <div className='grid grid-cols-12 items-center border-b border-BorderColor2-0 pb-7'>
-        <div className='col-span-4'>
-          <h1 className='font-AlbertSans font-bold uppercase text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
+      <div className='grid grid-cols-12 md:items-center border-b border-BorderColor2-0 pb-7 gap-7 lg:gap-0'>
+        <div className='col-span-12 md:col-span-6 lg:col-span-4'>
+          <h1 className='font-AlbertSans font-bold uppercase text-white text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
             Provide <br />
             Best Services
           </h1>
         </div>
-        <div className='col-span-5 flex justify-center'>
+        <div className='col-span-12 md:col-span-6 lg:col-span-5 flex justify-start lg:justify-center'>
           <p className='font-DMSans text-lg text-TextColor-0'>
             Enthusiastically orchestrate competitive e-services whereas superior{' '}
             <br className='hidden 2xl:block' />
@@ -108,7 +108,7 @@ const Service = () => {
             tailers without seamless markets network .
           </p>
         </div>
-        <div className='col-span-3 flex justify-end'>
+        <div className='col-span-12 lg:col-span-3 flex lg:justify-end'>
           <Link to={'/service_details'}>
             <button className='primary-btn mt-3'>
               View All Services

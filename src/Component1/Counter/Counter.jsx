@@ -1,34 +1,37 @@
-import CountUp from "react-countup";
-import counterImg from "/images/counter-img.png";
+import CountUp from 'react-countup';
+import counterImg from '/images/counter-img.png';
 
 const Counter = () => {
   return (
-    <div className="bg-BodyBg-0 px-2 lg:px-5">
-      <section className="rounded-b-[30px] pt-[74px] pb-[54px] bg-[url(/images/counter-bg.png)] bg-no-repeat bg-cover bg-center">
-        <div className="Container">
-          <div className="grid gap-7 grid-cols-12 items-center justify-center">
-            <div className="col-span-12 lg:col-span-7">
-              <div className="flex items-center gap-6">
-                <div>
-                  <img src={counterImg} draggable="false" />
+    <div className='bg-BodyBg-0 px-2 lg:px-5'>
+      <section className='rounded-b-[30px] pt-[74px] pb-[54px] bg-[url(/images/counter-bg.png)] bg-no-repeat bg-cover bg-center'>
+        <div className='Container'>
+          <div className='grid gap-7 grid-cols-12 lg:items-center lg:justify-center'>
+            <div className='col-span-12 md:col-span-12 lg:col-span-7'>
+              <div className='flex items-center gap-6'>
+                <div className='hidden sm:block'>
+                  <img
+                    src={counterImg}
+                    draggable='false'
+                  />
                 </div>
-                <h2 className="font-AlbertSans font-bold text-white text-[34px] leading-[40px]">
+                <h2 className='font-AlbertSans font-bold text-white text-2xl sm:text-2xl md:text-[34px] sm:leading-[40px]'>
                   Medical Achivement <br /> Health Protection
                 </h2>
               </div>
             </div>
-            <div className="col-span-12 lg:col-span-5">
-              <div className="grid grid-cols-2 gap-20">
+            <div className='col-span-12 md:col-span-12 lg:col-span-5'>
+              <div className='grid grid-cols-1 md:grid-cols-2 gap-10 xl:gap-20'>
                 <div>
                   <div>
                     <CountUp
                       start={-11}
-                      end={"12"}
-                      suffix={"K+"}
-                      className="font-AlbertSans text-3xl sm:text-4xl md:text-[50px] text-white font-bold"
+                      end={'12'}
+                      suffix={'K+'}
+                      className='font-AlbertSans text-3xl sm:text-4xl md:text-[50px] text-white font-bold'
                     />
                   </div>
-                  <p className="font-AlbertSans font-medium text-xl text-white pt-3 mt-3 border-t-2 border-BorderColor-0 border-opacity-25">
+                  <p className='font-AlbertSans font-medium text-xl text-white pt-3 mt-3 border-t-2 border-BorderColor-0 border-opacity-25'>
                     Satisfied Patients
                   </p>
                 </div>
@@ -36,12 +39,12 @@ const Counter = () => {
                   <div>
                     <CountUp
                       start={-11}
-                      end={"100"}
-                      suffix={"%"}
-                      className="font-AlbertSans text-3xl sm:text-4xl md:text-[50px] text-white font-bold"
+                      end={'100'}
+                      suffix={'%'}
+                      className='font-AlbertSans text-3xl sm:text-4xl md:text-[50px] text-white font-bold'
                     />
                   </div>
-                  <p className="font-AlbertSans font-medium text-xl text-white pt-3 mt-3 border-t-2 border-BorderColor-0 border-opacity-25">
+                  <p className='font-AlbertSans font-medium text-xl text-white pt-3 mt-3 border-t-2 border-BorderColor-0 border-opacity-25'>
                     Satisfaction Rates
                   </p>
                 </div>

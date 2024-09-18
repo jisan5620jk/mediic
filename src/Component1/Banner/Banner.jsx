@@ -35,7 +35,7 @@ const Banner = () => {
                 />
               </div>
               <div className='flex items-center justify-center sm:gap-5'>
-                <h1 className='font-AlbertSans font-extrabold text-3xl xl:text-[110px] text-white uppercase'>
+                <h1 className='font-AlbertSans font-extrabold text-3xl sm:text-5xl xl:text-[110px] text-white uppercase'>
                   HealthCare
                 </h1>
                 <img
@@ -51,7 +51,7 @@ const Banner = () => {
                   className='max-w-[inherit]'
                 />
               </div>
-              <div className='flex items-center justify-center gap-6 relative z-20 lg:-mt-8'>
+              <div className='flex items-center justify-center gap-6 relative z-20 lg:mt-8'>
                 <div className='bg-white bg-opacity-20 backdrop-filter filter-blur-[5px] backdrop-blur-lg hidden sm:flex items-center gap-[15px] rounded-full py-[14px] px-5'>
                   <img
                     src={bannerTeam}
@@ -61,7 +61,7 @@ const Banner = () => {
                     Memebers
                   </h5>
                 </div>
-                <h1 className='font-AlbertSans font-extrabold text-3xl xl:text-[110px] text-white uppercase'>
+                <h1 className='font-AlbertSans font-extrabold text-3xl sm:text-5xl xl:text-[110px] text-white uppercase'>
                   Doctors
                 </h1>
               </div>
@@ -79,7 +79,8 @@ const Banner = () => {
                     Best Medical
                   </h5>
                   <p className='font-DMSans text-TextColor-0 mt-[6px]'>
-                    Rapidiously reinvent long-term <br className='hidden sm:block' /> impact collaboration
+                    Rapidiously reinvent long-term{' '}
+                    <br className='hidden sm:block' /> impact collaboration
                   </p>
                 </div>
               </div>

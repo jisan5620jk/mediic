@@ -7,7 +7,7 @@ import circleShape from '/images/crcle-bg.png';
 
 const Appoinment = () => {
   return (
-    <section className='px-5 2xl:px-20 bg-BodyBg-0 pt-[106px] relative z-10'>
+    <section className='px-5 2xl:px-20 bg-BodyBg-0 pt-[106px] relative z-10 overflow-hidden'>
       <div className='absolute -z-10 -top-1/2 left-1/2 -translate-x-1/2'>
         <img
           src={circleShape}
@@ -16,13 +16,13 @@ const Appoinment = () => {
         />
       </div>
       <div className='text-center mb-12'>
-        <h1 className='font-AlbertSans font-bold uppercase text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
+        <h1 className='font-AlbertSans font-bold uppercase text-HeadingColor-0 text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
           Make Appionment
         </h1>
       </div>
-      <div className='bg-[url(/images/appoinment.png)] bg-cover bg-no-repeat bg-center grid grid-cols-2 pt-[110px] pb-[118px] lg:border-x-2 2xl:border-x-0 border-white rounded-[30px] relative z-10'>
+      <div className='bg-[url(/images/appoinment.png)] bg-cover bg-no-repeat bg-center grid grid-cols-1 lg:grid-cols-2 pt-[110px] pb-[118px] lg:border-x-2 2xl:border-x-0 border-white rounded-[30px] relative z-10'>
         <div></div>
-        <div className='relative z-10 pr-5 2xl:pr-[230px]'>
+        <div className='relative z-10 pr-5 2xl:pr-[230px] pl-5 lg:pl-0'>
           <div className='absolute -top-2 -left-[190px] 2xl:-left-40'>
             <img
               src={Heart}

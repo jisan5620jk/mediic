@@ -20,7 +20,7 @@ const About = () => {
       <div className='Container'>
         <div className='grid grid-cols-1 gap-8 lg:items-center lg:grid-cols-2 border-b border-BorderColor3-0 pb-7'>
           <div className='flex items-center gap-7'>
-            <h1 className='font-AlbertSans font-bold uppercase text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
+            <h1 className='font-AlbertSans font-bold uppercase text-HeadingColor-0 text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
               About Medical
             </h1>
             <img
@@ -29,7 +29,7 @@ const About = () => {
               className='animate-rotational'
             />
           </div>
-          <div className='flex justify-end'>
+          <div className='flex md:justify-end'>
             <div className='flex items-center gap-8 '>
               <div>
                 <CountUp
@@ -52,7 +52,7 @@ const About = () => {
               draggable='false'
               className='w-full 2xl:w-[inherit]'
             />
-            <div className='absolute -top-4 sm:-top-16 right-9 md:-top-8 sm:right-12 md:right-24 xl:top-0 xl:right-0 size-[74px] sm:size-[142px] lg:size-[120px] xl:size-[170px] 2xl:size-[200px] bg-PrimaryColor-0 rounded-[30px] flex items-center justify-center'>
+            <div className='absolute top-0 right-0 md:right-24 xl:top-0 xl:right-0 size-[90px] sm:size-[162px] lg:size-[120px] xl:size-[170px] 2xl:size-[200px] bg-PrimaryColor-0 rounded-[30px] flex items-center justify-center'>
               <div className='size-14 sm:size-24 lg:size-28 xl:size-[120px] 2xl:size-[130px] animate-rotational '>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -92,7 +92,7 @@ const About = () => {
               Since 2007 We’re working Medical group of more than 1200+ Patients
               help from our medical
             </h1>
-            <h5 className='font-AlbertSans font-semibold text-[22px] text-HeadingColor-0 mt-10 mb-6'>
+            <h5 className='font-AlbertSans font-semibold text-lg sm:text-[22px] text-HeadingColor-0 mt-10 mb-6'>
               We’re Putting your Comfort List
             </h5>
             <div className='grid items-center grid-cols-1 gap-7 sm:grid-cols-2 border-t border-dashed border-HeadingColor-0 border-opacity-25 pb-[18px] pt-4'>

@@ -6,16 +6,16 @@ const Subscribe = () => {
     return (
       <section className='bg-[url(/images/sbcribe-bg.jpg)] bg-cover bg-no-repeat bg-center py-14'>
         <div className='Container'>
-          <div className='flex justify-between items-center'>
-            <div className='flex items-center gap-7'>
+          <div className='flex flex-col justify-start md:justify-between md:items-center gap-6 lg:gap-0'>
+            <div className='flex flex-col sm:flex-row sm:items-center gap-7'>
               <div className="size-[120px] rounded-full flex items-center justify-center bg-white">
                 <img
                   src={subscribeIcon}
                   draggable='false'
                 />
               </div>
-              <h3 className="font-AlbertSans font-bold text-[32px] text-white leading-[38px]">
-                Since 2007 We’re working Medical <br /> group more than 1200+ Patient
+              <h3 className="font-AlbertSans font-bold text-2xl sm:text-3xl flex-1 md:text-[32px] text-white leading-[38px]">
+                Since 2007 We’re working Medical <br className="hidden md:block" /> group more than 1200+ Patient
               </h3>
             </div>
             <div>

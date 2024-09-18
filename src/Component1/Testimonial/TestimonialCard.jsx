@@ -8,7 +8,7 @@ const TestimonialCard = ({
   testiDesc,
 }) => {
   return (
-    <div className='relative px-[50px] bg-Secondarycolor-0 bg-[url(/images/test.png)] bg-no-repeat bg-cover bg-center border-2 border-BorderColor2-0 rounded-[30px]'>
+    <div className='relative px-2 sm:px-[50px] bg-Secondarycolor-0 bg-[url(/images/test.png)] bg-no-repeat bg-cover bg-center border-2 border-BorderColor2-0 rounded-[30px]'>
      <img src={testiQuote} draggable="false" className="pt-14"/>
       <ul className='flex gap-1 items-center mb-5 mt-9'>
         <li className='text-[#ffb609] text-2xl'>{testiRatingIcon}</li>

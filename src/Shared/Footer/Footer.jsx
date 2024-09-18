@@ -19,7 +19,7 @@ const Footer = () => {
               <img src={footerLogo} draggable={false} />
             </Link>
             <p className="font-AlbertSans xl:text-lg 2xl:text-xl font-medium text-white mt-[52px] mb-7">
-              Completely promote interdependent systems for <br /> Latest update
+              Completely promote interdependent systems for <br className="hidden sm:block"/> Latest update
               news this Medical.
             </p>
             <form action="#" method="post" className="relative w-11/12">

@@ -55,9 +55,9 @@ body {
   left: 0;
   top: 0;
   background-color: #007eff;
-  background-image: url(../public/images/mask-btn2.png);
-  -webkit-mask: url(../public/images/mask-btn2.png);
-  mask: url(../public/images/mask-btn2.png);
+  background-image: url(../images/mask-btn2.png);
+  -webkit-mask: url(../images/mask-btn2.png);
+  mask: url(../images/mask-btn2.png);
   -webkit-mask-size: 2300% 100%;
   mask-size: 2300% 100%;
   animation: mask_animation_2 0.7s steps(22) forwards;
