@@ -23,7 +23,7 @@ const Appoinment = () => {
       <div className='bg-[url(/images/appoinment.png)] bg-cover bg-no-repeat bg-center grid grid-cols-2 pt-[110px] pb-[118px] lg:border-x-2 2xl:border-x-0 border-white rounded-[30px] relative z-10'>
         <div></div>
         <div className='relative z-10 pr-5 2xl:pr-[230px]'>
-          <div className='absolute -top-2 -left-[190px]'>
+          <div className='absolute -top-2 -left-[190px] 2xl:-left-40'>
             <img
               src={Heart}
               draggable='false'

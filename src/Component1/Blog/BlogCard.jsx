@@ -22,7 +22,7 @@ const BlogCard = ({
           className='transition-all duration-500 scale-100 group-hover:scale-110 w-full'
         />
       </div>
-      <div className='rounded-b-lg relative z-20 flex justify-center transition-all duration-500 sm:px-[30px] lg:px-5 2xl:px-[30px] pt-9'>
+      <div className='rounded-b-lg relative z-20 flex justify-center transition-all duration-500 2xl:pr-14 pt-9'>
         <div>
           <div className='flex gap-6 mb-3'>
             <p className='font-DMSans text-HeadingColor-0 flex gap-2 items-center uppercase'>

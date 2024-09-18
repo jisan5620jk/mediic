@@ -101,7 +101,7 @@ const Banner = () => {
                   className='animate-rotational'
                 />
               </div>
-              <div className='absolute bottom-24 right-0  -z-10'>
+              <div className='absolute bottom-28 right-0  -z-10'>
                 <img
                   src={bannerShape}
                   draggable='false'

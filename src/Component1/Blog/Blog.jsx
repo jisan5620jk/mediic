@@ -18,7 +18,7 @@ const BlogData = [
     blogDate: 'April 04, 2024',
     blogPostBy: 'Admin',
     blogUrl: '/blog_details',
-    blogTitle: 'Globally disintermediate exten services Planning',
+    blogTitle: 'Top 10 Popular Equipments for Medical Industre',
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const BlogData = [
     blogDate: 'April 14, 2024',
     blogPostBy: 'Admin',
     blogUrl: '/blog_details',
-    blogTitle: 'Sustainability Consulting for Business Planning',
+    blogTitle: 'How to maintain Patient for Better Surgery',
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const BlogData = [
     blogDateIcon: <FaCircle />,
     blogPostBy: 'Admin',
     blogUrl: '/blog_details',
-    blogTitle: 'Consulting Industry changing Business Landscape',
+    blogTitle: 'Most Popular Advises for Kids Happy & Smile Life',
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ const BlogData = [
     blogDateIcon: <FaCircle />,
     blogPostBy: 'Admin',
     blogUrl: '/blog_details',
-    blogTitle: 'Consulting Industry changing Business Landscape',
+    blogTitle: 'How to maintain Patient for Better Surgery',
   },
 ];
 
