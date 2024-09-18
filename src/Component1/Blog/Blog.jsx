@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { FaCircle } from 'react-icons/fa6';
 import blogThumb from '/images/blog2.jpg';
 import blogThumb2 from '/images/blog2.jpg';

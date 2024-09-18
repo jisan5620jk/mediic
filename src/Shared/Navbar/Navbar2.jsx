@@ -61,6 +61,8 @@ const Navbar2 = () => {
     };
   }, []);
 
+  //Menu Bar
+
   const menuBarRef = useRef(null);
   const offcanvasRef = useRef(null);
   const bodyOverlayRef = useRef(null);

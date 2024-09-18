@@ -886,7 +886,8 @@ nav.main-menu-content > ul > li > a:hover > span {
   z-index: 50;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(5px);
   visibility: hidden;
   opacity: 0;
   transition: 0.45s ease-in-out;
@@ -901,39 +902,6 @@ nav.main-menu-content > ul > li > a:hover > span {
   cursor: url(/public/images/cross.png), pointer;
 }
 
-.menu-sidebar {
-  transform: rotate(-180deg);
-  position: relative;
-  top: 5px;
-}
-
-.menu-sidebar span {
-  display: block;
-  height: 2px;
-  background: #ffffff;
-  margin: 5px;
-  transition: all 0.5s ease;
-  border-radius: 30px;
-}
-
-.menu-sidebar:hover span:nth-child(1),
-.menu-sidebar:hover span:nth-child(2),
-.menu-sidebar:hover span:nth-child(3) {
-  width: 22px;
-}
-
-.menu-sidebar span:nth-child(3) {
-  width: 20px;
-}
-
-.menu-sidebar span:nth-child(2) {
-  width: 16px;
-}
-
-.menu-sidebar span:nth-child(1) {
-  width: 22px;
-}
-
 .sidebar {
   background-position: center;
   background-size: cover;
@@ -941,10 +909,10 @@ nav.main-menu-content > ul > li > a:hover > span {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 380px;
+  width: 400px;
   bottom: 0;
-  box-shadow: 0 16px -32px 0 rgba(0, 0, 0, 0.8);
-  background-color: #053131;
+  box-shadow: 0 20px 50px 0 rgba(0, 126, 255, 0.4);
+  background-color: #002570;
   z-index: 99;
   padding: 36px;
   scrollbar-width: none;
@@ -957,20 +925,6 @@ nav.main-menu-content > ul > li > a:hover > span {
 .sidebar.opened {
   opacity: 1;
   visibility: visible;
-}
-
-@media (max-width: 767px) {
-  .sidebar {
-    width: 300px;
-    padding: 30px 25px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .sidebar {
-    width: 400px;
-    padding: 25px;
-  }
 }
 
 .sidebar.opened {
@@ -993,13 +947,42 @@ nav.main-menu-content > ul > li > a:hover > span {
   }
 }
 
+.sidebar_service-title h5 {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Albert Sans", sans-serif;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.service_list li {
+  list-style: circle;
+  color: #007eff;
+  margin-left: 20px;
+}
+
+.service_list li button {
+  font-size: 18px;
+  color: #a3b7b7;
+  font-weight: 500;
+  font-family: "Albert Sans", sans-serif;
+  transition: all .5s;
+  margin: 6px 0;
+}
+
+.service_list li button:hover {
+  color: #ffffff;
+}
+
 .sidebar_contact-title h5 {
   font-size: 24px;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Albert Sans", sans-serif;
   margin-bottom: 30px;
   display: inline-block;
+  margin-top: 20px;
 }
 
 .sidebar_contact-info ul li {
@@ -1012,7 +995,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   font-family: "Albert Sans", sans-serif;
 }
 
-.sidebar_contact-info ul li i {
+.sidebar_contact-info ul li svg {
   color: #007eff;
 }
 
@@ -1038,6 +1021,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   padding-left: 20px;
   padding-right: 80px;
   color: #ffffff;
+  outline: none;
 }
 
 .sidebar_input button {
@@ -1136,17 +1120,14 @@ nav.main-menu-content > ul > li > a:hover > span {
   transition: 0.9s;
 }
 
-.sidebar_social {
-  margin-top: 30px;
-}
-
-.sidebar_social .social-icon {
+.sidebar-social-icon{
   display: flex;
   align-items: center;
   gap: 3;
+  margin-top: 30px;
 }
 
-.sidebar_social .social-icon a {
+.sidebar-social-icon li a {
   height: 45px;
   width: 45px;
   line-height: 45px;
@@ -1164,7 +1145,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   justify-content: center;
 }
 
-.sidebar_social .social-icon a::before {
+.sidebar-social-icon li a::before {
   position: absolute;
   content: "";
   top: 0;
@@ -1179,19 +1160,13 @@ nav.main-menu-content > ul > li > a:hover > span {
 }
 
 @media (max-width: 767px) {
-  .sidebar_social .social-icon a {
-    margin-right: 3px;
+  .sidebar-social-icon li a {
     height: 40px;
     width: 40px;
-    line-height: 40px;
     font-size: 15px;
   }
 }
 
-.sidebar_social .social-icon a:hover::before {
+.sidebar-social-icon li a:hover::before {
   transform: scale(1);
-}
-
-.sidebar_social .social-icon a:hover {
-  color: #ffffff;
 }
