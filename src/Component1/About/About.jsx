@@ -52,7 +52,7 @@ const About = () => {
               draggable='false'
               className='w-full 2xl:w-[inherit]'
             />
-            <div className='absolute -top-4 sm:-top-16 right-9 md:-top-8 sm:right-12 md:right-24 xl:top-0 xl:right-0 2xl:-top-[70px] 2xl:right-[56px] size-[74px] sm:size-[142px] lg:size-[120px] xl:size-[170px] 2xl:size-[200px] bg-PrimaryColor-0 rounded-[30px] flex items-center justify-center'>
+            <div className='absolute -top-4 sm:-top-16 right-9 md:-top-8 sm:right-12 md:right-24 xl:top-0 xl:right-0 size-[74px] sm:size-[142px] lg:size-[120px] xl:size-[170px] 2xl:size-[200px] bg-PrimaryColor-0 rounded-[30px] flex items-center justify-center'>
               <div className='size-14 sm:size-24 lg:size-28 xl:size-[120px] 2xl:size-[130px] animate-rotational '>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'

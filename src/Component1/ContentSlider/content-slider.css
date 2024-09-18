@@ -1,5 +1,5 @@
 .content-slider-section {
-  padding: 66px 80px;
+  padding: 66px 0px;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -57,7 +57,7 @@
   color: #002570;
   transition: 0.5s;
   text-transform: uppercase;
-  font-family: "Albert Sans", "sans-serif";
+  font-family: 'Albert Sans', 'sans-serif';
 }
 
 @-webkit-keyframes scroll {

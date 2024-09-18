@@ -1,19 +1,19 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { EffectCards } from 'swiper/modules';
+import { EffectFlip } from 'swiper/modules';
 import { MdOutlineStarPurple500 } from 'react-icons/md';
 import TestimonialCard from './TestimonialCard';
 import testThumb from '/images/testi.jpg';
 import testiProfile from '/images/people.png';
 import testiShape from '/images/circle2.png';
-import { RiDoubleQuotesR } from 'react-icons/ri';
+import testiQuote from '/images/quote.png';
 import { Link } from 'react-router-dom';
 import { GoArrowRight } from 'react-icons/go';
 
 const testiData = [
   {
     id: 1,
-    testiQuote: <RiDoubleQuotesR />,
+    testiQuote: testiQuote,
     testiRatingIcon: <MdOutlineStarPurple500 />,
     testiDesc: `Quickly fashion backend strategic theme areas with
                 virtual growth strategies. Authoritatively
@@ -26,7 +26,7 @@ const testiData = [
   },
   {
     id: 2,
-    testiQuote: <RiDoubleQuotesR />,
+    testiQuote: testiQuote,
     testiRatingIcon: <MdOutlineStarPurple500 />,
     testiDesc: `Quickly fashion backend strategic theme areas with
                 virtual growth strategies. Authoritatively
@@ -43,11 +43,13 @@ const Testimonial = () => {
   const settings = {
     loop: true,
     spaceBetween: 30,
-    speed: 1000,
     initialSlide: 1,
     autoplay: true,
-    effect: 'cards',
-    slideShadows: false,
+    effect: 'flip',
+    grabCursor: true,
+    flipEffect: {
+      slideShadows: false,
+    },
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -73,7 +75,7 @@ const Testimonial = () => {
       </div>
       <div className='text-center pb-11'>
         <h1 className='font-AlbertSans font-bold uppercase text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
-          Testimonial
+          Testimonials
         </h1>
       </div>
       <div className='px-2 xl:px-20'>
@@ -84,12 +86,12 @@ const Testimonial = () => {
                 src={testThumb}
                 draggable='false'
               />
-              <div className='absolute top-7 left-7 px-8 pb-10 pt-9 border-2 border-white bg-white bg-opacity-15 backdrop-filter backdrop-blur-md rounded-2xl'>
-                <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 pb-6'>
+              <div className='absolute top-7 left-7 px-8 pb-10 pt-7 border-2 border-white bg-white bg-opacity-15 backdrop-filter backdrop-blur-md rounded-2xl'>
+                <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 pb-5'>
                   Get Free Consultation
                 </h4>
                 <Link to={'/appointment'}>
-                  <button className='primary-btn mt-3'>
+                  <button className='primary-btn'>
                     Appointment
                     <GoArrowRight
                       size={'22'}
@@ -103,7 +105,7 @@ const Testimonial = () => {
           <div className='col-span-4'>
             <Swiper
               {...settings}
-              modules={[EffectCards]}
+              modules={[EffectFlip]}
             >
               <div>
                 {testiData.map(
