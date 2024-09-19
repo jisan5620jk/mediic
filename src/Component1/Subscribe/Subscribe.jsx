@@ -6,7 +6,7 @@ const Subscribe = () => {
     return (
       <section className='bg-[url(/images/sbcribe-bg.jpg)] bg-cover bg-no-repeat bg-center py-14'>
         <div className='Container'>
-          <div className='flex flex-col justify-start md:justify-between md:items-center gap-6 lg:gap-0'>
+          <div className='flex flex-col lg:flex-row justify-start lg:justify-between lg:items-center gap-6 lg:gap-0'>
             <div className='flex flex-col sm:flex-row sm:items-center gap-7'>
               <div className="size-[120px] rounded-full flex items-center justify-center bg-white">
                 <img

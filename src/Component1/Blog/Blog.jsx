@@ -56,7 +56,6 @@ const Blog = () => {
     loop: true,
     spaceBetween: 30,
     speed: 1000,
-    centeredSlides: true,
     initialSlide: 1,
     autoplay: true,
     breakpoints: {
@@ -79,7 +78,7 @@ const Blog = () => {
       <div className='Container'>
         <div className='grid grid-cols-1 gap-8 lg:items-center lg:grid-cols-2 border-b border-BorderColor3-0 pb-7'>
           <div>
-            <h1 className='font-AlbertSans font-bold uppercase text-HeadingColor-0 text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
+            <h1 className='font-AlbertSans font-bold uppercase text-HeadingColor-0 text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[40px] md:leading-[50px] lg:text-[50px] lg:leading-[60px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
               Read Our <br />
               Latest Blog
             </h1>

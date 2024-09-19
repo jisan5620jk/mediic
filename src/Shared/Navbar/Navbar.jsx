@@ -372,7 +372,7 @@ const Navbar = () => {
             </div>
             <div className='col-span-3'>
               <div className='header-right-box flex items-center gap-10 lg:gap-0 justify-end'>
-                <div className='size-[50px] rounded-full bg-BodyBg2-0 hidden sm:flex items-center justify-center text-HeadingColor-0 relative z-10 transition-all duration-500 hover:text-white before:absolute before:left-0 before:top-0 before:w-full before:rounded-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100'>
+                <div className='size-[50px] rounded-full bg-BodyBg2-0 hidden sm:flex lg:hidden 2xl:flex items-center justify-center text-HeadingColor-0 relative z-10 transition-all duration-500 hover:text-white before:absolute before:left-0 before:top-0 before:w-full before:rounded-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100'>
                   <button>
                     <IoSearch size={'18'} />
                   </button>
@@ -389,7 +389,7 @@ const Navbar = () => {
                     />
                   </Link>
                 </div>
-                <div className='hidden 2xl:block'>
+                <div className='hidden 2xl:block ml-2'>
                   <button
                     ref={menuSideBarRef}
                     className='menu-sidebar size-[50px] rounded-full bg-PrimaryColor-0 flex items-center justify-center text-white relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:rounded-full before:h-full before:bg-Secondarycolor-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100'

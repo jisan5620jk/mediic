@@ -88,22 +88,20 @@
 }
 
 .main-menu-mobile nav.main-menu-content > ul {
-    padding: 0;
-    background: transparent;
-    border-radius: 0;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
 }
 
 .main-menu-mobile nav.main-menu-content > ul > li > a {
-    padding: 17px 18px 17px  0;
-    color: #ffffff;
+  padding: 17px 18px 17px 0;
+  color: #ffffff;
 }
 
-.main-menu-mobile nav.main-menu-content > ul > li > a.active ,
+.main-menu-mobile nav.main-menu-content > ul > li > a.active,
 .main-menu-mobile nav.main-menu-content > ul > li > a:hover {
   padding-left: 18px;
 }
-
-
 
 .offcanvas.opened {
   opacity: 1;
@@ -123,7 +121,6 @@
     padding: 30px 25px;
   }
 }
-
 
 .offcanvas.opened {
   right: 0;
@@ -149,7 +146,7 @@
   font-size: 24px;
   color: #ffffff;
   font-weight: 400;
-  font-family: "Albert Sans", sans-serif;
+  font-family: 'Albert Sans', sans-serif;
   margin-bottom: 30px;
   display: inline-block;
 }
@@ -161,7 +158,7 @@
 
 .offcanvas_contact-info ul li a {
   color: #ffffff;
-  font-family: "Albert Sans", sans-serif;
+  font-family: 'Albert Sans', sans-serif;
 }
 
 .offcanvas_contact-info ul li i {
@@ -172,7 +169,7 @@
   font-size: 24px;
   color: #ffffff;
   font-weight: 400;
-  font-family: "Albert Sans", sans-serif;
+  font-family: 'Albert Sans', sans-serif;
   margin-bottom: 30px;
   display: inline-block;
 }
@@ -318,7 +315,7 @@
 
 .offcanvas_social .social-icon a::before {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   border-radius: 50%;
@@ -409,13 +406,13 @@ nav.main-menu-content > ul > li > a {
   transition: 0.5s;
   color: #002570;
   font-weight: 500;
-  font-family: "Albert Sans";
+  font-family: 'Albert Sans';
   position: relative;
 }
 
 nav.main-menu-content > ul > li > a::before {
   position: absolute;
-  content: "";
+  content: '';
   top: 50%;
   left: 20px;
   transform: translateY(-50%) scale(0);
@@ -430,9 +427,6 @@ nav.main-menu-content > ul > li > a.active:before,
 nav.main-menu-content > ul > li > a:hover:before {
   left: 3px;
   transform: translateY(-50%) scale(1);
-}
-
-@media only screen and (max-width: 991px) {
 }
 
 nav.main-menu-content > ul > li > a:hover {
@@ -454,7 +448,7 @@ nav.main-menu-content > ul > li > a:hover > span {
 
 .header-btn a {
   font-size: 15px;
-  font-family: "Albert Sans";
+  font-family: 'Albert Sans';
   padding: 14px 30px;
   font-weight: 500;
   color: #fff;
@@ -467,7 +461,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   position: relative;
   z-index: 1;
   transition: 0.5s;
-  margin: 0 9px 0 14px;
+  margin: 0 0 0 14px;
   overflow: hidden;
 }
 
@@ -515,6 +509,29 @@ nav.main-menu-content > ul > li > a:hover > span {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  nav.main-menu-content > ul > li > a {
+    padding: 17px 5px;
+  }
+
+  nav.main-menu-content > ul > li > a.active:before,
+  nav.main-menu-content > ul > li > a:hover:before {
+    left: -2px;
+  }
+
+  .header-btn a {
+    padding: 14px 18px;
+    font-weight: 500;
+    gap: 2px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+ nav.main-menu-content > ul > li > a {
+    padding: 17px 14px;
+}
 }
 
 /* Submenu Start Here */
@@ -569,7 +586,7 @@ nav.main-menu-content > ul > li > a:hover > span {
 }
 
 .header-main-menu nav ul li .submenu > li a::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   right: 0;
@@ -613,7 +630,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   margin-bottom: 0;
   color: #000000;
   display: inline-block;
-  font-family: "Albert Sans", sans-serif;
+  font-family: 'Albert Sans', sans-serif;
 }
 
 .homemenu-title:hover {
@@ -735,7 +752,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   position: relative;
   padding: 10px 0;
   padding-right: 20px;
-  font-family: "Albert Sans", sans-serif;
+  font-family: 'Albert Sans', sans-serif;
 }
 
 .main-menu-mobile ul li > a svg {
@@ -976,7 +993,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   font-size: 24px;
   color: #ffffff;
   font-weight: 500;
-  font-family: "Albert Sans", sans-serif;
+  font-family: 'Albert Sans', sans-serif;
   margin-bottom: 20px;
   display: inline-block;
 }
@@ -991,8 +1008,8 @@ nav.main-menu-content > ul > li > a:hover > span {
   font-size: 18px;
   color: #a3b7b7;
   font-weight: 500;
-  font-family: "Albert Sans", sans-serif;
-  transition: all .5s;
+  font-family: 'Albert Sans', sans-serif;
+  transition: all 0.5s;
   margin: 6px 0;
 }
 
@@ -1004,7 +1021,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   font-size: 24px;
   color: #ffffff;
   font-weight: 500;
-  font-family: "Albert Sans", sans-serif;
+  font-family: 'Albert Sans', sans-serif;
   margin-bottom: 30px;
   display: inline-block;
   margin-top: 20px;
@@ -1017,7 +1034,7 @@ nav.main-menu-content > ul > li > a:hover > span {
 
 .sidebar_contact-info ul li a {
   color: #ffffff;
-  font-family: "Albert Sans", sans-serif;
+  font-family: 'Albert Sans', sans-serif;
 }
 
 .sidebar_contact-info ul li svg {
@@ -1028,7 +1045,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   font-size: 24px;
   color: #ffffff;
   font-weight: 400;
-  font-family: "Albert Sans", sans-serif;
+  font-family: 'Albert Sans', sans-serif;
   margin-bottom: 30px;
   display: inline-block;
 }
@@ -1145,7 +1162,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   transition: 0.9s;
 }
 
-.sidebar-social-icon{
+.sidebar-social-icon {
   display: flex;
   align-items: center;
   gap: 3;
@@ -1172,7 +1189,7 @@ nav.main-menu-content > ul > li > a:hover > span {
 
 .sidebar-social-icon li a::before {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   border-radius: 50%;

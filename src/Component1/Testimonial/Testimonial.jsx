@@ -74,17 +74,18 @@ const Testimonial = () => {
         />
       </div>
       <div className='text-center pb-11'>
-        <h1 className='font-AlbertSans font-bold uppercase text-white text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
+        <h1 className='font-AlbertSans font-bold uppercase text-white text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[40px] md:leading-[50px] lg:text-[50px] lg:leading-[60px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
           Testimonials
         </h1>
       </div>
-      <div className='px-2 xl:px-20'>
+      <div className='px-2 xl:px-5 2xl:px-20'>
         <div className='grid gap-[30px] grid-cols-6 lg:grid-cols-12 lg:items-center'>
           <div className='col-span-6 lg:col-span-8 relative rounded-[30px] overflow-hidden'>
             <div className='relative z-10'>
               <img
                 src={testThumb}
                 draggable='false'
+                className='lg:max-w-[inherit] lg:w-[inherit] 2xl:max-w-full'
               />
               <div className='hidden sm:block absolute top-7 left-7 px-8 pb-10 pt-7 border-2 border-white bg-white bg-opacity-15 backdrop-filter backdrop-blur-md rounded-2xl'>
                 <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 pb-5'>

@@ -20,7 +20,7 @@ const About = () => {
       <div className='Container'>
         <div className='grid grid-cols-1 gap-8 lg:items-center lg:grid-cols-2 border-b border-BorderColor3-0 pb-7'>
           <div className='flex items-center gap-7'>
-            <h1 className='font-AlbertSans font-bold uppercase text-HeadingColor-0 text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
+            <h1 className='font-AlbertSans font-bold uppercase text-HeadingColor-0 text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[40px] md:leading-[50px] lg:text-[42px] lg:leading-[52px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
               About Medical
             </h1>
             <img
@@ -29,7 +29,7 @@ const About = () => {
               className='animate-rotational'
             />
           </div>
-          <div className='flex md:justify-end'>
+          <div className='flex lg:justify-end'>
             <div className='flex items-center gap-8 '>
               <div>
                 <CountUp
@@ -52,8 +52,8 @@ const About = () => {
               draggable='false'
               className='w-full 2xl:w-[inherit]'
             />
-            <div className='absolute top-0 right-0 md:right-24 xl:top-0 xl:right-0 size-[90px] sm:size-[162px] lg:size-[120px] xl:size-[170px] 2xl:size-[200px] bg-PrimaryColor-0 rounded-[30px] flex items-center justify-center'>
-              <div className='size-14 sm:size-24 lg:size-28 xl:size-[120px] 2xl:size-[130px] animate-rotational '>
+            <div className='absolute top-0 right-0 xl:top-0 xl:right-0 size-[90px] sm:size-[162px] md:size-[220px] lg:size-[150px] xl:size-[170px] 2xl:size-[200px] bg-PrimaryColor-0 rounded-[30px] flex items-center justify-center'>
+              <div className='size-14 sm:size-24 md:size-36 lg:size-28 xl:size-[120px] 2xl:size-[130px] animate-rotational '>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 250.5 250.5'
@@ -88,7 +88,7 @@ const About = () => {
             <h5 className='font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-4'>
               FINANCE CONSULTING
             </h5>
-            <h1 className='font-AlbertSans font-bold text-HeadingColor-0 text-[16px] leading-[23px] sm:text-[22px] sm:leading-[35px] md:text-[30px] md:leading-[35px] lg:text-[28px] lg:leading-[35px] xl:text-[32px] xl:leading-[39px] 2xl:text-[32px] 2xl:leading-[39px]'>
+            <h1 className='font-AlbertSans font-bold text-HeadingColor-0 text-[16px] leading-[23px] sm:text-[22px] sm:leading-[35px] md:text-[30px] md:leading-[35px] lg:text-[26px] lg:leading-[33px] xl:text-[32px] xl:leading-[39px] 2xl:text-[32px] 2xl:leading-[39px]'>
               Since 2007 We’re working Medical group of more than 1200+ Patients
               help from our medical
             </h1>
