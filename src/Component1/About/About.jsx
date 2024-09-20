@@ -80,6 +80,7 @@ const About = () => {
                 <img
                   src={heart}
                   draggable='false'
+                  className='animate-pulse'
                 />
               </div>
             </div>
