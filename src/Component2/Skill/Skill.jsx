@@ -1,15 +1,15 @@
 import ProgressBar from 'react-animated-progress-bar';
-import { LuMoveUpRight } from 'react-icons/lu';
 import { Link } from 'react-router-dom';
 import skillThumb from '/images/featur.jpg';
 import skillIcon from '/images/icon2.png';
+import { GoArrowUpRight } from 'react-icons/go';
 
 const Skill = () => {
   return (
     <section className='bg-BodyBg-0 pt-[120px] relative z-10 overflow-hidden skill-section'>
       <div className='Container'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-16 items-center'>
-          <div>
+        <div className='grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-20 lg:gap-10 2xl:gap-16 items-center'>
+          <div className='col-span-1 lg:col-span-7'>
             <h5 className='font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-4'>
               SKILLS AND ABILITIES
             </h5>
@@ -20,7 +20,7 @@ const Skill = () => {
               help from our medical
             </h1>
           </div>
-          <div className='relative'>
+          <div className='col-span-1 lg:col-span-5 relative'>
             <div className='mb-[22px]'>
               <h6 className='font-AlbertSans font-medium text-lg text-HeadingColor-0 pb-3'>
                 Human Brain Surgery
@@ -99,27 +99,30 @@ const Skill = () => {
                 trackPathBorderRadius='10px'
               />
             </div>
-          </div>{' '}
+          </div>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-16 items-start'>
-          <div>
-            <div>
+          <div className='flex items-center gap-10 p-7 bg-white bg-opacity-20 backdrop-filter backdrop-blur-md border-2 border-white rounded-[30px] group relative overflow-hidden'>
+            <span className='absolute w-full h-[2px] top-0 left-0 bg-PrimaryColor-0'></span>
+            <div className='rounded-3xl overflow-hidden inline-block'>
               <img
                 src={skillThumb}
                 draggable='false'
               />
             </div>
-            <div>
+            <div className='flex-1'>
               <div>
                 <img
                   src={skillIcon}
                   draggable='false'
                 />
               </div>
-              <h4>Make An Online Appointment</h4>
+              <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 border-b border-BorderColor3-0 pb-5 mt-6 mb-6 relative before:absolute before:-bottom-[1px] before:left-0 before:w-0 before:h-[2px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full'>
+                Make An Online Appointment
+              </h4>
               <Link to={'/'}>
-                <button>
-                  <LuMoveUpRight />
+                <button className='text-Secondarycolor-0 transition-all duration-500 group-hover:text-PrimaryColor-0'>
+                  <GoArrowUpRight size={'24'} />
                 </button>
               </Link>
             </div>
