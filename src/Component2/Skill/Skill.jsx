@@ -1,114 +1,127 @@
-import aboutThumb from "/images/skills_thumb.png";
-import skillProfile from "/images/skill_author.png";
-import ceoSign from "/images/sign.png";
-import skillShape2 from "/images/service_shape1.png";
-import skillShape3 from "/images/skill_shape.png";
-import ProgressBar from "react-animated-progress-bar";
+import ProgressBar from 'react-animated-progress-bar';
+import { LuMoveUpRight } from 'react-icons/lu';
+import { Link } from 'react-router-dom';
+import skillThumb from '/images/featur.jpg';
+import skillIcon from '/images/icon2.png';
 
 const Skill = () => {
   return (
-    <section className="pt-[120px] pb-28 lg:pb-10 xl:pb-0 relative z-10 overflow-hidden skill-section">
-      <img
-        src={skillShape2}
-        draggable="false"
-        className="absolute top-20 right-20 animate-rotational hidden 2xl:block"
-      />
-      <img
-        src={skillShape3}
-        draggable="false"
-        className="absolute -bottom-72 -right-10 animate-wiggle hidden xl:block"
-      />
-      <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-16 items-start">
-          <div className="relative z-10 lg:top-16 xl:top-0">
-            <img
-              src={aboutThumb}
-              draggable="false"
-              className="w-full 2xl:w-[inherit]"
-            />
-          </div>
-          <div className="relative">
-            <h5 className="font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
-              COMPANY OVERVIEW
+    <section className='bg-BodyBg-0 pt-[120px] relative z-10 overflow-hidden skill-section'>
+      <div className='Container'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-16 items-center'>
+          <div>
+            <h5 className='font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-4'>
+              SKILLS AND ABILITIES
             </h5>
-            <h1 className="font-AlbertSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[32px] lg:leading-[42px] xl:text-[38px] xl:leading-[48px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
-              Financial Journey to Elevating <br /> Your Business Destiny
+            <h1 className='font-AlbertSans font-bold text-HeadingColor-0 text-[16px] leading-[23px] sm:text-[22px] sm:leading-[35px] md:text-[30px] md:leading-[35px] lg:text-[26px] lg:leading-[33px] xl:text-[32px] xl:leading-[39px] 2xl:text-[32px] 2xl:leading-[39px]'>
+              Since 2007 We’re working Medical{' '}
+              <br className='hidden md:block' /> group of more than 1200+
+              Patients <br className='hidden md:block' />
+              help from our medical
             </h1>
-            <p className="font-AlbertSans text-TextColor2-0">
-              Globally engage cross-media leadership skills before cross-media
-              innovation develop standardized platforms without robust
-              applications. Conveniently go forward collaboration and
-              idea-sharing
-            </p>
-            <div className="mb-6 mt-7">
-              <h6 className="font-AlbertSans text-HeadingColor-0 pb-3">
-                Finance Consulting
+          </div>
+          <div className='relative'>
+            <div className='mb-[22px]'>
+              <h6 className='font-AlbertSans font-medium text-lg text-HeadingColor-0 pb-3'>
+                Human Brain Surgery
               </h6>
               <ProgressBar
                 rect
-                width="100%"
-                height="12px"
-                fontColor="#001818"
-                fontSize="16px"
-                leading="10px"
-                margin="0px"
-                rectBorderRadius="10px"
-                fontWeight="400"
-                percentage="90"
+                width='100%'
+                height='5px'
+                fontColor='#002570'
+                fontSize='18px'
+                leading='10px'
+                margin='0px'
+                rectBorderRadius='10px'
+                fontWeight='500'
+                percentage='95'
                 defColor={{
-                  excellent: "#0c6e6d",
-                  good: "#79b900",
-                  fair: "green",
-                  poor: "red",
+                  excellent: '#002570',
+                  good: '#002570',
+                  fair: 'green',
+                  poor: 'red',
                 }}
-                trackPathColor="#dbe9e9"
-                trackBorderColor="transparent"
-                trackPathBorderRadius="10px"
+                trackPathColor='#b8c8e2'
+                trackBorderColor='transparent'
+                trackPathBorderRadius='10px'
               />
             </div>
-            <div className="mb-10">
-              <h6 className="font-AlbertSans text-HeadingColor-0 pb-3">
-                Business Consulting
+            <div className='mb-[22px]'>
+              <h6 className='font-AlbertSans font-medium text-lg text-HeadingColor-0 pb-3'>
+                Dental Fixing
               </h6>
               <ProgressBar
                 rect
-                width="100%"
-                height="12px"
-                fontColor="#001818"
-                fontSize="16px"
-                leading="10px"
-                margin="0px"
-                rectBorderRadius="10px"
-                fontWeight="400"
-                percentage="85"
+                width='100%'
+                height='5px'
+                fontColor='#002570'
+                fontSize='18px'
+                leading='10px'
+                margin='0px'
+                rectBorderRadius='10px'
+                fontWeight='500'
+                percentage='85'
                 defColor={{
-                  excellent: "#0c6e6d",
-                  good: "#79b900",
-                  fair: "green",
-                  poor: "red",
+                  excellent: '#002570',
+                  good: '#002570',
+                  fair: 'green',
+                  poor: 'red',
                 }}
-                trackPathColor="#dbe9e9"
-                trackBorderColor="transparent"
-                trackPathBorderRadius="10px"
+                trackPathColor='#b8c8e2'
+                trackBorderColor='transparent'
+                trackPathBorderRadius='10px'
               />
             </div>
-            <div className="flex flex-col sm:flex-row sm:items-center gap-10">
-              <div className="flex items-center gap-5">
-                <div>
-                  <img src={skillProfile} draggable="false" />
-                </div>
-                <div>
-                  <h5 className="font-AlbertSans inline-block text-HeadingColor-0 text-xl mb-1">
-                    Jhon D. Alexon
-                  </h5>
-                  <p className="font-AlbertSans text-[15px] font-light text-TextColor2-0">
-                    CEO & Founder
-                  </p>
-                </div>
-              </div>
+            <div>
+              <h6 className='font-AlbertSans font-medium text-lg text-HeadingColor-0 pb-3'>
+                Digital X-Ray
+              </h6>
+              <ProgressBar
+                rect
+                width='100%'
+                height='5px'
+                fontColor='#002570'
+                fontSize='18px'
+                leading='10px'
+                margin='0px'
+                rectBorderRadius='10px'
+                fontWeight='500'
+                percentage='75'
+                defColor={{
+                  excellent: '#002570',
+                  good: '#002570',
+                  fair: 'green',
+                  poor: 'red',
+                }}
+                trackPathColor='#b8c8e2'
+                trackBorderColor='transparent'
+                trackPathBorderRadius='10px'
+              />
+            </div>
+          </div>{' '}
+        </div>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-16 items-start'>
+          <div>
+            <div>
+              <img
+                src={skillThumb}
+                draggable='false'
+              />
+            </div>
+            <div>
               <div>
-                <img src={ceoSign} draggable="false" />
+                <img
+                  src={skillIcon}
+                  draggable='false'
+                />
               </div>
+              <h4>Make An Online Appointment</h4>
+              <Link to={'/'}>
+                <button>
+                  <LuMoveUpRight />
+                </button>
+              </Link>
             </div>
           </div>
         </div>
