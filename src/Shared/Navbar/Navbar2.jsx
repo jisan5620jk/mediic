@@ -1,28 +1,29 @@
 /* eslint-disable no-unused-vars */
-import { Link } from "react-router-dom";
-import Logo from "/images/logo.png";
-import homeOne from "/images/home-one.jpg";
-import homeTwo from "/images/home-three.jpg";
-import homeThree from "/images/home-two.jpg";
-import "./navbar.css";
-import { useEffect, useState, useRef } from "react";
+import { Link } from 'react-router-dom';
+import Logo from '/images/logo.png';
+import Logo2 from '/images/logo2.png';
+import homeOne from '/images/home1.png';
+import homeTwo from '/images/home2.png';
+import homeThree from '/images/home3.png';
+import homeFour from '/images/home4.png';
+import btnArrow from '/images/arrow.png';
+import './navbar.css';
+import { useEffect, useRef } from 'react';
 import {
   FaChevronDown,
   FaEnvelope,
   FaFacebookF,
-  FaInstagram,
   FaLinkedinIn,
   FaPinterestP,
   FaXTwitter,
-} from "react-icons/fa6";
-import { FaPhoneAlt, FaTimes } from "react-icons/fa";
-import { MdLocationPin } from "react-icons/md";
-import { IoMdPaperPlane } from "react-icons/io";
-import { LuMoveRight } from "react-icons/lu";
-import { ImFacebook2 } from "react-icons/im";
-import { BiSearch } from "react-icons/bi";
+} from 'react-icons/fa6';
+import { FaPhoneAlt, FaTimes } from 'react-icons/fa';
+import { MdLocationPin } from 'react-icons/md';
+import { IoMdPaperPlane } from 'react-icons/io';
+import { IoSearch } from 'react-icons/io5';
+import { CgMenuGridO } from 'react-icons/cg';
 
-const Navbar2 = () => {
+const Navbar = () => {
   //Menu Sidebar
 
   const menuSideBarRef = useRef(null);
@@ -37,32 +38,31 @@ const Navbar2 = () => {
     const closeBtn2 = closeBtn2Ref.current;
 
     const addClasses = () => {
-      sidebarContent.classList.add("opened");
-      bodyOverlay2.classList.add("apply");
+      sidebarContent.classList.add('opened');
+      bodyOverlay2.classList.add('apply');
     };
 
     const removeClasses = () => {
-      sidebarContent.classList.remove("opened");
-      bodyOverlay2.classList.remove("apply");
+      sidebarContent.classList.remove('opened');
+      bodyOverlay2.classList.remove('apply');
     };
 
     if (menuSideBar && sidebarContent && bodyOverlay2 && closeBtn2) {
-      menuSideBar.addEventListener("click", addClasses);
-      closeBtn2.addEventListener("click", removeClasses);
-      bodyOverlay2.addEventListener("click", removeClasses);
+      menuSideBar.addEventListener('click', addClasses);
+      closeBtn2.addEventListener('click', removeClasses);
+      bodyOverlay2.addEventListener('click', removeClasses);
     }
 
     return () => {
       if (menuSideBar && sidebarContent && bodyOverlay2 && closeBtn2) {
-        menuSideBar.removeEventListener("click", addClasses);
-        closeBtn2.removeEventListener("click", removeClasses);
-        bodyOverlay2.removeEventListener("click", removeClasses);
+        menuSideBar.removeEventListener('click', addClasses);
+        closeBtn2.removeEventListener('click', removeClasses);
+        bodyOverlay2.removeEventListener('click', removeClasses);
       }
     };
   }, []);
 
   //Menu Bar
-
   const menuBarRef = useRef(null);
   const offcanvasRef = useRef(null);
   const bodyOverlayRef = useRef(null);
@@ -75,26 +75,26 @@ const Navbar2 = () => {
     const closeBtn = closeBtnRef.current;
 
     const addClasses = () => {
-      offcanvas.classList.add("opened");
-      bodyOverlay.classList.add("apply");
+      offcanvas.classList.add('opened');
+      bodyOverlay.classList.add('apply');
     };
 
     const removeClasses = () => {
-      offcanvas.classList.remove("opened");
-      bodyOverlay.classList.remove("apply");
+      offcanvas.classList.remove('opened');
+      bodyOverlay.classList.remove('apply');
     };
 
     if (menuBar && offcanvas && bodyOverlay && closeBtn) {
-      menuBar.addEventListener("click", addClasses);
-      closeBtn.addEventListener("click", removeClasses);
-      bodyOverlay.addEventListener("click", removeClasses);
+      menuBar.addEventListener('click', addClasses);
+      closeBtn.addEventListener('click', removeClasses);
+      bodyOverlay.addEventListener('click', removeClasses);
     }
 
     return () => {
       if (menuBar && offcanvas && bodyOverlay && closeBtn) {
-        menuBar.removeEventListener("click", addClasses);
-        closeBtn.removeEventListener("click", removeClasses);
-        bodyOverlay.removeEventListener("click", removeClasses);
+        menuBar.removeEventListener('click', addClasses);
+        closeBtn.removeEventListener('click', removeClasses);
+        bodyOverlay.removeEventListener('click', removeClasses);
       }
     };
   }, []);
@@ -108,42 +108,42 @@ const Navbar2 = () => {
 `;
 
   useEffect(() => {
-    const mainMenuContent = document.querySelector(".main-menu-content");
-    const mainMenuMobile = document.querySelector(".main-menu-mobile");
+    const mainMenuContent = document.querySelector('.main-menu-content');
+    const mainMenuMobile = document.querySelector('.main-menu-mobile');
 
     if (mainMenuContent && mainMenuMobile) {
       const navContent = mainMenuContent.outerHTML;
       mainMenuMobile.innerHTML = navContent;
 
       const arrows = document.querySelectorAll(
-        ".main-menu-mobile .has-dropdown > a"
+        '.main-menu-mobile .has-dropdown > a'
       );
 
       arrows.forEach((arrow) => {
-        const arrowBtn = document.createElement("BUTTON");
-        arrowBtn.classList.add("dropdown-toggle-btn");
+        const arrowBtn = document.createElement('BUTTON');
+        arrowBtn.classList.add('dropdown-toggle-btn');
         arrowBtn.innerHTML = headerIcon;
 
         arrow.appendChild(arrowBtn);
 
-        arrowBtn.addEventListener("click", (e) => {
+        arrowBtn.addEventListener('click', (e) => {
           e.preventDefault();
-          arrowBtn.classList.toggle("dropdown-opened");
-          arrow.parentElement.classList.toggle("expanded");
-          arrow.parentElement.parentElement.classList.add("dropdown-opened");
+          arrowBtn.classList.toggle('dropdown-opened');
+          arrow.parentElement.classList.toggle('expanded');
+          arrow.parentElement.parentElement.classList.add('dropdown-opened');
           arrow.parentElement.parentElement
-            .querySelectorAll(".submenu")
+            .querySelectorAll('.submenu')
             .forEach((submenu) => {
               submenu.style.display =
-                submenu.style.display === "block" ? "none" : "block";
+                submenu.style.display === 'block' ? 'none' : 'block';
             });
           arrow.parentElement.parentElement
-            .querySelectorAll(".has-dropdown")
+            .querySelectorAll('.has-dropdown')
             .forEach((sibling) => {
               if (sibling !== arrow.parentElement) {
-                sibling.classList.remove("dropdown-opened");
-                sibling.querySelectorAll(".submenu").forEach((submenu) => {
-                  submenu.style.display = "none";
+                sibling.classList.remove('dropdown-opened');
+                sibling.querySelectorAll('.submenu').forEach((submenu) => {
+                  submenu.style.display = 'none';
                 });
               }
             });
@@ -153,188 +153,155 @@ const Navbar2 = () => {
   }, []);
 
   return (
-    <div className="absolute z-50 w-full">
-      <div className="offcanvas-area">
-        <div ref={offcanvasRef} className="offcanvas">
-          <div className="offcanvas_close-btn">
-            <button ref={closeBtnRef} className="close-btn">
+    <>
+      <div className='offcanvas-area'>
+        <div
+          ref={offcanvasRef}
+          className='offcanvas'
+        >
+          <div className='offcanvas_close-btn'>
+            <button
+              ref={closeBtnRef}
+              className='close-btn'
+            >
               <FaTimes />
             </button>
           </div>
-          <div className="offcanvas_logo">
-            <Link to={"/"}>
-              <img src={Logo} draggable="false" />
+          <div className='offcanvas_logo inline-block'>
+            <Link to={'/'}>
+              <img
+                src={Logo2}
+                draggable='false'
+              />
             </Link>
           </div>
-          <div className="offcanvas_title">
+          <div className='offcanvas_title'>
             <p>
-              Business consultation provides expert advice to improve
-              performance.
+              Stay healthy with a balanced diet, regular exercise, and enough
+              sleep. Manage stress and get regular check-ups.
             </p>
           </div>
-          <div className="main-menu-mobile lg:none"></div>
-          <div className="offcanvas_contact-info">
-            <div className="offcanvas_contact-title">
+          <div className='main-menu-mobile lg:none'></div>
+          <div className='offcanvas_contact-info'>
+            <div className='offcanvas_contact-title'>
               <h5>Contact Us</h5>
             </div>
             <ul>
               <li>
                 <MdLocationPin />
-                <Link to={"/"}>Melbone st, Australia, Ny 12099</Link>
+                <Link to={'/'}>Melbone st, Australia, Ny 12099</Link>
               </li>
               <li>
                 <FaEnvelope />
-                <Link to={"/"}>needhelp@company.com</Link>
+                <Link to={'/'}>needhelp@company.com</Link>
               </li>
               <li>
                 <FaPhoneAlt />
-                <Link to={"/"}>+48 555 223 224</Link>
+                <Link to={'/'}>+48 555 223 224</Link>
               </li>
             </ul>
           </div>
-          <div className="offcanvas_input">
-            <div className="offcanvas_input-title">
+          <div className='offcanvas_input'>
+            <div className='offcanvas_input-title'>
               <h4>Get Update</h4>
             </div>
-            <form action="#" method="post">
-              <div className="relative">
+            <form
+              action='#'
+              method='post'
+            >
+              <div className='relative'>
                 <input
-                  type="email"
-                  name="email"
-                  placeholder="Enter E-Mail"
+                  type='email'
+                  name='email'
+                  placeholder='Enter E-Mail'
                   required
                 />
-                <button type="submit">
+                <button type='submit'>
                   <IoMdPaperPlane />
                 </button>
               </div>
             </form>
-            <div className="status"></div>
+            <div className='status'></div>
           </div>
-          <div className="offcanvas_social">
-            <div className="social-icon">
-              <Link to={"/"}>
+          <div className='offcanvas_social'>
+            <div className='social-icon'>
+              <Link to={'/'}>
                 <FaFacebookF />
               </Link>
-              <Link to={"/"}>
+              <Link to={'/'}>
                 <FaXTwitter />
               </Link>
-              <Link to={"/"}>
+              <Link to={'/'}>
                 <FaPinterestP />
               </Link>
-              <Link to={"/"}>
+              <Link to={'/'}>
                 <FaLinkedinIn />
               </Link>
             </div>
           </div>
         </div>
       </div>
-      <div ref={bodyOverlayRef} className="body-overlay"></div>
-      <header className="bg-transparent relative z-10">
-        <div className="Container flex items-center justify-between h-[52px]">
-          <div className="flex items-center gap-8">
-            <div className=" sm:flex items-center gap-2 hidden">
-              <h6 className="font-AlbertSans text-[15px] text-white">Mial :</h6>
-              <Link
-                to={"/"}
-                className="font-AlbertSans text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white"
-              >
-                example@gmail.com
-              </Link>
-            </div>
-            <div className=" md:flex items-center gap-2 hidden">
-              <h6 className="font-AlbertSans text-[15px] text-white">
-                Call Us :
-              </h6>
-              <Link
-                to={"/"}
-                className="font-AlbertSans text-[15px] text-TextColor-0 transition-all duration-500 hover:text-white"
-              >
-                +980 123 (4587) 584
-              </Link>
-            </div>
-          </div>
-          <div className="flex items-center gap-16">
-            <ul className="flex gap-5 items-center">
-              <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <ImFacebook2 size={"14"} />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <FaXTwitter />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <FaLinkedinIn />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"/"}
-                  className="transition-all duration-500 text-white hover:text-PrimaryColor-0"
-                >
-                  <FaInstagram />
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div id="header-sticky" className="header-area style-two">
-        <div className="Container">
-          <div className="bg-PrimaryColor-0 rounded-md px-8 flex items-center justify-between lg:grid lg:grid-cols-12">
-            <div className="col-span-2">
-              <div className="header-logo">
-                <Link to={"/"}>
-                  <img src={Logo} draggable="false" />
+      <div
+        ref={bodyOverlayRef}
+        className='body-overlay'
+      ></div>
+      <div
+        id='header-sticky'
+        className='header-area2 py-5 lg:py-0'
+      >
+        <div className='px-2 lg:px-[30px]'>
+          <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
+            <div className='col-span-3'>
+              <div className='header-logo inline-block'>
+                <Link to={'/'}>
+                  <img
+                    src={Logo}
+                    draggable='false'
+                  />
                 </Link>
               </div>
             </div>
-            <div className="col-span-7 hidden lg:block">
-              <div className="header-main-menu text-center">
-                <nav className="main-menu-content">
+            <div className='col-span-6 hidden lg:block'>
+              <div className='header-main-menu text-center'>
+                <nav className='main-menu-content'>
                   <ul>
-                    <li className="has-dropdown">
-                      <Link to={"/"}>
+                    <li className='has-dropdown'>
+                      <Link
+                        to={'/'}
+                        className='active'
+                      >
                         Home
-                        <span>
-                          <FaChevronDown />
-                        </span>
                       </Link>
-                      <div className="submenu has-homemenu mega-menu">
-                        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-3">
-                          <div className="homemenu">
-                            <div className="homemenu-thumb">
-                              <Link to={"/"}>
+                      <div className='submenu has-homemenu mega-menu'>
+                        <div className='grid grid-cols-1 lg:grid-cols-4 lg:gap-3'>
+                          <div className='homemenu'>
+                            <div className='homemenu-thumb'>
+                              <Link to={'/'}>
                                 <img src={homeOne} />
                                 <h6>Live Demo</h6>
                               </Link>
                             </div>
-                          </div>{" "}
-                          <div className="homemenu">
-                            <div className="homemenu-thumb">
-                              <Link to={"/home2"}>
+                          </div>
+                          <div className='homemenu'>
+                            <div className='homemenu-thumb'>
+                              <Link to={'/home2'}>
                                 <img src={homeTwo} />
                                 <h6>Live Demo</h6>
                               </Link>
                             </div>
-                          </div>{" "}
-                          <div className="homemenu">
-                            <div className="homemenu-thumb">
-                              <Link to={"/"}>
+                          </div>
+                          <div className='homemenu'>
+                            <div className='homemenu-thumb'>
+                              <Link to={'/'}>
                                 <img src={homeThree} />
+                                <h6>Live Demo</h6>
+                              </Link>
+                            </div>
+                          </div>
+                          <div className='homemenu'>
+                            <div className='homemenu-thumb'>
+                              <Link to={'/'}>
+                                <img src={homeFour} />
                                 <h6>Live Demo</h6>
                               </Link>
                             </div>
@@ -342,144 +309,99 @@ const Navbar2 = () => {
                         </div>
                       </div>
                     </li>
-                    <li className="has-dropdown">
-                      <Link to={"/"}>
-                        Pages
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className="submenu">
+                    <li>
+                      <Link to={'/'}>About</Link>
+                    </li>
+                    <li className='has-dropdown'>
+                      <Link to={'/'}>Pages</Link>
+                      <ul className='submenu'>
                         <li>
-                          <Link to={"/"}>about us</Link>
+                          <Link to={'/'}>about us</Link>
                         </li>
                         <li>
-                          <Link to={"/"}>team</Link>
+                          <Link to={'/'}>team</Link>
                         </li>
                         <li>
-                          <Link to={"/"}>testimonial</Link>
+                          <Link to={'/'}>testimonial</Link>
                         </li>
                         <li>
-                          <Link to={"/"}>cart</Link>
+                          <Link to={'/'}>cart</Link>
                         </li>
                         <li>
-                          <Link to={"/"}>checkout</Link>
+                          <Link to={'/'}>checkout</Link>
                         </li>
                         <li>
-                          <Link to={"/"}>faq</Link>
+                          <Link to={'/'}>faq</Link>
                         </li>
                       </ul>
                     </li>
-                    <li className="has-dropdown">
-                      <Link to={"/"}>
-                        Service
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className="submenu">
+                    <li className='has-dropdown'>
+                      <Link to={'/'}>Services</Link>
+                      <ul className='submenu'>
                         <li>
-                          <Link to={"/"}>service</Link>
+                          <Link to={'/'}>service</Link>
                         </li>
                         <li>
-                          <Link to={"/"}>service details</Link>
+                          <Link to={'/'}>service details</Link>
                         </li>
                       </ul>
                     </li>
-                    <li className="has-dropdown">
-                      <Link to={"/"}>
-                        Project
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className="submenu">
+                    <li className='has-dropdown'>
+                      <Link to={'/'}>Blog</Link>
+                      <ul className='submenu'>
                         <li>
-                          <Link to={"/"}>project</Link>
+                          <Link to={'/'}>blog grid</Link>
                         </li>
                         <li>
-                          <Link to={"/"}>project details</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="has-dropdown">
-                      <Link to={"/"}>
-                        Shop
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className="submenu">
-                        <li>
-                          <Link to={"/"}>shop</Link>
+                          <Link to={'/'}>blog right sidebar</Link>
                         </li>
                         <li>
-                          <Link to={"/"}>shop details</Link>
+                          <Link to={'/'}>blog left sidebar</Link>
                         </li>
                         <li>
-                          <Link to={"/"}>cart</Link>
-                        </li>
-                        <li>
-                          <Link to={"/"}>checkout</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="has-dropdown">
-                      <Link to={"/"}>
-                        Blog
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className="submenu">
-                        <li>
-                          <Link to={"/"}>blog grid</Link>
-                        </li>
-                        <li>
-                          <Link to={"/"}>blog right sidebar</Link>
-                        </li>
-                        <li>
-                          <Link to={"/"}>blog left sidebar</Link>
-                        </li>
-                        <li>
-                          <Link to={"/"}>blog details</Link>
+                          <Link to={'/'}>blog details</Link>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <Link to={"/"}>Contact</Link>
+                      <Link to={'/'}>Contact</Link>
                     </li>
                   </ul>
                 </nav>
               </div>
             </div>
-            <div className="col-span-3">
-              <div className="header-right-box flex items-center gap-10 lg:gap-6 xl:gap-6 2xl:gap-12 justify-end">
-                <div className="hidden lg:block">
-                  <Link to={"/"}>
-                    <button className="text-white relative top-1">
-                      <BiSearch size={"20"} />
-                    </button>
+            <div className='col-span-3'>
+              <div className='header-right-box flex items-center gap-10 lg:gap-0 justify-end'>
+                <div className='size-[50px] rounded-full bg-BodyBg2-0 hidden sm:flex lg:hidden 2xl:flex items-center justify-center text-HeadingColor-0 relative z-10 transition-all duration-500 hover:text-white before:absolute before:left-0 before:top-0 before:w-full before:rounded-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100'>
+                  <button>
+                    <IoSearch size={'18'} />
+                  </button>
+                </div>
+                <div className='header-btn hidden lg:block'>
+                  <Link to={'/'}>
+                    get Appiontment<span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <img
+                      src={btnArrow}
+                      draggable='false'
+                    />
                   </Link>
                 </div>
-                <div className="hidden lg:block">
-                  <Link
-                    to={"/"}
-                    className="font-AlbertSans font-medium capitalize text-white flex items-center gap-1"
+                <div className='hidden 2xl:block ml-2'>
+                  <button
+                    ref={menuSideBarRef}
+                    className='menu-sidebar size-[50px] rounded-full bg-PrimaryColor-0 flex items-center justify-center text-white relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:rounded-full before:h-full before:bg-Secondarycolor-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100'
                   >
-                    get a quote<span></span>
-                    <LuMoveRight size={"19"} />
-                  </Link>
-                </div>
-                <div className="header-sidebar hidden lg:block">
-                  <button ref={menuSideBarRef} className="menu-sidebar">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <CgMenuGridO size={'30'} />
                   </button>
                 </div>
-                <div className="header-bar lg:hidden">
-                  <button ref={menuBarRef} className="menu-bar">
+                <div className='header-bar lg:hidden'>
+                  <button
+                    ref={menuBarRef}
+                    className='menu-bar'
+                  >
                     <span></span>
                     <span></span>
                     <span></span>
@@ -489,128 +411,146 @@ const Navbar2 = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="sidebar-content">
-        <div ref={sidebarContentRef} className="sidebar">
-          <div className="sidebar_close-btn">
-            <button ref={closeBtn2Ref} className="close-btn2">
-              <FaTimes />
-            </button>
-          </div>
-          <div className="sidebar_logo">
-            <Link to={"/"}>
-              <img src={Logo} draggable="false" />
-            </Link>
-          </div>
-          <div className="sidebar_title">
-            <p>
-              Business consultation provides expert advice to improve
-              performance.
-            </p>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <Link to={"/"}>
-                  <button>Managed IT Services</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={"/"}>
-                  <button>Cloud Services</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={"/"}>
-                  <button>Cybersecurity Services</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={"/"}>
-                  <button>Network Services</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={"/"}>
-                  <button>Data Analytics</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={"/"}>
-                  <button>IT Consulting Services</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={"/"}>
-                  <button>Backup and Disaster Recovery</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={"/"}>
-                  <button>Website Development</button>
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="sidebar_contact-info">
-            <div className="sidebar_contact-title">
-              <h5>Contact Us</h5>
+        <div className='sidebar-content'>
+          <div
+            ref={sidebarContentRef}
+            className='sidebar'
+          >
+            <div className='sidebar_close-btn'>
+              <button
+                ref={closeBtn2Ref}
+                className='close-btn2'
+              >
+                <FaTimes />
+              </button>
             </div>
-            <ul>
-              <li>
-                <MdLocationPin />
-                <Link to={"/"}>Melbone st, Australia, Ny 12099</Link>
-              </li>
-              <li>
-                <FaEnvelope />
-                <Link to={"/"}>needhelp@company.com</Link>
-              </li>
-              <li>
-                <FaPhoneAlt />
-                <Link to={"/"}>+48 555 223 224</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="sidebar_input">
-            <div className="offcanvas_input-title">
-              <h4>Get Update</h4>
-            </div>
-            <form action="#" method="post">
-              <div className="relative">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Enter E-Mail"
-                  required
+            <div className='sidebar_logo'>
+              <Link to={'/'}>
+                <img
+                  src={Logo2}
+                  draggable='false'
                 />
-                <button type="submit">
-                  <IoMdPaperPlane />
-                </button>
-              </div>
-            </form>
-            <div className="status"></div>
-          </div>
-          <div className="sidebar_social">
-            <div className="sidebar-social-icon">
-              <Link to={"/"}>
-                <FaFacebookF />
-              </Link>
-              <Link to={"/"}>
-                <FaXTwitter />
-              </Link>
-              <Link to={"/"}>
-                <FaPinterestP />
-              </Link>
-              <Link to={"/"}>
-                <FaLinkedinIn />
               </Link>
             </div>
+            <div className='sidebar_title'>
+              <p>
+                Stay healthy with a balanced diet, regular exercise, and enough
+                sleep. Manage stress and get regular check-ups.
+              </p>
+            </div>
+            <div>
+              <div className='sidebar_service-title'>
+                <h5>What Services We Provide?</h5>
+              </div>
+              <ul className='service_list'>
+                <li>
+                  <Link to={'/'}>
+                    <button>General Health Check-ups</button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/'}>
+                    <button>Cardiology Services</button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/'}>
+                    <button>Mental Health Support</button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/'}>
+                    <button>Pediatric Care</button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/'}>
+                    <button>Vaccination Programs</button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/'}>
+                    <button>Physical Therapy</button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/'}>
+                    <button>Chronic Disease Management</button>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className='sidebar_contact-info'>
+              <div className='sidebar_contact-title'>
+                <h5>Have Questions? Contact Our Team!</h5>
+              </div>
+              <ul>
+                <li>
+                  <MdLocationPin />
+                  <Link to={'/'}>Melbone st, Australia, Ny 12099</Link>
+                </li>
+                <li>
+                  <FaEnvelope />
+                  <Link to={'/'}>needhelp@company.com</Link>
+                </li>
+                <li>
+                  <FaPhoneAlt />
+                  <Link to={'/'}>+48 555 223 224</Link>
+                </li>
+              </ul>
+            </div>
+            <div className='sidebar_input'>
+              <div className='offcanvas_input-title'>
+                <h4>Get Update</h4>
+              </div>
+              <form
+                action='#'
+                method='post'
+              >
+                <div className='relative'>
+                  <input
+                    type='email'
+                    name='email'
+                    placeholder='Enter E-Mail'
+                    required
+                  />
+                  <button type='submit'>
+                    <IoMdPaperPlane />
+                  </button>
+                </div>
+              </form>
+            </div>
+            <ul className='sidebar-social-icon'>
+              <li>
+                <Link to={'/'}>
+                  <FaFacebookF />
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <FaXTwitter />
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <FaPinterestP />
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <FaLinkedinIn />
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
+        <div
+          ref={bodyOverlay2Ref}
+          className='body-overlay2'
+        ></div>
       </div>
-      <div ref={bodyOverlay2Ref} className="body-overlay2"></div>
-    </div>
+    </>
   );
 };
 
-export default Navbar2;
+export default Navbar;

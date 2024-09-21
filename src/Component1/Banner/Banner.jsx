@@ -95,7 +95,7 @@ const Banner = () => {
                   </button>
                 </Link>
               </div>
-              <div className='absolute -bottom-14 -right-16  -z-10'>
+              <div className='absolute -bottom-14 -right-16 -z-10'>
                 <img
                   src={bannerPlus}
                   draggable='false'
