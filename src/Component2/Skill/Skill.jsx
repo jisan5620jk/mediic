@@ -1,7 +1,9 @@
 import ProgressBar from 'react-animated-progress-bar';
 import { Link } from 'react-router-dom';
 import skillThumb from '/images/featur.jpg';
+import skillThumb2 from '/images/featur2.jpg';
 import skillIcon from '/images/icon2.png';
+import skillIcon2 from '/images/icon.png';
 import { GoArrowUpRight } from 'react-icons/go';
 
 const Skill = () => {
@@ -101,9 +103,8 @@ const Skill = () => {
             </div>
           </div>
         </div>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-16 items-start'>
-          <div className='flex items-center gap-10 p-7 bg-white bg-opacity-20 backdrop-filter backdrop-blur-md border-2 border-white rounded-[30px] group relative overflow-hidden'>
-            <span className='absolute w-full h-[2px] top-0 left-0 bg-PrimaryColor-0'></span>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mt-20'>
+          <div className='flex items-center gap-10 p-7 bg-white bg-opacity-20 backdrop-filter backdrop-blur-md border-2 border-white rounded-[30px] group overflow-hidden transition-all duration-500 hover:border-PrimaryColor-0'>
             <div className='rounded-3xl overflow-hidden inline-block'>
               <img
                 src={skillThumb}
@@ -114,6 +115,30 @@ const Skill = () => {
               <div>
                 <img
                   src={skillIcon}
+                  draggable='false'
+                />
+              </div>
+              <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 border-b border-BorderColor3-0 pb-5 mt-6 mb-6 relative before:absolute before:-bottom-[1px] before:left-0 before:w-0 before:h-[2px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full'>
+                Make An Online Appointment
+              </h4>
+              <Link to={'/'}>
+                <button className='text-Secondarycolor-0 transition-all duration-500 group-hover:text-PrimaryColor-0'>
+                  <GoArrowUpRight size={'24'} />
+                </button>
+              </Link>
+            </div>
+          </div>
+          <div className='flex items-center gap-10 p-7 bg-white bg-opacity-20 backdrop-filter backdrop-blur-md border-2 border-white rounded-[30px] group overflow-hidden transition-all duration-500 hover:border-PrimaryColor-0'>
+            <div className='rounded-3xl overflow-hidden inline-block'>
+              <img
+                src={skillThumb2}
+                draggable='false'
+              />
+            </div>
+            <div className='flex-1'>
+              <div>
+                <img
+                  src={skillIcon2}
                   draggable='false'
                 />
               </div>
