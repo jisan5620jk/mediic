@@ -1,0 +1,102 @@
+.content-slider-section {
+  padding: 30px 0px;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  --duration: 30s;
+  --gap: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  gap: 40px;
+  background: #002570;
+}
+
+.content-slider {
+  text-align: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  gap: 30px;
+  min-width: 100%;
+  -webkit-animation: scroll 50s linear infinite;
+  animation: scroll 50s linear infinite;
+}
+
+.content-slider-content {
+  position: relative;
+  --duration: 50s;
+  --gap: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  gap: 0px;
+  justify-content: center;
+}
+
+.content-slider-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #ffffff;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-family: 'Albert Sans', 'sans-serif';
+}
+
+.content-slider-content img {
+  width: 60%;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-100% - var(--gap)));
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-100% - var(--gap)));
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@media (max-width: 767px) {
+  .content-slider-section {
+    gap: 20px;
+  }
+
+  .content-slider {
+    gap: 20px;
+  }
+
+  .content-slider-content h1 {
+    font-size: 30px;
+  }
+}

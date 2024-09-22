@@ -1,60 +1,63 @@
-/* eslint-disable no-unused-vars */
-import serviceThumb from "/images/service_3.png";
-import serviceThumb2 from "/images/service_4.png";
-import serviceIcon from "/images/service_icon1.png";
-import serviceIcon2 from "/images/service_icon2.png";
-import serviceShape from "/images/service_shape1.png";
-import serviceShape2 from "/images/service_shape2.png";
-import ServiceCard from "./ServiceCard";
-import { GoArrowUpRight } from "react-icons/go";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import ServiceNavigation from "./ServiceNavigation";
+import serviceThumb from '/images/srvce.png';
+import serviceThumb2 from '/images/srvce2.png';
+import serviceThumb3 from '/images/srvce3.png';
+import serviceThumb4 from '/images/srvce4.png';
+import ServiceCard from './ServiceCard';
+import serviceShape from '/images/srvce-shp.png';
+import { Link } from 'react-router-dom';
+import { GoArrowRight } from 'react-icons/go';
+import { LuArrowUpRight } from 'react-icons/lu';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+import ServiceNavigation from './ServiceNavigation';
 
 const ServiceData = [
   {
     id: 1,
-    serviceIcon: serviceIcon,
-    serviceSubTitle: "Finance",
-    serviceTitle: "Investment Idea",
-    serviceDesc: "Business visualize strategic informatic beanchmark",
-    serviceUrl: "/service_details",
-    btnContent: "View Details",
-    btnIcon: <GoArrowUpRight />,
     serviceThumb: serviceThumb,
+    serviceShape: serviceShape,
+    serviceSubTitle: 'X-Ray',
+    serviceTitle: 'Digital X-Ray',
+    serviceUrl: '/',
+    btnIcon: <LuArrowUpRight />,
   },
   {
     id: 2,
-    serviceIcon: serviceIcon2,
-    serviceSubTitle: "Finance",
-    serviceTitle: "Investment Idea",
-    serviceDesc: "Business visualize strategic informatic beanchmark",
-    serviceUrl: "/service_details",
-    btnContent: "View Details",
-    btnIcon: <GoArrowUpRight />,
     serviceThumb: serviceThumb2,
+    serviceShape: serviceShape,
+    serviceSubTitle: 'Dental',
+    serviceTitle: 'Dentel Fixing',
+    serviceUrl: '/',
+    btnIcon: <LuArrowUpRight />,
   },
   {
     id: 3,
-    serviceIcon: serviceIcon,
-    serviceSubTitle: "Finance",
-    serviceTitle: "Investment Idea",
-    serviceDesc: "Business visualize strategic informatic beanchmark",
-    serviceUrl: "/service_details",
-    btnContent: "View Details",
-    btnIcon: <GoArrowUpRight />,
-    serviceThumb: serviceThumb,
+    serviceThumb: serviceThumb3,
+    serviceShape: serviceShape,
+    serviceSubTitle: 'Surgery',
+    serviceTitle: 'Human Brain Surgery',
+    serviceUrl: '/',
+    btnIcon: <LuArrowUpRight />,
   },
   {
     id: 4,
-    serviceIcon: serviceIcon2,
-    serviceSubTitle: "Finance",
-    serviceTitle: "Investment Idea",
-    serviceDesc: "Business visualize strategic informatic beanchmark",
-    serviceUrl: "/service_details",
-    btnContent: "View Details",
-    btnIcon: <GoArrowUpRight />,
-    serviceThumb: serviceThumb2,
+    serviceThumb: serviceThumb4,
+    serviceShape: serviceShape,
+    serviceSubTitle: 'Vacchine',
+    serviceTitle: 'Vacchine Services',
+    serviceUrl: '/',
+    btnIcon: <LuArrowUpRight />,
+  },
+  {
+    id: 5,
+    serviceThumb: serviceThumb3,
+    serviceShape: serviceShape,
+    serviceSubTitle: 'Surgery',
+    serviceTitle: 'Human Brain Surgery',
+    serviceUrl: '/',
+    btnIcon: <LuArrowUpRight />,
   },
 ];
 
@@ -70,71 +73,82 @@ const Service = () => {
         slidesPerView: 1,
       },
       768: {
-        slidesPerView: 1.5,
-      },
-      992: {
         slidesPerView: 2,
       },
+      992: {
+        slidesPerView: 3,
+      },
       1400: {
-        slidesPerView: 2.5,
+        slidesPerView: 4,
       },
     },
   };
 
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + ' pagination-bullet"></span>';
+    },
+  };
   return (
-    <section className="relative z-10 pt-28 pb-[120px] bg-BodyBg4-0">
-      <div className="absolute -z-10 top-40 left-0 hidden 2xl:block">
-        <div className="relative animate-wiggle">
-          <img src={serviceShape2} draggable="false" />
-          <img
-            src={serviceShape}
-            draggable="false"
-            className="absolute top-[40%] left-28 animate-rotational"
-          />
-        </div>
-      </div>
-      <div className="Container">
-        <div className="mb-4 md:-mb-[100px] lg:-mb-[120px]">
-          <h5 className="font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
-            SERVICES WE PROVIDE
-          </h5>
-          <h1 className="font-AlbertSans font-semibold text-HeadingColor-0 text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
-            Individuals offer Professional <br /> Services we Provide
+    <section className='service px-5 2xl:px-20 bg-Secondarycolor-0 bg-cover bg-bottom bg-no-repeat py-[120px] relative'>
+      <div className='grid grid-cols-12 md:items-center border-b border-BorderColor2-0 pb-7 gap-7 lg:gap-0'>
+        <div className='col-span-12 md:col-span-6 lg:col-span-4'>
+          <h1 className='font-AlbertSans font-bold uppercase text-white text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[40px] md:leading-[50px] lg:text-[34px] lg:leading-[44px] xl:text-[48px] xl:leading-[58px] 2xl:text-[60px] 2xl:leading-[70px]'>
+            Provide <br />
+            Best Services
           </h1>
         </div>
+        <div className='col-span-12 md:col-span-6 lg:col-span-5 flex justify-start lg:justify-center'>
+          <p className='font-DMSans text-lg text-TextColor-0'>
+            Enthusiastically orchestrate competitive e-services whereas superior{' '}
+            <br className='hidden 2xl:block' />
+            Conveniently disintermediate innovative solutions through impactfuls{' '}
+            <br className='hidden 2xl:block' />
+            tailers without seamless markets network .
+          </p>
+        </div>
+        <div className='col-span-12 lg:col-span-3 flex lg:justify-end'>
+          <Link to={'/service_details'}>
+            <button className='primary-btn mt-3 px-8'>
+              View All Services
+              <GoArrowRight
+                size={'22'}
+                className='-rotate-45'
+              />
+            </button>
+          </Link>
+        </div>
       </div>
-      <div className="ml-0 lg:ml-7 xl:ml-[46px] 2xl:ml-[314px]">
-        <Swiper {...settings}>
+      <div className='relative z-10 mt-[60px] before:absolute before:z-40 before:left-[25px] before:bottom-[302px] before:rotate-0 before:w-[2px] 2xl:before:h-[170px] before:bg-gradient-to-t before:from-PrimaryColor-0 before:to-transparent'>
+        <Swiper
+          {...settings}
+          pagination={pagination}
+          modules={[Pagination]}
+        >
           {ServiceData.map(
             ({
               id,
-              serviceIcon,
+              serviceThumb,
+              serviceShape,
               serviceSubTitle,
               serviceTitle,
-              serviceDesc,
-              btnContent,
               serviceUrl,
               btnIcon,
-              serviceThumb,
             }) => {
               return (
-                <>
-                  <SwiperSlide
-                    key={id}
-                    className="pt-24 md:pt-[120px] lg:pt-[150px]"
-                  >
+                <SwiperSlide key={id}>
+                  <div className='pb-[60px] service-box'>
                     <ServiceCard
-                      serviceIcon={serviceIcon}
-                      serviceSubTilte={serviceSubTitle}
+                      serviceThumb={serviceThumb}
+                      serviceShape={serviceShape}
+                      serviceSubTitle={serviceSubTitle}
                       serviceTitle={serviceTitle}
-                      serviceDesc={serviceDesc}
-                      btnContent={btnContent}
                       serviceUrl={serviceUrl}
                       btnIcon={btnIcon}
-                      serviceThumb={serviceThumb}
                     />
-                  </SwiperSlide>
-                </>
+                  </div>
+                </SwiperSlide>
               );
             }
           )}

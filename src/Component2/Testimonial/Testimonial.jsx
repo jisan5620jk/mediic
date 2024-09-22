@@ -1,39 +1,41 @@
-/* eslint-disable no-unused-vars */
-import testiImg from "/images/testi_author2.png";
-import testiQuote from "/images/testi_icon2.png";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { MdOutlineStarPurple500 } from "react-icons/md";
-import TestimonialCard from "./TestimonialCard";
-import CountUp from "react-countup";
-import { FaStar, FaStarHalfAlt } from "react-icons/fa";
-import TestimonialNavigation from "./TestimonialNavigation";
-import Brand from "../Brand/Brand";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { EffectFlip } from 'swiper/modules';
+import { MdOutlineStarPurple500 } from 'react-icons/md';
+import TestimonialCard from './TestimonialCard';
+import testThumb from '/images/testi.jpg';
+import testiProfile from '/images/people.png';
+import testiShape from '/images/circle2.png';
+import testiQuote from '/images/quote.png';
+import { Link } from 'react-router-dom';
+import { GoArrowRight } from 'react-icons/go';
 
 const testiData = [
   {
     id: 1,
     testiQuote: testiQuote,
-    testiImg: testiImg,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Hemilton Masakajja",
-    testiDesignation: "Web Developer",
-    testiDesc: `Conveniently transform error-free architectures
-                diness vis-a-vis equity invested Appropriately in
-                underwhelm  proactive leadership skills without 
-                future applications Consultant`,
+    testiDesc: `Quickly fashion backend strategic theme areas with
+                virtual growth strategies. Authoritatively
+                formulate competitive experiences rather than
+                granular manufactured products granular intelle
+                capital without equity invested`,
+    testiName: 'Jhon D. Alexon',
+    testiDesignation: 'Psycologist',
+    testiProfile: testiProfile,
   },
   {
     id: 2,
     testiQuote: testiQuote,
-    testiImg: testiImg,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Jhon D. Alexon",
-    testiDesignation: "UI/UX Designer",
-    testiDesc: `Conveniently transform error-free architectures
-                diness vis-a-vis equity invested Appropriately in
-                underwhelm  proactive leadership skills without 
-                future applications Consultant`,
+    testiDesc: `Quickly fashion backend strategic theme areas with
+                virtual growth strategies. Authoritatively
+                formulate competitive experiences rather than
+                granular manufactured products granular intelle
+                capital without equity invested`,
+    testiName: 'Jhon D. Alexon',
+    testiDesignation: 'Psycologist',
+    testiProfile: testiProfile,
   },
 ];
 
@@ -41,98 +43,100 @@ const Testimonial = () => {
   const settings = {
     loop: true,
     spaceBetween: 30,
-    speed: 1000,
+    initialSlide: 1,
     autoplay: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    effect: 'flip',
+    grabCursor: true,
+    flipEffect: {
+      slideShadows: false,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1,
+      },
+      992: {
+        slidesPerView: 1,
+      },
+      1400: {
+        slidesPerView: 1,
+      },
+    },
   };
   return (
-    <section className="pt-28 pb-[98px] bg-BodyBg2-0 relative z-10 overflow-hidden">
-      <div className="Container">
-        <div className="grid grid-cols-6 gap-10 lg:gap-0 lg:grid-cols-12">
-          <div className="col-span-6 lg:col-span-5">
-            <h5 className="font-AlbertSans font-medium text-sm sm:text-base text-white uppercase mb-3">
-              Testimonial
-            </h5>
-            <h1 className="font-AlbertSans font-semibold text-white text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[34px] lg:leading-[44px] xl:text-[40px] xl:leading-[50px] 2xl:text-[42px] 2xl:leading-[52px] mb-4">
-              Trusted By The Genius <br /> People With Cosult
-            </h1>
-            <p className="font-AlbertSans text-TextColor-0 mb-7">
-              Media leadership skills before cross-media innovation{" "}
-              <br className="hidden sm:block lg:hidden xl:block" /> develop
-              standardized platforms without
-            </p>
-            <div className="relative flex items-center gap-5 border-t border-BorderColor2-0 sm:mr-10 pt-8">
-              <div className="border-r border-BorderColor2-0 pr-5">
-                <CountUp
-                  start={-11}
-                  prefix="4."
-                  end={98}
-                  suffix={""}
-                  className="font-AlbertSans text-4xl leading-[26px] md:text-[56px] md:leading-[40px] text-white font-medium"
-                />
-              </div>
-              <div>
-                <ul className="flex items-center gap-1">
-                  <li className="text-[#ffb609]">
-                    <FaStar size={"18"} />
-                  </li>
-                  <li className="text-[#ffb609]">
-                    <FaStar size={"18"} />
-                  </li>
-                  <li className="text-[#ffb609]">
-                    <FaStar size={"18"} />
-                  </li>
-                  <li className="text-[#ffb609]">
-                    <FaStar size={"18"} />
-                  </li>
-                  <li className="text-[#ffb609]">
-                    <FaStarHalfAlt size={"18"} />
-                  </li>
-                </ul>
-                <p className="font-AlbertSans sm:text-lg text-TextColor-0 capitalize mt-2">
-                  Avg. Clients Ratings
-                </p>
+    <section className='bg-Secondarycolor-0 py-28 relative z-10 overflow-hidden'>
+      <div className='absolute top-0 right-0 -z-10'>
+        <img
+          src={testiShape}
+          draggable='false'
+        />
+      </div>
+      <div className='text-center pb-11'>
+        <h1 className='font-AlbertSans font-bold uppercase text-white text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[40px] md:leading-[50px] lg:text-[50px] lg:leading-[60px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
+          Testimonials
+        </h1>
+      </div>
+      <div className='px-2 xl:px-5 2xl:px-20'>
+        <div className='grid gap-[30px] grid-cols-6 lg:grid-cols-12 lg:items-center'>
+          <div className='col-span-6 lg:col-span-8 relative rounded-[30px] overflow-hidden'>
+            <div className='relative z-10'>
+              <img
+                src={testThumb}
+                draggable='false'
+                className='lg:max-w-[inherit] lg:w-[inherit] 2xl:max-w-full'
+              />
+              <div className='hidden sm:block absolute top-7 left-7 px-8 pb-10 pt-7 border-2 border-white bg-white bg-opacity-15 backdrop-filter backdrop-blur-md rounded-2xl'>
+                <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 pb-5'>
+                  Get Free Consultation
+                </h4>
+                <Link to={'/appointment'}>
+                  <button className='primary-btn'>
+                    Appointment
+                    <GoArrowRight
+                      size={'22'}
+                      className='-rotate-45'
+                    />
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
-          <div className="col-span-6 lg:col-span-7 relative">
-            <Swiper {...settings}>
+          <div className='col-span-6 lg:col-span-4'>
+            <Swiper
+              {...settings}
+              modules={[EffectFlip]}
+            >
               <div>
                 {testiData.map(
                   ({
                     id,
                     testiQuote,
-                    testiImg,
                     testiRatingIcon,
                     testiName,
+                    testiProfile,
                     testiDesignation,
                     testiDesc,
-                    testiShape,
                   }) => {
                     return (
                       <SwiperSlide key={id}>
-                        <div className="pr-6">
-                          <TestimonialCard
-                            testiQuote={testiQuote}
-                            testiImg={testiImg}
-                            testiRatingIcon={testiRatingIcon}
-                            testiName={testiName}
-                            testiDesignation={testiDesignation}
-                            testiDesc={testiDesc}
-                            testiShape={testiShape}
-                          />
-                        </div>
+                        <TestimonialCard
+                          testiQuote={testiQuote}
+                          testiRatingIcon={testiRatingIcon}
+                          testiName={testiName}
+                          testiDesignation={testiDesignation}
+                          testiProfile={testiProfile}
+                          testiDesc={testiDesc}
+                        />
                       </SwiperSlide>
                     );
                   }
                 )}
               </div>
-              <TestimonialNavigation />
             </Swiper>
           </div>
         </div>
-        <Brand />
       </div>
     </section>
   );

@@ -1,39 +1,37 @@
 /* eslint-disable react/prop-types */
 const TestimonialCard = ({
-  testiImg,
+  testiQuote,
   testiRatingIcon,
+  testiProfile,
   testiName,
   testiDesignation,
   testiDesc,
-  testiQuote,
 }) => {
   return (
-    <div className="flex flex-col sm:flex-row sm:px-5 md:px-0 lg:pl-6 lg:py-6 xl:p-0 sm:items-center gap-8 bg-white rounded-xl overflow-hidden relative group z-10">
-      <div className="relative z-10">
-        <img
-          src={testiImg}
-          draggable={false}
-          className="sm:w-28 md:w-full 2xl:w-[inherit]"
-        />
-      </div>
-      <div className="flex-1 lg:flex-[inherit] xl:flex-1 rounded overflow-hidden relative z-10 pl-5 pb-5 sm:py-7 md:py-0 sm:pl-0 mr-8">
-        <div className="transition-all duration-500">
-          <img src={testiQuote} draggable="false" />
+    <div className='relative px-2 sm:px-[50px] lg:px-2 xl:px-8 2xl:px-[50px] bg-Secondarycolor-0 bg-[url(/images/test.png)] bg-no-repeat bg-cover bg-center border-2 border-BorderColor2-0 rounded-[30px]'>
+     <img src={testiQuote} draggable="false" className="pt-14"/>
+      <ul className='flex gap-1 items-center mb-5 mt-9'>
+        <li className='text-[#ffb609] text-2xl'>{testiRatingIcon}</li>
+        <li className='text-[#ffb609] text-2xl'>{testiRatingIcon}</li>
+        <li className='text-[#ffb609] text-2xl'>{testiRatingIcon}</li>
+        <li className='text-[#ffb609] text-2xl'>{testiRatingIcon}</li>
+        <li className='text-[#ffb609] text-2xl'>{testiRatingIcon}</li>
+      </ul>
+      <p className='font-AlbertSans sm:text-xl lg:text-lg xl:text-xl text-white'>
+        {testiDesc}
+      </p>
+      <div className='flex items-center gap-5 mt-12 lg:mt-[104px] 2xl:mt-[165px] pb-14'>
+        <div>
+          <img src={testiProfile} />
         </div>
-        <ul className="flex gap-[2px] items-center mt-4">
-          <li className="text-[#ffb609] text-[22px]">{testiRatingIcon}</li>
-          <li className="text-[#ffb609] text-[22px]">{testiRatingIcon}</li>
-          <li className="text-[#ffb609] text-[22px]">{testiRatingIcon}</li>
-          <li className="text-[#ffb609] text-[22px]">{testiRatingIcon}</li>
-          <li className="text-[#ffb609] text-[22px]">{testiRatingIcon}</li>
-        </ul>
-        <p className="font-AlbertSans text-TextColor2-0 mt-4 text-sm sm:text-base">
-          {testiDesc}
-        </p>
-        <h5 className="font-AlbertSans font-semibold text-HeadingColor-0 text-xl mt-5 mb-2">
-          {testiName}
-        </h5>
-        <p className="font-AlbertSans text-TextColor2-0">{testiDesignation}</p>
+        <div>
+          <h5 className='font-AlbertSans font-semibold inline-block text-white text-2xl mb-1'>
+            {testiName}
+          </h5>
+          <p className='font-DMSans text-[17px] lg:text-base xl:text-[17px] text-TextColor-0'>
+            {testiDesignation}
+          </p>
+        </div>
       </div>
     </div>
   );

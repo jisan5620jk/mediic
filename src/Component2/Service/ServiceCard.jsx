@@ -1,47 +1,46 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const ServiceCard = ({
-  serviceIcon,
-  serviceSubTilte,
-  serviceTitle,
-  serviceDesc,
-  serviceUrl,
-  btnContent,
-  btnIcon,
   serviceThumb,
+  serviceShape,
+  serviceSubTitle,
+  serviceTitle,
+  serviceUrl,
+  btnIcon,
 }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 items-center rounded-lg bg-white group lg:pr-5 xl:pr-0 relative z-10 overflow-hidden">
-      <div className="pl-10 py-7 sm:py-0 lg:py-5 xl:py-0">
-        <div className="relative pt-[6px] z-10">
-          <img src={serviceIcon} draggable="false" />
-        </div>
-        <h6 className="font-AlbertSans text-[15px] text-PrimaryColor-0 inline-block pb-1 uppercase mt-8 relative before:absolute before:left-0 before:bottom-0 before:h-[1px] before:w-6 before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full">
-          {serviceSubTilte}
-        </h6>
-        <br />
-        <Link to={serviceUrl}>
-          <button className="font-AlbertSans font-semibold text-xl pb-[10px] text-HeadingColor-0 mt-4">
-            {serviceTitle}
-          </button>
-        </Link>
-        <p className="font-AlbertSans text-TextColor2-0 pb-2 mt-2 xl:w-10/12">
-          {serviceDesc}
-        </p>
-        <Link to={serviceUrl} className="inline-block">
-          <button className="font-AlbertSans font-semibold overflow-hidden flex gap-2 items-center text-[15px] pb-[10px] text-PrimaryColor-0 mt-4 transition-all duration-500 group-hover:mt-[28px]">
-            <span className="-ml-[98px] transition-all duration-500 group-hover:ml-0">
-              {btnContent}
-            </span>
-            <span className="text-4xl text-PrimaryColor-0 transition-all duration-500 inline-block group-hover:rotate-45 group-hover:text-xl">
-              {btnIcon}
-            </span>
+    <div className='relative z-10 rounded-3xl overflow-hidden group'>
+      <div className='absolute z-20 -top-[95px] -right-[95px] opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:right-0 group-hover:top-0'>
+        <img
+          src={serviceShape}
+          draggable='false'
+        />
+      </div>
+      <div className='absolute z-30 right-1/3 top-1/3 transition-all duration-500 opacity-0 group-hover:right-0 group-hover:top-0 group-hover:opacity-100'>
+        <Link
+          to={serviceUrl}
+          className='inline-block relative'
+        >
+          <button className='size-[60px] rounded-full bg-PrimaryColor-0 flex items-center justify-center text-2xl text-white'>
+            {btnIcon}
           </button>
         </Link>
       </div>
-      <div>
-        <img src={serviceThumb} draggable="false" />
+      <div className='relative z-10 rounded-t-2xl overflow-hidden before:absolute before:bottom-0 before:left-0 before:bg-gradient-to-t before:from-Secondarycolor-0 before:from-20% before:via-Secondarycolor-0 before:via-10% before:to-transparent before:w-full before:h-1/3 before:transition-all before:z-10 before:duration-500 group-hover:before:h-0 after:absolute after:bottom-0 after:left-0 after:bg-gradient-to-t after:from-PrimaryColor-0 after:from-20% after:via-PrimaryColor-0 after:via-10% after:to-transparent after:w-full after:h-0 after:z-10 after:transition-all after:duration-500 group-hover:after:h-1/3'>
+        <img
+          src={serviceThumb}
+          draggable='false'
+          className='w-full transition-all duration-500 group-hover:scale-110'
+        />
+        <div className='absolute left-10 bottom-10 z-20'>
+          <h6 className='font-AlbertSans font-medium text-white uppercase'>
+            {serviceSubTitle}
+          </h6>
+          <h4 className='font-AlbertSans font-medium text-xl sm:text-2xl 2xl:text-[28px] text-white mt-1'>
+            {serviceTitle}
+          </h4>
+        </div>
       </div>
     </div>
   );

@@ -2,13 +2,21 @@ import ProgressBar from 'react-animated-progress-bar';
 import { Link } from 'react-router-dom';
 import skillThumb from '/images/featur.jpg';
 import skillThumb2 from '/images/featur2.jpg';
+import circleShape from '/images/crcle-bg.png';
 import skillIcon from '/images/icon2.png';
 import skillIcon2 from '/images/icon.png';
 import { GoArrowUpRight } from 'react-icons/go';
 
 const Skill = () => {
   return (
-    <section className='bg-BodyBg-0 pt-[120px] relative z-10 overflow-hidden skill-section'>
+    <section className='bg-BodyBg-0 pt-[120px] relative z-20 skill-section'>
+      <div className='absolute -z-10 top-10 left-1/2 -translate-x-1/2'>
+        <img
+          src={circleShape}
+          draggable='false'
+          className='max-w-[inherit] w-[inherit]'
+        />
+      </div>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-20 lg:gap-10 2xl:gap-16 items-center'>
           <div className='col-span-1 lg:col-span-7'>
@@ -143,7 +151,7 @@ const Skill = () => {
                 />
               </div>
               <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 border-b border-BorderColor3-0 pb-5 mt-6 mb-6 relative before:absolute before:-bottom-[1px] before:left-0 before:w-0 before:h-[2px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full'>
-               Meet Professional Expert Doctors
+                Meet Professional Expert Doctors
               </h4>
               <Link to={'/'}>
                 <button className='text-Secondarycolor-0 transition-all duration-500 group-hover:text-PrimaryColor-0'>

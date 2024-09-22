@@ -1,216 +1,119 @@
-import { Link } from "react-router-dom";
-import CountUp from "react-countup";
-import { useEffect } from "react";
-import ProgressBar from "react-animated-progress-bar";
-import { BiRightTopArrowCircle } from "react-icons/bi";
-import { IoDiamondOutline } from "react-icons/io5";
-import chooseShape from "/images/about-shape2.png";
+import whyChooseThumb from '/images/why-chs.png';
+import whyChooseThumb2 from '/images/why-chse.jpg';
+import heart from '/images/banner-heart.png';
+import whyChooseIcon from '/images/why-icn.png';
+import whyChooseIcon2 from '/images/why-icn2.png';
+import whyChooseIcon3 from '/images/why-icn3.png';
+import whyChooseIcon4 from '/images/why-icn4.png';
+import { Link } from 'react-router-dom';
 
 const WhyChoose = () => {
-  useEffect(() => {
-    const handleMouseEnter = (event) => {
-      event.target.classList.add("active");
-
-      // Remove 'active' class from siblings
-      const parent = event.target.parentElement;
-      if (parent) {
-        const siblings = parent.querySelectorAll(".choose-box");
-        siblings.forEach((sibling) => {
-          if (sibling !== event.target) {
-            sibling.classList.remove("active");
-          }
-        });
-      }
-    };
-
-    const elements = document.querySelectorAll(".choose-box");
-    elements.forEach((element) => {
-      element.addEventListener("mouseenter", handleMouseEnter);
-    });
-
-    // Clean up event listeners when component unmounts
-    return () => {
-      elements.forEach((element) => {
-        element.removeEventListener("mouseenter", handleMouseEnter);
-      });
-    };
-  }, []);
-
   return (
-    <section className="relative overflow-hidden py-28 bg-BodyBg-0">
-      <div className="Container">
-        <div className="grid grid-cols-1 gap-10 lg:gap-16 xl:gap-24 2xl:gap-[110px] lg:grid-cols-2 items-center">
-          <div className="relative">
-            <h5 className="font-AlbertSans text-lg font-semibold text-PrimaryColor-0">
-              Why Choose Us?
-            </h5>
-            <h1 className="font-AlbertSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[28px] lg:leading-[38px] xl:text-[32px] xl:leading-[42px] 2xl:text-[37px] 2xl:leading-[47px] text-HeadingColor-0 mt-[18px] mb-3">
-              Building your Path to Success <br />
-              with a Reliable IT Service
-            </h1>
-            <p className="font-AlbertSans text-TextColor2-0 mt-4 mb-5">
-              Monotonectally synergize granular markets front markets.
-              Collaboratively visualize strategic infomediaries after multimedia
-              based.Synergistically to task state of the art infrastructures
-            </p>
-            <div className="mb-5">
-              <h6 className="font-AlbertSans font-semibold text-lg text-HeadingColor-0 pb-3">
-                It Solution
-              </h6>
-              <ProgressBar
-                rect
-                width="100%"
-                height="9px"
-                fontColor="#001818"
-                fontSize="18px"
-                leading="10px"
-                margin="0px"
-                rectBorderRadius="0"
-                fontWeight="500"
-                percentage="90"
-                defColor={{
-                  excellent: "#0c59db",
-                  good: "#79b900",
-                  fair: "green",
-                  poor: "red",
-                }}
-                trackPathColor="#d0e0f9"
-                trackBorderColor="transparent"
-                trackPathBorderRadius="0"
-              />
-            </div>
-            <div>
-              <h6 className="font-AlbertSans font-semibold text-lg text-HeadingColor-0 pb-3">
-                Development
-              </h6>
-              <ProgressBar
-                rect
-                width="100%"
-                height="9px"
-                fontColor="#001818"
-                fontSize="18px"
-                leading="10px"
-                margin="0px"
-                rectBorderRadius="0"
-                fontWeight="500"
-                percentage="80"
-                defColor={{
-                  excellent: "#0c59db",
-                  good: "#79b900",
-                  fair: "green",
-                  poor: "red",
-                }}
-                trackPathColor="#d0e0f9"
-                trackBorderColor="transparent"
-                trackPathBorderRadius="0"
-              />
-            </div>
-            <Link to={"/about"} className="mt-[50px] inline-block">
-              <button className="primary-btn3">
-                {`More About`}
-                <BiRightTopArrowCircle size={"20"} />
-              </button>
-            </Link>
+    <section className='py-[120px] bg-[url(/images/why-choose.jpg)] bg-no-repeat bg-center bg-cover relative'>
+      <div className='Container'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'>
+          <div className='relative z-30'>
             <img
-              src={chooseShape}
-              draggable="false"
-              className="absolute -bottom-0 left-1/2 animate-swing hidden sm:block"
+              src={whyChooseThumb}
+              draggable='false'
+              className='2xl:max-w-[inherit] -ml-[216px]'
             />
-          </div>
-          <div className="grid gap-7 grid-cols-1 sm:grid-cols-2 items-center">
-            <div className="choose-box group text-center bg-white rounded-md px-[30px] lg:px-4 xl:px-[30px] pt-9 pb-10 relative z-10  before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-HeadingColor-0 before:rounded-md before:transition-all before:duration-500">
-              <div className="choose-icon flex justify-center text-PrimaryColor-0 transition-all duration-500">
-                <IoDiamondOutline size={"70px"} />
-              </div>
-              <h6 className="choose-title text-[26px] rounded font-AlbertSans text-HeadingColor-0 font-semibold transition-all duration-500 mt-4 mb-1">
-                Business Plan
-              </h6>
-              <p className="choose-desc font-AlbertSans text-TextColor2-0 transition-all duration-500 mb-4">
-                The markets and front market
-              </p>
-              <div className="flex items-end justify-center gap-1 border-b border-BorderColor2-0 pb-5">
-                <div className="flex gap-1">
-                  <h6 className="choose-price transition-all duration-500 font-AlbertSans font-semibold text-2xl text-HeadingColor-0">
-                    $
-                  </h6>
-                  <CountUp
-                    start={-9}
-                    end={49}
-                    prefix=""
-                    suffix=""
-                    className="choose-price text-[50px] leading-[50px] font-AlbertSans font-semibold text-HeadingColor-0 transition-all duration-500"
-                  />
-                </div>
-                <h6 className="choose-price font-AlbertSans text-TextColor2-0 text-lg transition-all duration-500">
-                  / Month
-                </h6>
-              </div>
-              <ul className="flex flex-col gap-3 mt-6 mb-9">
-                <li className="choose-list font-AlbertSans text-TextColor2-0 transition-all duration-500">
-                  10+ user Account
-                </li>
-                <li className="choose-list font-AlbertSans text-TextColor2-0 transition-all duration-500">
-                  Moneyback Gaurentee
-                </li>
-                <li className="choose-list font-AlbertSans text-TextColor2-0 transition-all duration-500">
-                  Unlimited Database
-                </li>
-                <li className="choose-list font-AlbertSans text-TextColor2-0 transition-all duration-500">
-                  24/7 Supports
-                </li>
-              </ul>
-              <Link to={"/"}>
-                <button className="choose-btn font-AlbertSans font-medium bg-[#e6eefb] text-lg text-HeadingColor-0 rounded px-8 py-[10px] transition-all duration-500">
-                  Purchaces
-                </button>
-              </Link>
+            <div className='absolute top-8 -left-[186px]'>
+              <img
+                src={heart}
+                draggable='false'
+                className='animate-rotateX'
+              />
             </div>
-            <div className="choose-box active group text-center bg-white rounded-md px-[30px] lg:px-4 xl:px-[30px] pt-9 pb-10 relative z-10  before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-HeadingColor-0 before:rounded-md before:transition-all before:duration-500">
-              <div className="choose-icon flex justify-center text-PrimaryColor-0 transition-all duration-500">
-                <IoDiamondOutline size={"70px"} />
-              </div>
-              <h6 className="choose-title text-[26px] rounded font-AlbertSans text-HeadingColor-0 font-semibold transition-all duration-500 mt-4 mb-1">
-                Premium Plan
-              </h6>
-              <p className="choose-desc font-AlbertSans text-TextColor2-0 transition-all duration-500 mb-4">
-                The markets and front market
-              </p>
-              <div className="flex items-end justify-center gap-1 border-b border-BorderColor2-0 pb-5">
-                <div className="flex gap-1">
-                  <h6 className="choose-price transition-all duration-500 font-AlbertSans font-semibold text-2xl text-HeadingColor-0">
-                    $
-                  </h6>
-                  <CountUp
-                    start={-9}
-                    end={99}
-                    prefix=""
-                    suffix=""
-                    className="choose-price text-[50px] leading-[50px] font-AlbertSans font-semibold text-HeadingColor-0 transition-all duration-500"
+            <div className='absolute z-10 right-[70px] bottom-0 rounded-3xl overflow-hidden'>
+              <img
+                src={whyChooseThumb2}
+                draggable='false'
+              />
+            </div>
+          </div>
+          <div className='relative z-30'>
+            <h5 className='font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-4'>
+              why choose us?
+            </h5>
+            <h1 className='font-AlbertSans font-bold capitalize text-HeadingColor-0 text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[40px] md:leading-[50px] lg:text-[42px] lg:leading-[52px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
+              Medical Health Care <br /> Human Specialist
+            </h1>
+            <p className='font-DMSans text-TextColor2-0 mt-6 mb-10'>
+              Continually evolve professional intellectual capital without
+              enterprise users. Seamlessly matrix value added e-commerce.
+              Uniquely e-enable innovative technologies via team
+            </p>
+            <div className='grid grid-cols-2 items-center gap-5'>
+              <div className='group px-[34px] pt-7 pb-[26px] bg-white bg-opacity-25 border-2 border-white rounded-2xl relative z-10 overflow-hidden flex items-center gap-5 transition-all duration-500 hover:border-PrimaryColor-0'>
+                <span className='absolute bg-PrimaryColor-0 left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
+                <span className='absolute bg-PrimaryColor-0 left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
+                <span className='absolute bg-PrimaryColor-0 left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
+                <span className='absolute bg-PrimaryColor-0 left-[87.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[75%]'></span>
+                <div>
+                  <img
+                    src={whyChooseIcon}
+                    draggable='false'
+                    className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
                   />
                 </div>
-                <h6 className="choose-price font-AlbertSans text-TextColor2-0 text-lg transition-all duration-500">
-                  / Month
-                </h6>
+                <h5 className='flex-1 font-AlbertSans font-semibold text-HeadingColor-0 text-[22px] transition-all duration-500 group-hover:text-white'>
+                  Individual Approach
+                </h5>
               </div>
-              <ul className="flex flex-col gap-3 mt-6 mb-9">
-                <li className="choose-list font-AlbertSans text-TextColor2-0 transition-all duration-500">
-                  10+ user Account
-                </li>
-                <li className="choose-list font-AlbertSans text-TextColor2-0 transition-all duration-500">
-                  Moneyback Gaurentee
-                </li>
-                <li className="choose-list font-AlbertSans text-TextColor2-0 transition-all duration-500">
-                  Unlimited Database
-                </li>
-                <li className="choose-list font-AlbertSans text-TextColor2-0 transition-all duration-500">
-                  24/7 Supports
-                </li>
-              </ul>
-              <Link to={"/"}>
-                <button className="choose-btn font-AlbertSans font-medium bg-[#e6eefb] text-lg text-HeadingColor-0 rounded px-8 py-[10px] transition-all duration-500">
-                  Purchaces
-                </button>
-              </Link>
+              <div className='group px-[34px] pt-7 pb-[26px] bg-white bg-opacity-25 border-2 border-white rounded-2xl relative z-10 overflow-hidden flex items-center gap-5 transition-all duration-500 hover:border-PrimaryColor-0'>
+                <span className='absolute bg-PrimaryColor-0 left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
+                <span className='absolute bg-PrimaryColor-0 left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
+                <span className='absolute bg-PrimaryColor-0 left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
+                <span className='absolute bg-PrimaryColor-0 left-[87.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[75%]'></span>
+                <div>
+                  <img
+                    src={whyChooseIcon2}
+                    draggable='false'
+                    className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
+                  />
+                </div>
+                <h5 className='flex-1 font-AlbertSans font-semibold text-HeadingColor-0 text-[22px] transition-all duration-500 group-hover:text-white'>
+                  Personalized Treatment
+                </h5>
+              </div>
+              <div className='group px-[34px] pt-7 pb-[26px] bg-white bg-opacity-25 border-2 border-white rounded-2xl relative z-10 overflow-hidden flex items-center gap-5 transition-all duration-500 hover:border-PrimaryColor-0'>
+                <span className='absolute bg-PrimaryColor-0 left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
+                <span className='absolute bg-PrimaryColor-0 left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
+                <span className='absolute bg-PrimaryColor-0 left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
+                <span className='absolute bg-PrimaryColor-0 left-[87.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[75%]'></span>
+                <div>
+                  <img
+                    src={whyChooseIcon3}
+                    draggable='false'
+                    className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
+                  />
+                </div>
+                <h5 className='flex-1 font-AlbertSans font-semibold text-HeadingColor-0 text-[22px] transition-all duration-500 group-hover:text-white'>
+                  Any Infections Protection
+                </h5>
+              </div>
+              <div className='group px-[34px] pt-7 pb-[26px] bg-white bg-opacity-25 border-2 border-white rounded-2xl relative z-10 overflow-hidden flex items-center gap-5 transition-all duration-500 hover:border-PrimaryColor-0'>
+                <span className='absolute bg-PrimaryColor-0 left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
+                <span className='absolute bg-PrimaryColor-0 left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
+                <span className='absolute bg-PrimaryColor-0 left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
+                <span className='absolute bg-PrimaryColor-0 left-[87.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[75%]'></span>
+                <div>
+                  <img
+                    src={whyChooseIcon4}
+                    draggable='false'
+                    className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
+                  />
+                </div>
+                <h5 className='flex-1 font-AlbertSans font-semibold text-HeadingColor-0 text-[22px] transition-all duration-500 group-hover:text-white'>
+                  Healthcare Services
+                </h5>
+              </div>
+            </div>
+            <div className='border-t-2 border-BorderColor3-0  mt-[50px] pt-4'>
+              <p className='font-AlbertSans font-medium text-lg text-HeadingColor-0'>
+                Need any Help? Contact with <Link to={'/'} className='text-PrimaryColor-0 underline'>Mediic</Link>
+              </p>
             </div>
           </div>
         </div>
