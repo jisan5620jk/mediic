@@ -143,7 +143,7 @@ const Skill = () => {
                 />
               </div>
               <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 border-b border-BorderColor3-0 pb-5 mt-6 mb-6 relative before:absolute before:-bottom-[1px] before:left-0 before:w-0 before:h-[2px] before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full'>
-                Make An Online Appointment
+               Meet Professional Expert Doctors
               </h4>
               <Link to={'/'}>
                 <button className='text-Secondarycolor-0 transition-all duration-500 group-hover:text-PrimaryColor-0'>

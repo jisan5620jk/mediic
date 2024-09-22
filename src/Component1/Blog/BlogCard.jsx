@@ -14,7 +14,7 @@ const BlogCard = ({
     <div className='group transition-all duration-500 rounded-lg bg-white shadow-shade'>
       <div className='relative rounded-[20px] overflow-hidden'>
         <span className='absolute bg-PrimaryColor-0 left-[12.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:w-[25%] group-hover:left-0 group-hover:opacity-0'></span>
-        <span className='absolute bg-PrimaryColor-0 left-[27.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:w-[25%] group-hover:left-[25%] group-hover:opacity-0'></span>
+        <span className='absolute bg-PrimaryColor-0 left-[37.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:w-[25%] group-hover:left-[25%] group-hover:opacity-0'></span>
         <span className='absolute bg-PrimaryColor-0 left-[62.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:w-[25%] group-hover:left-1/2 group-hover:opacity-0'></span>
         <span className='absolute bg-PrimaryColor-0 left-[87.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:w-[25%] group-hover:left-[75%] group-hover:opacity-0'></span>
         <img
