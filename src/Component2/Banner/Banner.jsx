@@ -6,8 +6,8 @@ const Banner = () => {
   return (
     <div className='bg-BodyBg-0 px-2 lg:px-[30px]'>
       <section className='bg-[url(/images/hero-bg2.png)] bg-cover bg-no-repeat h-[600px] sm:h-[700px] md:h-[700px] lg:h-[700px] xl:h-[850px] 2xl:h-[850px] flex items-center relative z-10 overflow-hidden rounded-t-2xl md:rounded-[30px]'>
-        <div className='absolute z-10 top-0 left-0 w-[834px] h-[447px] inline-block bg-Secondarycolor-0 rounded-[30px] pl-[100px] pt-[88px]'>
-          <h1 className='font-AlbertSans font-semibold text-[70px] leading-[80px] text-white'>
+        <div className='absolute z-10 top-0 left-0 w-full md:w-[834px] md:h-[447px] inline-block bg-Secondarycolor-0 rounded-[30px] pl-8 md:pl-[100px] pt-[88px] pb-20'>
+          <h1 className='font-AlbertSans font-semibold text-3xl leading-[40px] md:text-[70px] md:leading-[80px] text-white'>
             Bringing you the <br /> Best Healthcare
           </h1>
           <div className='pt-8'>
