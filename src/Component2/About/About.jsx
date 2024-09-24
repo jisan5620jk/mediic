@@ -26,11 +26,11 @@ const About = () => {
               draggable='false'
               className='w-full 2xl:w-[inherit]'
             />
-            <div className='absolute bottom-0 left-0 rounded-[30px]'>
+            <div className='absolute bottom-0 left-0 rounded-[30px] overflow-hidden'>
               <img
                 src={heart}
                 draggable='false'
-                className='animate-pulse w-3/6 sm:w-[inherit]'
+                className='animate-pulse w-3/6 sm:w-[inherit] lg:w-5/6 xl:w-[inherit]'
               />
             </div>
             <div className='absolute -z-10 right-10 -bottom-16'>
@@ -91,7 +91,7 @@ const About = () => {
                 </h5>
               </div>
             </div>
-            <div className='flex flex-col sm:flex-row items-center gap-[46px] mt-[54px]'>
+            <div className='flex flex-col sm:flex-row lg:flex-col xl:flex-row lg:items-start xl:items-center items-center gap-[46px] mt-[54px]'>
               <Link to={'/about'}>
                 <button className='primary-btn'>
                   More About

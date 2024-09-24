@@ -112,8 +112,8 @@ const Skill = () => {
           </div>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mt-20'>
-          <div className='flex flex-col sm:flex-row items-center gap-10 p-7 bg-white bg-opacity-20 backdrop-filter backdrop-blur-md border-2 border-white rounded-[30px] group overflow-hidden transition-all duration-500 hover:border-PrimaryColor-0'>
-            <div className='rounded-3xl overflow-hidden inline-block'>
+          <div className='flex flex-col md:flex-row lg:flex-col xl:flex-row items-center sm:items-start md:items-center lg:items-start xl:items-center gap-10 p-7 bg-white bg-opacity-20 backdrop-filter backdrop-blur-md border-2 border-white rounded-[30px] group overflow-hidden transition-all duration-500 hover:border-PrimaryColor-0'>
+            <div className='rounded-3xl overflow-hidden inline-block xl:flex-1 2xl:flex-none'>
               <img
                 src={skillThumb}
                 draggable='false'
@@ -136,8 +136,8 @@ const Skill = () => {
               </Link>
             </div>
           </div>
-          <div className='flex flex-col sm:flex-row items-center gap-10 p-7 bg-white bg-opacity-20 backdrop-filter backdrop-blur-md border-2 border-white rounded-[30px] group overflow-hidden transition-all duration-500 hover:border-PrimaryColor-0'>
-            <div className='rounded-3xl overflow-hidden inline-block'>
+          <div className='flex flex-col md:flex-row lg:flex-col xl:flex-row items-center sm:items-start md:items-center lg:items-start xl:items-center gap-10 p-7 bg-white bg-opacity-20 backdrop-filter backdrop-blur-md border-2 border-white rounded-[30px] group overflow-hidden transition-all duration-500 hover:border-PrimaryColor-0'>
+            <div className='rounded-3xl overflow-hidden inline-block xl:flex-1 2xl:flex-none'>
               <img
                 src={skillThumb2}
                 draggable='false'

@@ -110,7 +110,7 @@ const Service = () => {
         </div>
         <div className='col-span-12 lg:col-span-3 flex lg:justify-end'>
           <Link to={'/service_details'}>
-            <button className='primary-btn mt-3 px-8'>
+            <button className='primary-btn mt-3 lg:px-8 xl:px-[35px]'>
               View All Services
               <GoArrowRight
                 size={'22'}
