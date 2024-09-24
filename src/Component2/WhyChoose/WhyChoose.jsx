@@ -16,19 +16,20 @@ const WhyChoose = () => {
             <img
               src={whyChooseThumb}
               draggable='false'
-              className='2xl:max-w-[inherit] -ml-[216px]'
+              className='2xl:max-w-[inherit] 2xl:-ml-[216px]'
             />
-            <div className='absolute top-8 -left-[186px]'>
+            <div className='absolute left-2 top-2 md:top-8 2xl:-left-[186px]'>
               <img
                 src={heart}
                 draggable='false'
-                className='animate-rotateX'
+                className='animate-rotateX w-3/6'
               />
             </div>
-            <div className='absolute z-10 right-[70px] bottom-0 rounded-3xl overflow-hidden'>
+            <div className='absolute z-10 -right-[222px] 2xl:right-[70px] bottom-0 overflow-hidden'>
               <img
                 src={whyChooseThumb2}
                 draggable='false'
+                className='w-4/12'
               />
             </div>
           </div>
@@ -44,8 +45,8 @@ const WhyChoose = () => {
               enterprise users. Seamlessly matrix value added e-commerce.
               Uniquely e-enable innovative technologies via team
             </p>
-            <div className='grid grid-cols-2 items-center gap-5'>
-              <div className='group px-[34px] pt-7 pb-[26px] bg-white bg-opacity-25 border-2 border-white rounded-2xl relative z-10 overflow-hidden flex items-center gap-5 transition-all duration-500 hover:border-PrimaryColor-0'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 items-center gap-5'>
+              <div className='group px-[34px] sm:px-4 md:px-[34px] pt-7 pb-[26px] bg-white bg-opacity-25 border-2 border-white rounded-2xl relative z-10 overflow-hidden flex items-center gap-5 transition-all duration-500 hover:border-PrimaryColor-0'>
                 <span className='absolute bg-PrimaryColor-0 left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
                 <span className='absolute bg-PrimaryColor-0 left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
                 <span className='absolute bg-PrimaryColor-0 left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
@@ -61,7 +62,7 @@ const WhyChoose = () => {
                   Individual Approach
                 </h5>
               </div>
-              <div className='group px-[34px] pt-7 pb-[26px] bg-white bg-opacity-25 border-2 border-white rounded-2xl relative z-10 overflow-hidden flex items-center gap-5 transition-all duration-500 hover:border-PrimaryColor-0'>
+              <div className='group px-[34px] sm:px-4 md:px-[34px] pt-7 pb-[26px] bg-white bg-opacity-25 border-2 border-white rounded-2xl relative z-10 overflow-hidden flex items-center gap-5 transition-all duration-500 hover:border-PrimaryColor-0'>
                 <span className='absolute bg-PrimaryColor-0 left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
                 <span className='absolute bg-PrimaryColor-0 left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
                 <span className='absolute bg-PrimaryColor-0 left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
@@ -77,7 +78,7 @@ const WhyChoose = () => {
                   Personalized Treatment
                 </h5>
               </div>
-              <div className='group px-[34px] pt-7 pb-[26px] bg-white bg-opacity-25 border-2 border-white rounded-2xl relative z-10 overflow-hidden flex items-center gap-5 transition-all duration-500 hover:border-PrimaryColor-0'>
+              <div className='group px-[34px] sm:px-4 md:px-[34px] pt-7 pb-[26px] bg-white bg-opacity-25 border-2 border-white rounded-2xl relative z-10 overflow-hidden flex items-center gap-5 transition-all duration-500 hover:border-PrimaryColor-0'>
                 <span className='absolute bg-PrimaryColor-0 left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
                 <span className='absolute bg-PrimaryColor-0 left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
                 <span className='absolute bg-PrimaryColor-0 left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
@@ -93,7 +94,7 @@ const WhyChoose = () => {
                   Any Infections Protection
                 </h5>
               </div>
-              <div className='group px-[34px] pt-7 pb-[26px] bg-white bg-opacity-25 border-2 border-white rounded-2xl relative z-10 overflow-hidden flex items-center gap-5 transition-all duration-500 hover:border-PrimaryColor-0'>
+              <div className='group px-[34px] sm:px-4 md:px-[34px] pt-7 pb-[26px] bg-white bg-opacity-25 border-2 border-white rounded-2xl relative z-10 overflow-hidden flex items-center gap-5 transition-all duration-500 hover:border-PrimaryColor-0'>
                 <span className='absolute bg-PrimaryColor-0 left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
                 <span className='absolute bg-PrimaryColor-0 left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
                 <span className='absolute bg-PrimaryColor-0 left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
@@ -112,7 +113,13 @@ const WhyChoose = () => {
             </div>
             <div className='border-t-2 border-BorderColor3-0  mt-[50px] pt-4'>
               <p className='font-AlbertSans font-medium text-lg text-HeadingColor-0'>
-                Need any Help? Contact with <Link to={'/'} className='text-PrimaryColor-0 underline'>Mediic</Link>
+                Need any Help? Contact with{' '}
+                <Link
+                  to={'/'}
+                  className='text-PrimaryColor-0 underline'
+                >
+                  Mediic
+                </Link>
               </p>
             </div>
           </div>

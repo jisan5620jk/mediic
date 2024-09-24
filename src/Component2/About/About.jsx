@@ -30,7 +30,7 @@ const About = () => {
               <img
                 src={heart}
                 draggable='false'
-                className='animate-pulse'
+                className='animate-pulse w-3/6 sm:w-[inherit]'
               />
             </div>
             <div className='absolute -z-10 right-10 -bottom-16'>
@@ -53,7 +53,7 @@ const About = () => {
               enterprise users. Seamlessly matrix value added e-commerce.
               Uniquely e-enable innovative technologies via team
             </p>
-            <div className='grid grid-cols-2 items-center gap-[30px]'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 items-center gap-[30px]'>
               <div className='group px-4 sm:px-10 lg:px-5 xl:px-8 2xl:px-10 pt-9 pb-[26px] bg-PrimaryColor-0 rounded-2xl relative z-10 overflow-hidden'>
                 <span className='absolute bg-Secondarycolor-0 left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
                 <span className='absolute bg-Secondarycolor-0 left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
@@ -91,7 +91,7 @@ const About = () => {
                 </h5>
               </div>
             </div>
-            <div className='flex items-center gap-[46px] mt-[54px]'>
+            <div className='flex flex-col sm:flex-row items-center gap-[46px] mt-[54px]'>
               <Link to={'/about'}>
                 <button className='primary-btn'>
                   More About
