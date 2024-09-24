@@ -1,413 +1,545 @@
 /* eslint-disable no-unused-vars */
-import { Link, NavLink } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import Logo from '/images/logo.png';
+import Logo2 from '/images/logo2.png';
+import homeOne from '/images/home1.png';
+import homeTwo from '/images/home2.png';
+import homeThree from '/images/home3.png';
+import btnArrow from '/images/arrow.png';
+import './navbar.css';
+import { useEffect, useRef } from 'react';
 import {
-  FaBars,
+  FaEnvelope,
   FaFacebookF,
   FaLinkedinIn,
   FaPinterestP,
   FaXTwitter,
-} from "react-icons/fa6";
-import { BiChevronDown } from "react-icons/bi";
-import Logo from "/images/logo-2.png";
-import { useState, useEffect } from "react";
-import { IoMdClose } from "react-icons/io";
-import { IoSearch } from "react-icons/io5";
-import { HiOutlineMailOpen } from "react-icons/hi";
-import { CiLocationOn } from "react-icons/ci";
-import { GrAlarm } from "react-icons/gr";
+} from 'react-icons/fa6';
+import { FaPhoneAlt, FaTimes } from 'react-icons/fa';
+import { MdLocationPin } from 'react-icons/md';
+import { IoMdPaperPlane } from 'react-icons/io';
+import { IoSearch } from 'react-icons/io5';
+import { CgMenuGridO } from 'react-icons/cg';
 
 const Navbar3 = () => {
-  //sticky
+  //Menu Sidebar
+
+  const menuSideBarRef = useRef(null);
+  const sidebarContentRef = useRef(null);
+  const bodyOverlay2Ref = useRef(null);
+  const closeBtn2Ref = useRef(null);
 
   useEffect(() => {
-    window.addEventListener("scroll", isSticky);
-    return () => {
-      window.removeEventListener("scroll", isSticky);
+    const menuSideBar = menuSideBarRef.current;
+    const sidebarContent = sidebarContentRef.current;
+    const bodyOverlay2 = bodyOverlay2Ref.current;
+    const closeBtn2 = closeBtn2Ref.current;
+
+    const addClasses = () => {
+      sidebarContent.classList.add('opened');
+      bodyOverlay2.classList.add('apply');
     };
-  });
 
-  /* Method that will fix header after a specific scrollable */
+    const removeClasses = () => {
+      sidebarContent.classList.remove('opened');
+      bodyOverlay2.classList.remove('apply');
+    };
 
-  const isSticky = (e) => {
-    const header = document.querySelector(".header-section");
-    const scrollTop = window.scrollY;
-    scrollTop >= 250
-      ? header.classList.add("is-sticky")
-      : header.classList.remove("is-sticky");
-  };
+    if (menuSideBar && sidebarContent && bodyOverlay2 && closeBtn2) {
+      menuSideBar.addEventListener('click', addClasses);
+      closeBtn2.addEventListener('click', removeClasses);
+      bodyOverlay2.addEventListener('click', removeClasses);
+    }
 
-  // modal openar
+    return () => {
+      if (menuSideBar && sidebarContent && bodyOverlay2 && closeBtn2) {
+        menuSideBar.removeEventListener('click', addClasses);
+        closeBtn2.removeEventListener('click', removeClasses);
+        bodyOverlay2.removeEventListener('click', removeClasses);
+      }
+    };
+  }, []);
 
-  const [isOpen, setIsOpen] = useState(false);
+  //Menu Bar
+  const menuBarRef = useRef(null);
+  const offcanvasRef = useRef(null);
+  const bodyOverlayRef = useRef(null);
+  const closeBtnRef = useRef(null);
 
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
+  useEffect(() => {
+    const menuBar = menuBarRef.current;
+    const offcanvas = offcanvasRef.current;
+    const bodyOverlay = bodyOverlayRef.current;
+    const closeBtn = closeBtnRef.current;
+
+    const addClasses = () => {
+      offcanvas.classList.add('opened');
+      bodyOverlay.classList.add('apply');
+    };
+
+    const removeClasses = () => {
+      offcanvas.classList.remove('opened');
+      bodyOverlay.classList.remove('apply');
+    };
+
+    if (menuBar && offcanvas && bodyOverlay && closeBtn) {
+      menuBar.addEventListener('click', addClasses);
+      closeBtn.addEventListener('click', removeClasses);
+      bodyOverlay.addEventListener('click', removeClasses);
+    }
+
+    return () => {
+      if (menuBar && offcanvas && bodyOverlay && closeBtn) {
+        menuBar.removeEventListener('click', addClasses);
+        closeBtn.removeEventListener('click', removeClasses);
+        bodyOverlay.removeEventListener('click', removeClasses);
+      }
+    };
+  }, []);
+
+  let headerIcon = `  
+  <span class="header-icon">  
+    <svg fill="currentColor" viewBox="0 0 320 512" height="15px" width="15px" xmlns="http://www.w3.org/2000/svg">
+      <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
+    </svg>
+  </span>  
+`;
+
+  useEffect(() => {
+    const mainMenuContent = document.querySelector('.main-menu-content');
+    const mainMenuMobile = document.querySelector('.main-menu-mobile');
+
+    if (mainMenuContent && mainMenuMobile) {
+      const navContent = mainMenuContent.outerHTML;
+      mainMenuMobile.innerHTML = navContent;
+
+      const arrows = document.querySelectorAll(
+        '.main-menu-mobile .has-dropdown > a'
+      );
+
+      arrows.forEach((arrow) => {
+        const arrowBtn = document.createElement('BUTTON');
+        arrowBtn.classList.add('dropdown-toggle-btn');
+        arrowBtn.innerHTML = headerIcon;
+
+        arrow.appendChild(arrowBtn);
+
+        arrowBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          arrowBtn.classList.toggle('dropdown-opened');
+          arrow.parentElement.classList.toggle('expanded');
+          arrow.parentElement.parentElement.classList.add('dropdown-opened');
+          arrow.parentElement.parentElement
+            .querySelectorAll('.submenu')
+            .forEach((submenu) => {
+              submenu.style.display =
+                submenu.style.display === 'block' ? 'none' : 'block';
+            });
+          arrow.parentElement.parentElement
+            .querySelectorAll('.has-dropdown')
+            .forEach((sibling) => {
+              if (sibling !== arrow.parentElement) {
+                sibling.classList.remove('dropdown-opened');
+                sibling.querySelectorAll('.submenu').forEach((submenu) => {
+                  submenu.style.display = 'none';
+                });
+              }
+            });
+        });
+      });
+    }
+  }, []);
 
   return (
-    <nav
-      className={`w-full transition-all duration-300 bg-transparent relative z-[99999]`}
-    >
-      <header
-        className="header-section navbar2 bg-transparent absolute w-full z-10"
-        data-aos="zoom-in"
-        data-aos-duration="1000"
-      >
-        <div className="Container">
-          {/* main Navbar */}
-          <div className="flex flex-col lg:flex-row items-center justify-between lg:h-[100px] ">
-            {/* website Logo */}
-            <div className=" w-48 lg:w-52">
-              <Link to="/">
-                <img
-                  draggable="false"
-                  src={Logo}
-                  className="hidden lg:block"
-                  alt="website_logo"
+    <>
+      <div className='offcanvas-area'>
+        <div
+          ref={offcanvasRef}
+          className='offcanvas'
+        >
+          <div className='offcanvas_close-btn'>
+            <button
+              ref={closeBtnRef}
+              className='close-btn'
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className='offcanvas_logo inline-block'>
+            <Link to={'/'}>
+              <img
+                src={Logo2}
+                draggable='false'
+              />
+            </Link>
+          </div>
+          <div className='offcanvas_title'>
+            <p>
+              Stay healthy with a balanced diet, regular exercise, and enough
+              sleep. Manage stress and get regular check-ups.
+            </p>
+          </div>
+          <div className='main-menu-mobile lg:none'></div>
+          <div className='offcanvas_contact-info'>
+            <div className='offcanvas_contact-title'>
+              <h5>Contact Us</h5>
+            </div>
+            <ul>
+              <li>
+                <MdLocationPin />
+                <Link to={'/'}>Melbone st, Australia, Ny 12099</Link>
+              </li>
+              <li>
+                <FaEnvelope />
+                <Link to={'/'}>needhelp@company.com</Link>
+              </li>
+              <li>
+                <FaPhoneAlt />
+                <Link to={'/'}>+48 555 223 224</Link>
+              </li>
+            </ul>
+          </div>
+          <div className='offcanvas_input'>
+            <div className='offcanvas_input-title'>
+              <h4>Get Update</h4>
+            </div>
+            <form
+              action='#'
+              method='post'
+            >
+              <div className='relative'>
+                <input
+                  type='email'
+                  name='email'
+                  placeholder='Enter E-Mail'
+                  required
                 />
+                <button type='submit'>
+                  <IoMdPaperPlane />
+                </button>
+              </div>
+            </form>
+            <div className='status'></div>
+          </div>
+          <div className='offcanvas_social'>
+            <div className='social-icon'>
+              <Link to={'/'}>
+                <FaFacebookF />
+              </Link>
+              <Link to={'/'}>
+                <FaXTwitter />
+              </Link>
+              <Link to={'/'}>
+                <FaPinterestP />
+              </Link>
+              <Link to={'/'}>
+                <FaLinkedinIn />
               </Link>
             </div>
-            {/* small screen size */}
-            <div className="w-full lg:hidden flex justify-between h-[70px] items-center p-3">
-              <div className="w-28">
-                <Link to="/">
+          </div>
+        </div>
+      </div>
+      <div
+        ref={bodyOverlayRef}
+        className='body-overlay'
+      ></div>
+      <div
+        id='header-sticky'
+        className='header-area3 py-5 lg:py-0'
+      >
+        <div className='px-2 lg:px-[30px]'>
+          <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
+            <div className='col-span-3'>
+              <div className='header-logo inline-block'>
+                <Link to={'/'}>
                   <img
-                    draggable="false"
                     src={Logo}
-                    className="block lg:hidden "
+                    draggable='false'
                   />
                 </Link>
               </div>
-              {/* toggle bar mode. */}
-              <button
-                className="lg:hidden block focus:outline-none "
-                onClick={toggleNavbar}
-              >
-                {/* modal open and close */}
-                {isOpen ? (
-                  <IoMdClose className="w-6 h-6 text-white" />
-                ) : (
-                  <FaBars className="w-5 h-5 text-white" />
-                )}
-              </button>
             </div>
-            {/* All navLink are hear with active */}
-            <div className="flex gap-8 items-center">
-              <ul
-                className={`${
-                  isOpen ? "block" : "hidden"
-                } text-right lg:w-fit ease-in-out flex-1 lg:flex space-y-2 lg:space-y-0 space-x-0 flex flex-col lg:flex-row capitalize text-sm lg:bg-transparent py-3 lg:py-0 font-AlbertSans font-medium sm:text-base text-HeadingColor-0 transition-all duration-500
-                `}
-              >
-                <NavLink
-                  to="/"
-                  className={`${({ isActive, isPending }) =>
-                    isPending
-                      ? "pending"
-                      : isActive
-                      ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative`}
-                >
-                  <span className="flex items-center">
-                    Home
-                    <BiChevronDown className="ml-1" />
-                  </span>
-                  <div
-                    className="absolute pt-5 lg:pt-8 z-[1]"
-                    data-aos="zoom-in-left"
-                    data-aos-duration="1000"
+            <div className='col-span-6 hidden lg:block'>
+              <div className='header-main-menu text-center'>
+                <nav className='main-menu-content'>
+                  <ul>
+                    <li className='has-dropdown'>
+                      <Link
+                        to={'/'}
+                        className='active'
+                      >
+                        Home
+                      </Link>
+                      <div className='submenu has-homemenu mega-menu'>
+                        <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-3'>
+                          <div className='homemenu'>
+                            <div className='homemenu-thumb'>
+                              <Link to={'/'}>
+                                <img src={homeOne} />
+                                <h6>Live Demo</h6>
+                              </Link>
+                            </div>
+                          </div>
+                          <div className='homemenu'>
+                            <div className='homemenu-thumb'>
+                              <Link to={'/home2'}>
+                                <img src={homeTwo} />
+                                <h6>Live Demo</h6>
+                              </Link>
+                            </div>
+                          </div>
+                          <div className='homemenu'>
+                            <div className='homemenu-thumb'>
+                              <Link to={'/home3'}>
+                                <img src={homeThree} />
+                                <h6>Live Demo</h6>
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <Link to={'/'}>About</Link>
+                    </li>
+                    <li className='has-dropdown'>
+                      <Link to={'/'}>Pages</Link>
+                      <ul className='submenu'>
+                        <li>
+                          <Link to={'/'}>about us</Link>
+                        </li>
+                        <li>
+                          <Link to={'/'}>team</Link>
+                        </li>
+                        <li>
+                          <Link to={'/'}>testimonial</Link>
+                        </li>
+                        <li>
+                          <Link to={'/'}>cart</Link>
+                        </li>
+                        <li>
+                          <Link to={'/'}>checkout</Link>
+                        </li>
+                        <li>
+                          <Link to={'/'}>faq</Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className='has-dropdown'>
+                      <Link to={'/'}>Services</Link>
+                      <ul className='submenu'>
+                        <li>
+                          <Link to={'/'}>service</Link>
+                        </li>
+                        <li>
+                          <Link to={'/'}>service details</Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className='has-dropdown'>
+                      <Link to={'/'}>Blog</Link>
+                      <ul className='submenu'>
+                        <li>
+                          <Link to={'/'}>blog grid</Link>
+                        </li>
+                        <li>
+                          <Link to={'/'}>blog right sidebar</Link>
+                        </li>
+                        <li>
+                          <Link to={'/'}>blog left sidebar</Link>
+                        </li>
+                        <li>
+                          <Link to={'/'}>blog details</Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <Link to={'/'}>Contact</Link>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div className='col-span-3'>
+              <div className='header-right-box flex items-center gap-10 lg:gap-0 justify-end'>
+                <div className='size-[50px] rounded-full bg-BodyBg2-0 hidden sm:flex lg:hidden 2xl:flex items-center justify-center text-HeadingColor-0 relative z-10 transition-all duration-500 hover:text-white before:absolute before:left-0 before:top-0 before:w-full before:rounded-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100'>
+                  <button>
+                    <IoSearch size={'18'} />
+                  </button>
+                </div>
+                <div className='header-btn hidden lg:block'>
+                  <Link to={'/'}>
+                    get Appiontment<span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <img
+                      src={btnArrow}
+                      draggable='false'
+                    />
+                  </Link>
+                </div>
+                <div className='hidden 2xl:block ml-2'>
+                  <button
+                    ref={menuSideBarRef}
+                    className='menu-sidebar size-[50px] rounded-full bg-PrimaryColor-0 flex items-center justify-center text-white relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:rounded-full before:h-full before:bg-Secondarycolor-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100'
                   >
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-PrimaryColor-0 ">
-                      <div className="px-5 group hover:bg-HeadingColor-0 ">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/" className="py-2 block">
-                            Home One
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-HeadingColor-0 ">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/home2" className="py-2 block">
-                            Home Two
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-HeadingColor-0 ">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/home3" className="py-2 block">
-                            Home Three
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-HeadingColor-0 ">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/home4" className="py-2 block">
-                            Home Four
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-HeadingColor-0 ">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/home5" className="py-2 block">
-                            Home Five
-                          </Link>
-                        </li>
-                      </div>
-                    </ul>
-                  </div>
-                </NavLink>
-                <NavLink
-                  className={`${({ isActive, isPending }) =>
-                    isPending
-                      ? "pending"
-                      : isActive
-                      ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative `}
-                  to="#"
-                >
-                  <span className="flex items-center">
-                    About
-                    <BiChevronDown className="ml-1" />
-                  </span>
-                  <div className="absolute pt-5 lg:pt-8 z-20">
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0">
-                      <div className="px-5 group hover:bg-PrimaryColor-0 ">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/about" className="py-2 block">
-                            About us 01
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0 ">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/about2" className="py-2 block">
-                            About Us 02
-                          </Link>
-                        </li>
-                      </div>
-                    </ul>
-                  </div>
-                </NavLink>
-                <NavLink
-                  className={`${({ isActive, isPending }) =>
-                    isPending
-                      ? "pending"
-                      : isActive
-                      ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative `}
-                  to="#"
-                >
-                  <span className="flex items-center">
-                    Service
-                    <BiChevronDown className="ml-1" />
-                  </span>
-                  <div className="absolute pt-5 lg:pt-8 z-20">
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0">
-                      <div className="px-5 group hover:bg-PrimaryColor-0 ">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/service" className="py-2 block">
-                            Service
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0 ">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/service_details" className="py-2 block">
-                            Service Details
-                          </Link>
-                        </li>
-                      </div>
-                    </ul>
-                  </div>
-                </NavLink>
-                <NavLink
-                  className={`${({ isActive, isPending }) =>
-                    isPending
-                      ? "pending"
-                      : isActive
-                      ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative `}
-                  to="#"
-                >
-                  <span className="flex items-center">
-                    Pages
-                    <BiChevronDown className="ml-1" />
-                  </span>
-                  <div className="absolute pt-5 lg:pt-8 z-20">
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0 ">
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/about" className="py-2 block">
-                            About Us
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/service" className="py-2 block">
-                            Service
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/service_details" className="py-2 block">
-                            Service Details
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/mission_inner" className="py-2 block">
-                            Our Mission
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/why_choose" className="py-2 block">
-                            Why Choose Us
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/team_inner" className="py-2 block">
-                            Team Member
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/team_details" className="py-2 block">
-                            Team Details
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/project" className="py-2 block">
-                            Projects
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/project_details" className="py-2 block">
-                            Project Details
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/pricing_inner" className="py-2 block">
-                            Pricing Plan
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/testimonial" className="py-2 block">
-                            Testimonial
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/appointment" className="py-2 block">
-                            Appointment
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/faq_inner" className="py-2 block">
-                            Faq
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/location" className="py-2 block">
-                            Our Location
-                          </Link>
-                        </li>
-                      </div>
-                    </ul>
-                  </div>
-                </NavLink>
-                {/* blog sub menu link */}
-                <NavLink
-                  className={`${({ isActive, isPending }) =>
-                    isPending
-                      ? "pending"
-                      : isActive
-                      ? "active"
-                      : ""} text-white text-left hover:text-PrimaryColor-0 lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300 group relative `}
-                  to="#"
-                >
-                  <span className="flex items-center">
-                    Blog
-                    <BiChevronDown className="ml-1" />
-                  </span>
-                  <div className="absolute pt-5 lg:pt-8 z-20">
-                    <ul className="shadow-lg hidden group-hover:block rounded-sm text-white w-[220px] text-left transition-all duration-500 text-sm sm:text-base py-4 bg-HeadingColor-0">
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/blog_grid" className="py-2 block">
-                            Blog Grid
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/blog_left_sidebar" className="py-2 block">
-                            Blog Left Sidebar
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/blog_right_sidebar" className="py-2 block">
-                            Blog Right Sidebar
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="px-5 group hover:bg-PrimaryColor-0">
-                        <li className="hover:ml-3 duration-300">
-                          <Link to="/blog_details" className="py-2 block">
-                            Blog Details
-                          </Link>
-                        </li>
-                      </div>
-                    </ul>
-                  </div>
-                </NavLink>
-                <NavLink
-                  className={`${({ isActive, isPending }) =>
-                    isPending
-                      ? "pending"
-                      : isActive
-                      ? "active"
-                      : ""} text-white text-left lg:border-b-0 px-3 lg:px-2 xl:px-5 w-full block transition-all duration-300`}
-                  to="/contact"
-                >
-                  Contact
-                </NavLink>
-              </ul>
-              <div className="hidden lg:flex items-center">
-                <button>
-                  <IoSearch className="text-xl ml-2 mr-10 text-white" />
-                </button>
-                <Link to={"/appointment"} className="header-btn">
-                  Get A Quote
-                </Link>
+                    <CgMenuGridO size={'30'} />
+                  </button>
+                </div>
+                <div className='header-bar lg:hidden'>
+                  <button
+                    ref={menuBarRef}
+                    className='menu-bar'
+                  >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </header>
-    </nav>
+        <div className='sidebar-content'>
+          <div
+            ref={sidebarContentRef}
+            className='sidebar'
+          >
+            <div className='sidebar_close-btn'>
+              <button
+                ref={closeBtn2Ref}
+                className='close-btn2'
+              >
+                <FaTimes />
+              </button>
+            </div>
+            <div className='sidebar_logo'>
+              <Link to={'/'}>
+                <img
+                  src={Logo2}
+                  draggable='false'
+                />
+              </Link>
+            </div>
+            <div className='sidebar_title'>
+              <p>
+                Stay healthy with a balanced diet, regular exercise, and enough
+                sleep. Manage stress and get regular check-ups.
+              </p>
+            </div>
+            <div>
+              <div className='sidebar_service-title'>
+                <h5>What Services We Provide?</h5>
+              </div>
+              <ul className='service_list'>
+                <li>
+                  <Link to={'/'}>
+                    <button>General Health Check-ups</button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/'}>
+                    <button>Cardiology Services</button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/'}>
+                    <button>Mental Health Support</button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/'}>
+                    <button>Pediatric Care</button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/'}>
+                    <button>Vaccination Programs</button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/'}>
+                    <button>Physical Therapy</button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/'}>
+                    <button>Chronic Disease Management</button>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className='sidebar_contact-info'>
+              <div className='sidebar_contact-title'>
+                <h5>Have Questions? Contact Our Team!</h5>
+              </div>
+              <ul>
+                <li>
+                  <MdLocationPin />
+                  <Link to={'/'}>Melbone st, Australia, Ny 12099</Link>
+                </li>
+                <li>
+                  <FaEnvelope />
+                  <Link to={'/'}>needhelp@company.com</Link>
+                </li>
+                <li>
+                  <FaPhoneAlt />
+                  <Link to={'/'}>+48 555 223 224</Link>
+                </li>
+              </ul>
+            </div>
+            <div className='sidebar_input'>
+              <div className='offcanvas_input-title'>
+                <h4>Get Update</h4>
+              </div>
+              <form
+                action='#'
+                method='post'
+              >
+                <div className='relative'>
+                  <input
+                    type='email'
+                    name='email'
+                    placeholder='Enter E-Mail'
+                    required
+                  />
+                  <button type='submit'>
+                    <IoMdPaperPlane />
+                  </button>
+                </div>
+              </form>
+            </div>
+            <ul className='sidebar-social-icon'>
+              <li>
+                <Link to={'/'}>
+                  <FaFacebookF />
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <FaXTwitter />
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <FaPinterestP />
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <FaLinkedinIn />
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          ref={bodyOverlay2Ref}
+          className='body-overlay2'
+        ></div>
+      </div>
+    </>
   );
 };
 

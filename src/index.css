@@ -72,6 +72,71 @@ body {
   @apply flex items-center gap-2 overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-10 py-[18px] relative rounded-full text-base text-white font-medium font-AlbertSans before:bg-HeadingColor-0 before:h-full before:w-0 before:-skew-x-[25deg] before:absolute before:top-0 before:-right-5 before:-z-10 before:transition-all before:duration-500 hover:before:w-[125%] hover:before:-left-5;
 }
 
+.primary-btn3 {
+  font-size: 15px;
+  font-family: 'Albert Sans';
+  padding: 18px 30px;
+  font-weight: 500;
+  color: #fff;
+  background: #002570;
+  text-transform: uppercase;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 0 0 0 14px;
+  overflow: hidden;
+}
+
+.primary-btn3 span {
+  background-color: #007eff;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  position: absolute;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  width: 25%;
+  z-index: -1;
+}
+
+.primary-btn3 span:nth-of-type(1) {
+  left: 0;
+  -webkit-transition-delay: 0.105s;
+  transition-delay: 0.105s;
+  border-radius: 30px 0 0px 30px;
+}
+
+.primary-btn3 span:nth-of-type(2) {
+  left: 25%;
+  -webkit-transition-delay: 0.105s;
+  transition-delay: 0.105s;
+}
+
+.primary-btn3 span:nth-of-type(3) {
+  left: 50%;
+  -webkit-transition-delay: 0.105s;
+  transition-delay: 0.105s;
+}
+
+.primary-btn3 span:nth-of-type(4) {
+  left: 75%;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  border-radius: 0 30px 30px 0;
+}
+
+.primary-btn3:hover span {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
 .is-sticky {
   @apply fixed top-0 left-0 w-full z-[99999] shadow-lg bg-white backdrop-blur-md animate-headerSlideDown;
 }

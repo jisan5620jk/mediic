@@ -1,58 +1,81 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import FsLightbox from "fslightbox-react";
+import bannerCheck from '/images/tick.png';
+import btnArrow from '/images/arrow.png';
+import { Link } from 'react-router-dom';
+import { FaCircle } from 'react-icons/fa6';
+import FsLightbox from 'fslightbox-react';
+import { useState } from 'react';
 
 const Banner = () => {
   const [toggler, setToggler] = useState(false);
   return (
-    <section className="bg-[url('/images/hero3-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[900px] lg:h-[660px] xl:h-[900px] flex items-center relative z-10 overflow-hidden">
-      <div className="Container">
-        <div className="grid gap-16 lg:gap-0 lg:grid-cols-12 items-center">
-          <div className="col-span-9 relative">
-            <h5 className="font-AlbertSans text-white text-xl sm:text-2xl uppercase font-medium flex items-center gap-2 mb-5">
-              Welcome to Toptech
-            </h5>
-            <h1 className="font-AlbertSans font-extrabold text-white text-[26px] leading-[30px] sm:text-[48px] sm:leading-[50px] md:text-[62px] md:leading-[62px] lg:text-[50px] lg:leading-[50px] xl:text-[74px] xl:leading-[74px]">
-              TOP IT SOLUTIONS AGENCY
-              <br />
-              IN THE WORLD
-            </h1>
-            <p className="font-AlbertSans sm:text-[17px] text-white mb-[50px] mt-6">
-              Play In Order To Make A Business, Brand Advertising And Marketing
-              Plays An
-              <br className="hidden md:block" /> Important Role. Similarly, In
-              Making Cultivation Business
-            </p>
-            <div className="flex flex-col sm:flex-row gap-5">
-              <Link to={"/"}>
-                <button className="primary-btn3 !py-4 !px-10 !rounded-none">
-                  {`How IT Works`}
-                </button>
-              </Link>
-              <Link to={"/"}>
-                <button className="primary-btn3 !py-4 !px-10 !rounded-none !border-white hover:!border-PrimaryColor-0 !bg-transparent before:!bg-PrimaryColor-0">{`It Services`}</button>
-              </Link>
+    <div className='bg-white px-2 lg:px-[30px]'>
+      <section className="bg-[url('/images/hero-bg3.jpg')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[700px] md:h-[700px] lg:h-[700px] xl:h-[790px] 2xl:h-[790px] flex items-center relative z-10 overflow-hidden rounded-t-2xl md:rounded-t-[30px]">
+        <div className='flex justify-center items-center m-auto'>
+          <div className='Container'>
+            <div>
+              <div>
+                <div className='inline-block'>
+                  <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-30 text-PrimaryColor-0 text-[15px] font-semibold border-2 border-white rounded-full font-AlbertSans px-[22px] py-2'>
+                    <FaCircle size={'8'} />
+                    WELCOME TO OUR HOSPITAL
+                  </h6>
+                </div>
+                <h1 className='font-AlbertSans font-extrabold text-[65px] leading-[80px] text-HeadingColor-0'>
+                  BETTER CARE FOR <br /> OUR{' '}
+                  <span className='text-PrimaryColor-0'>HEALTH</span>
+                </h1>
+                <Link to={'/appiontment'}>
+                  <button className='primary-btn3'>
+                    Research More <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <img
+                      src={btnArrow}
+                      draggable='false'
+                    />
+                  </button>
+                </Link>
+                <div className='flex items-center gap-5'>
+                  <div className='relative z-30 flex flex-col md:flex-row md:justify-between lg:justify-evenly xl:justify-between md:items-center gap-8'>
+                    <div className='flex flex-col sm:flex-row items-center gap-5 bg-white bg-opacity-30 backdrop-filter backdrop-blur-md border-2 border-white rounded-2xl pt-6 px-4 sm:px-8 pb-6'>
+                      <div>
+                        <img
+                          src={bannerCheck}
+                          draggable='false'
+                        />
+                      </div>
+                      <div className='flex-1'>
+                        <h5 className='font-AlbertSans font-semibold text-xl text-HeadingColor-0'>
+                          Best Medical
+                        </h5>
+                        <p className='font-DMSans text-HeadingColor-0 xl:text-white 2xl:text-TextColor2-0 mt-[6px]'>
+                          Rapidiously reinvent long-term
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      className='font-AlbertSans font-medium uppercase leading-4 text-PrimaryColor-0 border-b border-PrimaryColor-0'
+                      onClick={() => setToggler(!toggler)}
+                    >
+                      Watch A Video
+                    </button>
+                    <FsLightbox
+                      toggler={toggler}
+                      sources={[
+                        'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+                      ]}
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="col-span-3 flex justify-center">
-            <button className="size-[120px] border-2 border-white rounded-full bg-transparent flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
-              <span
-                className="text-white uppercase font-AlbertSans text-2xl"
-                onClick={() => setToggler(!toggler)}
-              >
-                Play
-              </span>
-            </button>
-            <FsLightbox
-              toggler={toggler}
-              sources={[
-                "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-              ]}
-            />
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

@@ -523,9 +523,9 @@ nav.main-menu-content > ul > li > a:hover > span {
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
- nav.main-menu-content > ul > li > a {
+  nav.main-menu-content > ul > li > a {
     padding: 17px 14px;
-}
+  }
 }
 
 /* Submenu Start Here */
@@ -823,9 +823,9 @@ nav.main-menu-content > ul > li > a:hover > span {
 }
 
 .submenu.has-homemenu.mega-menu {
-  width: 1000px;
+  width: 800px;
   padding: 20px;
-  margin-left: -250px;
+  margin-left: -130px;
 }
 
 .homemenu-thumb {
@@ -910,6 +910,14 @@ nav.main-menu-content > ul > li > a:hover > span {
   background: transparent;
 }
 
+/* Header Style Three */
+
+.header-area3 {
+  background: #ffffff;
+  position: relative;
+  z-index: 50;
+  width: 100%;
+}
 
 /* Header Sidebar */
 

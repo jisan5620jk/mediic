@@ -5,12 +5,10 @@ import Logo2 from '/images/logo2.png';
 import homeOne from '/images/home1.png';
 import homeTwo from '/images/home2.png';
 import homeThree from '/images/home3.png';
-import homeFour from '/images/home4.png';
 import btnArrow from '/images/arrow.png';
 import './navbar.css';
 import { useEffect, useRef } from 'react';
 import {
-  FaChevronDown,
   FaEnvelope,
   FaFacebookF,
   FaLinkedinIn,
@@ -273,7 +271,7 @@ const Navbar = () => {
                         Home
                       </Link>
                       <div className='submenu has-homemenu mega-menu'>
-                        <div className='grid grid-cols-1 lg:grid-cols-4 lg:gap-3'>
+                        <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-3'>
                           <div className='homemenu'>
                             <div className='homemenu-thumb'>
                               <Link to={'/'}>
@@ -292,16 +290,8 @@ const Navbar = () => {
                           </div>
                           <div className='homemenu'>
                             <div className='homemenu-thumb'>
-                              <Link to={'/'}>
+                              <Link to={'/home3'}>
                                 <img src={homeThree} />
-                                <h6>Live Demo</h6>
-                              </Link>
-                            </div>
-                          </div>
-                          <div className='homemenu'>
-                            <div className='homemenu-thumb'>
-                              <Link to={'/'}>
-                                <img src={homeFour} />
                                 <h6>Live Demo</h6>
                               </Link>
                             </div>
