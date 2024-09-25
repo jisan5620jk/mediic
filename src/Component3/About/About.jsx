@@ -5,7 +5,7 @@ import { FaCircle } from "react-icons/fa6";
 
 const About = () => {
   return (
-    <section className='py-[120px] bg-gradient-to-t from-BodyBg-0 from-25% relative mx-10'>
+    <section className='py-[120px] bg-gradient-to-t from-BodyBg-0 from-25% relative px-2 xl:mx-10 rounded-b-[30px]'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-10 items-center bg-gradient-to-b from-BodyBg-0 from-60% rounded-[30px] border-2 border-white'>
           <div className='relative z-10'>
@@ -17,13 +17,13 @@ const About = () => {
           </div>
           <div className='relative'>
             <div className='inline-block mb-5'>
-              <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-30 text-PrimaryColor-0 text-[15px] font-semibold border-2 border-white rounded-full font-AlbertSans px-[22px] py-2'>
+              <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-30 text-PrimaryColor-0 text-[15px] font-semibold border border-white rounded-full font-AlbertSans px-[22px] py-2 uppercase'>
                 <FaCircle size={'8'} />
                 About Our Medical
               </h6>
             </div>
-            <h1 className='font-AlbertSans font-bold text-HeadingColor-0 text-[16px] leading-[23px] sm:text-[22px] sm:leading-[35px] md:text-[30px] md:leading-[35px] lg:text-[26px] lg:leading-[33px] xl:text-[55px] xl:leading-[67px] 2xl:text-[55px] 2xl:leading-[67px]'>
-              Start Your Adventure to Better Health Here
+            <h1 className='font-AlbertSans font-bold text-HeadingColor-0 text-[20px] leading-[28px] sm:text-[38px] sm:leading-[48px] md:text-[48px] md:leading-[58px] lg:text-[40px] lg:leading-[50px] xl:text-[46px] xl:leading-[57px] 2xl:text-[55px] 2xl:leading-[67px]'>
+              Start Your Adventure to <br /> Better Health Here
             </h1>
             <p className='font-DMSans text-TextColor2-0 pb-12 pt-4'>
               Continually evolve professional intellectual capital without

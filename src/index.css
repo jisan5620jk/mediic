@@ -87,7 +87,7 @@ body {
   position: relative;
   z-index: 1;
   transition: 0.5s;
-  margin: 0 0 0 14px;
+  border: 1px solid #002570;
   overflow: hidden;
 }
 

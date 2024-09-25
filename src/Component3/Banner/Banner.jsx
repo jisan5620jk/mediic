@@ -27,7 +27,6 @@ const Banner = () => {
                   BETTER CARE FOR <br /> YOUR{' '}
                   <span className='text-PrimaryColor-0'>HEALTH</span>
                 </h1>
-                <div className='-ml-3'>
                   <Link to={'/appiontment'}>
                     <button className='primary-btn3 '>
                       Research More <span></span>
@@ -40,7 +39,6 @@ const Banner = () => {
                       />
                     </button>
                   </Link>
-                </div>
                 <div className='flex items-center gap-5 pt-11'>
                   <div className='relative z-30 flex flex-col md:flex-row md:justify-between lg:justify-evenly xl:justify-between md:items-center gap-8'>
                     <div className='flex flex-col sm:flex-row items-center gap-5 bg-white bg-opacity-30 backdrop-filter backdrop-blur-md border-2 border-white rounded-2xl pt-6 px-4 sm:px-8 pb-6'>
