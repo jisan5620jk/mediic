@@ -1,53 +1,18 @@
-/* eslint-disable no-unused-vars */
-import { FaPlus } from "react-icons/fa6";
-import portfolioThumb from "/images/portfolio4-1.jpg";
-import portfolioThumb2 from "/images/portfolio4-2.jpg";
-import portfolioThumb3 from "/images/portfolio4-3.jpg";
-import portfolioThumb4 from "/images/portfolio4-4.jpg";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import PortfolioCard from "./PortfolioCard";
+import PortfolioCard from './PortfolioCard';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import portfolioThumb from '/images/port1.jpg';
+import 'swiper/css';
+import { FaCircle, FaSquareFull } from 'react-icons/fa6';
+import { HiOutlineArrowRight } from 'react-icons/hi2';
 
-const portfolioData = [
+const PortfolioData = [
   {
     id: 1,
     portfolioThumb: portfolioThumb,
-    portfolioSubTilte: "Design",
-    portfolioTitle: "Mobile UI/UX Design",
-    portfolioUrl: "/portfolio_details",
-    portfolioBtn: <FaPlus />,
-  },
-  {
-    id: 2,
-    portfolioThumb: portfolioThumb2,
-    portfolioSubTilte: "Technology",
-    portfolioTitle: "Cyber Security & Protect",
-    portfolioUrl: "/portfolio_details",
-    portfolioBtn: <FaPlus />,
-  },
-  {
-    id: 3,
-    portfolioThumb: portfolioThumb3,
-    portfolioSubTilte: "IT Solution",
-    portfolioTitle: "Website Development",
-    portfolioUrl: "/portfolio_details",
-    portfolioBtn: <FaPlus />,
-  },
-  {
-    id: 4,
-    portfolioThumb: portfolioThumb4,
-    portfolioSubTilte: "Technology",
-    portfolioTitle: "Cyber Security & Protect",
-    portfolioUrl: "/portfolio_details",
-    portfolioBtn: <FaPlus />,
-  },
-  {
-    id: 5,
-    portfolioThumb: portfolioThumb2,
-    portfolioSubTilte: "IT Solution",
-    portfolioTitle: "Website Development",
-    portfolioUrl: "/portfolio_details",
-    portfolioBtn: <FaPlus />,
+    portfolioShape: <FaSquareFull />,
+    portfolioTitle: 'Dental Whitening',
+    portfolioUrl: '/',
+    btnIcon: <HiOutlineArrowRight />,
   },
 ];
 
@@ -56,64 +21,66 @@ const Portfolio = () => {
     loop: true,
     spaceBetween: 30,
     speed: 1000,
-    centeredSlides: true,
     initialSlide: 1,
     autoplay: true,
     breakpoints: {
       320: {
         slidesPerView: 1,
       },
-      768: {
+      576: {
         slidesPerView: 2,
       },
-      992: {
+      768: {
         slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
       },
       1400: {
         slidesPerView: 4,
       },
     },
   };
+
   return (
-    <section className="portfolio2 relative z-10 py-28 bg-white">
-      <div className="Container">
-        <div>
-          <h5 className="font-AlbertSans text-[19px] font-semibold text-PrimaryColor-0 relative pl-5 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[10px] before:w-[10px] before:bg-PrimaryColor-0 before:rounded-full">
-            PORTFOLIO
-          </h5>
-          <h1 className="font-AlbertSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-HeadingColor-0 mt-3 mb-4">
-            Our Completed <span className="text-PrimaryColor-0">Projects</span>
-          </h1>
+    <section className='mx-2 lg:mx-[50px] px-2 lg:px-[50px]  bg-gradient-to-t from-BodyBg-0 from-25% py-[120px] relative rounded-b-[30px]'>
+      <div className='text-center'>
+        <div className='inline-block mb-5'>
+          <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-0 text-white text-[15px] font-semibold border border-white border-opacity-10 rounded-full font-AlbertSans px-[22px] py-2 uppercase'>
+            <FaCircle size={'8'} />
+            Hospital Motivation
+          </h6>
         </div>
+        <h1 className='font-AlbertSans font-bold uppercase text-white text-[20px] leading-[28px] sm:text-[38px] sm:leading-[48px] md:text-[48px] md:leading-[58px] lg:text-[40px] lg:leading-[50px] xl:text-[46px] xl:leading-[57px] 2xl:text-[55px] 2xl:leading-[67px]'>
+          Medical Department
+        </h1>
       </div>
-      <div className="mt-[60px] 2xl:mx-[60px]">
+      <div className='relative z-10 mt-[44px]'>
         <Swiper {...settings}>
-          <div>
-            {portfolioData.map(
-              ({
-                id,
-                portfolioThumb,
-                portfolioSubTilte,
-                portfolioTitle,
-                portfolioUrl,
-                portfolioBtn,
-              }) => {
-                return (
-                  <SwiperSlide key={id}>
-                    <div>
-                      <PortfolioCard
-                        portfolioThumb={portfolioThumb}
-                        portfolioSubTilte={portfolioSubTilte}
-                        portfolioUrl={portfolioUrl}
-                        portfolioTitle={portfolioTitle}
-                        portfolioBtn={portfolioBtn}
-                      />
-                    </div>
-                  </SwiperSlide>
-                );
-              }
-            )}
-          </div>
+          {PortfolioData.map(
+            ({
+              id,
+              portfolioThumb,
+              portfolioShape,
+              portfolioTitle,
+              portfolioUrl,
+              btnIcon,
+            }) => {
+              return (
+                <SwiperSlide key={id}>
+                  <div className='pb-[94px]'>
+                    <PortfolioCard
+                      portfolioThumb={portfolioThumb}
+                      portfolioShape={portfolioShape}
+                      portfolioTitle={portfolioTitle}
+                      portfolioUrl={portfolioUrl}
+                      btnIcon={btnIcon}
+                    />
+                  </div>
+                </SwiperSlide>
+              );
+            }
+          )}
         </Swiper>
       </div>
     </section>

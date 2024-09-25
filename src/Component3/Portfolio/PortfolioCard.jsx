@@ -1,38 +1,39 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const PortfolioCard = ({
   portfolioThumb,
-  portfolioSubTilte,
+  portfolioShape,
   portfolioTitle,
   portfolioUrl,
-  portfolioBtn,
+  btnIcon,
 }) => {
   return (
-    <div>
-      <div className="portfolio-box relative z-10 group overflow-hidden">
-        <div className="portfolio-box-thumb rounded-md relative overflow-hidden before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-full before:bg-HeadingColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 before:z-10 group-hover:before:opacity-60">
-          <img src={portfolioThumb} draggable={false} className="w-full" />
-        </div>
-        <div className="portfolio-box-content rounded-md overflow-hidden absolute z-10 w-11/12 left-1/2 -translate-x-1/2 -bottom-full bg-white border-PrimaryColor-0 transition-all duration-500 group-hover:bottom-5">
-          <Link
-            to={portfolioUrl}
-            className="portfolio-btn transition-all duration-500 flex justify-center py-3"
-          >
-            <button className="flex items-center justify-center text-2xl text-PrimaryColor-0">
-              {portfolioBtn}
-            </button>
-          </Link>
-          <div className="bg-PrimaryColor-0 px-5 py-6">
+    <div className='relative z-10 rounded-3xl overflow-hidden group'>
+      <span className='absolute bg-PrimaryColor-0 bg-opacity-75 left-[12.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:w-[25%] group-hover:left-0'></span>
+      <span className='absolute bg-PrimaryColor-0 bg-opacity-75 left-[37.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
+      <span className='absolute bg-PrimaryColor-0 bg-opacity-75 left-[62.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
+      <span className='absolute bg-PrimaryColor-0 bg-opacity-75 left-[87.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:w-[25%] group-hover:left-[75%]'></span>
+      <img
+        src={portfolioThumb}
+        draggable='false'
+        className='rounded-3xl overflow-hidden'
+      />
+      <div className='absolute top-1/2 left-[47px] z-20 -translate-y-1/2 mx-auto'>
+        <div className='relative z-10 text-center bg-PrimaryColor-0 border border-white border-opacity-15 rounded-lg pt-10 pb-8 px-11'>
+          <div className='absolute z-10 -right-[1px] -top-[1px] text-Secondarycolor-0'>
+            {portfolioShape}
+          </div>
+          <div className='inline-block'>
             <Link to={portfolioUrl}>
-              <button className="font-AlbertSans font-semibold text-xl lg:text-lg xl:text-[26px] text-white text-left">
-                {portfolioTitle}
+              <button className='size-[70px] rounded-full flex items-center justify-center m-auto border border-white text-white text-3xl border-opacity-20 bg-white bg-opacity-10 -rotate-45'>
+                {btnIcon}
               </button>
             </Link>
-            <p className="font-AlbertSans text-white mt-1">
-              {portfolioSubTilte}
-            </p>
           </div>
+          <h4 className='font-AlbertSans font-bold text-[22px] text-white pt-12 uppercase '>
+            {portfolioTitle}
+          </h4>
         </div>
       </div>
     </div>

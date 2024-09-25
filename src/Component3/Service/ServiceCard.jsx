@@ -7,7 +7,8 @@ const ServiceCard = ({
   serviceSubTitle,
   serviceTitle,
   serviceDesc,
-  serviceUrl,btnContent,
+  serviceUrl,
+  btnContent,
   btnIcon,
 }) => {
   return (
