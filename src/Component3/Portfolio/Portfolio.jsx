@@ -60,6 +60,7 @@ const Portfolio = () => {
     speed: 1000,
     initialSlide: 1,
     autoplay: true,
+    draggable:true,
     breakpoints: {
       320: {
         slidesPerView: 1,

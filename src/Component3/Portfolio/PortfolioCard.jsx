@@ -20,7 +20,7 @@ const PortfolioCard = ({
         className='rounded-3xl overflow-hidden'
       />
       <div className='absolute top-full left-0 right-0 z-20 scale-0 -translate-y-1/2 px-11 m-auto inline-block transition-all duration-500 group-hover:top-1/2 group-hover:scale-100'>
-        <div className='relative z-10 text-center bg-PrimaryColor-0 border pt-10  pb-8 border-white border-opacity-15 rounded-xl'>
+        <div className='relative z-10 text-center bg-PrimaryColor-0 border pt-10  pb-8 border-white border-opacity-35 rounded-xl'>
           <div className='absolute z-10 -right-[1px] -top-[1px] text-Secondarycolor-0'>
             {portfolioShape}
           </div>
