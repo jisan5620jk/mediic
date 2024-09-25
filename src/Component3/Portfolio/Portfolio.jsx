@@ -1,14 +1,51 @@
 import PortfolioCard from './PortfolioCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import portfolioThumb from '/images/port1.jpg';
+import portfolioThumb2 from '/images/port2.jpg';
+import portfolioThumb3 from '/images/port3.jpg';
+import portfolioThumb4 from '/images/port4.jpg';
 import 'swiper/css';
-import { FaCircle, FaSquareFull } from 'react-icons/fa6';
+import { FaSquareFull } from 'react-icons/fa6';
 import { HiOutlineArrowRight } from 'react-icons/hi2';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
 
 const PortfolioData = [
   {
     id: 1,
     portfolioThumb: portfolioThumb,
+    portfolioShape: <FaSquareFull />,
+    portfolioTitle: 'Speech Therapy',
+    portfolioUrl: '/',
+    btnIcon: <HiOutlineArrowRight />,
+  },
+  {
+    id: 2,
+    portfolioThumb: portfolioThumb2,
+    portfolioShape: <FaSquareFull />,
+    portfolioTitle: 'Plastic Surgery',
+    portfolioUrl: '/',
+    btnIcon: <HiOutlineArrowRight />,
+  },
+  {
+    id: 3,
+    portfolioThumb: portfolioThumb3,
+    portfolioShape: <FaSquareFull />,
+    portfolioTitle: 'Dental Whitening',
+    portfolioUrl: '/',
+    btnIcon: <HiOutlineArrowRight />,
+  },
+  {
+    id: 4,
+    portfolioThumb: portfolioThumb4,
+    portfolioShape: <FaSquareFull />,
+    portfolioTitle: 'Physical Therapy',
+    portfolioUrl: '/',
+    btnIcon: <HiOutlineArrowRight />,
+  },
+  {
+    id: 5,
+    portfolioThumb: portfolioThumb2,
     portfolioShape: <FaSquareFull />,
     portfolioTitle: 'Dental Whitening',
     portfolioUrl: '/',
@@ -42,21 +79,21 @@ const Portfolio = () => {
     },
   };
 
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + ' pagination-bullet"></span>';
+    },
+  };
+
   return (
-    <section className='mx-2 lg:mx-[50px] px-2 lg:px-[50px]  bg-gradient-to-t from-BodyBg-0 from-25% py-[120px] relative rounded-b-[30px]'>
-      <div className='text-center'>
-        <div className='inline-block mb-5'>
-          <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-0 text-white text-[15px] font-semibold border border-white border-opacity-10 rounded-full font-AlbertSans px-[22px] py-2 uppercase'>
-            <FaCircle size={'8'} />
-            Hospital Motivation
-          </h6>
-        </div>
-        <h1 className='font-AlbertSans font-bold uppercase text-white text-[20px] leading-[28px] sm:text-[38px] sm:leading-[48px] md:text-[48px] md:leading-[58px] lg:text-[40px] lg:leading-[50px] xl:text-[46px] xl:leading-[57px] 2xl:text-[55px] 2xl:leading-[67px]'>
-          Medical Department
-        </h1>
-      </div>
-      <div className='relative z-10 mt-[44px]'>
-        <Swiper {...settings}>
+    <section className='portfolio mx-2 lg:mx-[50px] px-2 lg:px-[50px]  bg-gradient-to-t from-BodyBg-0 from-25% py-[120px] relative rounded-b-[30px]'>
+      <div className='relative z-10'>
+        <Swiper
+          {...settings}
+          pagination={pagination}
+          modules={[Pagination]}
+        >
           {PortfolioData.map(
             ({
               id,
