@@ -1,10 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import brandThumb from '/images/brand.png';
-import brandThumb2 from "/images/brand2.png";
-import brandThumb3 from "/images/brand3.png";
-import brandThumb4 from "/images/brand4.png";
-import brandThumb5 from "/images/brand5.png";
+import brandThumb from '/images/bran.png';
+import brandThumb2 from "/images/bran2.png";
+import brandThumb3 from "/images/bran3.png";
+import brandThumb4 from "/images/bran4.png";
+import brandThumb5 from "/images/bran5.png";
 
 const Brand = () => {
   const settings = {
@@ -31,7 +31,7 @@ const Brand = () => {
     },
   };
   return (
-    <div className='py-[120px] bg-BodyBg-0'>
+    <div className='py-[60px] bg-PrimaryColor-0 mx-10 rounded-b-[30px]'>
       <div className='Container relative z-10'>
         <Swiper {...settings}>
           <SwiperSlide>
