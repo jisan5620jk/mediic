@@ -653,7 +653,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   scale: 0;
 }
 
-
 .latest-work .swiper-slide.swiper-slide-active .latest-work-box {
   padding: 20px;
 }
@@ -715,4 +714,40 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
     -webkit-mask-position: 0 0;
     mask-position: 0 0;
   }
+}
+
+/* Scrollbar Style */
+
+/* For WebKit Browsers (Chrome, Safari, Edge) */
+
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 5px; /* Adjust the width as needed */
+}
+
+/* Track of the scrollbar */
+::-webkit-scrollbar-track {
+  background: #002570; /* Color of the track */
+}
+
+/* Handle of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #007eff; /* Color of the handle */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color when hovered */
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin; /* Width of the scrollbar */
+  scrollbar-color: #007eff #002570; /* Color of the scrollbar thumb and track */
+}
+
+/* For Internet Explorer and Edge */
+body {
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* Auto-hiding scrollbar */
 }

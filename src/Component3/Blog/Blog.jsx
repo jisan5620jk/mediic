@@ -1,8 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { FaRegCalendarCheck } from "react-icons/fa6";
-import blogThumb from "/images/blog1.png";
+import blogThumb from '/images/blog.png';
 import blogThumb2 from "/images/blog2.png";
-import blogThumb3 from "/images/blog3.png";
 import BlogCard from "./BlogCard";
 import { GoArrowRight } from "react-icons/go";
 import { PiUserCircleFill } from "react-icons/pi";
@@ -29,18 +28,6 @@ const blogData = [
     blogTag: "Admin",
     blogUrl: "/blog_details",
     blogTitle: "How to Secure your facebook Business Account",
-    blogBtn: "Read More",
-    blogBtnIcon: <GoArrowRight />,
-  },
-  {
-    id: 3,
-    blogThumb: blogThumb3,
-    blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: "24 Mar, 2024",
-    blogTagIcon: <PiUserCircleFill />,
-    blogTag: "Admin",
-    blogUrl: "/blog_details",
-    blogTitle: "Better Context Menus With Safe Triangles",
     blogBtn: "Read More",
     blogBtnIcon: <GoArrowRight />,
   },

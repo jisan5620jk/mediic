@@ -37,11 +37,11 @@ const ServiceCard = ({
         to={serviceUrl}
         className='inline-block relative'
       >
-        <button className='primary-btn3 '>
-          {btnContent} <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+        <button className='primary-btn3 !bg-PrimaryColor-0 !border-white !border-opacity-15'>
+          {btnContent} <span className='!bg-Secondarycolor-0'></span>
+          <span className='!bg-Secondarycolor-0'></span>
+          <span className='!bg-Secondarycolor-0'></span>
+          <span className='!bg-Secondarycolor-0'></span>
           <img
             src={btnIcon}
             draggable='false'

@@ -106,7 +106,7 @@ const Portfolio = () => {
             }) => {
               return (
                 <SwiperSlide key={id}>
-                  <div className='pb-[94px]'>
+                  <div className='pb-[60px]'>
                     <PortfolioCard
                       portfolioThumb={portfolioThumb}
                       portfolioShape={portfolioShape}
