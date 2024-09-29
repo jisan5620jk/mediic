@@ -11,24 +11,24 @@ const blogData = [
     id: 1,
     blogThumb: blogThumb,
     blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: "24 Mar, 2024",
+    blogDate: '24 Mar, 2024',
     blogTagIcon: <PiUserCircleFill />,
-    blogTag: "Admin",
-    blogUrl: "/blog_details",
-    blogTitle: "Most Popular Chrome Extensionfor Business Promot",
-    blogBtn: "Read More",
+    blogTag: 'Admin',
+    blogUrl: '/blog_details',
+    blogTitle: 'Transfusion strategy and heart surgery',
+    blogDesc: 'Professional capital without pros users matrix value e-commerce',
     blogBtnIcon: <GoArrowRight />,
   },
   {
     id: 2,
     blogThumb: blogThumb2,
     blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: "24 Mar, 2024",
+    blogDate: '24 Mar, 2024',
     blogTagIcon: <PiUserCircleFill />,
-    blogTag: "Admin",
-    blogUrl: "/blog_details",
-    blogTitle: "How to Secure your facebook Business Account",
-    blogBtn: "Read More",
+    blogTag: 'Admin',
+    blogUrl: '/blog_details',
+    blogTitle: 'Goals Setting the people Heart is Healthy',
+    blogDesc: 'Professional capital without pros users matrix value e-commerce',
     blogBtnIcon: <GoArrowRight />,
   },
 ];
@@ -47,7 +47,7 @@ const Blog = () => {
           </h1>
         </div>
         <div className="mt-[60px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-7">
             {blogData.map(
               ({
                 id,
@@ -58,7 +58,7 @@ const Blog = () => {
                 blogTag,
                 blogUrl,
                 blogTitle,
-                blogBtn,
+                blogDesc,
                 blogBtnIcon,
               }) => {
                 return (
@@ -71,7 +71,7 @@ const Blog = () => {
                       blogTag={blogTag}
                       blogUrl={blogUrl}
                       blogTitle={blogTitle}
-                      blogBtn={blogBtn}
+                      blogDesc={blogDesc}
                       blogBtnIcon={blogBtnIcon}
                     />
                   </div>

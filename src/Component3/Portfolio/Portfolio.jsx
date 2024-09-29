@@ -45,7 +45,7 @@ const PortfolioData = [
   },
   {
     id: 5,
-    portfolioThumb: portfolioThumb2,
+    portfolioThumb: portfolioThumb,
     portfolioShape: <FaSquareFull />,
     portfolioTitle: 'Dental Whitening',
     portfolioUrl: '/',
