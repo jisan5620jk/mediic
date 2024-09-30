@@ -13,7 +13,7 @@ const ServiceData = [
     id: 1,
     serviceIcon: serviceIcon,
     serviceShape: serviceShape,
-    serviceTitle: 'Common Illnesses',
+    serviceTitle: 'Health issues',
     serviceDesc:
       'Evolve professional intellectual capital from without enterprise user seamlessl prox value added e-commerce medical creams need and clean development',
     serviceUrl: '/',
@@ -57,7 +57,7 @@ const ServiceData = [
     id: 5,
     serviceIcon: serviceIcon5,
     serviceShape: serviceShape,
-    serviceTitle: 'Internal Medicine',
+    serviceTitle: 'Adult medicine',
     serviceDesc:
       'Evolve professional intellectual capital from without enterprise user seamlessl prox value added e-commerce medical creams need and clean development',
     serviceUrl: '/',
@@ -68,46 +68,46 @@ const ServiceData = [
 
 const Service2 = () => {
   return (
-    <section className='px-5 lg:px-10 bg-[url(/images/motivation-bg.jpg)] bg-cover bg-center bg-no-repeat py-[120px] relative'>
+    <section className=' bg-gradient-to-t from-BodyBg-0 from-25% px-2 xl:mx-10 rounded-b-[30px] py-[120px] relative'>
       <div className='text-center'>
         <div className='inline-block mb-5'>
-          <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-0 text-white text-[15px] font-semibold border border-white border-opacity-10 rounded-full font-AlbertSans px-[22px] py-2 uppercase'>
+          <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-30 text-PrimaryColor-0 text-[15px] font-semibold border border-white border-opacity-10 rounded-full font-AlbertSans px-[22px] py-2 uppercase'>
             <FaCircle size={'8'} />
             Hospital Motivation
           </h6>
         </div>
-        <h1 className='font-AlbertSans font-bold uppercase text-white text-[20px] leading-[28px] sm:text-[38px] sm:leading-[48px] md:text-[48px] md:leading-[58px] lg:text-[40px] lg:leading-[50px] xl:text-[46px] xl:leading-[57px] 2xl:text-[55px] 2xl:leading-[67px]'>
+        <h1 className='font-AlbertSans font-bold uppercase text-HeadingColor-0 text-[20px] leading-[28px] sm:text-[38px] sm:leading-[48px] md:text-[48px] md:leading-[58px] lg:text-[40px] lg:leading-[50px] xl:text-[46px] xl:leading-[57px] 2xl:text-[55px] 2xl:leading-[67px]'>
           Medical Department
         </h1>
       </div>
       <div className='Container'>
         <div className='flex items-center justify-between gap-8 w-full relative z-10 mt-[44px]'>
-            {ServiceData.map(
-              ({
-                id,
-                serviceIcon,
-                serviceShape,
-                serviceTitle,
-                serviceDesc,
-                serviceUrl,
-                btnContent,
-                btnIcon,
-              }) => {
-                return (
-                    <div key={id}>
-                      <ServiceCard2
-                        serviceIcon={serviceIcon}
-                        serviceShape={serviceShape}
-                        serviceTitle={serviceTitle}
-                        serviceDesc={serviceDesc}
-                        serviceUrl={serviceUrl}
-                        btnContent={btnContent}
-                        btnIcon={btnIcon}
-                      />
-                    </div>
-                );
-              }
-            )}
+          {ServiceData.map(
+            ({
+              id,
+              serviceIcon,
+              serviceShape,
+              serviceTitle,
+              serviceDesc,
+              serviceUrl,
+              btnContent,
+              btnIcon,
+            }) => {
+              return (
+                <div key={id}>
+                  <ServiceCard2
+                    serviceIcon={serviceIcon}
+                    serviceShape={serviceShape}
+                    serviceTitle={serviceTitle}
+                    serviceDesc={serviceDesc}
+                    serviceUrl={serviceUrl}
+                    btnContent={btnContent}
+                    btnIcon={btnIcon}
+                  />
+                </div>
+              );
+            }
+          )}
         </div>
       </div>
     </section>

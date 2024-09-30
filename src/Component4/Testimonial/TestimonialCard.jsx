@@ -3,7 +3,6 @@ const TestimonialCard = ({
   testiImg,
   testiRatingIcon,
   testiName,
-
   testiDesignation,
   testiDesc,
 }) => {

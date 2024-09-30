@@ -8,7 +8,6 @@ import { FaCircle } from 'react-icons/fa6';
 import circleShape from '/images/crcle-bg.png';
 import TestimonialNavigation from './TestimonialNavigation';
 
-
 const testiData = [
   {
     id: 1,
