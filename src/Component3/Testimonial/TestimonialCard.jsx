@@ -1,26 +1,28 @@
 /* eslint-disable react/prop-types */
 const TestimonialCard = ({
-  testiRatingIcon,
+  testiQuote,
   testiName,
   testiDesignation,
   testiDesc,
 }) => {
   return (
-    <div className="relative text-center">
-      <p className="font-AlbertSans sm:text-xl sm:leading-9 text-HeadingColor-0 lg:w-[75%] m-auto">
+    <div className='relative px-2 sm:px-[60px] lg:px-2 xl:px-12 2xl:px-[60px] pt-[114px] pb-[110px] bg-[url(/images/review-bg.png)] bg-no-repeat bg-cover bg-center rounded-[30px]'>
+      <img
+        src={testiQuote}
+        draggable='false'
+      />
+      <p className='font-DMSans sm:text-xl lg:text-lg xl:text-xl text-white pt-8'>
         {testiDesc}
       </p>
-      <ul className="flex gap-[6px] items-center justify-center mb-7 mt-6">
-        <li className="text-[#ffb609] text-xl">{testiRatingIcon}</li>
-        <li className="text-[#ffb609] text-xl">{testiRatingIcon}</li>
-        <li className="text-[#ffb609] text-xl">{testiRatingIcon}</li>
-        <li className="text-[#ffb609] text-xl">{testiRatingIcon}</li>
-        <li className="text-[#ffb609] text-xl">{testiRatingIcon}</li>
-      </ul>
-      <h5 className="font-AlbertSans font-semibold inline-block text-HeadingColor-0 text-2xl pt-7 mb-1 relative before:absolute before:left-1/2 before:-translate-x-1/2 before:-top-0 before:w-8 before:h-[2px] before:bg-PrimaryColor-0">
-        {testiName}
-      </h5>
-      <p className="font-AlbertSans text-TextColor2-0">{testiDesignation}</p>
+      <div className='flex items-center gap-3 mt-14'>
+        <h5 className='font-AlbertSans font-semibold inline-block text-white text-[22px] mb-1'>
+          {testiName}
+        </h5>
+        <span className='h-[1px] w-6 bg-white bg-opacity-50'></span>
+        <p className='font-DMSans text-sm text-white uppercase'>
+          {testiDesignation}
+        </p>
+      </div>
     </div>
   );
 };

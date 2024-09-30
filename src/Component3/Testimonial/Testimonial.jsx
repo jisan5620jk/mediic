@@ -1,52 +1,38 @@
-/* eslint-disable no-unused-vars */
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
-import { MdOutlineStarPurple500 } from "react-icons/md";
-import TestimonialCard from "./TestimonialCard";
-import TestimonialNavigation from "./TestimonialNavigation";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { EffectFlip } from 'swiper/modules';
+import TestimonialCard from './TestimonialCard';
+import testiThumb from '/images/testi-thumb.jpg';
+import testiQuote from '/images/testi-quote.png';
+import { FaCircle } from 'react-icons/fa6';
+import circleShape from '/images/crcle-bg.png';
+import TestimonialNavigation from './TestimonialNavigation';
+
 
 const testiData = [
   {
     id: 1,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
-    testiDesignation: "Web Developer",
+    testiQuote: testiQuote,
+    testiDesc: `Doctean is the best medical in the world I have great
+                experience with them the provide authentic results &
+                have the best environment the inside here. I can't
+                express enough gratitude for the exceptional care
+                experienced at doctean kudos to the remarkable team for
+                press support!, I highly recommend them.`,
+    testiName: 'Jhon D. Alexon',
+    testiDesignation: 'Mental Patient',
   },
   {
     id: 2,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
-    testiDesignation: "Web Developer",
-  },
-  {
-    id: 3,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
-    testiDesignation: "Web Developer",
-  },
-  {
-    id: 4,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
-    testiDesignation: "Web Developer",
-  },
-  {
-    id: 5,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
-    testiDesignation: "Web Developer",
+    testiQuote: testiQuote,
+    testiDesc: `Doctean is the best medical in the world I have great
+                experience with them the provide authentic results &
+                have the best environment the inside here. I can't
+                express enough gratitude for the exceptional care
+                experienced at doctean kudos to the remarkable team for
+                press support!, I highly recommend them.`,
+    testiName: 'Jhon D. Alexon',
+    testiDesignation: 'Dental Patient',
   },
 ];
 
@@ -54,8 +40,14 @@ const Testimonial = () => {
   const settings = {
     loop: true,
     spaceBetween: 30,
-    speed: 1500,
+    initialSlide: 1,
     autoplay: true,
+    speed: 1000,
+    effect: 'ease',
+    grabCursor: true,
+    flipEffect: {
+      slideShadows: false,
+    },
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -71,52 +63,70 @@ const Testimonial = () => {
       },
     },
   };
-  const pagination = {
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + ' pagination-bullet"></span>';
-    },
-  };
   return (
-    <section className="testimonial py-28 bg-[url(/images/testi-bg.jpg)] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden">
-      <div className="Container">
-        <div className="text-center">
-          <h5 className="font-AlbertSans text-[19px] font-semibold text-PrimaryColor-0 inline-block relative pl-5 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[10px] before:w-[10px] before:bg-PrimaryColor-0 before:rounded-full">
-            SERVICE WE PROVIDE
-          </h5>
-          <h1 className="font-AlbertSans font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-HeadingColor-0 mt-3 mb-4">
-            Customer’s Awesome Feedback <br />
-            About Our <span className="text-PrimaryColor-0">Services</span>
+    <section className='bg-[url(/images/motivation-bg.jpg)] bg-cover bg-center bg-no-repeat py-28 relative z-10 overflow-hidden'>
+      <div className='absolute -z-10 top-16 -translate-y-1/2 left-1/2 -translate-x-1/2'>
+        <img
+          src={circleShape}
+          draggable='false'
+          className='max-w-[inherit] w-[inherit]'
+        />
+      </div>
+      <div className='Container'>
+        <div className='-mb-[116px] border-b border-BorderColor2-0 pb-10'>
+          <div className='inline-block mb-5'>
+            <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-0 text-PrimaryColor-0 text-[15px] font-semibold border border-PrimaryColor-0 border-opacity-100 rounded-full font-AlbertSans px-[22px] py-2 uppercase'>
+              <FaCircle size={'8'} />
+              EXPERT OUR DOCTOR
+            </h6>
+          </div>
+          <h1 className='font-AlbertSans font-bold uppercase text-white text-[20px] leading-[28px] sm:text-[38px] sm:leading-[48px] md:text-[48px] md:leading-[58px] lg:text-[40px] lg:leading-[50px] xl:text-[46px] xl:leading-[57px] 2xl:text-[55px] 2xl:leading-[67px]'>
+            Explore Our Team
           </h1>
         </div>
-        <div className="mt-[46px]">
-          <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
-            <div>
-              {testiData.map(
-                ({
-                  id,
-                  testiRatingIcon,
-                  testiName,
-                  testiDesignation,
-                  testiDesc,
-                }) => {
-                  return (
-                    <SwiperSlide key={id}>
-                      <div className="pt-[80px] md:pt-[150px]">
+        <div className='grid gap-8 lg:gap-0 grid-cols-6 lg:grid-cols-12 lg:items-center pt-5'>
+          <div className='col-span-6 lg:col-span-4 relative pt-[154px]'>
+            <div className='relative z-10 rounded-[30px] overflow-hidden'>
+              <img
+                src={testiThumb}
+                draggable='false'
+                className='lg:max-w-[inherit] lg:w-[inherit] 2xl:max-w-full'
+              />
+            </div>
+          </div>
+          <div className='col-span-6 lg:col-span-8 ml-20'>
+            <Swiper
+              {...settings}
+              modules={[EffectFlip]}
+            >
+              <div>
+                {testiData.map(
+                  ({
+                    id,
+                    testiQuote,
+                    testiName,
+                    testiDesignation,
+                    testiDesc,
+                  }) => {
+                    return (
+                      <SwiperSlide
+                        key={id}
+                        className='pt-[154px]'
+                      >
                         <TestimonialCard
-                          testiRatingIcon={testiRatingIcon}
+                          testiQuote={testiQuote}
                           testiName={testiName}
                           testiDesignation={testiDesignation}
                           testiDesc={testiDesc}
                         />
-                      </div>
-                    </SwiperSlide>
-                  );
-                }
-              )}
-            </div>
-            <TestimonialNavigation />
-          </Swiper>
+                      </SwiperSlide>
+                    );
+                  }
+                )}
+              </div>
+              <TestimonialNavigation />
+            </Swiper>
+          </div>
         </div>
       </div>
     </section>

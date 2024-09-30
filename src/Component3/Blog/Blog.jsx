@@ -91,7 +91,7 @@ const Blog = () => {
             OUR HAPPY PATIENTS
           </h1>
         </div>
-        <div className='pt-[20px]'>
+        <div className='pt-5'>
           <Swiper {...settings}>
             {blogData.map(
               ({
