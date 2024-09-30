@@ -12,7 +12,7 @@ const TeamCard = ({
   teamIcon,
 }) => {
   return (
-    <div className='group text-center relative z-10 bg-BodyBg-0 py-10 rounded-2xl overflow-hidden before:absolute before:bottom-0 before:left-0 before:w-full before:h-1/2 before:border-x-2 before:border-b-2 before:rounded-b-2xl before:border-white'>
+    <div className='group text-center relative z-10 bg-BodyBg-0 py-10 rounded-2xl overflow-hidden before:absolute before:bottom-0 before:left-0 before:w-full before:h-1/2 before:border-x-2 before:border-b-2 before:rounded-b-2xl before:border-white before:transition-all before:duration-500 hover:before:opacity-0'>
       <div className='absolute -z-10 top-0 left-0 opacity-0 transition-all duration-500 group-hover:opacity-100'>
         <img
           src={teamShape}

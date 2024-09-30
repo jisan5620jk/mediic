@@ -5,7 +5,7 @@ import { FaCircle } from "react-icons/fa6";
 
 const About = () => {
   return (
-    <section className='py-[120px] bg-gradient-to-t from-BodyBg-0 from-25% relative px-2 xl:mx-10 rounded-b-[30px]'>
+    <section className='py-[120px] bg-gradient-to-t from-BodyBg-0 from-25% relative z-10 px-2 xl:mx-10 rounded-b-[30px] -mb-[120px]'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-10 items-center bg-gradient-to-b from-BodyBg-0 from-60% rounded-[30px] border-2 border-white'>
           <div className='relative z-10'>

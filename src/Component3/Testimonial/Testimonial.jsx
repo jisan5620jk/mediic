@@ -63,7 +63,7 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className='bg-[url(/images/motivation-bg.jpg)] bg-cover bg-center bg-no-repeat py-28 relative z-10 overflow-hidden'>
+    <section className='bg-[url(/images/motivation-bg.jpg)] bg-cover bg-center bg-no-repeat pt-[200px] pb-28 relative z-10 overflow-hidden'>
       <div className='absolute -z-10 top-16 -translate-y-1/2 left-1/2 -translate-x-1/2'>
         <img
           src={circleShape}

@@ -5,6 +5,7 @@ import Brand from '../../Component3/Brand/Brand';
 import Portfolio from '../../Component3/Portfolio/Portfolio';
 import Service from '../../Component3/Service/Service';
 import Service2 from '../../Component3/Service2/Service2';
+import Subscribe from '../../Component3/Subscribe/Subscribe';
 import TeamMember from '../../Component3/TeamMember/TeamMember';
 import Testimonial from '../../Component3/Testimonial/Testimonial';
 
@@ -20,6 +21,7 @@ const Home3 = () => {
       <Testimonial />
       <TeamMember />
       <Blog />
+      <Subscribe/>
     </>
   );
 };

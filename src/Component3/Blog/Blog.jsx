@@ -71,7 +71,7 @@ const Blog = () => {
     },
   };
   return (
-    <section className='py-28 bg-gradient-to-t from-BodyBg-0 from-10% mx-2 xl:mx-10 rounded-b-[30px] relative z-10'>
+    <section className='py-28 bg-gradient-to-t from-BodyBg-0 from-10% mx-2 xl:mx-10 relative z-10'>
       <div className='absolute -left-20 top-0 -z-10'>
         <img
           src={blogShape}
