@@ -90,6 +90,7 @@ const Banner = () => {
                     <img
                       src={bannerHeart}
                       draggable='false'
+                      className='animate-rotateX'
                     />
                   </div>
                   <div className='absolute top-48 -right-[102px]'>
