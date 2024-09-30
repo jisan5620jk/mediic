@@ -42,7 +42,7 @@ const Service2 = () => {
       };
     }, []);
   return (
-    <section className='bg-gradient-to-t from-BodyBg-0 from-25% px-2 xl:mx-10 rounded-b-[30px] py-[120px] relative z-20 -mb-20'>
+    <section className='bg-gradient-to-t from-BodyBg-0 from-25% px-2 xl:mx-10 rounded-b-[30px] py-[120px] relative z-20 -mb-20 overflow-hidden'>
       <div className='absolute -z-10 top-16 -translate-y-1/2 left-1/2 -translate-x-1/2'>
         <img
           src={circleShape}

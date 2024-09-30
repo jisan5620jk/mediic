@@ -823,21 +823,22 @@ nav.main-menu-content > ul > li > a:hover > span {
 }
 
 .submenu.has-homemenu.mega-menu {
-  width: 800px;
+  width: 1000px;
   padding: 20px;
-  margin-left: -130px;
+  margin-left: -250px;
 }
 
 .homemenu-thumb {
   text-align: center;
   position: relative;
   overflow: hidden;
-  filter: drop-shadow(0 0 10px rgba(156, 156, 156, 0.25));
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.35));
   border-radius: 5px;
 }
 
 .homemenu-thumb img {
   width: 100%;
+  transition: all .5s;
 }
 
 .homemenu-thumb a > h6 {
@@ -855,7 +856,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   transform: translateX(-50%) translateY(-50%);
   transition: all 0.5s;
   text-align: center;
-  filter: drop-shadow(0 0 10px rgba(156, 156, 156, 0.25));
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.50));
 }
 
 @media only screen and (max-width: 991px) {
@@ -880,6 +881,10 @@ nav.main-menu-content > ul > li > a:hover > span {
 .homemenu-thumb a:hover h6 {
   top: 50%;
   opacity: 1;
+}
+
+.homemenu-thumb a:hover img {
+  filter: blur(2px);
 }
 
 .homemenu-content a {
