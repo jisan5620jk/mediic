@@ -7,7 +7,7 @@ import homeThree from '/images/home3.png';
 import homeFour from '/images/home4.png';
 import btnArrow from '/images/arrow.png';
 import './navbar.css';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   FaArrowUp,
   FaEnvelope,
@@ -161,25 +161,26 @@ const Navbar = () => {
     document.body.classList.remove('search-active');
   };
 
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   setIsSubmitting(true);
+  const searchContentRef = useRef(null);
+  const bodyOverlay3Ref = useRef(null);
+  const searchInputRef = useRef(null); // Reference for the search input
+  const [isSubmitting, setIsSubmitting] = useState(false); // State to track form submission
 
-  //   // Simulate form submission
-  //   setTimeout(() => {
-  //     setIsSubmitting(false);
-  //     if (searchInputRef.current) {
-  //       searchInputRef.current.value = ''; // Reset the search input
-  //     }
-  //     if (searchContentRef.current) {
-  //       searchContentRef.current.classList.remove('opened'); // Hide search overlay
-  //       searchContentRef.current.classList.add('hidden'); // Optionally hide afterwards
-  //     }
-  //     if (bodyOverlay3Ref.current) {
-  //       bodyOverlay3Ref.current.classList.add('hidden'); // Hide overlay
-  //     }
-  //   }, 2000); // Simulate a 2-second delay
-  // };
+ const handleSubmit = (event) => {
+   event.preventDefault(); // Prevent default form submission
+   setIsSubmitting(true); // Set submitting state
+
+   // Simulate a submission with a timeout (replace with your actual submission logic)
+   setTimeout(() => {
+     setIsSubmitting(false); // Reset submitting state
+     // Optionally clear the input field or close the overlay
+     if (searchInputRef.current) {
+       searchInputRef.current.value = ''; // Clear the input
+     }
+     bodyOverlay3Ref.current.classList.remove('apply'); // Close overlay on submit (optional)
+     searchContentRef.current.classList.remove('opened'); // Close search content (optional)
+   }, 2000); // Simulate a delay of 2 seconds
+ };;
 
   return (
     <>
@@ -593,16 +594,27 @@ const Navbar = () => {
           >
             <FaArrowUp />
           </button>
-          <form method='post'>
+          <form
+            method='post'
+            onSubmit={handleSubmit}
+          >
             <div className='form-group'>
               <input
                 type='search'
                 name='search-field'
                 placeholder='Search Here'
                 required
+                ref={searchInputRef}
               />
-              <button type='submit'>
-                <IoSearch />
+              <button
+                type='submit'
+                disabled={isSubmitting} // Disable button if submitting
+              >
+                {isSubmitting ? (
+                  <span>Loading...</span> // Show loading text
+                ) : (
+                  <IoSearch />
+                )}
               </button>
             </div>
           </form>
