@@ -561,7 +561,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   .service-box.active > div,
   .service-box:hover > div {
     width: 300px;
-    border-color: #007eff;
   }
 
   .service-box.active .service-title,
@@ -575,7 +574,32 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   .service-box.active > div,
   .service-box:hover > div {
     width: 410px;
-    border-color: #007eff;
+  }
+}
+
+@media screen and (min-width:992px) and (max-width: 1199px) {
+  .service-box.active > div,
+  .service-box:hover > div {
+    width: 250px;
+  }
+
+    .service-box.active .service-title,
+  .service-box:hover .service-title {
+    left: 16px;
+    bottom: 320px;
+  }
+
+  .service-box.active .service-desc,
+.service-box:hover .service-desc {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+}
+
+@media screen and (min-width:1200px) and (max-width: 1399px) {
+  .service-box.active > div,
+  .service-box:hover > div {
+    width: 336px;
   }
 }
 

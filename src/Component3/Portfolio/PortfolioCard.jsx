@@ -19,7 +19,7 @@ const PortfolioCard = ({
         draggable='false'
         className='w-full rounded-3xl overflow-hidden'
       />
-      <div className='absolute top-full left-0 right-0 z-20 scale-0 -translate-y-1/2 px-11 m-auto inline-block transition-all duration-500 group-hover:top-1/2 group-hover:scale-100'>
+      <div className='absolute top-full left-0 right-0 z-20 scale-0 -translate-y-1/2 px-11 lg:px-4 px:11 m-auto inline-block transition-all duration-500 group-hover:top-1/2 group-hover:scale-100'>
         <div className='relative z-10 text-center bg-PrimaryColor-0 border pt-10  pb-8 border-white border-opacity-35 rounded-xl'>
           <div className='absolute z-10 -right-[1px] -top-[1px] text-Secondarycolor-0'>
             {portfolioShape}
@@ -31,7 +31,7 @@ const PortfolioCard = ({
               </button>
             </Link>
           </div>
-          <h4 className='font-AlbertSans font-semibold text-xl sm:text-[22px] text-white pt-7 uppercase'>
+          <h4 className='font-AlbertSans font-semibold text-xl sm:text-[22px] lg:text-lg xl:text-base 2xl:text-[22px] text-white pt-7 uppercase'>
             {portfolioTitle}
           </h4>
         </div>

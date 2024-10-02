@@ -57,7 +57,7 @@ const TeamData = [
 
 const TeamMember = () => {
   return (
-    <section className='py-28 overflow-hidden relative z-10 bg-gradient-to-t from-BodyBg-0 to-80% from-25% rounded-b-[30px] mx-2 xl:mx-10'>
+    <section className='py-28 overflow-hidden relative z-10 bg-gradient-to-t from-BodyBg-0 to-80% from-25% rounded-b-[30px] mx-2 xl:mx-6 2xl:mx-10'>
       <div className='absolute -z-10 top-16 -translate-y-1/2 left-1/2 -translate-x-1/2'>
         <img
           src={circleShape}

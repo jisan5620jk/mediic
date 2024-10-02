@@ -30,7 +30,7 @@ const TeamCard = ({
           className='mx-auto'
         />
       </div>
-      <h5 className='font-AlbertSans font-bold text-2xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white pt-7'>
+      <h5 className='font-AlbertSans font-bold text-2xl lg:text-xl xl:text-2xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white pt-7'>
         {teamTitle}
       </h5>
       <p className='font-AlbertSans text-HeadingColor-0 transition-all duration-500 uppercase pt-1 pb-7 group-hover:text-white'>

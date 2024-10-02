@@ -6,7 +6,7 @@ const TestimonialCard = ({
   testiDesc,
 }) => {
   return (
-    <div className='relative px-2 sm:px-[60px] lg:px-2 xl:px-12 2xl:px-[60px] py-10 lg:pt-[114px] lg:pb-[110px] bg-[url(/images/review-bg.png)] bg-no-repeat bg-cover bg-center rounded-[30px]'>
+    <div className='relative px-2 sm:px-[60px] lg:px-10 xl:px-12 2xl:px-[60px] py-10 lg:pt-24 lg:pb-28 2xl:pt-[114px] 2xl:pb-[110px] bg-[url(/images/review-bg.png)] bg-no-repeat bg-cover bg-center rounded-[30px]'>
       <img
         src={testiQuote}
         draggable='false'

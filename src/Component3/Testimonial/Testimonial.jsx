@@ -84,7 +84,7 @@ const Testimonial = () => {
           </h1>
         </div>
         <div className='grid gap-8 lg:gap-0 grid-cols-6 lg:grid-cols-12 lg:items-center pt-5'>
-          <div className='col-span-6 lg:col-span-4 relative pt-[154px]'>
+          <div className='col-span-6 lg:col-span-4 relative pt-[154px] lg:pt-36 2xl:pt-[140px]'>
             <div className='relative z-10 rounded-[30px] overflow-hidden'>
               <img
                 src={testiThumb}
@@ -93,7 +93,7 @@ const Testimonial = () => {
               />
             </div>
           </div>
-          <div className='col-span-6 lg:col-span-8 lg:ml-20'>
+          <div className='col-span-6 lg:col-span-8 lg:ml-7 xl:ml-20'>
             <Swiper
               {...settings}
               modules={[EffectFlip]}
@@ -110,7 +110,7 @@ const Testimonial = () => {
                     return (
                       <SwiperSlide
                         key={id}
-                        className='mt-28 lg:pt-[154px]'
+                        className='mt-28 lg:mt-36 2xl:pt-0'
                       >
                         <TestimonialCard
                           testiQuote={testiQuote}

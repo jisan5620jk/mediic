@@ -4,7 +4,7 @@ import { LiaPhoneSolid } from 'react-icons/lia';
 
 const Subscribe = () => {
   return (
-    <section className='bg-[url(/images/sbcribe-bg.jpg)] bg-cover bg-no-repeat bg-center py-10 mx-2 xl:mx-10 rounded-b-[30px] relative z-20 -mb-[52px]'>
+    <section className='bg-[url(/images/sbcribe-bg.jpg)] bg-cover bg-no-repeat bg-center py-10 mx-2 xl:mx-6 2xl:mx-10 rounded-b-[30px] relative z-20 -mb-[52px]'>
       <div className='Container'>
         <div className='flex flex-col lg:flex-row justify-start lg:justify-between lg:items-center gap-6 lg:gap-0'>
           <div className='flex flex-col sm:flex-row sm:items-center gap-7'>

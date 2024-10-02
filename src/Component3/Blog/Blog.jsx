@@ -63,15 +63,15 @@ const Blog = () => {
         slidesPerView: 1,
       },
       992: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
-      1400: {
+      1200: {
         slidesPerView: 2,
       },
     },
   };
   return (
-    <section className='py-28 bg-gradient-to-t from-BodyBg-0 from-10% mx-2 xl:mx-10 relative z-10'>
+    <section className='py-28 bg-gradient-to-t from-BodyBg-0 from-10% mx-2 xl:mx-6 2xl:mx-10 relative z-10'>
       <div className='absolute -left-20 top-0 -z-10'>
         <img
           src={blogShape}
@@ -106,7 +106,10 @@ const Blog = () => {
                 blogBtnIcon,
               }) => {
                 return (
-                  <SwiperSlide key={id} className='pt-20 md:pt-[154px]'>
+                  <SwiperSlide
+                    key={id}
+                    className='pt-20 md:pt-[154px]'
+                  >
                     <BlogCard
                       blogThumb={blogThumb}
                       blogDateIcon={blogDateIcon}

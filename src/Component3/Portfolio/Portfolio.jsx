@@ -72,6 +72,9 @@ const Portfolio = () => {
         slidesPerView: 2,
       },
       992: {
+        slidesPerView: 3,
+      },
+      1200: {
         slidesPerView: 4,
       },
       1400: {
@@ -88,7 +91,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section className='portfolio mx-2 lg:mx-[50px] px-2 lg:px-[50px]  bg-gradient-to-t from-BodyBg-0 from-25% py-[120px] relative rounded-b-[30px]'>
+    <section className='portfolio mx-2 lg:mx-7 xl:mx-[50px] px-2 lg:px-7 xl:px-[50px]  bg-gradient-to-t from-BodyBg-0 from-25% py-[120px] relative rounded-b-[30px]'>
       <div className='relative z-10'>
         <Swiper
           {...settings}

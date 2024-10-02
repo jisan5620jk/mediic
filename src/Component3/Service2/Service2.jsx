@@ -11,38 +11,37 @@ import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import circleShape from '/images/crcle-bg.png';
 
-
 const Service2 = () => {
-    useEffect(() => {
-      const handleMouseEnter = (event) => {
-        event.target.classList.add('active');
+  useEffect(() => {
+    const handleMouseEnter = (event) => {
+      event.target.classList.add('active');
 
-        // Remove 'active' class from siblings
-        const parent = event.target.parentElement;
-        if (parent) {
-          const siblings = parent.querySelectorAll('.service-box');
-          siblings.forEach((sibling) => {
-            if (sibling !== event.target) {
-              sibling.classList.remove('active');
-            }
-          });
-        }
-      };
-
-      const elements = document.querySelectorAll('.service-box');
-      elements.forEach((element) => {
-        element.addEventListener('mouseenter', handleMouseEnter);
-      });
-
-      // Clean up event listeners when component unmounts
-      return () => {
-        elements.forEach((element) => {
-          element.removeEventListener('mouseenter', handleMouseEnter);
+      // Remove 'active' class from siblings
+      const parent = event.target.parentElement;
+      if (parent) {
+        const siblings = parent.querySelectorAll('.service-box');
+        siblings.forEach((sibling) => {
+          if (sibling !== event.target) {
+            sibling.classList.remove('active');
+          }
         });
-      };
-    }, []);
+      }
+    };
+
+    const elements = document.querySelectorAll('.service-box');
+    elements.forEach((element) => {
+      element.addEventListener('mouseenter', handleMouseEnter);
+    });
+
+    // Clean up event listeners when component unmounts
+    return () => {
+      elements.forEach((element) => {
+        element.removeEventListener('mouseenter', handleMouseEnter);
+      });
+    };
+  }, []);
   return (
-    <section className='bg-gradient-to-t from-BodyBg-0 from-25% px-2 xl:mx-10 rounded-b-[30px] py-[120px] relative z-20 -mb-20 overflow-hidden'>
+    <section className='bg-gradient-to-t from-BodyBg-0 from-25% px-2 xl:px-5 2xl:mx-10 rounded-b-[30px] py-[120px] relative z-20 -mb-20 overflow-hidden'>
       <div className='absolute -z-10 top-16 -translate-y-1/2 left-1/2 -translate-x-1/2'>
         <img
           src={circleShape}
@@ -62,7 +61,64 @@ const Service2 = () => {
         </h1>
       </div>
       <div className='Container'>
-        <div className='flex flex-col lg:flex-row items-center justify-between gap-8 w-full relative z-10 mt-[44px]'>
+        <div className='flex md:hidden lg:flex flex-col lg:flex-row items-center justify-between gap-8 w-full relative z-10 mt-[44px]'>
+          <div className='service-box'>
+            <ServiceCard2
+              serviceIcon={serviceIcon}
+              serviceShape={serviceShape}
+              serviceTitle='Health issues'
+              serviceDesc='Evolve professional intellectual capital from without enterprise user seamlessl prox value added e-commerce medical creams need and clean development'
+              serviceUrl='/service_details'
+              btnContent='Read More'
+              btnIcon={btnIcon}
+            />
+          </div>
+          <div className='service-box'>
+            <ServiceCard2
+              serviceIcon={serviceIcon5}
+              serviceShape={serviceShape}
+              serviceTitle='Ophthalmology'
+              serviceDesc='Evolve professional intellectual capital from without enterprise user seamlessl prox value added e-commerce medical creams need and clean development'
+              serviceUrl='/service_details'
+              btnContent='Read More'
+              btnIcon={btnIcon}
+            />
+          </div>
+          <div className='service-box active'>
+            <ServiceCard2
+              serviceIcon={serviceIcon2}
+              serviceShape={serviceShape}
+              serviceTitle='Dental Services'
+              serviceDesc='Evolve professional intellectual capital from without enterprise user seamlessl prox value added e-commerce medical creams need and clean development'
+              serviceUrl='/service_details'
+              btnContent='Read More'
+              btnIcon={btnIcon}
+            />
+          </div>
+          <div className='service-box'>
+            <ServiceCard2
+              serviceIcon={serviceIcon3}
+              serviceShape={serviceShape}
+              serviceTitle='Neurology Care'
+              serviceDesc='Evolve professional intellectual capital from without enterprise user seamlessl prox value added e-commerce medical creams need and clean development'
+              serviceUrl='/service_details'
+              btnContent='Read More'
+              btnIcon={btnIcon}
+            />
+          </div>
+          <div className='service-box'>
+            <ServiceCard2
+              serviceIcon={serviceIcon4}
+              serviceShape={serviceShape}
+              serviceTitle='Adult medicine'
+              serviceDesc='Evolve professional intellectual capital from without enterprise user seamlessl prox value added e-commerce medical creams need and clean development'
+              serviceUrl='/service_details'
+              btnContent='Read More'
+              btnIcon={btnIcon}
+            />
+          </div>
+        </div>
+        <div className='hidden md:flex lg:hidden flex-col lg:flex-row items-center justify-between gap-8 w-full relative z-10 mt-[44px]'>
           <div className='flex flex-col md:flex-row gap-8 items-center justify-between'>
             <div className='service-box'>
               <ServiceCard2

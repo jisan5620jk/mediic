@@ -12,7 +12,7 @@ const Banner = () => {
   const [toggler, setToggler] = useState(false);
   return (
     <div className='bg-white'>
-      <section className="bg-[url('/images/hero-bg3.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1250px] md:h-[1400px] lg:h-[700px] xl:h-[790px] 2xl:h-[790px] flex items-center relative z-10 overflow-hidden rounded-t-2xl md:rounded-t-[30px]">
+      <section className="bg-[url('/images/hero-bg3.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1250px] md:h-[1400px] lg:h-[880px] xl:h-[790px] 2xl:h-[790px] flex items-center relative z-10 overflow-hidden rounded-t-2xl md:rounded-t-[30px]">
         <div className='flex justify-center items-center m-auto'>
           <div className='Container'>
             <div className='grid grid-cols-1 lg:grid-cols-2 items-center'>
@@ -23,7 +23,7 @@ const Banner = () => {
                     WELCOME TO OUR HOSPITAL
                   </h6>
                 </div>
-                <h1 className='font-AlbertSans font-extrabold text-3xl sm:text-5xl sm:leading-[58px] md:text-6xl md:leading-[70px] xl:text-[65px] xl:leading-[80px] text-HeadingColor-0 mt-[18px] mb-7'>
+                <h1 className='font-AlbertSans font-extrabold text-3xl sm:text-5xl sm:leading-[58px] md:text-6xl md:leading-[70px] lg:text-5xl lg:leading-[58px] xl:text-[58px] xl:leading-[70px] 2xl:text-[65px] 2xl:leading-[80px] text-HeadingColor-0 mt-[18px] mb-7'>
                   BETTER CARE FOR <br /> YOUR{' '}
                   <span className='text-PrimaryColor-0'>HEALTH</span>
                 </h1>
@@ -39,7 +39,7 @@ const Banner = () => {
                     />
                   </button>
                 </Link>
-                <div className='flex flex-col sm:flex-row items-center gap-5 pt-11'>
+                <div className='flex flex-col sm:flex-row lg:flex-col xl:flex-row lg:items-start xl:items-center items-center gap-5 pt-11'>
                   <div className='relative z-30 flex flex-col md:flex-row md:justify-between lg:justify-evenly xl:justify-between md:items-center gap-8'>
                     <div className='flex flex-col sm:flex-row items-center gap-5 bg-white bg-opacity-30 backdrop-filter backdrop-blur-md border-2 border-white rounded-2xl pt-6 px-4 sm:px-8 pb-6'>
                       <div>

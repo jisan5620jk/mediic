@@ -1,7 +1,7 @@
-import aboutThumb from "/images/about-3.jpg";
+import aboutThumb from '/images/about-3.jpg';
 import aboutIcon from '/images/about-icon.png';
 import aboutIcon2 from '/images/about-icon2.png';
-import { FaCircle } from "react-icons/fa6";
+import { FaCircle } from 'react-icons/fa6';
 
 const About = () => {
   return (
@@ -22,7 +22,7 @@ const About = () => {
                 About Our Medical
               </h6>
             </div>
-            <h1 className='font-AlbertSans font-bold text-HeadingColor-0 text-[20px] leading-[28px] sm:text-[38px] sm:leading-[48px] md:text-[48px] md:leading-[58px] lg:text-[40px] lg:leading-[50px] xl:text-[46px] xl:leading-[57px] 2xl:text-[55px] 2xl:leading-[67px]'>
+            <h1 className='font-AlbertSans font-bold text-HeadingColor-0 text-[20px] leading-[28px] sm:text-[38px] sm:leading-[48px] md:text-[48px] md:leading-[58px] lg:text-[40px] lg:leading-[50px] xl:text-[46px] xl:leading-[57px] 2xl:text-[52px] 2xl:leading-[64px]'>
               Start Your Adventure to <br /> Better Health Here
             </h1>
             <p className='font-DMSans text-TextColor2-0 pb-12 pt-4'>
@@ -39,7 +39,7 @@ const About = () => {
                 </h6>
                 <p className='font-DMSans text-TextColor2-0'>
                   Professional intellectual capital without enterprise users{' '}
-                  <br className="hidden md:block lg:hidden xl:block"/>
+                  <br className='hidden md:block lg:hidden 2xl:block' />
                   Seamlessly matrix value e-commerce
                 </p>
               </div>
@@ -54,7 +54,7 @@ const About = () => {
                 </h6>
                 <p className='font-DMSans text-TextColor2-0'>
                   Professional intellectual capital without enterprise users{' '}
-                  <br className="hidden md:block lg:hidden xl:block"/>
+                  <br className='hidden md:block lg:hidden 2xl:block' />
                   Seamlessly matrix value e-commerce
                 </p>
               </div>
