@@ -12,7 +12,7 @@ const Banner = () => {
   const [toggler, setToggler] = useState(false);
   return (
     <div className='bg-white'>
-      <section className="bg-[url('/images/hero-bg3.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[700px] md:h-[700px] lg:h-[700px] xl:h-[790px] 2xl:h-[790px] flex items-center relative z-10 overflow-hidden rounded-t-2xl md:rounded-t-[30px]">
+      <section className="bg-[url('/images/hero-bg3.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1250px] md:h-[1400px] lg:h-[700px] xl:h-[790px] 2xl:h-[790px] flex items-center relative z-10 overflow-hidden rounded-t-2xl md:rounded-t-[30px]">
         <div className='flex justify-center items-center m-auto'>
           <div className='Container'>
             <div className='grid grid-cols-1 lg:grid-cols-2 items-center'>
@@ -23,7 +23,7 @@ const Banner = () => {
                     WELCOME TO OUR HOSPITAL
                   </h6>
                 </div>
-                <h1 className='font-AlbertSans font-extrabold text-3xl  xl:text-[65px] xl:leading-[80px] text-HeadingColor-0 mt-[18px] mb-7'>
+                <h1 className='font-AlbertSans font-extrabold text-3xl sm:text-5xl sm:leading-[58px] md:text-6xl md:leading-[70px] xl:text-[65px] xl:leading-[80px] text-HeadingColor-0 mt-[18px] mb-7'>
                   BETTER CARE FOR <br /> YOUR{' '}
                   <span className='text-PrimaryColor-0'>HEALTH</span>
                 </h1>
@@ -74,12 +74,12 @@ const Banner = () => {
                   </div>
                 </div>
               </div>
-              <div className='flex justify-end'>
+              <div className='flex justify-end md:justify-center lg:justify-end'>
                 <div className='relative z-10'>
                   <img
                     src={bannerThumb}
                     draggable='false'
-                    className='relative top-[70px] xl:top-14'
+                    className='relative top-[70px] sm:top-20 md:top-36 xl:top-14'
                   />
                   <img
                     src={bannerShape}

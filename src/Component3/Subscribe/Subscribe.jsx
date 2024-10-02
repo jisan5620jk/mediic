@@ -18,7 +18,7 @@ const Subscribe = () => {
               Elevating Customer Experience.
             </h3>
           </div>
-          <div className='flex items-center gap-10'>
+          <div className='flex items-center gap-3 sm:gap-10'>
             <div className='size-[70px] rounded-full flex items-center justify-center text-white bg-[#1b8bff]'>
               <LiaPhoneSolid className='text-4xl' />
             </div>

@@ -495,7 +495,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   border-color: #007eff;
 }
 
-
 .service-box.active > div > span:nth-of-type(1),
 .service-box:hover > div > span:nth-of-type(1) {
   width: 25%;
@@ -566,10 +565,18 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   }
 
   .service-box.active .service-title,
-.service-box:hover .service-title {
-  left: 16px;
-  bottom: 310px;
+  .service-box:hover .service-title {
+    left: 16px;
+    bottom: 310px;
+  }
 }
+
+@media screen and (min-width:576px) and (max-width: 767px) {
+  .service-box.active > div,
+  .service-box:hover > div {
+    width: 410px;
+    border-color: #007eff;
+  }
 }
 
 /* Faq */

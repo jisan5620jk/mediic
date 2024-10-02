@@ -62,50 +62,54 @@ const Service2 = () => {
         </h1>
       </div>
       <div className='Container'>
-        <div className='flex flex-col items-center justify-between gap-8 w-full relative z-10 mt-[44px]'>
-          <div className='service-box'>
-            <ServiceCard2
-              serviceIcon={serviceIcon}
-              serviceShape={serviceShape}
-              serviceTitle='Health issues'
-              serviceDesc='Evolve professional intellectual capital from without enterprise user seamlessl prox value added e-commerce medical creams need and clean development'
-              serviceUrl='/service_details'
-              btnContent='Read More'
-              btnIcon={btnIcon}
-            />
+        <div className='flex flex-col lg:flex-row items-center justify-between gap-8 w-full relative z-10 mt-[44px]'>
+          <div className='flex flex-col md:flex-row gap-8 items-center justify-between'>
+            <div className='service-box'>
+              <ServiceCard2
+                serviceIcon={serviceIcon}
+                serviceShape={serviceShape}
+                serviceTitle='Health issues'
+                serviceDesc='Evolve professional intellectual capital from without enterprise user seamlessl prox value added e-commerce medical creams need and clean development'
+                serviceUrl='/service_details'
+                btnContent='Read More'
+                btnIcon={btnIcon}
+              />
+            </div>
+            <div className='service-box'>
+              <ServiceCard2
+                serviceIcon={serviceIcon5}
+                serviceShape={serviceShape}
+                serviceTitle='Ophthalmology'
+                serviceDesc='Evolve professional intellectual capital from without enterprise user seamlessl prox value added e-commerce medical creams need and clean development'
+                serviceUrl='/service_details'
+                btnContent='Read More'
+                btnIcon={btnIcon}
+              />
+            </div>
           </div>
-          <div className='service-box'>
-            <ServiceCard2
-              serviceIcon={serviceIcon5}
-              serviceShape={serviceShape}
-              serviceTitle='Ophthalmology'
-              serviceDesc='Evolve professional intellectual capital from without enterprise user seamlessl prox value added e-commerce medical creams need and clean development'
-              serviceUrl='/service_details'
-              btnContent='Read More'
-              btnIcon={btnIcon}
-            />
-          </div>
-          <div className='service-box active'>
-            <ServiceCard2
-              serviceIcon={serviceIcon2}
-              serviceShape={serviceShape}
-              serviceTitle='Dental Services'
-              serviceDesc='Evolve professional intellectual capital from without enterprise user seamlessl prox value added e-commerce medical creams need and clean development'
-              serviceUrl='/service_details'
-              btnContent='Read More'
-              btnIcon={btnIcon}
-            />
-          </div>
-          <div className='service-box'>
-            <ServiceCard2
-              serviceIcon={serviceIcon3}
-              serviceShape={serviceShape}
-              serviceTitle='Neurology Care'
-              serviceDesc='Evolve professional intellectual capital from without enterprise user seamlessl prox value added e-commerce medical creams need and clean development'
-              serviceUrl='/service_details'
-              btnContent='Read More'
-              btnIcon={btnIcon}
-            />
+          <div className='flex flex-col md:flex-row gap-8 items-center justify-between'>
+            <div className='service-box active'>
+              <ServiceCard2
+                serviceIcon={serviceIcon2}
+                serviceShape={serviceShape}
+                serviceTitle='Dental Services'
+                serviceDesc='Evolve professional intellectual capital from without enterprise user seamlessl prox value added e-commerce medical creams need and clean development'
+                serviceUrl='/service_details'
+                btnContent='Read More'
+                btnIcon={btnIcon}
+              />
+            </div>
+            <div className='service-box'>
+              <ServiceCard2
+                serviceIcon={serviceIcon3}
+                serviceShape={serviceShape}
+                serviceTitle='Neurology Care'
+                serviceDesc='Evolve professional intellectual capital from without enterprise user seamlessl prox value added e-commerce medical creams need and clean development'
+                serviceUrl='/service_details'
+                btnContent='Read More'
+                btnIcon={btnIcon}
+              />
+            </div>
           </div>
           <div className='service-box'>
             <ServiceCard2

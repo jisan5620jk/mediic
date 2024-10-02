@@ -89,7 +89,7 @@ const Testimonial = () => {
               <img
                 src={testiThumb}
                 draggable='false'
-                className='lg:max-w-[inherit] lg:w-[inherit] 2xl:max-w-full'
+                className='w-full lg:max-w-[inherit] lg:w-[inherit] 2xl:max-w-full'
               />
             </div>
           </div>
@@ -110,7 +110,7 @@ const Testimonial = () => {
                     return (
                       <SwiperSlide
                         key={id}
-                        className='pt-[154px]'
+                        className='mt-28 lg:pt-[154px]'
                       >
                         <TestimonialCard
                           testiQuote={testiQuote}

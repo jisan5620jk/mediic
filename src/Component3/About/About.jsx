@@ -12,10 +12,10 @@ const About = () => {
             <img
               src={aboutThumb}
               draggable='false'
-              className='rounded-[30px] overflow-hidden'
+              className='w-full rounded-[30px] overflow-hidden'
             />
           </div>
-          <div className='relative px-2 lg:px-0 pb-5 lg:pb-0'>
+          <div className='relative px-2 md:px-6 lg:px-0 pb-5 lg:pb-0'>
             <div className='inline-block mb-5'>
               <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-30 text-PrimaryColor-0 text-[15px] font-semibold border border-white rounded-full font-AlbertSans px-[22px] py-2 uppercase'>
                 <FaCircle size={'8'} />
@@ -39,7 +39,7 @@ const About = () => {
                 </h6>
                 <p className='font-DMSans text-TextColor2-0'>
                   Professional intellectual capital without enterprise users{' '}
-                  <br />
+                  <br className="hidden md:block lg:hidden xl:block"/>
                   Seamlessly matrix value e-commerce
                 </p>
               </div>
@@ -54,7 +54,7 @@ const About = () => {
                 </h6>
                 <p className='font-DMSans text-TextColor2-0'>
                   Professional intellectual capital without enterprise users{' '}
-                  <br />
+                  <br className="hidden md:block lg:hidden xl:block"/>
                   Seamlessly matrix value e-commerce
                 </p>
               </div>

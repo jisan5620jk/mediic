@@ -13,7 +13,7 @@ const BlogCard = ({
   blogBtnIcon,
 }) => {
   return (
-    <div className='group p-[30px] transition-all duration-500 bg-white bg-opacity-30 border-2 border-white border-opacity-65 rounded-3xl flex items-center gap-10'>
+    <div className='group p-4 md:p-[30px] transition-all duration-500 bg-white bg-opacity-30 border-2 border-white border-opacity-65 rounded-3xl flex items-center flex-col sm:flex-row gap-10 sm:gap-4 md:gap-10'>
       <div className='relative rounded-3xl overflow-hidden before:absolute before:top-0 before:left-1/2 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 group-hover:before:w-full group-hover:before:left-0 before:z-10 group-hover:before:opacity-0'>
         <img
           src={blogThumb}
@@ -33,7 +33,7 @@ const BlogCard = ({
             </p>
           </div>
           <Link to={blogUrl}>
-            <button className='font-AlbertSans text-left font-semibold text-lg sm:text-xl md:text-xl lg:text-base xl:text-xl text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-2 uppercase'>
+            <button className='font-AlbertSans text-left font-semibold text-lg sm:text-base md:text-xl lg:text-base xl:text-xl text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-2 uppercase'>
               {blogTitle}
             </button>
           </Link>

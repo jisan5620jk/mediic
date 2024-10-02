@@ -79,7 +79,7 @@ const Blog = () => {
         />
       </div>
       <div className='Container'>
-        <div className='-mb-[116px] border-b border-BorderColor3-0 pb-10'>
+        <div className=' md:-mb-[116px] border-b border-BorderColor3-0 pb-10'>
           <div className='inline-block mb-5'>
             <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-30 text-PrimaryColor-0 text-[15px] font-semibold border border-white border-opacity-60 rounded-full font-AlbertSans px-[22px] py-2 uppercase'>
               <FaCircle size={'8'} />
@@ -106,7 +106,7 @@ const Blog = () => {
                 blogBtnIcon,
               }) => {
                 return (
-                  <SwiperSlide key={id} className='pt-[154px]'>
+                  <SwiperSlide key={id} className='pt-20 md:pt-[154px]'>
                     <BlogCard
                       blogThumb={blogThumb}
                       blogDateIcon={blogDateIcon}
