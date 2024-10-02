@@ -76,11 +76,11 @@ const Testimonial = () => {
           <div className='inline-block mb-5'>
             <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-0 text-PrimaryColor-0 text-[15px] font-semibold border border-PrimaryColor-0 border-opacity-100 rounded-full font-AlbertSans px-[22px] py-2 uppercase'>
               <FaCircle size={'8'} />
-              EXPERT OUR DOCTOR
+              PATIENTS Feedback
             </h6>
           </div>
           <h1 className='font-AlbertSans font-bold uppercase text-white text-[20px] leading-[28px] sm:text-[38px] sm:leading-[48px] md:text-[48px] md:leading-[58px] lg:text-[40px] lg:leading-[50px] xl:text-[46px] xl:leading-[57px] 2xl:text-[55px] 2xl:leading-[67px]'>
-            Explore Our Team
+            OUR HAPPY PATIENTS
           </h1>
         </div>
         <div className='grid gap-8 lg:gap-0 grid-cols-6 lg:grid-cols-12 lg:items-center pt-5'>
@@ -93,7 +93,7 @@ const Testimonial = () => {
               />
             </div>
           </div>
-          <div className='col-span-6 lg:col-span-8 ml-20'>
+          <div className='col-span-6 lg:col-span-8 lg:ml-20'>
             <Swiper
               {...settings}
               modules={[EffectFlip]}

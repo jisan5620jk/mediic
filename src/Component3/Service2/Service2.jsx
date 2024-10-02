@@ -62,7 +62,7 @@ const Service2 = () => {
         </h1>
       </div>
       <div className='Container'>
-        <div className='flex items-center justify-between gap-8 w-full relative z-10 mt-[44px]'>
+        <div className='flex flex-col items-center justify-between gap-8 w-full relative z-10 mt-[44px]'>
           <div className='service-box'>
             <ServiceCard2
               serviceIcon={serviceIcon}

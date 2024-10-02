@@ -31,7 +31,7 @@ const PortfolioCard = ({
               </button>
             </Link>
           </div>
-          <h4 className='font-AlbertSans font-semibold text-[22px] text-white pt-7 uppercase'>
+          <h4 className='font-AlbertSans font-semibold text-xl sm:text-[22px] text-white pt-7 uppercase'>
             {portfolioTitle}
           </h4>
         </div>

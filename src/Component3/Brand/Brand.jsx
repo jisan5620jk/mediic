@@ -31,7 +31,7 @@ const Brand = () => {
     },
   };
   return (
-    <div className='py-[60px] bg-PrimaryColor-0 mx-10 rounded-b-[30px]'>
+    <div className='py-[60px] bg-PrimaryColor-0 mx-4 xl:mx-10 rounded-b-[30px]'>
       <div className='Container relative z-10'>
         <Swiper {...settings}>
           <SwiperSlide>

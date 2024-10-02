@@ -15,7 +15,7 @@ const About = () => {
               className='rounded-[30px] overflow-hidden'
             />
           </div>
-          <div className='relative'>
+          <div className='relative px-2 lg:px-0 pb-5 lg:pb-0'>
             <div className='inline-block mb-5'>
               <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-30 text-PrimaryColor-0 text-[15px] font-semibold border border-white rounded-full font-AlbertSans px-[22px] py-2 uppercase'>
                 <FaCircle size={'8'} />
@@ -29,7 +29,7 @@ const About = () => {
               Continually evolve professional intellectual capital without
               enterprise user Seamlessly matrix value added e-commerce
             </p>
-            <div className='flex items-center gap-5'>
+            <div className='flex flex-col sm:flex-row sm:items-center gap-5'>
               <div className='size-[100px] rounded-md bg-PrimaryColor-0 flex items-center justify-center'>
                 <img src={aboutIcon} />
               </div>
@@ -44,7 +44,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className='flex items-center gap-5 pt-8'>
+            <div className='flex flex-col sm:flex-row sm:items-center gap-5 pt-8'>
               <div className='size-[100px] rounded-md bg-Secondarycolor-0 flex items-center justify-center'>
                 <img src={aboutIcon2} />
               </div>

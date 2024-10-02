@@ -84,7 +84,7 @@ const Service = () => {
   };
 
   return (
-    <section className='px-5 lg:px-10 bg-[url(/images/motivation-bg.jpg)] bg-cover bg-center bg-no-repeat pt-[240px] pb-[120px] relative'>
+    <section className='px-4 lg:px-10 bg-[url(/images/motivation-bg.jpg)] bg-cover bg-center bg-no-repeat pt-[240px] pb-[120px] relative'>
       <div className='text-center'>
         <div className='inline-block mb-5'>
           <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-0 text-white text-[15px] font-semibold border border-white border-opacity-10 rounded-full font-AlbertSans px-[22px] py-2 uppercase'>

@@ -150,7 +150,7 @@ const Navbar = () => {
         });
       });
     }
-  }, []);
+  }, [headerIcon]);
 
   //Menu Search
   const handleMenuSearchClick = () => {
