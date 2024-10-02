@@ -161,7 +161,7 @@
   font-family: 'Albert Sans', sans-serif;
 }
 
-.offcanvas_contact-info ul li i {
+.offcanvas_contact-info ul li svg {
   color: #007eff;
 }
 
@@ -279,7 +279,7 @@
   transform: rotate(360deg);
 }
 
-.offcanvas_close-btn button i {
+.offcanvas_close-btn button svg {
   font-weight: 300;
   font-size: 20px;
   transition: 0.9s;
@@ -727,7 +727,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   li.has-dropdown
   > a.expanded
   .dropdown-toggle-btn.dropdown-opened
-  i {
+  svg {
   color: #ffffff;
 }
 
@@ -1161,7 +1161,7 @@ nav.main-menu-content > ul > li > a:hover > span {
   transform: rotate(360deg);
 }
 
-.sidebar_close-btn button i {
+.sidebar_close-btn button svg {
   font-weight: 300;
   font-size: 20px;
   transition: 0.9s;
@@ -1216,4 +1216,166 @@ nav.main-menu-content > ul > li > a:hover > span {
 
 .sidebar-social-icon li a:hover::before {
   transform: scale(1);
+}
+
+/* Search CSS */
+.search-popup {  
+  position: fixed;  
+  top: 0;  
+  left: 0;  
+  height: 100vh;  
+  width: 100%;  
+  z-index: 99999;  
+  margin-top: -540px;  
+  transform: translateY(-100%);  
+  background: rgba(0, 0, 0, 0.2); 
+  transition: all 1500ms cubic-bezier(0.86, 0, 0.07, 1);  
+  backdrop-filter: blur(5px);  
+}  
+
+.search-active .search-popup {  
+  transform: translateY(0);  
+  margin-top: 0;  
+}  
+
+.close-search {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ff0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #f00;
+}
+
+.close-search2 {  
+  position: absolute;  
+  left: 0;  
+  right: 0;  
+  top: 75%;  
+  margin: 0 auto;  
+  margin-top: -200px;  
+  border-radius: 50%;  
+  background: linear-gradient(to right, #007eff 6%, #002570 96%);  
+  width: 70px;  
+  cursor: pointer;  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);  
+  border: 3px solid ;  
+  border-top-color: #fff;
+  border-left-color: #000;
+  border-bottom-color: #fff;
+  border-right-color: #000;
+  opacity: 0;  
+  visibility: hidden;  
+  height: 70px;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 500ms ease;  
+}  
+
+
+.search-active .close-search2 {  
+  visibility: visible;  
+  opacity: 1;  
+  top: 50%;  
+  transition-delay: 1500ms;  
+}  
+
+.close-search2 svg {  
+  font-size: 30px;  
+  color: #ffffff;  
+}  
+
+.search-popup form {  
+  position: absolute;  
+  max-width: 700px;  
+  top: 50%;  
+  left: 15px;  
+  right: 15px;  
+  margin: -35px auto 0;  
+  transform: scaleX(0);  
+  background-color: transparent;  
+  transition: all 300ms ease;  
+}  
+
+.search-active form {  
+  transform: scaleX(1);  
+  transition-delay: 1200ms;  
+}  
+
+.form-group {  
+  position: relative;  
+  margin: 0;  
+  overflow: hidden;  
+}  
+
+.form-group input[type='search'] {  
+  display: block;  
+  font-size: 18px;  
+  line-height: 50px;  
+  color: #000000;  
+  height: 70px;  
+  width: 100%;  
+  padding: 10px 30px;  
+  background-color: #ffffff;  
+  font-family: 'Albert Sans';
+  transition: all 500ms ease;  
+  border: 2px solid #007eff;  
+  border-radius: 5px;  
+}  
+
+.form-group button {  
+  position: absolute;  
+  right: 30px;  
+  top: 0;  
+  height: 70px;  
+  line-height: 70px;  
+  background: transparent;  
+  font-size: 24px;  
+  color: #002570;  
+  padding: 0;  
+  cursor: pointer;  
+  border: none;  
+  transition: all 500ms ease;  
+}  
+
+.form-group button:hover {  
+  color: #000000;  
+}  
+
+input::placeholder {  
+  color: #000000;  
+}  
+
+.close-search.style-two {  
+  right: 25px;  
+  color: #ffffff;  
+  top: 25px;  
+  background: none;  
+  transition: all 500ms ease;  
+}  
+
+.close-search.style-two svg {  
+  font-size: 20px;  
+  color: #f00;  
+}  
+
+.search-box-btn.search-box-outer svg {  
+  font-size: 18px;  
+  color: #093c78;  
+  cursor: pointer;  
+  transition: 0.5s;  
+}  
+
+.search-box-btn.search-box-outer svg:hover {  
+  color: #ff4613;  
+  filter: hue-rotate(360deg);  
 }

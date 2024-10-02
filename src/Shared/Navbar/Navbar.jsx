@@ -9,6 +9,7 @@ import btnArrow from '/images/arrow.png';
 import './navbar.css';
 import { useEffect, useRef } from 'react';
 import {
+  FaArrowUp,
   FaEnvelope,
   FaFacebookF,
   FaLinkedinIn,
@@ -20,6 +21,7 @@ import { MdLocationPin } from 'react-icons/md';
 import { IoMdPaperPlane } from 'react-icons/io';
 import { IoSearch } from 'react-icons/io5';
 import { CgMenuGridO } from 'react-icons/cg';
+import { LiaTimesSolid } from 'react-icons/lia';
 
 const Navbar = () => {
   //Menu Sidebar
@@ -98,7 +100,7 @@ const Navbar = () => {
   }, []);
 
   let headerIcon = `  
-  <span class="header-icon">  
+  <span className="header-icon">  
     <svg fill="currentColor" viewBox="0 0 320 512" height="15px" width="15px" xmlns="http://www.w3.org/2000/svg">
       <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
     </svg>
@@ -149,6 +151,35 @@ const Navbar = () => {
       });
     }
   }, []);
+
+  //Menu Search
+  const handleMenuSearchClick = () => {
+    document.body.classList.add('search-active');
+  };
+
+  const handleCloseSearchClick = () => {
+    document.body.classList.remove('search-active');
+  };
+
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   setIsSubmitting(true);
+
+  //   // Simulate form submission
+  //   setTimeout(() => {
+  //     setIsSubmitting(false);
+  //     if (searchInputRef.current) {
+  //       searchInputRef.current.value = ''; // Reset the search input
+  //     }
+  //     if (searchContentRef.current) {
+  //       searchContentRef.current.classList.remove('opened'); // Hide search overlay
+  //       searchContentRef.current.classList.add('hidden'); // Optionally hide afterwards
+  //     }
+  //     if (bodyOverlay3Ref.current) {
+  //       bodyOverlay3Ref.current.classList.add('hidden'); // Hide overlay
+  //     }
+  //   }, 2000); // Simulate a 2-second delay
+  // };
 
   return (
     <>
@@ -298,7 +329,10 @@ const Navbar = () => {
                           </div>
                           <div className='homemenu'>
                             <div className='homemenu-thumb'>
-                              <Link to={'#'} className='cursor-wait'>
+                              <Link
+                                to={'#'}
+                                className='cursor-wait'
+                              >
                                 <img src={homeFour} />
                                 <h6>Coming Soon</h6>
                               </Link>
@@ -371,7 +405,7 @@ const Navbar = () => {
             <div className='col-span-3'>
               <div className='header-right-box flex items-center gap-10 lg:gap-0 justify-end'>
                 <div className='size-[50px] rounded-full bg-BodyBg2-0 hidden sm:flex lg:hidden 2xl:flex items-center justify-center text-HeadingColor-0 relative z-10 transition-all duration-500 hover:text-white before:absolute before:left-0 before:top-0 before:w-full before:rounded-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100'>
-                  <button>
+                  <button onClick={handleMenuSearchClick}>
                     <IoSearch size={'18'} />
                   </button>
                 </div>
@@ -546,6 +580,33 @@ const Navbar = () => {
           ref={bodyOverlay2Ref}
           className='body-overlay2'
         ></div>
+        <div className='search-popup'>
+          <button
+            className='close-search'
+            onClick={handleCloseSearchClick}
+          >
+            <LiaTimesSolid />
+          </button>
+          <button
+            className='close-search2'
+            onClick={handleCloseSearchClick}
+          >
+            <FaArrowUp />
+          </button>
+          <form method='post'>
+            <div className='form-group'>
+              <input
+                type='search'
+                name='search-field'
+                placeholder='Search Here'
+                required
+              />
+              <button type='submit'>
+                <IoSearch />
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </>
   );

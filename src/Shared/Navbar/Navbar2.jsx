@@ -9,6 +9,7 @@ import btnArrow from '/images/arrow.png';
 import './navbar.css';
 import { useEffect, useRef } from 'react';
 import {
+  FaArrowUp,
   FaEnvelope,
   FaFacebookF,
   FaLinkedinIn,
@@ -20,6 +21,7 @@ import { MdLocationPin } from 'react-icons/md';
 import { IoMdPaperPlane } from 'react-icons/io';
 import { IoSearch } from 'react-icons/io5';
 import { CgMenuGridO } from 'react-icons/cg';
+import { LiaTimesSolid } from 'react-icons/lia';
 
 const Navbar2 = () => {
   //Menu Sidebar
@@ -149,6 +151,15 @@ const Navbar2 = () => {
       });
     }
   }, []);
+
+  //Menu Search
+  const handleMenuSearchClick = () => {
+    document.body.classList.add('search-active');
+  };
+
+  const handleCloseSearchClick = () => {
+    document.body.classList.remove('search-active');
+  };
 
   return (
     <>
@@ -374,7 +385,7 @@ const Navbar2 = () => {
             <div className='col-span-3'>
               <div className='header-right-box flex items-center gap-10 lg:gap-0 justify-end'>
                 <div className='size-[50px] rounded-full bg-BodyBg2-0 hidden sm:flex lg:hidden 2xl:flex items-center justify-center text-HeadingColor-0 relative z-10 transition-all duration-500 hover:text-white before:absolute before:left-0 before:top-0 before:w-full before:rounded-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 hover:before:scale-100'>
-                  <button>
+                  <button onClick={handleMenuSearchClick}>
                     <IoSearch size={'18'} />
                   </button>
                 </div>
@@ -549,6 +560,33 @@ const Navbar2 = () => {
           ref={bodyOverlay2Ref}
           className='body-overlay2'
         ></div>
+        <div className='search-popup'>
+          <button
+            className='close-search'
+            onClick={handleCloseSearchClick}
+          >
+            <LiaTimesSolid />
+          </button>
+          <button
+            className='close-search2'
+            onClick={handleCloseSearchClick}
+          >
+            <FaArrowUp />
+          </button>
+          <form method='post'>
+            <div className='form-group'>
+              <input
+                type='search'
+                name='search-field'
+                placeholder='Search Here'
+                required
+              />
+              <button type='submit'>
+                <IoSearch />
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </>
   );
