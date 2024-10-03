@@ -329,9 +329,11 @@
   border-radius: 0.25em;
   transform: translate(-50%, -50%);
 }
+
 .load:before {
   animation: before 2s infinite;
 }
+
 .load:after {
   animation: after 2s infinite;
 }
