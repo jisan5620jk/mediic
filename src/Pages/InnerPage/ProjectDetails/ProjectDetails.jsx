@@ -19,10 +19,10 @@ const ProjectDetails = () => {
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={'Project Details'}
       />
-      <section className='py-[120px] bg-BodyBg-0'>
+      <section className='project-details py-[120px] bg-BodyBg-0'>
         <div className='Container'>
           <div className='grid grid-cols-3 gap-[50px]'>
-            <div className='col-span-3 lg:col-span-2'>
+            <div className='col-span-3 lg:col-span-2 h-[1276px] overflow-hidden overflow-y-scroll'>
               <div className='rounded-[30px] overflow-hidden'>
                 <img
                   src={projectDetailsThumb}

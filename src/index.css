@@ -861,3 +861,24 @@ html {
 body {
   -ms-overflow-style: -ms-autohiding-scrollbar; /* Auto-hiding scrollbar */
 }
+
+/* Width of the scrollbar for WebKit (Chrome, Safari) */
+.project-details::-webkit-scrollbar {
+  width: 3px !important; /* Adjust the width as needed */
+}
+
+/* Track of the scrollbar for WebKit */
+.project-details::-webkit-scrollbar-track {
+  background: transparent; /* Color of the track */
+}
+
+/* For Firefox */
+.project-details {
+  scrollbar-width: thin; /* Width of the scrollbar */
+  scrollbar-color: #007eff transparent; /* Color of the scrollbar thumb and track */
+}
+
+/* For Internet Explorer and Edge */
+.project-details {
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* Auto-hiding scrollbar */
+}
