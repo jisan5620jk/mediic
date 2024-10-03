@@ -202,47 +202,43 @@ body {
 
 .swiper-pagination {
   bottom: inherit !important;
-  top: 50% !important;
-  left: 94% !important;
-  transform: translatex(-50%) !important;
+  top: inherit !important;
+  bottom: 6px !important;
+  left: 50% !important;
   width: 100% !important;
   display: flex !important;
   align-items: center !important;
   gap: 16px !important;
-  flex-direction: column !important;
+  flex-direction: row !important;
 }
 
 span.swiper-pagination-bullet {
   background: transparent !important;
-  opacity: 0.7 !important;
-  border: 2px solid #0c59db;
+  opacity: 1 !important;
+  background: transparent !important;
   border-radius: 50%;
-  height: 14px !important;
-  width: 14px !important;
+  height: 8px !important;
+  width: 8px !important;
   position: relative;
 }
 
 span.swiper-pagination-bullet::before {
   position: absolute;
   content: '';
-  top: -10px;
-  left: -10px;
-  width: 26px;
-  height: 26px;
+  top: -6px;
+  left: -6px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  border: 2px solid #0c59db;
+  border: 2px solid #fff;
   transition: 0.5s;
-  transform: scale(0);
-}
-
-span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   transform: scale(1);
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1 !important;
-  height: 10px !important;
-  width: 10px !important;
+  height: 8px !important;
+  width: 8px !important;
   background: #0c59db !important;
 }
 
@@ -570,33 +566,33 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   }
 }
 
-@media screen and (min-width:576px) and (max-width: 767px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
   .service-box.active > div,
   .service-box:hover > div {
     width: 410px;
   }
 }
 
-@media screen and (min-width:992px) and (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   .service-box.active > div,
   .service-box:hover > div {
     width: 250px;
   }
 
-    .service-box.active .service-title,
+  .service-box.active .service-title,
   .service-box:hover .service-title {
     left: 16px;
     bottom: 320px;
   }
 
   .service-box.active .service-desc,
-.service-box:hover .service-desc {
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
+  .service-box:hover .service-desc {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
 }
 
-@media screen and (min-width:1200px) and (max-width: 1399px) {
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
   .service-box.active > div,
   .service-box:hover > div {
     width: 336px;

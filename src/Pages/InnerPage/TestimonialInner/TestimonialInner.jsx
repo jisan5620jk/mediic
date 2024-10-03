@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import testiImg from "/images/testi-author1.png";
 import testiImg2 from "/images/testi-author2.png";
 import testiImg3 from "/images/testi-author3.png";

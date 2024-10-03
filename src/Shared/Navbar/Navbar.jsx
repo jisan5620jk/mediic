@@ -343,13 +343,13 @@ const Navbar = () => {
                       </div>
                     </li>
                     <li>
-                      <Link to={'/'}>About</Link>
+                      <Link to={'/about'}>About</Link>
                     </li>
                     <li className='has-dropdown'>
                       <Link to={'/'}>Pages</Link>
                       <ul className='submenu'>
                         <li>
-                          <Link to={'/'}>about us</Link>
+                          <Link to={'/about'}>about us</Link>
                         </li>
                         <li>
                           <Link to={'/'}>team</Link>

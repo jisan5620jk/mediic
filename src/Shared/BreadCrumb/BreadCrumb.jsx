@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
-import { IoHome } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const BreadCrumb = ({
   breadCrumbTitle,
@@ -9,33 +8,30 @@ const BreadCrumb = ({
   breadCrumbLink,
 }) => {
   return (
-    <div className="bg-[url('/images/breadcrumb-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start h-[400px] sm:h-[500px] pt-20">
-      <div className="Container">
-        <h1 className="font-AlbertSans font-bold text-4xl sm:text-[55px] text-white capitalize">
+    <div className="mx-2 lg:mx-4 xl:mx-[30px] bg-[url('/images/breadcrumb.png')] bg-no-repeat bg-cover bg-center flex items-center justify-center h-[400px] sm:h-[420px] rounded-[30px]">
+      <div className='Container text-center'>
+        <h1 className='font-AlbertSans font-extrabold text-4xl sm:text-[55px] text-white uppercase'>
           {breadCrumbTitle}
         </h1>
-        <div className="border-2 rounded border-BorderColor-0 mt-8 sm:mt-5 inline-block px-8 py-2">
-          <ul className="flex flex-col md:flex-row gap-2 sm:gap-4 items-center justify-start">
-            <li>
-              <Link to={"/"}>
-                <button className="font-AlbertSans font-medium text-lg text-white flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0">
-                  <IoHome className="text-PrimaryColor-0" />
-                  Home
-                </button>
-              </Link>
-            </li>
-            <li>
-              <div className="text-white hidden sm:block">{breadCrumbIcon}</div>
-            </li>
-            <li>
-              <Link to={url}>
-                <button className="font-AlbertSans font-medium text-lg capitalize text-white">
-                  {breadCrumbLink}
-                </button>
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <ul className='flex flex-col md:flex-row gap-2 sm:gap-4 items-center justify-center mt-[22px]'>
+          <li>
+            <Link to={'/'}>
+              <button className='font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0 uppercase'>
+                Mediic
+              </button>
+            </Link>
+          </li>
+          <li>
+            <div className='text-white hidden sm:block'>{breadCrumbIcon}</div>
+          </li>
+          <li>
+            <Link to={url}>
+              <button className='font-AlbertSans text-white uppercase'>
+                {breadCrumbLink}
+              </button>
+            </Link>
+          </li>
+        </ul>
       </div>
     </div>
   );

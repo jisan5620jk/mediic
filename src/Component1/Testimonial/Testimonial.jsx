@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { EffectFlip } from 'swiper/modules';
-import { MdOutlineStarPurple500 } from 'react-icons/md';
 import TestimonialCard from './TestimonialCard';
 import testThumb from '/images/testi.jpg';
 import testiProfile from '/images/people.png';
@@ -14,27 +13,25 @@ const testiData = [
   {
     id: 1,
     testiQuote: testiQuote,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
     testiDesc: `Quickly fashion backend strategic theme areas with
                 virtual growth strategies. Authoritatively
                 formulate competitive experiences rather than
                 granular manufactured products granular intelle
                 capital without equity invested`,
-    testiName: 'Jhon D. Alexon',
-    testiDesignation: 'Psycologist',
+    testiName: 'Jisan Khan',
+    testiDesignation: 'Satisfied Patient',
     testiProfile: testiProfile,
   },
   {
     id: 2,
     testiQuote: testiQuote,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
     testiDesc: `Quickly fashion backend strategic theme areas with
                 virtual growth strategies. Authoritatively
                 formulate competitive experiences rather than
                 granular manufactured products granular intelle
                 capital without equity invested`,
-    testiName: 'Jhon D. Alexon',
-    testiDesignation: 'Psycologist',
+    testiName: 'Jisan Khan',
+    testiDesignation: 'Satisfied Patient',
     testiProfile: testiProfile,
   },
 ];
@@ -113,7 +110,6 @@ const Testimonial = () => {
                   ({
                     id,
                     testiQuote,
-                    testiRatingIcon,
                     testiName,
                     testiProfile,
                     testiDesignation,
@@ -123,7 +119,6 @@ const Testimonial = () => {
                       <SwiperSlide key={id}>
                         <TestimonialCard
                           testiQuote={testiQuote}
-                          testiRatingIcon={testiRatingIcon}
                           testiName={testiName}
                           testiDesignation={testiDesignation}
                           testiProfile={testiProfile}
