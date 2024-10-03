@@ -364,6 +364,9 @@ const Navbar = () => {
                           <Link to={'/'}>checkout</Link>
                         </li>
                         <li>
+                          <Link to={'/project_details'}>Project Details</Link>
+                        </li>
+                        <li>
                           <Link to={'/'}>faq</Link>
                         </li>
                       </ul>
