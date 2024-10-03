@@ -225,7 +225,12 @@ const ProjectDetails = () => {
                 </ul>
               </div>
               <div className="rounded-2xl px-9 overflow-hidden bg-[url('/images/company-bg.png')] bg-cover bg-no-repeat bg-center py-[50px]">
-                <div className='relative before:absolute before:size-[90px] before:-top-[10px] before:-left-[10px] before:animate-rotational before:rounded-full before:border-[3px] before:border-dashed before:border-PrimaryColor-0 '><img src={callIcon} draggable="false" /></div>
+                <div className='relative before:absolute before:size-[90px] before:-top-[10px] before:-left-[10px] before:animate-rotational before:rounded-full before:border-[3px] before:border-dashed before:border-PrimaryColor-0 '>
+                  <img
+                    src={callIcon}
+                    draggable='false'
+                  />
+                </div>
                 <h6 className='font-AlbertSans font-medium text-lg text-white mt-9 mb-2'>
                   Call Us Anytime
                 </h6>
