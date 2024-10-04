@@ -830,9 +830,9 @@ nav.main-menu-content > ul > li > a:hover > span {
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .submenu.has-homemenu.mega-menu {
-  width: 850px;
-  margin-left: -230px;
-}
+    width: 850px;
+    margin-left: -230px;
+  }
 }
 
 .homemenu-thumb {
