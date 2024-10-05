@@ -21,7 +21,7 @@ const Home3 = () => {
       <Testimonial />
       <TeamMember />
       <Blog />
-      <Subscribe/>
+      <Subscribe />
     </>
   );
 };
