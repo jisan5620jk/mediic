@@ -3,20 +3,25 @@ const ContactBoxCard = ({
   contactBoxIcon,
   contactBoxTitle,
   contactBoxSubTitle,
+  contactBoxDesc,
 }) => {
   return (
-    <div className="group px-[30px] py-6 rounded-md flex items-center gap-5 border border-PrimaryColor-0 bg-white relative z-10 before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0">
-      <div className="size-[64px] rounded-full border-2 border-PrimaryColor-0 flex justify-center items-center text-PrimaryColor-0 text-3xl transition-all duration-500 group-hover:text-white group-hover:border-white">
-        {contactBoxIcon}
+    <div className='group px-9 pt-10 pb-8 rounded-3xl border-2 border-white bg-white hover:border-PrimaryColor-0 transition-all duration-500 bg-opacity-20 relative z-10'>
+      <div className='flex items-center justify-between pb-20'>
+        <h6 className="font-DMSans font-medium text-TextColor2-0 uppercase">{contactBoxSubTitle}</h6>
+        <div className='size-[70px] rounded-full border-2 border-white bg-white bg-opacity-20 flex justify-center items-center'>
+          <img
+            src={contactBoxIcon}
+            draggable='false'
+          />
+        </div>
       </div>
-      <div className="flex-1">
-        <h5 className="font-AlbertSans font-semibold text-xl text-HeadingColor-0 transition-all duration-500 group-hover:text-white mb-2">
-          {contactBoxSubTitle}
-        </h5>
-        <p className="font-AlbertSans text-PrimaryColor-0 font-semibold text-2xl transition-all duration-500 group-hover:text-white">
-          {contactBoxTitle}
-        </p>
-      </div>
+      <h5 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 mb-1 pt-2'>
+        {contactBoxTitle}
+      </h5>
+      <p className='font-AlbertSans text-TextColor2-0'>
+        {contactBoxDesc}
+      </p>
     </div>
   );
 };

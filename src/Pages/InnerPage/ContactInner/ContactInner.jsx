@@ -2,7 +2,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
 import ContactBox from "./ContactBox/ContactBox";
 import Map from "./Map";
-import ContactForm from "./ContactForm";
+import Appoinment from "../../../Component1/Appoinment/Appionment";
+import Subscribe from "../../../Component1/Subscribe/Subscribe";
 
 const ContactInner = () => {
   return (
@@ -12,9 +13,10 @@ const ContactInner = () => {
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={"Contact Us"}
       />
+      <Appoinment />
       <ContactBox />
-      <ContactForm />
       <Map />
+      <Subscribe />
     </>
   );
 };

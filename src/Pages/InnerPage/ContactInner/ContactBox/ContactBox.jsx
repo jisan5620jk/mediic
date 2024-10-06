@@ -1,54 +1,59 @@
-import { FaPhoneAlt } from "react-icons/fa";
-import ContactBoxCard from "./ContactBoxCard";
-import { MdOutlineMail } from "react-icons/md";
-import { AiOutlineClockCircle } from "react-icons/ai";
+import ContactBoxCard from './ContactBoxCard';
+import contactBoxIcon from '/images/icon-message.png';
+import contactBoxIcon2 from '/images/icon-call.png';
+import contactBoxIcon3 from '/images/icon-location.png';
 
 const processData = [
   {
     id: 1,
-    contactBoxIcon: <FaPhoneAlt />,
-    contactBoxSubTitle: "Call Us Anytime",
-    contactBoxTitle: "+123 (4547) 563",
+    contactBoxIcon: contactBoxIcon,
+    contactBoxSubTitle: 'Send Now',
+    contactBoxTitle: 'E-Mail Address',
+    contactBoxDesc: 'mediic@example.com',
   },
   {
     id: 2,
-    contactBoxIcon: <MdOutlineMail />,
-    contactBoxSubTitle: "Send E-Mail",
-    contactBoxTitle: "info@gmail.com",
+    contactBoxIcon: contactBoxIcon2,
+    contactBoxSubTitle: 'Call us',
+    contactBoxTitle: 'Phone Number',
+    contactBoxDesc: '+123 (4547) 563',
   },
   {
     id: 3,
-    contactBoxIcon: <AiOutlineClockCircle />,
-    contactBoxSubTitle: "Opening Hours",
-    contactBoxTitle: "Fri - Mon (9.00 - 5.00)",
+    contactBoxIcon: contactBoxIcon3,
+    contactBoxSubTitle: 'Meet Us',
+    contactBoxTitle: 'Location',
+    contactBoxDesc: 'A-1, Envanto Headquarter, Australia',
   },
 ];
 
 const ContactBox = () => {
   return (
-    <section className="py-28 relative bg-[url(/images/about-bg.jpg)] z-10 ">
-      <div className="Container">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10">
-            {processData.map(
-              ({
-                id,
-                contactBoxIcon,
-                contactBoxSubTitle,
-                contactBoxTitle,
-              }) => {
-                return (
-                  <div key={id}>
-                    <ContactBoxCard
-                      contactBoxIcon={contactBoxIcon}
-                      contactBoxSubTitle={contactBoxSubTitle}
-                      contactBoxTitle={contactBoxTitle}
-                    />
-                  </div>
-                );
-              }
-            )}
-          </div>
+    <section className='py-28 relative bg-BodyBg-0 z-10 '>
+      <div className='Container'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]'>
+          {processData.map(
+            ({
+              id,
+              contactBoxIcon,
+              contactBoxSubTitle,
+              contactBoxTitle,
+              contactBoxDesc,
+            }) => {
+              return (
+                <div key={id}>
+                  <ContactBoxCard
+                    contactBoxIcon={contactBoxIcon}
+                    contactBoxSubTitle={contactBoxSubTitle}
+                    contactBoxTitle={contactBoxTitle}
+                    contactBoxDesc={contactBoxDesc}
+                  />
+                </div>
+              );
+            }
+          )}
         </div>
+      </div>
     </section>
   );
 };
