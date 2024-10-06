@@ -9,6 +9,12 @@ import Home3 from '../Pages/Home3/Home3';
 import AboutInner from '../Pages/InnerPage/AboutInner/AboutInner';
 import ProjectDetails from '../Pages/InnerPage/ProjectDetails/ProjectDetails';
 import ServiceInner from '../Pages/InnerPage/ServiceInner/ServiceInner';
+import BlogDetails from '../Pages/InnerPage/BlogDetails/BlogDetails';
+import ServiceDetails from '../Pages/InnerPage/ServiceDetails/ServiceDetails';
+import ServiceDetails2 from '../Pages/InnerPage/ServiceDetails/ServiceDetails2';
+import ServiceDetails3 from '../Pages/InnerPage/ServiceDetails/ServiceDetails3';
+import ServiceDetails4 from '../Pages/InnerPage/ServiceDetails/ServiceDetails4';
+import ServiceDetails5 from '../Pages/InnerPage/ServiceDetails/ServiceDetails5';
 
 const router = createBrowserRouter([
   {
@@ -33,8 +39,28 @@ const router = createBrowserRouter([
         element: <ServiceInner />,
       },
       {
-        path: '/service',
-        element: <ServiceInner />,
+        path: '/service_details',
+        element: <ServiceDetails />,
+      },
+      {
+        path: '/service_details2',
+        element: <ServiceDetails2 />,
+      },
+      {
+        path: '/service_details3',
+        element: <ServiceDetails3 />,
+      },
+      {
+        path: '/service_details4',
+        element: <ServiceDetails4 />,
+      },
+      {
+        path: '/service_details5',
+        element: <ServiceDetails5 />,
+      },
+      {
+        path: '/blog_details',
+        element: <BlogDetails />,
       },
     ],
   },

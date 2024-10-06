@@ -1,390 +1,424 @@
-import { Link } from "react-router-dom";
-import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import blog_detailsThumb from "/images/blog-details.jpg";
-import blog_detailsImg from "/images/blog-details-benifis-thumb-1.png";
-import blog_detailsImg2 from "/images/blog-details-benifis-thumb-2.png";
-import itemthumb from "/images/recent-post-1.png";
-import itemthumb2 from "/images/recent-post-2.png";
-import itemthumb3 from "/images/recent-post-3.png";
-import { IoSearch } from "react-icons/io5";
+import { Link } from 'react-router-dom';
+import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
+import blogDetailsThumb from '/images/service.jpg';
 import {
+  FaArrowRight,
   FaArrowRightLong,
-  FaCircleCheck,
-  FaFacebookF,
-  FaLinkedinIn,
-  FaPinterestP,
   FaRegFolderOpen,
-  FaXTwitter,
-} from "react-icons/fa6";
-import { BiSolidQuoteAltRight } from "react-icons/bi";
+  FaUserDoctor,
+} from 'react-icons/fa6';
+import { MdEmail } from 'react-icons/md';
+import icon from '/images/dtls-icn.png';
+import icon2 from '/images/dtls-icn2.png';
+import callIcon from '/images/call3..png';
+import itemthumb from '/images/blog4.jpg';
+import itemthumb2 from '/images/blog5.jpg';
+import itemthumb3 from '/images/blog6.jpg';
+import author1 from '/images/people4.png';
+import author2 from '/images/people3.png';
+import author3 from '/images/people5.png';
+import { IoSearch } from 'react-icons/io5';
+import { BiSolidShare } from 'react-icons/bi';
 
-const BlogDetails = () => {
+const ProjectDetails = () => {
   return (
     <>
       <BreadCrumb
-        breadCrumbTitle={"Blog Details"}
+        breadCrumbTitle={'Blog Details'}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"Blog Details"}
+        breadCrumbLink={'Blog Details'}
       />
-      <section className="py-28">
-        <div className="Container">
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-12">
-            <div className="col-span-2">
-              <div className="border-l border-b border-BorderColor2-0 rounded-md">
-                <div className="relative overflow-hidden rounded-md">
-                  <img
-                    draggable="false"
-                    src={blog_detailsThumb}
-                    className="w-full"
-                  />
-                  <div className="absolute top-0 left-0">
-                    <h6 className="font-AlbertSans text-white pl-7 pr-12 py-2 overflow-hidden bg-PrimaryColor-0 relative z-10 before:absolute before:-right-4 before:top-1 before:w-8 before:h-8 before:!rotate-45 before:bg-HeadingColor-0">
-                      Cyber Security
-                    </h6>
+      <section className='py-[120px] bg-BodyBg-0'>
+        <div className='Container'>
+          <div className='grid grid-cols-3 gap-[50px]'>
+            <div className='col-span-3 lg:col-span-2'>
+              <div className='rounded-[30px] overflow-hidden'>
+                <img
+                  src={blogDetailsThumb}
+                  draggable='false'
+                  className='w-full'
+                />
+              </div>
+              <h2 className='font-AlbertSans font-bold text-[28px] text-HeadingColor-0 capitalize mt-8'>
+                How Virtual Healthcare is Transforming Patient Care
+              </h2>
+              <p className='font-AlbertSans text-TextColor2-0 mt-5'>
+                Alternative innovation to ethical network environmental
+                whiteboard pursue compelling results premier methods
+                empowerment. Dramatically architect go forward opportunities
+                before user-centric partner Credibly implement exceptional
+              </p>
+              <p className='font-AlbertSans text-TextColor2-0 mt-7 mb-11'>
+                Continually fashion orthogonal leadership skills whereas
+                wireless metrics. Uniquely syndicate exceptio opportunities with
+                interdependent users. Globally enhance fully tested
+                meta-services rather than pan solutions. Proactively integrate
+                client-integrate go forward architectures and turnkey
+                meta-services. Interactively harness integrated ROI whereas
+                frictionless products.
+              </p>
+              <div className='grid grid-cols-1 sm:grid-cols-2 sm:items-center gap-8 mb-14'>
+                <div className='flex gap-6 rounded-2xl border-2 border-white bg-white bg-opacity-25 px-[30px] py-8'>
+                  <div className='size-20 rounded-full border-2 border-white bg-white bg-opacity-25 flex items-center justify-center'>
+                    <img
+                      src={icon}
+                      draggable='false'
+                    />
+                  </div>
+                  <div className='flex-1'>
+                    <h5 className='font-AlbertSans font-bold text-[22px] text-HeadingColor-0'>
+                      Make Appointment
+                    </h5>
+                    <p className='font-AlbertSans text-TextColor2-0 mt-1'>
+                      Ethical network environmental architect go forward opportu
+                      credibly implement
+                    </p>
                   </div>
                 </div>
-                <div className="px-4 sm:px-8 ml-8 bg-white shadow-cases rounded-b-md rounded-ss-md -mt-[50px] relative z-10">
-                  <div className="flex items-center justify-between gap-5 pt-9 pb-7 border-b-2  relative before:absolute before:left-0 before:-bottom-[2px] before:w-8 before:h-[2px] before:bg-PrimaryColor-0 before:animate-dance5">
-                    <h6 className="flex items-center gap-2 font-AlbertSans text-[17px] text-PrimaryColor-0 font-medium">
-                      Admin : Mera
-                    </h6>
-                    <h6 className="flex items-center font-AlbertSans text-[17px] text-TextColor2-0 font-medium">
-                      Comments (04)
-                    </h6>
+                <div className='flex gap-6 rounded-2xl border-2 border-white bg-white bg-opacity-25 px-[30px] py-8'>
+                  <div className='size-20 rounded-full border-2 border-white bg-white bg-opacity-25 flex items-center justify-center'>
+                    <img
+                      src={icon2}
+                      draggable='false'
+                    />
                   </div>
-                  <Link to={"blog_details"}>
-                    <button className="font-AlbertSans font-bold text-left text-lg sm:text-2xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-7 mb-5">
-                      Solution This Business For is Marketing Blog
-                    </button>
-                  </Link>
-                  <p className="font-AlbertSans text-TextColor2-0 pb-9">
-                    Alternative innovation to ethical network environmental
-                    whiteboard pursue compelling results for methods
-                    empowerment. Dramatically architect go forward opportunities
-                    transition mission top critical supply chains after
-                    enterprise
-                  </p>
-                </div>{" "}
-                <div className="px-4 sm:px-8">
-                  <div className="flex flex-col bg-[#f3f4f8] sm:flex-row gap-7 px-4 sm:px-11 py-4 sm:py-10 rounded-md mt-12">
-                    <div className="text-6xl text-PrimaryColor-0">
-                      <BiSolidQuoteAltRight />
-                    </div>
-                    <div className="flex-1">
-                      <p className="font-AlbertSans text-HeadingColor-0 sm:text-lg italic">
-                        “Competently architect intermandated deliverables client
-                        with niches continually underwhelm build cross-media
-                        growth strategies without robust.”
-                      </p>
-                      <h6 className="font-AlbertSans text-HeadingColor-0 pl-16 mt-4 relative before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:w-14 before:h-[1px] before:bg-PrimaryColor-0">
-                        CEO & Founder
-                      </h6>
-                    </div>
+                  <div className='flex-1'>
+                    <h5 className='font-AlbertSans font-bold text-[22px] text-HeadingColor-0'>
+                      Get Consultation
+                    </h5>
+                    <p className='font-AlbertSans text-TextColor2-0 mt-1'>
+                      Ethical network environmental architect go forward opportu
+                      credibly implement
+                    </p>
                   </div>
-                  <Link to={"/blog_details"}>
-                    <button className="font-AlbertSans font-bold text-left text-[28px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-14 mb-4">
-                      Our Begin Now To Beingonl
-                    </button>
-                  </Link>
-                  <p className="font-AlbertSans text-TextColor2-0">
-                    Dramatically matrix cross-media vortals wireless
-                    deliverables. Phosfluorescently underwhelm market driven
-                    e-services and 24/365 infrastructures. Intrinsicly
-                    incentivize resource.
-                  </p>
-                  <ul className="flex flex-col gap-[14px] mt-7">
-                    <li className="flex gap-3 items-center font-AlbertSans font-light text-TextColor2-0">
-                      <FaCircleCheck
-                        size={"20"}
-                        className="text-PrimaryColor-0"
-                      />
-                      Innovate wireless market
-                    </li>
-                    <li className="flex gap-3 items-center font-AlbertSans font-light text-TextColor2-0">
-                      <FaCircleCheck
-                        size={"20"}
-                        className="text-PrimaryColor-0"
-                      />
-                      Productivate resource sucking
-                    </li>
-                    <li className="flex gap-3 items-center font-AlbertSans font-light text-TextColor2-0">
-                      <FaCircleCheck
-                        size={"20"}
-                        className="text-PrimaryColor-0"
-                      />
-                      Proactively unleash oriented communities
-                    </li>
-                    <li className="flex gap-3 items-center font-AlbertSans font-light text-TextColor2-0">
-                      <FaCircleCheck
-                        size={"20"}
-                        className="text-PrimaryColor-0"
-                      />
-                      Credibly develop progressive archi
-                    </li>
-                    <li className="flex gap-3 items-center font-AlbertSans font-light text-TextColor2-0">
-                      <FaCircleCheck
-                        size={"20"}
-                        className="text-PrimaryColor-0"
-                      />
-                      Phosfluorescently to customer
-                    </li>
-                  </ul>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-16">
-                    <div>
-                      <img draggable="false" src={blog_detailsImg} />
-                    </div>
-                    <div>
-                      <img draggable="false" src={blog_detailsImg2} />
-                    </div>
-                  </div>
-                  <Link to={"/blog_details"}>
-                    <button className="font-AlbertSans font-bold text-left text-[28px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-10 mb-4">
-                      Tree Plantation for Human
-                    </button>
-                  </Link>
-                  <p className="font-AlbertSans font-light text-TextColor2-0">
-                    Dramatically matrix cross-media vortals wireless
-                    deliverables. Phosfluorescently underwhelm market driven
-                    e-services and 24/365 infrastructures. Intrinsicly
-                    incentivize resource.
-                  </p>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-5 items-start sm:justify-between border-t border-BorderColor1-0 mt-9 py-5 px-4 sm:px-8 border-r border-BorderColor2-0">
-                  <div className="font-AlbertSans text-lg font-medium">
-                    <Link to={"/"}>
-                      <button className="font-AlbertSans px-5 py-2 text-HeadingColor-0 text-sm rounded bg-[#f3f4f8] transition-all duration-500 hover:bg-PrimaryColor-0 hover:text-white mr-2 ml-1">
-                        Digital Marketing
-                      </button>
-                    </Link>
-                    <Link to={"/"}>
-                      <button className="font-AlbertSans px-5 py-2 text-HeadingColor-0 text-sm rounded bg-[#f3f4f8] transition-all duration-500 hover:bg-PrimaryColor-0 hover:text-white">
-                        Development
+              </div>
+              <div className='flex items-center gap-[64px] bg-PrimaryColor-0 rounded-2xl px-10 py-7'>
+                <div className='text-white relative before:absolute before:top-0 before:-right-8 before:w-[2px] before:h-[48px] before:bg-white before:bg-opacity-25'>
+                  <FaUserDoctor size={'50'} />
+                </div>
+                <h4 className='font-DMSans font-medium text-[22px] text-white italic'>
+                  Competently architect intermandated deliverables client niches
+                  continually underwhelm
+                </h4>
+              </div>
+              <div className='mt-[60px]'>
+                <h3 className='font-AlbertSans font-bold text-[28px] text-HeadingColor-0 capitalize mb-10'>
+                  All Comments
+                </h3>
+                <div className='flex flex-col sm:flex-row gap-6 pb-8'>
+                  <div className='size-[62px]'>
+                    <img
+                      draggable='false'
+                      src={author1}
+                      className='w-full'
+                    />
+                  </div>
+                  <div className='flex-1 relative'>
+                    <h5 className='font-AlbertSans font-semibold text-HeadingColor-0 text-xl'>
+                      Dr. David Alexon
+                    </h5>
+                    <p className='font-AlbertSans font-light text-TextColor2-0 mt-3'>
+                      Pretium nulla suspendisse porttitor nunc a sodales tempor
+                      mauris sed felis maximus, interdum metus vel tincidunt
+                      diam mam ac risus vitae sem vehicula egestas send velit
+                      nulla, viverra non commodo et sodales id dui. Lorem ipsum
+                      dolor sit amet, conse.
+                    </p>
+                    <Link to={'/'}>
+                      <button className='text-HeadingColor-0 text-sm rounded-full flex items-center gap-2 font-AlbertSans absolute top-2 right-0'>
+                        <BiSolidShare
+                          size={'18'}
+                          className='text-SecondaryColor-0'
+                        />
+                        Reply
                       </button>
                     </Link>
                   </div>
-                  <div>
-                    <ul className="flex justify-center items-center gap-2">
-                      <li>
-                        <Link to={"/"}>
-                          <button className="text-white w-9 h-9 rounded-full bg-[#1673ea] flex justify-center items-center">
-                            <FaFacebookF size={"13"} />
-                          </button>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to={"/"}>
-                          <button className="text-white w-9 h-9 rounded-full bg-[#38ceff] flex justify-center items-center">
-                            <FaXTwitter size={"13"} />
-                          </button>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to={"/"}>
-                          <button className="text-white w-9 h-9 rounded-full bg-[#0b4ab1] flex justify-center items-center">
-                            <FaLinkedinIn size={"13"} />
-                          </button>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to={"/"}>
-                          <button className="text-white w-9 h-9 rounded-full bg-[#e92928] flex justify-center items-center">
-                            <FaPinterestP size={"13"} />
-                          </button>
-                        </Link>
-                      </li>
-                    </ul>
+                </div>
+                <div className='flex flex-col sm:flex-row gap-6 border-y-2 border-white border-opacity-80 py-10 md:ml-[90px]'>
+                  <div className='size-[62px]'>
+                    <img
+                      draggable='false'
+                      src={author2}
+                      className='w-full'
+                    />
+                  </div>
+                  <div className='flex-1 relative'>
+                    <h5 className='font-AlbertSans font-semibold text-HeadingColor-0 text-xl'>
+                      Dr. Michel Hemilton
+                    </h5>
+                    <p className='font-AlbertSans font-light text-TextColor2-0 mt-3'>
+                      Pretium nulla suspendisse porttitor nunc a sodales tempor
+                      mauris sed felis maximus, interdum metus vel tincidunt
+                      diam mam ac risus vitae sem vehicula egestas send velit
+                      nulla, viverra non commodo et sodales id dui.
+                    </p>
+                    <Link to={'/'}>
+                      <button className='text-HeadingColor-0 text-sm rounded-full flex items-center gap-2 font-AlbertSans absolute top-2 right-0'>
+                        <BiSolidShare
+                          size={'18'}
+                          className='text-SecondaryColor-0'
+                        />
+                        Reply
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+                <div className='flex flex-col sm:flex-row gap-6 pt-8'>
+                  <div className='size-[62px]'>
+                    <img
+                      draggable='false'
+                      src={author3}
+                      className='w-full'
+                    />
+                  </div>
+                  <div className='flex-1 relative'>
+                    <h5 className='font-AlbertSans font-semibold text-HeadingColor-0 text-xl'>
+                      Dr. Minhaz Khan
+                    </h5>
+                    <p className='font-AlbertSans font-light text-TextColor2-0 mt-3'>
+                      Pretium nulla suspendisse porttitor nunc a sodales tempor
+                      mauris sed felis maximus, interdum metus vel tincidunt
+                      diam mam ac risus vitae sem vehicula egestas send velit
+                      nulla, viverra non commodo et sodales id dui. Lorem ipsum
+                      dolor sit amet, conse.
+                    </p>
+                    <Link to={'/'}>
+                      <button className='text-HeadingColor-0 text-sm rounded-full flex items-center gap-2 font-AlbertSans absolute top-2 right-0'>
+                        <BiSolidShare
+                          size={'18'}
+                          className='text-SecondaryColor-0'
+                        />
+                        Reply
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-span-2 lg:col-span-1">
-              <div className="relative inline-block w-full mb-7 p-4 sm:p-8 lg:p-6 xl:p-8 rounded-md bg-[#f3f4f8]">
-                <input
-                  type="text"
-                  name="search"
-                  id="search"
-                  placeholder="Search here..."
-                  required
-                  className="w-full h-[56px] p-6 rounded font-AlbertSans"
-                />
-                <button
-                  type="submit"
-                  className=" text-xl text-white rounded h-[56px] w-[56px] bg-PrimaryColor-0 transition-all duration-500 flex items-center justify-center hover:hue-rotate-[360deg] absolute right-7 top-1/2 -translate-y-1/2"
-                >
-                  <IoSearch />
-                </button>
+            <div className='col-span-3 lg:col-span-1'>
+              <div className='rounded-2xl px-7 pt-7 pb-9 overflow-hidden bg-white bg-opacity-20 border-2 border-white border-opacity-80 mb-7'>
+                <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 pb-2 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0'>
+                  Search
+                </h4>
+                <div className='relative inline-block w-full'>
+                  <input
+                    type='text'
+                    name='search'
+                    id='search'
+                    placeholder='Search here...'
+                    required
+                    className='w-full h-[60px] p-6 bg-white bg-opacity-30 border-2 border-white border-opacity-80 rounded-full font-AlbertSans'
+                  />
+                  <button
+                    type='submit'
+                    className='text-xl text-white rounded-full size-11 bg-PrimaryColor-0 transition-all duration-500 flex items-center justify-center hover:hue-rotate-[360deg] absolute right-2 top-1/2 -translate-y-1/2'
+                  >
+                    <IoSearch />
+                  </button>
+                </div>
               </div>
-              <div className="bg-[#f3f4f8] rounded-md px-4 sm:px-8 lg:px-6 xl:px-8 pt-7 pb-4 mb-7">
-                <h4 className="font-AlbertSans font-bold text-left text-[28px] text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0">
+              <div className='rounded-2xl px-7 pt-7 pb-6 overflow-hidden bg-white bg-opacity-30 border-2 border-white border-opacity-80 mb-7'>
+                <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 pb-2 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0'>
                   Categories
                 </h4>
-                <ul className="mt-8">
+                <ul className='mt-8'>
                   <li>
-                    <Link to={"/service_details"}>
-                      <button className="w-full font-AlbertSans text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        <span className="flex items-center gap-3">
-                          <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          Web Development
+                    <Link to={'/service_details'}>
+                      <button className='w-full font-AlbertSans text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded-md bg-white bg-opacity-30 border-2 border-white border-opacity-80 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:border-PrimaryColor-0 hover:text-white'>
+                        <span className='flex items-center gap-3 lg:gap-1 xl:gap-3'>
+                          <FaRegFolderOpen className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
+                          Dental Care
                         </span>
-                        <FaArrowRightLong className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
+                        <FaArrowRightLong className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
                       </button>
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/service_details2"}>
-                      <button className="w-full font-AlbertSans text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        <span className="flex items-center gap-3">
-                          <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          Digital Marketing
+                    <Link to={'/service_details2'}>
+                      <button className='w-full font-AlbertSans text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded-md bg-white bg-opacity-30 border-2 border-white border-opacity-80 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:border-PrimaryColor-0 hover:text-white'>
+                        <span className='flex items-center gap-3 lg:gap-1 xl:gap-3'>
+                          <FaRegFolderOpen className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
+                          Pharmachology
                         </span>
-                        <FaArrowRightLong className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
+                        <FaArrowRightLong className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
                       </button>
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/service_details3"}>
-                      <button className="w-full font-AlbertSans text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        <span className="flex items-center gap-3">
-                          <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          IT Solution
+                    <Link to={'/service_details3'}>
+                      <button className='w-full font-AlbertSans text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded-md bg-white bg-opacity-30 border-2 border-white border-opacity-80 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:border-PrimaryColor-0 hover:text-white'>
+                        <span className='flex items-center gap-3 lg:gap-1 xl:gap-3'>
+                          <FaRegFolderOpen className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
+                          Plastic Surgery
                         </span>
-                        <FaArrowRightLong className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
+                        <FaArrowRightLong className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
                       </button>
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/service_details4"}>
-                      <button className="w-full font-AlbertSans text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        <span className="flex items-center gap-3">
-                          <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          App Development
+                    <Link to={'/service_details4'}>
+                      <button className='w-full font-AlbertSans text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded-md bg-white bg-opacity-30 border-2 border-white border-opacity-80 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:border-PrimaryColor-0 hover:text-white'>
+                        <span className='flex items-center gap-3 lg:gap-1 xl:gap-3'>
+                          <FaRegFolderOpen className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
+                          Mental Care
                         </span>
-                        <FaArrowRightLong className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
+                        <FaArrowRightLong className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
                       </button>
                     </Link>
                   </li>
                   <li>
-                    <Link to={"/service_details5"}>
-                      <button className="w-full font-AlbertSans text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        <span className="flex items-center gap-3">
-                          <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          Web Design
+                    <Link to={'/service_details5'}>
+                      <button className='w-full font-AlbertSans text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded-md bg-white bg-opacity-30 border-2 border-white border-opacity-80 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:border-PrimaryColor-0 hover:text-white'>
+                        <span className='flex items-center gap-3 lg:gap-1 xl:gap-3'>
+                          <FaRegFolderOpen className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
+                          Hematology
                         </span>
-                        <FaArrowRightLong className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={"/service_details6"}>
-                      <button className="w-full font-AlbertSans text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white">
-                        <span className="flex items-center gap-3">
-                          <FaRegFolderOpen className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
-                          UI/UX Design
-                        </span>
-                        <FaArrowRightLong className="text-PrimaryColor-0 transition-all duration-500 group-hover:text-white" />
+                        <FaArrowRightLong className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
                       </button>
                     </Link>
                   </li>
                 </ul>
               </div>
-              <div className="px-4 sm:px-8 lg:px-6 xl:px-8 bg-[#f3f4f8] rounded-md pt-7 pb-4 mb-7">
-                <h4 className="font-AlbertSans font-bold text-left text-[28px] text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0">
+              <div className='rounded-2xl px-7 pt-7 pb-6 overflow-hidden bg-white bg-opacity-20 border-2 border-white border-opacity-80 mb-7'>
+                <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 pb-2 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0'>
                   Popular Post
                 </h4>
-                <Link to={"/blog-details"}>
-                  <button className="group flex gap-4 mb-6">
-                    <div className="rounded overflow-hidden">
-                      <img draggable="false" src={itemthumb} />
+                <Link to={'/blog-details'}>
+                  <button className='group flex gap-4 mb-6'>
+                    <div className='size-[82px] rounded-xl overflow-hidden'>
+                      <img
+                        draggable='false'
+                        src={itemthumb}
+                        className='size-full'
+                      />
                     </div>
-                    <div className="flex-1 text-left">
-                      <h6 className="font-AlbertSans font-semibold text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
-                        Digital Marketing Strategy Action P…
+                    <div className='flex-1 text-left'>
+                      <h6 className='font-AlbertSans font-semibold sm:text-lg lg:text-base xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0'>
+                        How Virtual Healthcare is Transforming Pati...
                       </h6>
-                      <p className="font-AlbertSans text-PrimaryColor-0 text-sm mt-1">
-                        01 Jan, 2024
+                      <p className='font-AlbertSans text-TextColor2-0 text-sm mt-1'>
+                        AUGUST 01, 2024
                       </p>
                     </div>
                   </button>
                 </Link>
-                <Link to={"/blog_details"}>
-                  <button className="group flex gap-4 my-6">
-                    <div className="rounded overflow-hidden">
-                      <img draggable="false" src={itemthumb2} />
+                <Link to={'/blog_details'}>
+                  <button className='group flex gap-4 my-6'>
+                    <div className='size-[82px] rounded-xl overflow-hidden'>
+                      <img
+                        draggable='false'
+                        src={itemthumb2}
+                        className='size-full'
+                      />
                     </div>
-                    <div className="flex-1 text-left">
-                      <h6 className="font-AlbertSans font-semibold text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
-                        6 Things You Must Know Before Hirin…
+                    <div className='flex-1 text-left'>
+                      <h6 className='font-AlbertSans font-semibold sm:text-lg lg:text-base xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0'>
+                        How Your Digestive Health Impacts Mental...
                       </h6>
-                      <p className="font-AlbertSans text-PrimaryColor-0 text-sm mt-1">
-                        16 Jan, 2024
+                      <p className='font-AlbertSans text-TextColor2-0 text-sm mt-1'>
+                        AUGUST 16, 2024
                       </p>
                     </div>
                   </button>
                 </Link>
-                <Link to={"/blog_details"}>
-                  <button className="group flex gap-4 my-6">
-                    <div className="rounded overflow-hidden">
-                      <img draggable="false" src={itemthumb3} />
+                <Link to={'/blog_details'}>
+                  <button className='group flex gap-4 my-6'>
+                    <div className='size-[82px] rounded-xl overflow-hidden'>
+                      <img
+                        draggable='false'
+                        src={itemthumb3}
+                        className='size-full'
+                      />
                     </div>
-                    <div className="flex-1 text-left">
-                      <h6 className="font-AlbertSans font-semibold text-lg lg:text-base 2xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0">
-                        In eu fringilla, accumsan vel sollicitudin…
+                    <div className='flex-1 text-left'>
+                      <h6 className='font-AlbertSans font-semibold sm:text-lg lg:text-base xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0'>
+                        Expert Advice for a Better Quality of Life...
                       </h6>
-                      <p className="font-AlbertSans text-PrimaryColor-0 text-sm mt-1">
-                        27 Jan, 2024
+                      <p className='font-AlbertSans text-TextColor2-0 text-sm mt-1'>
+                        AUGUST 27, 2024
                       </p>
                     </div>
                   </button>
                 </Link>
               </div>
-              <div className="bg-[#f3f4f8] rounded-md px-4 sm:px-8 lg:px-6 xl:px-8 pt-7 pb-10 mb-7">
-                <h4 className="font-AlbertSans font-bold text-left text-[28px] text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0">
+              <div className='rounded-2xl px-7 pt-7 pb-6 overflow-hidden bg-white bg-opacity-20 border-2 border-white border-opacity-80 mb-7'>
+                <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 pb-2 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0'>
                   Tags
                 </h4>
-                <ul className="inline-block">
-                  <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/"}>
-                      <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-AlbertSans text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Cyber Security
+                <ul className='inline-block'>
+                  <li className='inline-block mr-[10px] mb-[10px]'>
+                    <Link to={'/'}>
+                      <button className='bg-white bg-opacity-20 border-2 border-white border-opacity-80 rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-AlbertSans text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white'>
+                        Medical Care
                       </button>
                     </Link>
                   </li>
-                  <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/"}>
-                      <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-AlbertSans text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Learning
+                  <li className='inline-block mr-[10px] mb-[10px]'>
+                    <Link to={'/'}>
+                      <button className='bg-white bg-opacity-20 border-2 border-white border-opacity-80 rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-AlbertSans text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white'>
+                        Dentist
                       </button>
                     </Link>
                   </li>
-                  <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/"}>
-                      <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-AlbertSans text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Web Drvelopment
+                  <li className='inline-block mr-[10px] mb-[10px]'>
+                    <Link to={'/'}>
+                      <button className='bg-white bg-opacity-20 border-2 border-white border-opacity-80 rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-AlbertSans text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white'>
+                        Psychologist
                       </button>
                     </Link>
                   </li>
-                  <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/"}>
-                      <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-AlbertSans text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        IT Solution
+                  <li className='inline-block mr-[10px] mb-[10px]'>
+                    <Link to={'/'}>
+                      <button className='bg-white bg-opacity-20 border-2 border-white border-opacity-80 rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-AlbertSans text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white'>
+                        Health Care
                       </button>
                     </Link>
                   </li>
-                  <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/"}>
-                      <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-AlbertSans text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Marketing
+                  <li className='inline-block mr-[10px] mb-[10px]'>
+                    <Link to={'/'}>
+                      <button className='bg-white bg-opacity-20 border-2 border-white border-opacity-80 rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-AlbertSans text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white'>
+                        Medicine
                       </button>
                     </Link>
                   </li>
-                  <li className="inline-block mr-[10px] mb-[10px]">
-                    <Link to={"/"}>
-                      <button className="bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-AlbertSans text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white">
-                        Technology
+                  <li className='inline-block mr-[10px] mb-[10px]'>
+                    <Link to={'/'}>
+                      <button className='bg-white bg-opacity-20 border-2 border-white border-opacity-80 rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-AlbertSans text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white'>
+                        Therapist
                       </button>
                     </Link>
                   </li>
                 </ul>
+              </div>
+              <div className="rounded-2xl px-9 overflow-hidden bg-[url('/images/company-bg.png')] bg-cover bg-no-repeat bg-center py-[50px]">
+                <div className='relative before:absolute before:size-[90px] before:-top-[10px] before:-left-[10px] before:animate-rotational before:rounded-full before:border-[3px] before:border-dashed before:border-PrimaryColor-0 '>
+                  <img
+                    src={callIcon}
+                    draggable='false'
+                  />
+                </div>
+                <h6 className='font-AlbertSans font-medium text-lg text-white mt-9 mb-2'>
+                  Call Us Anytime
+                </h6>
+                <Link to={'/'}>
+                  <button className='font-AlbertSans font-semibold text-2xl text-white'>
+                    +123 (4567) 890
+                  </button>
+                </Link>
+                <Link to={'/'}>
+                  <button className='font-AlbertSans text-white flex gap-2 items-center mt-4 mb-[52px]'>
+                    <MdEmail className='text-xl text-PrimaryColor-0' />
+                    example@gmail.com
+                  </button>
+                </Link>
+                <Link to={'/contact'}>
+                  <button className='font-AlbertSans text-white flex gap-2 items-center bg-PrimaryColor-0 w-full h-[58px] rounded-md justify-center z-10 relative before:absolute before:top-0 before:right-0 before:scale-0 before:-z-10 before:w-full before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:scale-100 hover:text-white'>
+                    Contact Us
+                    <FaArrowRight />
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -394,4 +428,4 @@ const BlogDetails = () => {
   );
 };
 
-export default BlogDetails;
+export default ProjectDetails;
