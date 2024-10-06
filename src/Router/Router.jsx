@@ -8,6 +8,7 @@ import Main3 from '../Main/Main3';
 import Home3 from '../Pages/Home3/Home3';
 import AboutInner from '../Pages/InnerPage/AboutInner/AboutInner';
 import ProjectDetails from '../Pages/InnerPage/ProjectDetails/ProjectDetails';
+import ServiceInner from '../Pages/InnerPage/ServiceInner/ServiceInner';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,14 @@ const router = createBrowserRouter([
       {
         path: '/project_details',
         element: <ProjectDetails />,
+      },
+      {
+        path: '/service',
+        element: <ServiceInner />,
+      },
+      {
+        path: '/service',
+        element: <ServiceInner />,
       },
     ],
   },

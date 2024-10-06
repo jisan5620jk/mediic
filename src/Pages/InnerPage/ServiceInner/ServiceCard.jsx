@@ -3,30 +3,40 @@ import { Link } from "react-router-dom";
 
 const ServiceCard = ({
   serviceIcon,
+  serviceIcon2,
   serviceButton,
   serviceUrl,
-  serviceButton2,
   serviceTitle,
   serviceDesc,
 }) => {
   return (
-    <div className="rounded-xl bg-white group relative z-10 pt-[76px] text-center px-8 pb-7">
-      <div className="absolute -top-10 left-1/2 -translate-x-1/2 z-10">
-        <div className="size-[86px] rounded-full bg-BodyBg-0 border-2 border-white flex justify-center items-center relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:rounded-full before:transition-all before:duration-500 group-hover:before:-bottom-2">
-          <img src={serviceIcon} draggable="false" />
+    <div className='rounded-xl bg-white bg-opacity-20 border-2 border-white border-opacity-75 group relative z-10 pt-10 px-9 pb-9'>
+      <div className='flex items-center gap-5'>
+        <div className='size-[72px] rounded-full bg-white bg-opacity-20 border-2 border-white border-opacity-75 relative overflow-hidden'>
+          <img
+            src={serviceIcon}
+            draggable='false'
+            className='absolute translate-y-0 top-full left-1/2 -translate-x-1/2 transition-all duration-500 group-hover:-translate-y-1/2 group-hover:top-1/2'
+          />
+          <img
+            src={serviceIcon2}
+            draggable='false'
+            className='absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 transition-all duration-500 group-hover:-top-1/3'
+          />
+        </div>
+        <div className='flex-1 inline-block'>
+          <Link to={serviceUrl}>
+            <button className='font-AlbertSans font-bold text-HeadingColor-0 text-2xl lg:text-xl xl:text-2xl text-HeadingColor-0transition-all duration-500 group-hover:text-PrimaryColor-0'>
+              {serviceTitle}
+            </button>
+          </Link>
         </div>
       </div>
-      <Link to={serviceUrl}>
-        <button className="font-AlbertSans font-semibold text-2xl lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0">
-          {serviceTitle}
-        </button>
-      </Link>
-      <p className="font-AlbertSans text-TextColor2-0 pt-2 pb-6">
+      <p className='font-AlbertSans text-TextColor2-0 pt-6 pb-7 mb-7 border-b-2 border-white border-opacity-75'>
         {serviceDesc}
       </p>
       <Link to={serviceUrl}>
-        <button className="font-AlbertSans text-white border border-PrimaryColor-0 rounded-full font-medium flex items-center justify-center gap-2 w-full py-2 transition-all duration-500 group-hover:text-HeadingColor-0 relative z-10 before:absolute before:-z-10 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:transition-all before:duration-500 before:scale-100 group-hover:before:scale-0">
-          {serviceButton2}
+        <button className='font-AlbertSans text-TextColor2-0 font-medium uppercase transition-all duration-500 group-hover:text-PrimaryColor-0 relative z-10 before:absolute before:left-0 before:bottom-0 before:-z-10 before:w-0 before:h-[1px] before:bg-PrimaryColor-0 before:rounded-full before:transition-all before:duration-500 before:scale-100 group-hover:before:w-full'>
           {serviceButton}
         </button>
       </Link>

@@ -375,10 +375,10 @@ const Navbar = () => {
                       <Link to={'/'}>Services</Link>
                       <ul className='submenu'>
                         <li>
-                          <Link to={'/'}>service</Link>
+                          <Link to={'/service'}>service</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>service details</Link>
+                          <Link to={'/service_details'}>service details</Link>
                         </li>
                       </ul>
                     </li>
@@ -395,7 +395,7 @@ const Navbar = () => {
                           <Link to={'/'}>blog left sidebar</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>blog details</Link>
+                          <Link to={'/blog_details'}>blog details</Link>
                         </li>
                       </ul>
                     </li>
