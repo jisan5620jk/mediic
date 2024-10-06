@@ -14,6 +14,7 @@ import callIcon from '/images/call3..png';
 import Faq from './Accordion/Faq';
 import { BsFileEarmarkPdf } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
+import Subscribe from '../../../Component1/Subscribe/Subscribe';
 
 const ServiceDetails2 = () => {
   return (
@@ -245,6 +246,7 @@ const ServiceDetails2 = () => {
           </div>
         </div>
       </section>
+      <Subscribe />
     </>
   );
 };

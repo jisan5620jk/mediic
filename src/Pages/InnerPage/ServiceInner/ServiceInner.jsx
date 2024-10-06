@@ -14,6 +14,7 @@ import serviceIcon12 from '/images/srvce-icn-2.png';
 import ServiceCard from './ServiceCard';
 import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
 import Appoinment from './Appoinment/Appionment';
+import Subscribe from '../../../Component1/Subscribe/Subscribe';
 
 const serviceData = [
   {
@@ -119,6 +120,7 @@ const ServiceInner = () => {
         </div>
       </section>
       <Appoinment />
+      <Subscribe />
     </>
   );
 };

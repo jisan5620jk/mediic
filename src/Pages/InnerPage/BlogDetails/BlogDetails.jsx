@@ -19,6 +19,7 @@ import author2 from '/images/people3.png';
 import author3 from '/images/people5.png';
 import { IoSearch } from 'react-icons/io5';
 import { BiSolidShare } from 'react-icons/bi';
+import Subscribe from '../../../Component1/Subscribe/Subscribe';
 
 const ProjectDetails = () => {
   return (
@@ -424,6 +425,8 @@ const ProjectDetails = () => {
           </div>
         </div>
       </section>
+
+      <Subscribe />
     </>
   );
 };

@@ -14,6 +14,7 @@ import callIcon from '/images/call3..png';
 import Faq from './Accordion/Faq';
 import { BsFileEarmarkPdf } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
+import Subscribe from '../../../Component1/Subscribe/Subscribe';
 
 const ServiceDetails3 = () => {
   return (
@@ -35,7 +36,7 @@ const ServiceDetails3 = () => {
                 />
               </div>
               <h2 className='font-AlbertSans font-bold text-[28px] text-HeadingColor-0 capitalize mt-8'>
-               We are prividing the best plastic surgery service
+                We are prividing the best plastic surgery service
               </h2>
               <p className='font-AlbertSans text-TextColor2-0 mt-5'>
                 Alternative innovation to ethical network environmental
@@ -245,6 +246,7 @@ const ServiceDetails3 = () => {
           </div>
         </div>
       </section>
+      <Subscribe />
     </>
   );
 };

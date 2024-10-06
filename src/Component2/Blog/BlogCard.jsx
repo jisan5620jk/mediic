@@ -11,7 +11,7 @@ const BlogCard = ({
   blogPostByIcon,
 }) => {
   return (
-    <div className='group transition-all duration-500 rounded-lg bg-white shadow-shade'>
+    <div className='group transition-all duration-500 rounded-lg bg-transparent'>
       <div className='relative rounded-[20px] overflow-hidden'>
         <span className='absolute bg-PrimaryColor-0 left-[12.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:w-[25%] group-hover:left-0 group-hover:opacity-0'></span>
         <span className='absolute bg-PrimaryColor-0 left-[37.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:w-[25%] group-hover:left-[25%] group-hover:opacity-0'></span>

@@ -1,5 +1,5 @@
 import { FaCircle } from 'react-icons/fa6';
-import blogThumb from '/images/blog2.jpg';
+import blogThumb from '/images/blog.jpg';
 import blogThumb2 from '/images/blog2.jpg';
 import blogThumb3 from '/images/blog3.jpg';
 import BlogCard from './BlogCard';
@@ -74,7 +74,7 @@ const Blog = () => {
     },
   };
   return (
-    <section className='py-28 blog'>
+    <section className='py-28 bg-BodyBg-0'>
       <div className='Container'>
         <div className='grid grid-cols-1 gap-8 lg:items-center lg:grid-cols-2 border-b border-BorderColor3-0 pb-7'>
           <div>

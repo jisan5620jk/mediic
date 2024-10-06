@@ -1,51 +1,59 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const BlogGridCard = ({
-  blogGridImg,
-  thumbContent,
-  blogGridTitle,
-  postBy,
-  comments,
-  blogGridDesc,
-  blogGridUrl,
-  thumbBtn,
+  blogThumb,
+  blogDateIcon,
+  blogDate,
+  blogPostBy,
+  blogUrl,
+  blogTitle,
+  blogPostByIcon,
+  blogGridContent,
+  blogGridIcon,
 }) => {
   return (
-    <div className="group bg-BodyBg-0 p-5 rounded-md">
-      <div className="relative overflow-hidden rounded-md">
+    <div className='group transition-all duration-500 p-5 rounded-3xl bg-white bg-opacity-20 border-2 border-white border-opacity-80'>
+      <div className='relative rounded-[20px] overflow-hidden'>
+        <span className='absolute bg-PrimaryColor-0 left-[12.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:w-[25%] group-hover:left-0 group-hover:opacity-0'></span>
+        <span className='absolute bg-PrimaryColor-0 left-[37.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:w-[25%] group-hover:left-[25%] group-hover:opacity-0'></span>
+        <span className='absolute bg-PrimaryColor-0 left-[62.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:w-[25%] group-hover:left-1/2 group-hover:opacity-0'></span>
+        <span className='absolute bg-PrimaryColor-0 left-[87.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:w-[25%] group-hover:left-[75%] group-hover:opacity-0'></span>
         <img
-          src={blogGridImg}
-          className="w-full transition-all duration-500 group-hover:scale-110"
+          src={blogThumb}
+          className='transition-all duration-500 scale-100 group-hover:scale-110 w-full'
         />
-        <div className="absolute top-0 left-0">
-          <h6 className="font-AlbertSans text-white pl-7 pr-12 py-2 overflow-hidden bg-PrimaryColor-0 relative z-10 before:absolute before:-right-4 before:top-1 before:w-8 before:h-8 before:!rotate-45 before:bg-HeadingColor-0">
-            {thumbContent}
-          </h6>
-        </div>
-        <div className="absolute bottom-4 -right-1/4 transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:right-6">
-          <Link to={blogGridUrl}>
-            <button className="font-AlbertSans text-white size-11 rounded-full border-2 text-2xl flex justify-center items-center border-white bg-PrimaryColor-0">
-              {thumbBtn}
+      </div>
+      <div className='rounded-b-lg relative z-20 flex justify-center transition-all duration-500 2xl:pr-14 pt-9 sm:px-5'>
+        <div>
+          <div className='flex gap-6 mb-3'>
+            <p className='font-DMSans text-HeadingColor-0 flex gap-2 items-center uppercase'>
+              <span className='text-PrimaryColor-0 text-opacity-30 text-[10px]'>
+                {blogDateIcon}
+              </span>
+              {blogDate}
+            </p>
+            <p className='font-DMSans text-HeadingColor-0 flex gap-2 items-center uppercase'>
+              <span className='text-PrimaryColor-0 text-opacity-30 text-[10px]'>
+                {blogPostByIcon}
+              </span>
+              {blogPostBy}
+            </p>
+          </div>
+          <Link to={blogUrl}>
+            <button className='font-AlbertSans text-left font-semibold text-xl sm:text-[23px] md:text-[22px] lg:text-xl xl:text-[23px] 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-2'>
+              {blogTitle}
             </button>
           </Link>
+          <div className='inline-block mt-8 mb-5'>
+            <Link to={'/about'}>
+              <button className='primary-btn !py-[11px] !px-8'>
+                {blogGridContent}
+                <span className='text-[22px] -rotate-45'>{blogGridIcon}</span>
+              </button>
+            </Link>
+          </div>
         </div>
-      </div>
-      <div className="sm:px-5 relative z-10">
-        <div className="flex items-center justify-between gap-5 pt-7 pb-7 border-b-2  relative before:absolute before:left-0 before:-bottom-[2px] before:w-8 before:h-[2px] before:bg-PrimaryColor-0 before:animate-dance5">
-          <h6 className="flex items-center gap-2 font-AlbertSans text-[17px] text-PrimaryColor-0 font-medium">
-            {postBy}
-          </h6>
-          <h6 className="flex items-center font-AlbertSans text-[17px] text-TextColor2-0 font-medium">
-            {comments}
-          </h6>
-        </div>
-        <Link to={blogGridUrl}>
-          <button className="font-AlbertSans font-semibold text-left text-lg sm:text-2xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-7 mb-3">
-            {blogGridTitle}
-          </button>
-        </Link>
-        <p className="font-AlbertSans text-TextColor2-0 pb-4">{blogGridDesc}</p>
       </div>
     </div>
   );

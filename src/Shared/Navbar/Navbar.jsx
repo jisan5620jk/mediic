@@ -386,7 +386,7 @@ const Navbar = () => {
                       <Link to={'/'}>Blog</Link>
                       <ul className='submenu'>
                         <li>
-                          <Link to={'/'}>blog grid</Link>
+                          <Link to={'/blog_grid'}>blog grid</Link>
                         </li>
                         <li>
                           <Link to={'/'}>blog right sidebar</Link>

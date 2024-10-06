@@ -1,87 +1,87 @@
-/* eslint-disable no-unused-vars */
-import { FaAngleRight, FaArrowRightLong } from "react-icons/fa6";
-import blogGridImg from "/images/blog-1.png";
-import blogGridImg2 from "/images/blog-2.png";
-import blogGridImg3 from "/images/blog-3.png";
-import blogGridImg4 from "/images/blog-4.png";
-import blogGridImg5 from "/images/blog-5.png";
-import blogGridImg6 from "/images/blog-6.png";
-import BlogGridCard from "./BlogGridCard";
-import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import { LuArrowUpRight } from "react-icons/lu";
+import { FaArrowRightLong, FaCircle } from 'react-icons/fa6';
+import blogThumb from '/images/blog.jpg';
+import blogThumb2 from '/images/blog2.jpg';
+import blogThumb3 from '/images/blog3.jpg';
+import blogThumb4 from '/images/blog4.jpg';
+import blogThumb5 from '/images/blog5.jpg';
+import blogThumb6 from '/images/blog6.jpg';
+import BlogGridCard from './BlogGridCard';
+import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
+import { GoArrowRight } from 'react-icons/go';
+import Subscribe from '../../../Component1/Subscribe/Subscribe';
 
-const blogData = [
+const BlogGridData = [
   {
     id: 1,
-    blogGridImg: blogGridImg,
-    thumbContent: "IT Solution",
-    thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Solution This Business For is Marketing Blog",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
-    blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+    blogThumb: blogThumb,
+    blogPostByIcon: <FaCircle />,
+    blogDateIcon: <FaCircle />,
+    blogDate: 'April 04, 2024',
+    blogPostBy: 'Admin',
+    blogUrl: '/blog_details',
+    blogTitle: 'Top 10 Popular Equipments for Medical Industre',
+    blogGridContent: 'Read More',
+    blogGridIcon: <GoArrowRight />,
   },
   {
     id: 2,
-    blogGridImg: blogGridImg2,
-    thumbContent: "IT Solution",
-    thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Easy and Most Powerful Server and Platform.",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
-    blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+    blogThumb: blogThumb2,
+    blogPostByIcon: <FaCircle />,
+    blogDateIcon: <FaCircle />,
+    blogDate: 'April 14, 2024',
+    blogPostBy: 'Admin',
+    blogUrl: '/blog_details',
+    blogTitle: 'How to maintain Patient for Better Surgery',
+    blogGridContent: 'Read More',
+    blogGridIcon: <GoArrowRight />,
   },
   {
     id: 3,
-    blogGridImg: blogGridImg3,
-    thumbContent: "IT Solution",
-    thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "In eu fringilla, accumsan purusvel sollicitudin.",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
-    blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+    blogThumb: blogThumb3,
+    blogDate: 'April 24, 2024',
+    blogPostByIcon: <FaCircle />,
+    blogDateIcon: <FaCircle />,
+    blogPostBy: 'Admin',
+    blogUrl: '/blog_details',
+    blogTitle: 'Most Popular Advises for Kids Happy & Smile Life',
+    blogGridContent: 'Read More',
+    blogGridIcon: <GoArrowRight />,
   },
   {
     id: 4,
-    blogGridImg: blogGridImg4,
-    thumbContent: "IT Solution",
-    thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Vivamus vehicula nl purus at eros interdum.",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
-    blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+    blogThumb: blogThumb4,
+    blogDate: 'June 08, 2024',
+    blogPostByIcon: <FaCircle />,
+    blogDateIcon: <FaCircle />,
+    blogPostBy: 'Admin',
+    blogUrl: '/blog_details',
+    blogTitle: 'How to maintain Patient for Better Surgery',
+    blogGridContent: 'Read More',
+    blogGridIcon: <GoArrowRight />,
   },
   {
     id: 5,
-    blogGridImg: blogGridImg5,
-    thumbContent: "IT Solution",
-    thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Optimizing IT Infrastructure for Cost Efficiency.",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
-    blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+    blogThumb: blogThumb5,
+    blogDate: 'June 19, 2024',
+    blogPostByIcon: <FaCircle />,
+    blogDateIcon: <FaCircle />,
+    blogPostBy: 'Admin',
+    blogUrl: '/blog_details',
+    blogTitle: 'How to maintain Patient for Better Surgery',
+    blogGridContent: 'Read More',
+    blogGridIcon: <GoArrowRight />,
   },
   {
     id: 6,
-    blogGridImg: blogGridImg6,
-    thumbContent: "IT Solution",
-    thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Business Rules of Running to Web Solution.",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
-    blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+    blogThumb: blogThumb6,
+    blogDate: 'June 28, 2024',
+    blogPostByIcon: <FaCircle />,
+    blogDateIcon: <FaCircle />,
+    blogPostBy: 'Admin',
+    blogUrl: '/blog_details',
+    blogTitle: 'How to maintain Patient for Better Surgery',
+    blogGridContent: 'Read More',
+    blogGridIcon: <GoArrowRight />,
   },
 ];
 
@@ -89,34 +89,38 @@ const BlogGrid = () => {
   return (
     <>
       <BreadCrumb
-        breadCrumbTitle={"Blog Grid"}
+        breadCrumbTitle={'Blog Grid'}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"Blog Grid"}
+        breadCrumbLink={'Blog Grid'}
       />
-      <section className="pt-28">
-        <div className="Container">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-            {blogData.map(
+      <section className='py-28 bg-BodyBg-0'>
+        <div className='Container'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-7'>
+            {BlogGridData.map(
               ({
                 id,
-                blogGridImg,
-                thumbContent,
-                thumbBtn,
-                blogGridTitle,
-                postBy,
-                comments,
-                blogGridDesc,
+                blogThumb,
+                blogDateIcon,
+                blogDate,
+                blogPostBy,
+                blogUrl,
+                blogTitle,
+                blogPostByIcon,
+                blogGridContent,
+                blogGridIcon,
               }) => {
                 return (
                   <div key={id}>
                     <BlogGridCard
-                      blogGridImg={blogGridImg}
-                      thumbContent={thumbContent}
-                      thumbBtn={thumbBtn}
-                      blogGridTitle={blogGridTitle}
-                      postBy={postBy}
-                      comments={comments}
-                      blogGridDesc={blogGridDesc}
+                      blogThumb={blogThumb}
+                      blogDateIcon={blogDateIcon}
+                      blogDate={blogDate}
+                      blogPostBy={blogPostBy}
+                      blogPostByIcon={blogPostByIcon}
+                      blogUrl={blogUrl}
+                      blogTitle={blogTitle}
+                      blogGridContent={blogGridContent}
+                      blogGridIcon={blogGridIcon}
                     />
                   </div>
                 );
@@ -125,30 +129,7 @@ const BlogGrid = () => {
           </div>
         </div>
       </section>
-      <div>
-        <ul className="flex items-center gap-2 justify-center pb-[120px] pt-[80px]">
-          <li>
-            <button className="h-[50px] w-[50px] font-AlbertSans rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-              01
-            </button>
-          </li>
-          <li>
-            <button className="h-[50px] w-[50px] font-AlbertSans rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-              02
-            </button>
-          </li>
-          <li>
-            <button className="h-[50px] w-[50px] font-AlbertSans rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-              03
-            </button>
-          </li>
-          <li>
-            <button className="h-[50px] w-[50px] font-AlbertSans rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
-              <FaAngleRight />
-            </button>
-          </li>
-        </ul>
-      </div>
+      <Subscribe />
     </>
   );
 };
