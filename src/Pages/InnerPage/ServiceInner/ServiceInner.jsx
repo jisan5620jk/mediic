@@ -13,6 +13,7 @@ import serviceIcon11 from '/images/srvce-icn6.png';
 import serviceIcon12 from '/images/srvce-icn-2.png';
 import ServiceCard from './ServiceCard';
 import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
+import Appoinment from './Appoinment/Appionment';
 
 const serviceData = [
   {
@@ -85,7 +86,7 @@ const ServiceInner = () => {
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={'Our Services'}
       />
-      <section className='py-[120px] relative z-10 bg-BodyBg-0'>
+      <section className='pt-[120px] relative z-10 bg-BodyBg-0'>
         <div className='Container'>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-[68px]'>
             {serviceData.map(
@@ -117,6 +118,7 @@ const ServiceInner = () => {
           </div>
         </div>
       </section>
+      <Appoinment />
     </>
   );
 };
