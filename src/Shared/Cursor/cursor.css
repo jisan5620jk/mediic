@@ -1,0 +1,50 @@
+.mouse-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  visibility: hidden;
+}
+
+.cursor-inner {
+  width: 8px;
+  height: 8px;
+  z-index: 10000001;
+  background-color: #fff;
+  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  mix-blend-mode: difference;
+}
+
+.cursor-inner.cursor-hover {
+  margin-left: -35px;
+  margin-top: -35px;
+  width: 75px;
+  height: 75px;
+  background-color: #fff;
+}
+
+.cursor-outer {
+  margin-left: -18px;
+  margin-top: -18px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  transform: scale(1);
+  z-index: 10000000;
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+  mix-blend-mode: difference;
+}
+
+.cursor-outer.cursor-hover {
+  transform: scale(2);
+  opacity: 0;
+}

@@ -1,26 +1,52 @@
 import { useEffect } from 'react';
+import './cursor.css';
 
 const Cursor = () => {
   useEffect(() => {
-    const cursor = document.querySelector('.cursor');
-    const cursor2 = document.querySelector('.cursor2');
+    const innerCursor = document.querySelector('.cursor-inner');
+    const outerCursor = document.querySelector('.cursor-outer');
 
-    const handleMouseMove = (e) => {
-      cursor.style.transform = `translate(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%))`;
-      cursor2.style.transform = `translate(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%))`;
+    const mouseMoveHandler = (event) => {
+      const { clientX, clientY } = event;
+      outerCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+      innerCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
     };
 
-    document.addEventListener('mousemove', handleMouseMove);
+    const mouseEnterHandler = (event) => {
+      if (event.target.matches('a, button, .cursor-pointer')) {
+        innerCursor.classList.add('cursor-hover');
+        outerCursor.classList.add('cursor-hover');
+      }
+    };
 
+    const mouseLeaveHandler = (event) => {
+      if (event.target.matches('a, button, .cursor-pointer')) {
+        innerCursor.classList.remove('cursor-hover');
+        outerCursor.classList.remove('cursor-hover');
+      }
+    };
+
+    // Add event listeners
+    window.addEventListener('mousemove', mouseMoveHandler);
+    document.body.addEventListener('mouseenter', mouseEnterHandler, true);
+    document.body.addEventListener('mouseleave', mouseLeaveHandler, true);
+
+    // Show the cursor elements
+    innerCursor.style.visibility = 'visible';
+    outerCursor.style.visibility = 'visible';
+
+    // Cleanup function
     return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mousemove', mouseMoveHandler);
+      document.body.removeEventListener('mouseenter', mouseEnterHandler);
+      document.body.removeEventListener('mouseleave', mouseLeaveHandler);
     };
   }, []);
 
   return (
     <div>
-      <div className='cursor fixed top-0 left-0 size-10 rounded-full bg-white mix-blend-difference pointer-events-none z-50 transition-transform duration-200 ease-in-out'></div>
-      <div className='cursor2 fixed top-0 left-0 size-2 rounded-full bg-white mix-blend-difference pointer-events-none z-50 transition-transform duration-100 ease-in-out'></div>
+      <div className='mouse-cursor cursor-inner'></div>
+      <div className='mouse-cursor cursor-outer'></div>
     </div>
   );
 };
