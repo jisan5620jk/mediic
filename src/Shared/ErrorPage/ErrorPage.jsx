@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const ErrorPage = () => {
   return (
-    <main className='h-screen w-full flex flex-col justify-center items-center bg-HeadingColor-0'>
+    <section className='h-screen w-full flex flex-col justify-center items-center bg-HeadingColor-0'>
       <h1 className='text-8xl sm:text-9xl font-extrabold text-white tracking-widest'>
         404
       </h1>
@@ -19,7 +19,7 @@ const ErrorPage = () => {
           </button>
         </Link>
       </div>
-    </main>
+    </section>
   );
 };
 
