@@ -1,7 +1,11 @@
-import teamThumb from "/images/team-1.png";
-import teamThumb2 from "/images/team-2.png";
-import teamThumb3 from "/images/team-4.png";
-import teamThumb4 from "/images/team-3.png";
+import teamThumb from "/images/team5.jpg";
+import teamThumb2 from "/images/team6.jpg";
+import teamThumb3 from "/images/team7.jpg";
+import teamThumb4 from "/images/team8.jpg";
+import teamThumb5 from "/images/team9.jpg";
+import teamThumb6 from "/images/team10.jpg";
+import teamThumb7 from "/images/team11.jpg";
+import teamThumb8 from "/images/team12.jpg";
 import TeamInnerCard from "./TeamInnerCard";
 import {
   FaArrowRightLong,
@@ -14,6 +18,7 @@ import { IoShareSocialOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { GoArrowRight } from "react-icons/go";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
+import Subscribe from "../../../Component1/Subscribe/Subscribe";
 
 const teamData = [
   {
@@ -62,7 +67,7 @@ const teamData = [
   },
   {
     id: 5,
-    teamThumb: teamThumb,
+    teamThumb: teamThumb5,
     teamTitle: "Connie Diaz",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
@@ -73,7 +78,7 @@ const teamData = [
   },
   {
     id: 6,
-    teamThumb: teamThumb2,
+    teamThumb: teamThumb6,
     teamTitle: "James E. Huey",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
@@ -84,7 +89,7 @@ const teamData = [
   },
   {
     id: 7,
-    teamThumb: teamThumb4,
+    teamThumb: teamThumb7,
     teamTitle: "Jone D. Alexon",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
@@ -95,7 +100,7 @@ const teamData = [
   },
   {
     id: 8,
-    teamThumb: teamThumb3,
+    teamThumb: teamThumb8,
     teamTitle: "June D. Vargas",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
@@ -115,7 +120,7 @@ const TeamInner = () => {
         breadCrumbLink={"Team Member"}
       />
       ;
-      <section className="bg-[url('/images/team-bg.jpg')] bg-no-repeat bg-cover bg-center py-28 relative">
+      <section className="bg-BodyBg-0 bg-no-repeat bg-cover bg-center py-28 relative">
         <div className="Container">
           <div className="grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-2 lg:items-center">
             <div>
@@ -168,6 +173,7 @@ const TeamInner = () => {
           </div>
         </div>
       </section>
+      <Subscribe />
     </>
   );
 };
