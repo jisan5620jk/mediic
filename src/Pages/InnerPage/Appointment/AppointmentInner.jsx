@@ -1,18 +1,18 @@
-import { FaArrowRightLong } from "react-icons/fa6";
-import Process from "../../../Component1/Process/Process";
-import Appointment from "./Appointment";
-import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
+import { FaArrowRightLong } from 'react-icons/fa6';
+import Appointment from './Appointment';
+import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
+import Subscribe from '../../../Component1/Subscribe/Subscribe';
 
 const AppointmentInner = () => {
   return (
     <>
       <BreadCrumb
-        breadCrumbTitle={"Book Appointment"}
+        breadCrumbTitle={'Book Appointment'}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"Book Appiontment"}
+        breadCrumbLink={'Appiontment'}
       />
       <Appointment />
-      <Process />
+      <Subscribe />
     </>
   );
 };

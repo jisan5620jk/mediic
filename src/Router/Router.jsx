@@ -18,6 +18,7 @@ import ServiceDetails5 from '../Pages/InnerPage/ServiceDetails/ServiceDetails5';
 import BlogGrid from '../Pages/InnerPage/BlogGrid/BlogGrid';
 import ContactInner from '../Pages/InnerPage/ContactInner/ContactInner';
 import TeamInner from '../Pages/InnerPage/TeamInner/TeamInner';
+import AppointmentInner from '../Pages/InnerPage/Appointment/AppointmentInner';
 
 const router = createBrowserRouter([
   {
@@ -72,6 +73,10 @@ const router = createBrowserRouter([
       {
         path: '/blog_details',
         element: <BlogDetails />,
+      },
+      {
+        path: '/appointment',
+        element: <AppointmentInner />,
       },
       {
         path: '/contact',

@@ -367,6 +367,9 @@ const Navbar = () => {
                           <Link to={'/project_details'}>Project Details</Link>
                         </li>
                         <li>
+                          <Link to={'/appointment'}>appointment</Link>
+                        </li>
+                        <li>
                           <Link to={'/'}>faq</Link>
                         </li>
                       </ul>
