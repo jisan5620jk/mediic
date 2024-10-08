@@ -10,9 +10,9 @@ const TeamDetails = () => {
   return (
     <>
       <BreadCrumb
-        breadCrumbTitle={'Team Member'}
+        breadCrumbTitle={'Team Details'}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={'Team Member'}
+        breadCrumbLink={'Team Details'}
       />
       <TeamDetailsMain />
       <Subscribe />

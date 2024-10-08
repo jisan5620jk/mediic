@@ -26,7 +26,7 @@ const TeamDetailsMain = () => {
           </div>
           <div>
             <h2 className='font-AlbertSans font-bold text-4xl text-HeadingColor-0 mb-1'>
-              Dr. Anjelina Whatson
+              Dr. Anjelina Jholi
             </h2>
             <p className='font-AlbertSans text-TextColor2-0'>
               Senior Heart Specialist
@@ -70,22 +70,22 @@ const TeamDetailsMain = () => {
               </h5>
               <ul className='flex gap-3'>
                 <li>
-                  <button className='size-10 rounded-full text-sm bg-BodyBg-0 flex items-center justify-center text-HeadingColor-0 hover:text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+                  <button className='size-10 rounded-full text-sm border-2 border-white bg-white bg-opacity-20 hover:border-PrimaryColor-0 flex items-center justify-center text-HeadingColor-0 hover:text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
                     <FaFacebookF />
                   </button>
                 </li>
                 <li>
-                  <button className='size-10 rounded-full text-sm bg-BodyBg-0 flex items-center justify-center text-HeadingColor-0 hover:text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+                  <button className='size-10 rounded-full text-sm border-2 border-white bg-white bg-opacity-20 hover:border-PrimaryColor-0 flex items-center justify-center text-HeadingColor-0 hover:text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
                     <FaXTwitter />
                   </button>
                 </li>
                 <li>
-                  <button className='size-10 rounded-full text-sm bg-BodyBg-0 flex items-center justify-center text-HeadingColor-0 hover:text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+                  <button className='size-10 rounded-full text-sm border-2 border-white bg-white bg-opacity-20 hover:border-PrimaryColor-0 flex items-center justify-center text-HeadingColor-0 hover:text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
                     <FaLinkedinIn />
                   </button>
                 </li>
                 <li>
-                  <button className='size-10 rounded-full text-sm bg-BodyBg-0 flex items-center justify-center text-HeadingColor-0 hover:text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+                  <button className='size-10 rounded-full text-sm border-2 border-white bg-white bg-opacity-20 hover:border-PrimaryColor-0 flex items-center justify-center text-HeadingColor-0 hover:text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
                     <FaPinterestP />
                   </button>
                 </li>
