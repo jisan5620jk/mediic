@@ -1,137 +1,129 @@
-import { FaArrowRightLong } from "react-icons/fa6";
-import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import projectThumb from "/images/project-img.png";
-import projectThumb2 from "/images/project-img2.png";
-import projectThumb3 from "/images/project-img3.png";
-import projectThumb4 from "/images/project-img4.jpg";
-import projectThumb5 from "/images/project-img5.jpg";
-import projectThumb6 from "/images/project-img6.jpg";
-import projectShape from "/images/project-shape.png";
-import projectContentShape from "/images/project-content-shape.png";
-import subTitleShape from "/images/sub-title-shape.png";
-import ProjectCard from "./ProjectCard";
+import { FaArrowRightLong } from 'react-icons/fa6';
+import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
+import projectThumb from '/images/project.jpg';
+import projectThumb2 from '/images/project2.jpg';
+import projectThumb3 from '/images/project3.jpg';
+import ProjectCard from './ProjectCard';
+import Blog from '../../../Component1/Blog/Blog';
+import Subscribe from '../../../Component1/Subscribe/Subscribe';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import ProjectNavigation from './ProjectNavigation';
+import Brand from './Brand/Brand';
 
 const ProjectData = [
   {
     id: 1,
     projectThumb: projectThumb,
-    projectSubTitle: "Climate",
-    projectTitle: "Cleaning Forest",
-    projectUrl: "/project_details",
-    buttonTitle: "View Details",
+    projectSubTitle: 'Frustation',
+    projectTitle: 'Cardiothoracic',
+    projectUrl: '/project_details',
+    buttonTitle: 'View Details',
     buttonIcon: <FaArrowRightLong />,
-    projectContentShape: projectContentShape,
-    projectShape: projectShape,
+    projectDesc:
+      'Mediic design and develop for high class innovative medical...',
   },
   {
     id: 2,
     projectThumb: projectThumb2,
-    projectSubTitle: "Environment",
-    projectTitle: "Echology Energy",
-    projectUrl: "/project_details",
-    buttonTitle: "View Details",
+    projectSubTitle: 'Frustation',
+    projectTitle: 'Supraventricular',
+    projectUrl: '/project_details',
+    buttonTitle: 'View Details',
     buttonIcon: <FaArrowRightLong />,
-    projectContentShape: projectContentShape,
-    projectShape: projectShape,
+    projectDesc:
+      'Mediic design and develop for high class innovative medical...',
   },
   {
     id: 3,
     projectThumb: projectThumb3,
-    projectSubTitle: "Recycling",
-    projectTitle: "Plastic Recycling",
-    projectUrl: "/project_details",
-    buttonTitle: "View Details",
+    projectSubTitle: 'Frustation',
+    projectTitle: 'Cardiothoracic',
+    projectUrl: '/project_details',
+    buttonTitle: 'View Details',
     buttonIcon: <FaArrowRightLong />,
-    projectContentShape: projectContentShape,
-    projectShape: projectShape,
+    projectDesc:
+      'Mediic design and develop for high class innovative medical...',
   },
   {
     id: 4,
-    projectThumb: projectThumb4,
-    projectSubTitle: "Recycling",
-    projectTitle: "Web Development",
-    projectUrl: "/project_details",
-    buttonTitle: "View Details",
+    projectThumb: projectThumb2,
+    projectSubTitle: 'Frustation',
+    projectTitle: 'Cardiothoracic',
+    projectUrl: '/project_details',
+    buttonTitle: 'View Details',
     buttonIcon: <FaArrowRightLong />,
-    projectContentShape: projectContentShape,
-    projectShape: projectShape,
-  },
-  {
-    id: 5,
-    projectThumb: projectThumb5,
-    projectSubTitle: "Plants",
-    projectTitle: "Seedlings Plants",
-    projectUrl: "/project_details",
-    buttonTitle: "View Details",
-    buttonIcon: <FaArrowRightLong />,
-    projectContentShape: projectContentShape,
-    projectShape: projectShape,
-  },
-  {
-    id: 6,
-    projectThumb: projectThumb6,
-    projectSubTitle: "Environment",
-    projectTitle: "Renewable Energy",
-    projectUrl: "/project_details",
-    buttonTitle: "View Details",
-    buttonIcon: <FaArrowRightLong />,
-    projectContentShape: projectContentShape,
-    projectShape: projectShape,
+    projectDesc:
+      'Mediic design and develop for high class innovative medical...',
   },
 ];
 
 const ProjectInner = () => {
+  const settings = {
+    loop: true,
+    spaceBetween: 30,
+    speed: 1000,
+    initialSlide: 1,
+    centeredSlides: true,
+    autoplay: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1400: {
+        slidesPerView: 3,
+      },
+    },
+  };
   return (
     <>
       <BreadCrumb
-        breadCrumbTitle={"Projects"}
+        breadCrumbTitle={'Projects'}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"Projects"}
+        breadCrumbLink={'Projects'}
       />
-      <section className="py-28 bg-[#f3f4f8]">
-        <div className="Container">
-          <div className="text-center">
-            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center justify-center gap-2">
-              <img src={subTitleShape} draggable="false" />
-              OUR SERVICES
-            </h5>
-            <h1 className="font-AlbertSans font-bold text-xl leading-6 sm:text-[38px] sm:leading-[48px] md:text-[40px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5">
-              Echofy Provide Environment <br />
-              Best Leading Services
-            </h1>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-[60px]">
+      <section className='py-28 bg-BodyBg-0'>
+        <div className='Container'>
+          <Swiper {...settings}>
             {ProjectData.map(
               ({
                 id,
                 projectThumb,
-                projectShape,
-                projectContentShape,
                 projectSubTitle,
                 projectTitle,
                 projectUrl,
-                buttonTitle,
                 buttonIcon,
+                projectDesc,
               }) => {
                 return (
-                  <div key={id}>
-                    <ProjectCard
-                      projectThumb={projectThumb}
-                      projectContentShape={projectContentShape}
-                      projectShape={projectShape}
-                      projectSubTitle={projectSubTitle}
-                      projectTitle={projectTitle}
-                      projectUrl={projectUrl}
-                      buttonTitle={buttonTitle}
-                      buttonIcon={buttonIcon}
-                    />
-                  </div>
+                  <SwiperSlide key={id}>
+                    <div className='pb-[64px]'>
+                      <ProjectCard
+                        projectThumb={projectThumb}
+                        projectSubTitle={projectSubTitle}
+                        projectTitle={projectTitle}
+                        projectUrl={projectUrl}
+                        buttonIcon={buttonIcon}
+                        projectDesc={projectDesc}
+                      />
+                    </div>
+                  </SwiperSlide>
                 );
               }
             )}
-          </div>
+            <ProjectNavigation />
+          </Swiper>
         </div>
       </section>
+      <Brand />
+      <Blog />
+      <Subscribe />
     </>
   );
 };

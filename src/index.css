@@ -198,6 +198,22 @@ body {
   bottom: 0;
 }
 
+/* Project Inner */
+
+.swiper-slide-active  .project-inner-box .project-inner-thumb::before {
+  height: 50%;
+}
+
+.swiper-slide-active  .project-inner-box .project-inner-content {
+  margin-top: -120px;
+}
+
+.swiper-slide-active  .project-inner-box .project-inner-btn {
+ opacity: 1;
+ margin-right: -8px;
+}
+
+
 /* Pagination */
 
 .swiper-pagination {
