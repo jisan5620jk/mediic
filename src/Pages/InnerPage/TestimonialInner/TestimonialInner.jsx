@@ -1,119 +1,258 @@
-import testiImg from "/images/testi-author1.png";
-import testiImg2 from "/images/testi-author2.png";
-import testiImg3 from "/images/testi-author3.png";
-import testiImg4 from "/images/testi-author-4.png";
-import testiImg5 from "/images/testi-author-5.png";
-import testiImg6 from "/images/testi-author-6.png";
-import testiShape from "/images/testi-quote-6.png";
-import subTitleShape from "/images/sub-title-shape.png";
-import { MdOutlineStarPurple500 } from "react-icons/md";
-import TestimonialInnerCard from "./TestimonialInnerCard";
-import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import { FaArrowRightLong } from "react-icons/fa6";
+import testiImg from '/images/people2.png';
+import testiImg2 from '/images/people3.png';
+import testiImg3 from '/images/people.png';
+import testiQuote from '/images/quote3.png';
+import { MdOutlineStarPurple500 } from 'react-icons/md';
+import TestimonialInnerCard from './TestimonialInnerCard';
+import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
+import { FaArrowRightLong } from 'react-icons/fa6';
+import Blog from '../../../Component1/Blog/Blog';
+import Subscribe from '../../../Component1/Subscribe/Subscribe';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const testiData = [
   {
     id: 1,
     testiImg: testiImg,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Anjelina Watson",
-    testiDesignation: "Web Developer",
-    testiDesc: `Appropriately administrate proactive value with to
-                niche markets. Dramatically target market position
-                idea after high quality best practice. Dramatically 
-                synergize open source service`,
-    testiTitle: "Support",
-    testiShape: testiShape,
+    testiName: 'Anjelina Watson',
+    testiDesignation: 'Dentist',
+    testiDesc: `Dr. Anjelina Watson conducted a thorough examination and took the time to explain my condition 
+    in detail. Their compassionate approach made all the difference; I felt genuinely cared for.`,
+    testiQuote: testiQuote,
   },
   {
     id: 2,
     testiImg: testiImg2,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Jhon D. Alexon",
-    testiDesignation: "UI/UX Designer",
-    testiDesc: `Appropriately administrate proactive value with to
-                niche markets. Dramatically target market position
-                idea after high quality best practice. Dramatically 
-                synergize open source service`,
-    testiTitle: "Service Quality",
-    testiShape: testiShape,
+    testiName: 'Jhon D. Alexon',
+    testiDesignation: 'Surjoun',
+    testiDesc: `Dr. Jhon D. Alexon conducted a thorough examination and took the time to explain my condition 
+    in detail. Their compassionate approach made all the difference; I felt genuinely cared for.`,
+    testiQuote: testiQuote,
   },
   {
     id: 3,
     testiImg: testiImg3,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Tina Rose",
-    testiDesignation: "Zoo Visitors",
-    testiDesc: `Appropriately administrate proactive value with to
-                niche markets. Dramatically target market position
-                idea after high quality best practice. Dramatically 
-                synergize open source service`,
-    testiTitle: "Support",
-    testiShape: testiShape,
-  },
-  {
-    id: 4,
-    testiImg: testiImg4,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "David Miller",
-    testiDesignation: "Volunteer",
-    testiDesc: `Appropriately administrate proactive value with to
-                niche markets. Dramatically target market position
-                idea after high quality best practice. Dramatically 
-                synergize open source service`,
-    testiTitle: "Service Quality",
-    testiShape: testiShape,
-  },
-  {
-    id: 5,
-    testiImg: testiImg5,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Jisan Khan",
-    testiDesignation: "Zoo Visitors",
-    testiDesc: `Appropriately administrate proactive value with to
-                niche markets. Dramatically target market position
-                idea after high quality best practice. Dramatically 
-                synergize open source service`,
-    testiTitle: "Support",
-    testiShape: testiShape,
-  },
-  {
-    id: 6,
-    testiImg: testiImg6,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: "Marina M.Cullam",
-    testiDesignation: "Web Developer",
-    testiDesc: `Appropriately administrate proactive value with to
-                niche markets. Dramatically target market position
-                idea after high quality best practice. Dramatically 
-                synergize open source service`,
-    testiTitle: "Service Quality",
-    testiShape: testiShape,
+    testiName: 'David Miller',
+    testiDesignation: 'Therapist',
+    testiDesc: `Dr. Anjelina Watson conducted a thorough examination and took the time to explain my condition 
+    in detail. Their compassionate approach made all the difference; I felt genuinely cared for.`,
+    testiQuote: testiQuote,
   },
 ];
 
 const TestimonialInner = () => {
+    const settings = {
+      loop: true,
+      spaceBetween: 30,
+      speed: 1000,
+      initialSlide: 1,
+      autoplay: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 1,
+        },
+        992: {
+          slidesPerView: 2,
+        },
+        1400: {
+          slidesPerView: 2,
+        },
+      },
+    };
   return (
     <>
       <BreadCrumb
-        breadCrumbTitle={"Testimonial"}
+        breadCrumbTitle={'Testimonial'}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"Testimonial"}
+        breadCrumbLink={'Testimonial'}
       />
-      <section className="py-28 bg-[#f5f8ed] relative z-10 before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-2/3 before:-z-10 before:h-2/3 before:bg-[url('/images/map.png')] before:bg-center before:bg-cover before:bg-no-repeat overflow-hidden testimonial">
-        <div className="Container">
-          <div className="text-center">
-            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2 justify-center">
-              <img src={subTitleShape} draggable="false" />
-              TESTIMONIALS
-            </h5>
-            <h1 className="font-AlbertSans font-bold text-xl leading-7 sm:text-[36px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
-              Clients Best Feedback About
-              <br />
-              Echofy Provission
-            </h1>
-          </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-[56px]">
+      <section className='py-28 bg-BodyBg-0 relative z-10 overflow-hidden'>
+        <div className='Container'>
+          <Tabs>
+            <TabPanel>
+              <div className='px-5 sm:px-10 lg:px-4 xl:px-[50px] pt-10 pb-10 bg-white bg-opacity-30 border-2 border-white rounded-3xl relative z-10 overflow-hidden'>
+                <div className=''>
+                  <img
+                    src={testiQuote}
+                    draggable='false'
+                  />
+                </div>
+                <ul className='flex gap-1 items-center pt-9'>
+                  <li className='text-[#ffb609] text-2xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                  <li className='text-[#ffb609] text-2xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                  <li className='text-[#ffb609] text-2xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                  <li className='text-[#ffb609] text-2xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                  <li className='text-[#ffb609] text-2xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                </ul>
+                <p className='font-AlbertSans text-xl text-TextColor2-0 pt-6'>
+                  Osteoarthritis (OA) is a chronic joint condition characterized
+                  by the gradual breakdown of cartilage, the smooth tissue that
+                  cushions the ends of bones in joints. This degeneration leads
+                  to pain, stiffness, swelling, and reduced mobility in the
+                  affected joints, most commonly the knees, hips, hands, and
+                  spine. The risk of developing OA increases with age, but other
+                  factors such as previous joint injuries, obesity, genetic
+                  predisposition, and repetitive stress on the joints also
+                  contribute. While there is no cure for OA, treatments focus on
+                  managing symptoms and improving joint function. These
+                  treatments include medications for pain relief, physical
+                  therapy to strengthen muscles around the joints.
+                </p>
+              </div>
+            </TabPanel>
+            <TabPanel>
+              <div className='px-5 sm:px-10 lg:px-4 xl:px-[50px] pt-10 pb-10 bg-white bg-opacity-30 border-2 border-white rounded-3xl relative z-10 overflow-hidden'>
+                <div className=''>
+                  <img
+                    src={testiQuote}
+                    draggable='false'
+                  />
+                </div>
+                <ul className='flex gap-1 items-center pt-9'>
+                  <li className='text-[#ffb609] text-2xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                  <li className='text-[#ffb609] text-2xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                  <li className='text-[#ffb609] text-2xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                  <li className='text-[#ffb609] text-2xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                  <li className='text-[#ffb609] text-2xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                </ul>
+                <p className='font-AlbertSans text-xl text-TextColor2-0 pt-6'>
+                  Hypertension, commonly known as high blood pressure, is a
+                  chronic medical condition where the force of the blood against
+                  the artery walls is consistently too high. This condition can
+                  lead to serious health complications, such as heart disease,
+                  stroke, and kidney damage. Hypertension is often called the
+                  “silent killer” because it typically has no symptoms until
+                  significant damage has occurred. Risk factors include
+                  genetics, obesity, lack of physical activity, excessive salt
+                  intake, and stress. Managing hypertension involves lifestyle
+                  changes such as a healthy diet, regular exercise, maintaining
+                  a healthy weight, and, in some cases, medication to help
+                  control blood pressure levels and other health issue.
+                </p>
+              </div>
+            </TabPanel>
+            <TabPanel>
+              <div className='px-5 sm:px-10 lg:px-4 xl:px-[50px] pt-10 pb-10 bg-white bg-opacity-30 border-2 border-white rounded-3xl relative z-10 overflow-hidden'>
+                <div className=''>
+                  <img
+                    src={testiQuote}
+                    draggable='false'
+                  />
+                </div>
+                <ul className='flex gap-1 items-center pt-9'>
+                  <li className='text-[#ffb609] text-2xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                  <li className='text-[#ffb609] text-2xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                  <li className='text-[#ffb609] text-2xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                  <li className='text-[#ffb609] text-2xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                  <li className='text-[#ffb609] text-2xl'>
+                    <MdOutlineStarPurple500 />
+                  </li>
+                </ul>
+                <p className='font-AlbertSans text-xl text-TextColor2-0 pt-6'>
+                  Diabetes Mellitus is a group of metabolic disorders
+                  characterized by high blood sugar levels over a prolonged
+                  period. This condition occurs either because the pancreas does
+                  not produce enough insulin (Type 1 Diabetes) or because the
+                  body’s cells do not respond properly to insulin (Type 2
+                  Diabetes). Common symptoms include frequent urination,
+                  increased thirst, and unexplained weight loss. Long-term
+                  complications of diabetes can include cardiovascular disease,
+                  nerve damage, kidney failure, and eye damage. Managing
+                  diabetes involves a combination of lifestyle changes, such as
+                  a healthy diet, regular physical activity, and maintaining a
+                  healthy weight, along with medication.
+                </p>
+              </div>
+            </TabPanel>
+            <TabList className='flex items-center justify-center gap-6 mt-[56px]'>
+              <Tab className='bg-white bg-opacity-30 border-2 border-white rounded-2xl cursor-pointer outline-none pl-10 py-8 pr-10'>
+                <div className='flex flex-col sm:flex-row gap-5 lg:gap-3 xl:gap-5'>
+                  <div>
+                    <img src={testiImg} />
+                  </div>
+                  <div className='flex-1'>
+                    <h5 className='font-AlbertSans font-semibold text-HeadingColor-0 text-2xl mt-2 mb-[6px]'>
+                      Anjelina Watson
+                    </h5>
+                    <p className='font-AlbertSans text-TextColor2-0'>
+                      Osteoarthritis
+                    </p>
+                  </div>
+                </div>
+              </Tab>
+              <Tab className='bg-white bg-opacity-30 border-2 border-white rounded-2xl cursor-pointer outline-none pl-10 py-8 pr-10'>
+                <div className='flex flex-col sm:flex-row gap-5 lg:gap-3 xl:gap-5'>
+                  <div>
+                    <img src={testiImg2} />
+                  </div>
+                  <div className='flex-1'>
+                    <h5 className='font-AlbertSans font-semibold text-HeadingColor-0 text-2xl mt-2 mb-[6px]'>
+                      Jhon D. Alexon
+                    </h5>
+                    <p className='font-AlbertSans text-TextColor2-0'>
+                      Hypertension
+                    </p>
+                  </div>
+                </div>
+              </Tab>
+              <Tab className='bg-white bg-opacity-30 border-2 border-white rounded-2xl cursor-pointer outline-none pl-10 py-8 pr-10'>
+                <div className='flex flex-col sm:flex-row gap-5 lg:gap-3 xl:gap-5'>
+                  <div>
+                    <img src={testiImg3} />
+                  </div>
+                  <div className='flex-1'>
+                    <h5 className='font-AlbertSans font-semibold text-HeadingColor-0 text-2xl mt-2 mb-[6px]'>
+                      David Miller
+                    </h5>
+                    <p className='font-AlbertSans text-TextColor2-0'>
+                      Diabetes Mellitus
+                    </p>
+                  </div>
+                </div>
+              </Tab>
+            </TabList>
+          </Tabs>
+        </div>
+      </section>
+      <section className='bg-BodyBg-0 relative z-10 overflow-hidden'>
+        <div className='Container'>
+           <Swiper {...settings}>
             {testiData.map(
               ({
                 id,
@@ -122,27 +261,27 @@ const TestimonialInner = () => {
                 testiName,
                 testiDesignation,
                 testiDesc,
-                testiTitle,
-                testiShape,
+                testiQuote,
               }) => {
                 return (
-                  <div key={id}>
+                  <SwiperSlide key={id}>
                     <TestimonialInnerCard
                       testiImg={testiImg}
                       testiRatingIcon={testiRatingIcon}
                       testiName={testiName}
                       testiDesignation={testiDesignation}
                       testiDesc={testiDesc}
-                      testiTitle={testiTitle}
-                      testiShape={testiShape}
+                      testiQuote={testiQuote}
                     />
-                  </div>
+                  </SwiperSlide>
                 );
               }
             )}
-          </div>
+          </Swiper>
         </div>
       </section>
+      <Blog />
+      <Subscribe />
     </>
   );
 };

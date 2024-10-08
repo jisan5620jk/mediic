@@ -355,7 +355,7 @@ const Navbar = () => {
                           <Link to={'/team'}>team</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>testimonial</Link>
+                          <Link to={'/testimonial'}>testimonial</Link>
                         </li>
                         <li>
                           <Link to={'/'}>cart</Link>
