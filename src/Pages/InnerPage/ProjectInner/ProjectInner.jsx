@@ -2,7 +2,7 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
 import projectThumb from '/images/project.jpg';
 import projectThumb2 from '/images/project2.jpg';
-import projectThumb3 from '/images/project3.jpg';
+import projectThumb3 from '/images/project3.png';
 import ProjectCard from './ProjectCard';
 import Blog from '../../../Component1/Blog/Blog';
 import Subscribe from '../../../Component1/Subscribe/Subscribe';

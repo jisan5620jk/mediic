@@ -352,13 +352,13 @@ const Navbar = () => {
                           <Link to={'/about'}>about us</Link>
                         </li>
                         <li>
-                          <Link to={'/team'}>team</Link>
+                          <Link to={'/team'}>team member</Link>
+                        </li>
+                        <li>
+                          <Link to={'/team_details'}>team details</Link>
                         </li>
                         <li>
                           <Link to={'/testimonial'}>testimonial</Link>
-                        </li>
-                        <li>
-                          <Link to={'/'}>cart</Link>
                         </li>
                         <li>
                           <Link to={'/project'}>Project</Link>

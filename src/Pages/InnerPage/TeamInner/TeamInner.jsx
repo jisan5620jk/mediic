@@ -5,6 +5,7 @@ import teamThumb4 from '/images/team8.jpg';
 import teamThumb5 from '/images/team9.jpg';
 import teamThumb6 from '/images/team10.jpg';
 import teamThumb7 from '/images/team11.jpg';
+import teamThumb8 from '/images/team4.jpg';
 import TeamInnerCard from './TeamInnerCard';
 import {
   FaArrowRightLong,
@@ -81,12 +82,12 @@ const teamData = [
   },
   {
     id: 8,
-    teamThumb: teamThumb2,
-    teamTitle: 'James E. Huey',
+    teamThumb: teamThumb8,
+    teamTitle: 'Mila Rahman',
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
     socialIcon3: <FaLinkedinIn />,
-    teamDesc: 'Therapist',
+    teamDesc: 'Skin Specialist',
   },
 ];
 
