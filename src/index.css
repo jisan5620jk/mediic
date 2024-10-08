@@ -501,116 +501,116 @@ span.swiper-pagination-bullet::before {
 
 /* Service */
 
-.service-box.active > div,
-.service-box:hover > div {
+.service-box2.active > div,
+.service-box2:hover > div {
   width: 410px;
   border-color: #007eff;
 }
 
-.service-box.active > div > span:nth-of-type(1),
-.service-box:hover > div > span:nth-of-type(1) {
+.service-box2.active > div > span:nth-of-type(1),
+.service-box2:hover > div > span:nth-of-type(1) {
   width: 25%;
   left: 0;
 }
 
-.service-box.active > div > span:nth-of-type(2),
-.service-box:hover > div > span:nth-of-type(2) {
+.service-box2.active > div > span:nth-of-type(2),
+.service-box2:hover > div > span:nth-of-type(2) {
   width: 25%;
   left: 25%;
 }
 
-.service-box.active > div > span:nth-of-type(3),
-.service-box:hover > div > span:nth-of-type(3) {
+.service-box2.active > div > span:nth-of-type(3),
+.service-box2:hover > div > span:nth-of-type(3) {
   width: 25%;
   left: 50%;
 }
 
-.service-box.active > div > span:nth-of-type(4),
-.service-box:hover > div > span:nth-of-type(4) {
+.service-box2.active > div > span:nth-of-type(4),
+.service-box2:hover > div > span:nth-of-type(4) {
   width: 25%;
   left: 75%;
 }
-.service-box.active > div > .service-shape,
-.service-box:hover > div > .service-shape {
+.service-box2.active > div > .service-shape,
+.service-box2:hover > div > .service-shape {
   opacity: 1;
 }
 
-.service-box.active .service-icon,
-.service-box:hover .service-icon {
+.service-box2.active .service-icon,
+.service-box2:hover .service-icon {
   margin-left: 0;
 }
 
-.service-box.active .service-icon img,
-.service-box:hover .service-icon img {
+.service-box2.active .service-icon img,
+.service-box2:hover .service-icon img {
   transform: rotateY(180deg);
 }
 
-.service-box.active .service-title,
-.service-box:hover .service-title {
+.service-box2.active .service-title,
+.service-box2:hover .service-title {
   left: 36px;
   bottom: 278px;
 }
 
-.service-box.active .service-title h4,
-.service-box:hover .service-title h4 {
+.service-box2.active .service-title h4,
+.service-box2:hover .service-title h4 {
   transform: rotate(0deg);
   color: #fff;
 }
 
-.service-box.active .service-desc,
-.service-box:hover .service-desc {
+.service-box2.active .service-desc,
+.service-box2:hover .service-desc {
   opacity: 1;
 }
 
-.service-box.active .service-btn,
-.service-box:hover .service-btn {
+.service-box2.active .service-btn,
+.service-box2:hover .service-btn {
   opacity: 1;
 }
 
 /* Service Responsive */
 
 @media screen and (max-width: 575px) {
-  .service-box.active > div,
-  .service-box:hover > div {
+  .service-box2.active > div,
+  .service-box2:hover > div {
     width: 300px;
   }
 
-  .service-box.active .service-title,
-  .service-box:hover .service-title {
+  .service-box2.active .service-title,
+  .service-box2:hover .service-title {
     left: 16px;
     bottom: 310px;
   }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .service-box.active > div,
-  .service-box:hover > div {
+  .service-box2.active > div,
+  .service-box2:hover > div {
     width: 410px;
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .service-box.active > div,
-  .service-box:hover > div {
+  .service-box2.active > div,
+  .service-box2:hover > div {
     width: 250px;
   }
 
-  .service-box.active .service-title,
-  .service-box:hover .service-title {
+  .service-box2.active .service-title,
+  .service-box2:hover .service-title {
     left: 16px;
     bottom: 320px;
   }
 
-  .service-box.active .service-desc,
-  .service-box:hover .service-desc {
+  .service-box2.active .service-desc,
+  .service-box2:hover .service-desc {
     padding-top: 80px;
     padding-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .service-box.active > div,
-  .service-box:hover > div {
+  .service-box2.active > div,
+  .service-box2:hover > div {
     width: 336px;
   }
 }

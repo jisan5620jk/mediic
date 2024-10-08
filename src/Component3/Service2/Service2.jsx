@@ -19,7 +19,7 @@ const Service2 = () => {
       // Remove 'active' class from siblings
       const parent = event.target.parentElement;
       if (parent) {
-        const siblings = parent.querySelectorAll('.service-box');
+        const siblings = parent.querySelectorAll('.service-box2');
         siblings.forEach((sibling) => {
           if (sibling !== event.target) {
             sibling.classList.remove('active');
@@ -28,7 +28,7 @@ const Service2 = () => {
       }
     };
 
-    const elements = document.querySelectorAll('.service-box');
+    const elements = document.querySelectorAll('.service-box2');
     elements.forEach((element) => {
       element.addEventListener('mouseenter', handleMouseEnter);
     });
@@ -62,7 +62,7 @@ const Service2 = () => {
       </div>
       <div className='Container'>
         <div className='flex md:hidden lg:flex flex-col lg:flex-row items-center justify-between gap-8 w-full relative z-10 mt-[44px]'>
-          <div className='service-box'>
+          <div className='service-box2'>
             <ServiceCard2
               serviceIcon={serviceIcon}
               serviceShape={serviceShape}
@@ -73,7 +73,7 @@ const Service2 = () => {
               btnIcon={btnIcon}
             />
           </div>
-          <div className='service-box'>
+          <div className='service-box2'>
             <ServiceCard2
               serviceIcon={serviceIcon5}
               serviceShape={serviceShape}
@@ -84,7 +84,7 @@ const Service2 = () => {
               btnIcon={btnIcon}
             />
           </div>
-          <div className='service-box active'>
+          <div className='service-box2 active'>
             <ServiceCard2
               serviceIcon={serviceIcon2}
               serviceShape={serviceShape}
@@ -95,7 +95,7 @@ const Service2 = () => {
               btnIcon={btnIcon}
             />
           </div>
-          <div className='service-box'>
+          <div className='service-box2'>
             <ServiceCard2
               serviceIcon={serviceIcon3}
               serviceShape={serviceShape}
@@ -106,7 +106,7 @@ const Service2 = () => {
               btnIcon={btnIcon}
             />
           </div>
-          <div className='service-box'>
+          <div className='service-box2'>
             <ServiceCard2
               serviceIcon={serviceIcon4}
               serviceShape={serviceShape}
@@ -120,7 +120,7 @@ const Service2 = () => {
         </div>
         <div className='hidden md:flex lg:hidden flex-col lg:flex-row items-center justify-between gap-8 w-full relative z-10 mt-[44px]'>
           <div className='flex flex-col md:flex-row gap-8 items-center justify-between'>
-            <div className='service-box'>
+            <div className='service-box2'>
               <ServiceCard2
                 serviceIcon={serviceIcon}
                 serviceShape={serviceShape}
@@ -131,7 +131,7 @@ const Service2 = () => {
                 btnIcon={btnIcon}
               />
             </div>
-            <div className='service-box'>
+            <div className='service-box2'>
               <ServiceCard2
                 serviceIcon={serviceIcon5}
                 serviceShape={serviceShape}
@@ -144,7 +144,7 @@ const Service2 = () => {
             </div>
           </div>
           <div className='flex flex-col md:flex-row gap-8 items-center justify-between'>
-            <div className='service-box active'>
+            <div className='service-box2 active'>
               <ServiceCard2
                 serviceIcon={serviceIcon2}
                 serviceShape={serviceShape}
@@ -155,7 +155,7 @@ const Service2 = () => {
                 btnIcon={btnIcon}
               />
             </div>
-            <div className='service-box'>
+            <div className='service-box2'>
               <ServiceCard2
                 serviceIcon={serviceIcon3}
                 serviceShape={serviceShape}
@@ -167,7 +167,7 @@ const Service2 = () => {
               />
             </div>
           </div>
-          <div className='service-box'>
+          <div className='service-box2'>
             <ServiceCard2
               serviceIcon={serviceIcon4}
               serviceShape={serviceShape}
