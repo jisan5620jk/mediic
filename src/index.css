@@ -629,6 +629,12 @@ span.swiper-pagination-bullet::before {
   border-color: #83a8ff;
 }
 
+.faq-inner-button[aria-expanded='true']{
+  border-radius: 16px 16px 0 0;
+  border-bottom: transparent;
+  padding-bottom: 30px;
+}
+
 /* Pricing */
 
 .pricing-box.active::before {

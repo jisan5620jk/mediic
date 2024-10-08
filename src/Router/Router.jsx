@@ -21,6 +21,7 @@ import TeamInner from '../Pages/InnerPage/TeamInner/TeamInner';
 import AppointmentInner from '../Pages/InnerPage/Appointment/AppointmentInner';
 import ProjectInner from '../Pages/InnerPage/ProjectInner/ProjectInner';
 import TestimonialInner from '../Pages/InnerPage/TestimonialInner/TestimonialInner';
+import FaqInner from '../Pages/InnerPage/Faq/FaqInner';
 
 const router = createBrowserRouter([
   {
@@ -87,6 +88,10 @@ const router = createBrowserRouter([
       {
         path: '/appointment',
         element: <AppointmentInner />,
+      },
+      {
+        path: '/faqs',
+        element: <FaqInner />,
       },
       {
         path: '/contact',

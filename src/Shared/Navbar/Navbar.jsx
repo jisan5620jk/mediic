@@ -370,7 +370,7 @@ const Navbar = () => {
                           <Link to={'/appointment'}>appointment</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>faq</Link>
+                          <Link to={'/faqs'}>faqs</Link>
                         </li>
                       </ul>
                     </li>
