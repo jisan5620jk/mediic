@@ -10,7 +10,7 @@ const ServiceCard = ({
   serviceDesc,
 }) => {
   return (
-    <div className='rounded-xl bg-white bg-opacity-20 border-2 border-white border-opacity-75 group relative z-10 pt-10 px-9 pb-9'>
+    <div className='rounded-xl bg-white bg-opacity-20 border-2 border-white border-opacity-75 group relative z-10 pt-10 px-4 sm:px-9 md:px-6 lg:px-4 xl:px-9 pb-9'>
       <div className='flex items-center gap-5'>
         <div className='size-[72px] rounded-full bg-white bg-opacity-20 border-2 border-white border-opacity-75 relative overflow-hidden'>
           <img
@@ -26,7 +26,7 @@ const ServiceCard = ({
         </div>
         <div className='flex-1 inline-block'>
           <Link to={serviceUrl}>
-            <button className='font-AlbertSans font-bold text-HeadingColor-0 text-2xl lg:text-xl xl:text-2xl text-HeadingColor-0transition-all duration-500 group-hover:text-PrimaryColor-0'>
+            <button className='font-AlbertSans font-bold text-left text-HeadingColor-0 text-[19px] sm:text-2xl md:text-xl lg:text-lg xl:text-[21px] 2xl:text-2xl transition-all duration-500 group-hover:text-PrimaryColor-0'>
               {serviceTitle}
             </button>
           </Link>
