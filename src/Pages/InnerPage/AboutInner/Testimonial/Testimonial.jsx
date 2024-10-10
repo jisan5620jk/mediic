@@ -100,7 +100,7 @@ const Testimonial = () => {
               </h1>
               <p className='font-DMSans text-TextColor2-0 mt-4 mb-9'>
                 Professional without enterprisee-commerce. Uniquely happy
-                clinets <br />
+                clinets <br className='lg:hidden xl:block'/>
                 innovative technologies via team member.
               </p>
               <div>
@@ -141,7 +141,7 @@ const Testimonial = () => {
                 </Swiper>
               </div>
             </div>
-            <div className='ml-8 relative rounded-[30px] overflow-hidden'>
+            <div className='ml-8 relative rounded-[30px] overflow-hidden pt-10 lg:pt-0'>
               <div className='relative z-10'>
                 <img
                   src={testThumb}

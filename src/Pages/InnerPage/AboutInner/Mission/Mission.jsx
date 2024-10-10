@@ -16,7 +16,7 @@ const MissionData = [
   },  {
     id: 3,
     missionIcon: missionIcon,
-    missionTitle: 'Our Mission',
+    missionTitle: 'Our Vission',
     missionDesc: 'Professional mision capital without enterp medical users pros value added e-enable creative technology via team.',
   },
 ];

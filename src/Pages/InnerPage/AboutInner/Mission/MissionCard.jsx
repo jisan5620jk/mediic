@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 const MissionCard = ({ missionIcon, missionTitle, missionDesc }) => {
   return (
-    <div className='px-9 pt-10 pb-9 rounded-3xl relative z-10 border-2 border-white overflow-hidden transition-all duration-500 hover:border-Secondarycolor-0 group'>
+    <div className='px-9 lg:px-4 xl:px-9 pt-10 pb-9 rounded-3xl relative z-10 border-2 border-white overflow-hidden transition-all duration-500 hover:border-Secondarycolor-0 group'>
       <span className='absolute bg-Secondarycolor-0 left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
       <span className='absolute bg-Secondarycolor-0 left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
       <span className='absolute bg-Secondarycolor-0 left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>

@@ -14,7 +14,7 @@ const BreadCrumb = ({
           <h1 className='font-AlbertSans font-extrabold text-2xl sm:text-4xl md:text-[55px] text-white uppercase'>
             {breadCrumbTitle}
           </h1>
-          <ul className='flex flex-col md:flex-row gap-2 sm:gap-4 items-center justify-center mt-[22px]'>
+          <ul className='flex flex-col sm:flex-row gap-2 sm:gap-4 items-center justify-center mt-[22px]'>
             <li>
               <Link to={'/'}>
                 <button className='font-AlbertSans text-white transition-all duration-500 hover:text-PrimaryColor-0 uppercase'>

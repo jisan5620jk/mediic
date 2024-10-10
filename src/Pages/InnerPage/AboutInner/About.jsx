@@ -23,7 +23,7 @@ const About = () => {
               draggable='false'
               className='w-full'
             />
-            <div className='bg-PrimaryColor-0 flex items-center justify-evenly pt-10 pb-9'>
+            <div className='bg-PrimaryColor-0 flex items-center justify-evenly pt-10 pb-9 pl-4 sm:pl-0'>
               <div>
                 <div>
                   <CountUp

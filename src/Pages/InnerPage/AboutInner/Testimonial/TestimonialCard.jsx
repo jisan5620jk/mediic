@@ -8,7 +8,7 @@ const TestimonialCard = ({
 }) => {
   return (
     <div className='relative px-2 sm:px-[50px] lg:px-2 xl:px-8 2xl:px-[50px] bg-white bg-opacity-35 border-2 border-white pt-10 pb-9 rounded-[30px]'>
-      <div className='absolute top-12 right-11'>
+      <div className='absolute top-12 right-11 hidden sm:block'>
         <img
           src={testiQuote}
           draggable='false'
