@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
-import blogDetailsThumb from '/images/service.jpg';
+import serviceDetailsThumb from '/images/service.jpg';
 import {
   FaArrowRight,
   FaArrowRightLong,
@@ -26,17 +26,17 @@ const ServiceDetails3 = () => {
       />
       <section className='py-[120px] bg-BodyBg-0'>
         <div className='Container'>
-          <div className='grid grid-cols-3 gap-[50px]'>
-            <div className='col-span-3 lg:col-span-2'>
+          <div className='grid grid-cols-3 gap-[50px] lg:gap-8 xl:gap-[50px]'>
+            <div className='col-span-3 lg:col-span-2 h-[1276px] overflow-hidden overflow-y-scroll'>
               <div className='rounded-[30px] overflow-hidden'>
                 <img
-                  src={blogDetailsThumb}
+                  src={serviceDetailsThumb}
                   draggable='false'
                   className='w-full'
                 />
               </div>
               <h2 className='font-AlbertSans font-bold text-[28px] text-HeadingColor-0 capitalize mt-8'>
-                We are prividing the best plastic surgery service
+                Delivering world class medical care
               </h2>
               <p className='font-AlbertSans text-TextColor2-0 mt-5'>
                 Alternative innovation to ethical network environmental
@@ -53,8 +53,8 @@ const ServiceDetails3 = () => {
                 meta-services. Interactively harness integrated ROI whereas
                 frictionless products.
               </p>
-              <div className='grid grid-cols-1 sm:grid-cols-2 sm:items-center gap-8 mb-14'>
-                <div className='flex gap-6 rounded-2xl border-2 border-white bg-white bg-opacity-25 px-[30px] py-8'>
+              <div className='grid grid-cols-1 md:grid-cols-2 sm:items-center gap-8 mb-14'>
+                <div className='flex flex-col sm:flex-row md:flex-col xl:flex-row gap-6 rounded-2xl border-2 border-white bg-white bg-opacity-25 px-[30px] py-8'>
                   <div className='size-20 rounded-full border-2 border-white bg-white bg-opacity-25 flex items-center justify-center'>
                     <img
                       src={icon}
@@ -71,7 +71,7 @@ const ServiceDetails3 = () => {
                     </p>
                   </div>
                 </div>
-                <div className='flex gap-6 rounded-2xl border-2 border-white bg-white bg-opacity-25 px-[30px] py-8'>
+                <div className='flex flex-col sm:flex-row md:flex-col xl:flex-row gap-6 rounded-2xl border-2 border-white bg-white bg-opacity-25 px-[30px] py-8'>
                   <div className='size-20 rounded-full border-2 border-white bg-white bg-opacity-25 flex items-center justify-center'>
                     <img
                       src={icon2}
@@ -89,11 +89,11 @@ const ServiceDetails3 = () => {
                   </div>
                 </div>
               </div>
-              <div className='flex items-center gap-[64px] bg-PrimaryColor-0 rounded-2xl px-10 py-7'>
-                <div className='text-white relative before:absolute before:top-0 before:-right-8 before:w-[2px] before:h-[48px] before:bg-white before:bg-opacity-25'>
+              <div className='flex flex-col sm:flex-row sm:items-center gap-8 sm:gap-[64px] bg-PrimaryColor-0 rounded-2xl px-4 sm:px-10 py-7'>
+                <div className='text-white relative before:absolute before:top-0 before:hidden sm:before:block before:-right-8 before:w-[2px] before:h-[48px] before:bg-white before:bg-opacity-25'>
                   <FaUserDoctor size={'50'} />
                 </div>
-                <h4 className='font-DMSans font-medium text-[22px] text-white italic'>
+                <h4 className='font-DMSans font-medium text-xl sm:text-[22px] text-white italic'>
                   Competently architect intermandated deliverables client niches
                   continually underwhelm
                 </h4>

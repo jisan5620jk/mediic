@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
-import blogDetailsThumb from '/images/service.jpg';
+import serviceDetailsThumb from '/images/service.jpg';
 import {
   FaArrowRight,
   FaArrowRightLong,
@@ -26,11 +26,11 @@ const ServiceDetails2 = () => {
       />
       <section className='py-[120px] bg-BodyBg-0'>
         <div className='Container'>
-          <div className='grid grid-cols-3 gap-[50px]'>
+          <div className='grid grid-cols-3 gap-[50px] lg:gap-8 xl:gap-[50px]'>
             <div className='col-span-3 lg:col-span-2'>
               <div className='rounded-[30px] overflow-hidden'>
                 <img
-                  src={blogDetailsThumb}
+                  src={serviceDetailsThumb}
                   draggable='false'
                   className='w-full'
                 />
