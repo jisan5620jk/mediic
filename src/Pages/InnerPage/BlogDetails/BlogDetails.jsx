@@ -58,8 +58,8 @@ const BlogDetails = () => {
                 meta-services. Interactively harness integrated ROI whereas
                 frictionless products.
               </p>
-              <div className='grid grid-cols-1 sm:grid-cols-2 sm:items-center gap-8 mb-14'>
-                <div className='flex gap-6 rounded-2xl border-2 border-white bg-white bg-opacity-25 px-[30px] py-8'>
+              <div className='grid grid-cols-1 md:grid-cols-2 sm:items-center gap-8 mb-14'>
+                <div className='flex flex-col sm:flex-row md:flex-col xl:flex-row gap-6 rounded-2xl border-2 border-white bg-white bg-opacity-25 px-[30px] py-8'>
                   <div className='size-20 rounded-full border-2 border-white bg-white bg-opacity-25 flex items-center justify-center'>
                     <img
                       src={icon}
@@ -76,7 +76,7 @@ const BlogDetails = () => {
                     </p>
                   </div>
                 </div>
-                <div className='flex gap-6 rounded-2xl border-2 border-white bg-white bg-opacity-25 px-[30px] py-8'>
+                <div className='flex flex-col sm:flex-row md:flex-col xl:flex-row gap-6 rounded-2xl border-2 border-white bg-white bg-opacity-25 px-[30px] py-8'>
                   <div className='size-20 rounded-full border-2 border-white bg-white bg-opacity-25 flex items-center justify-center'>
                     <img
                       src={icon2}
@@ -94,11 +94,11 @@ const BlogDetails = () => {
                   </div>
                 </div>
               </div>
-              <div className='flex items-center gap-[64px] bg-PrimaryColor-0 rounded-2xl px-10 py-7'>
-                <div className='text-white relative before:absolute before:top-0 before:-right-8 before:w-[2px] before:h-[48px] before:bg-white before:bg-opacity-25'>
+              <div className='flex flex-col sm:flex-row sm:items-center gap-8 sm:gap-[64px] bg-PrimaryColor-0 rounded-2xl px-4 sm:px-10 py-7'>
+                <div className='text-white relative before:absolute before:top-0 before:hidden sm:before:block before:-right-8 before:w-[2px] before:h-[48px] before:bg-white before:bg-opacity-25'>
                   <FaUserDoctor size={'50'} />
                 </div>
-                <h4 className='font-DMSans font-medium text-[22px] text-white italic'>
+                <h4 className='font-DMSans font-medium text-xl sm:text-[22px] text-white italic'>
                   Competently architect intermandated deliverables client niches
                   continually underwhelm
                 </h4>
