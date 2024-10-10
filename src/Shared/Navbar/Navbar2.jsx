@@ -342,28 +342,40 @@ const Navbar2 = () => {
                       </div>
                     </li>
                     <li>
-                      <Link to={'/'}>About</Link>
+                      <Link to={'/about'}>About</Link>
                     </li>
                     <li className='has-dropdown'>
                       <Link to={'/'}>Pages</Link>
                       <ul className='submenu'>
                         <li>
-                          <Link to={'/'}>about us</Link>
+                          <Link to={'/about'}>about us</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>team</Link>
+                          <Link to={'/service'}>Our Service</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>testimonial</Link>
+                          <Link to={'/team'}>team member</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>cart</Link>
+                          <Link to={'/team_details'}>team details</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>checkout</Link>
+                          <Link to={'/project'}>Project</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>faq</Link>
+                          <Link to={'/project_details'}>Project Details</Link>
+                        </li>
+                        <li>
+                          <Link to={'/appointment'}>appointment</Link>
+                        </li>
+                        <li>
+                          <Link to={'/testimonial'}>testimonial</Link>
+                        </li>
+                        <li>
+                          <Link to={'/faqs'}>faqs</Link>
+                        </li>
+                        <li>
+                          <Link to={'/contact'}>Contact Us</Link>
                         </li>
                       </ul>
                     </li>
@@ -371,10 +383,10 @@ const Navbar2 = () => {
                       <Link to={'/'}>Services</Link>
                       <ul className='submenu'>
                         <li>
-                          <Link to={'/'}>service</Link>
+                          <Link to={'/service'}>service</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>service details</Link>
+                          <Link to={'/service_details'}>service details</Link>
                         </li>
                       </ul>
                     </li>
@@ -382,21 +394,25 @@ const Navbar2 = () => {
                       <Link to={'/'}>Blog</Link>
                       <ul className='submenu'>
                         <li>
-                          <Link to={'/'}>blog grid</Link>
+                          <Link to={'/blog_grid'}>blog grid</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>blog right sidebar</Link>
+                          <Link to={'/blog_left_sidebar'}>
+                            blog left sidebar
+                          </Link>
                         </li>
                         <li>
-                          <Link to={'/'}>blog left sidebar</Link>
+                          <Link to={'/blog_right_sidebar'}>
+                            blog right sidebar
+                          </Link>
                         </li>
                         <li>
-                          <Link to={'/'}>blog details</Link>
+                          <Link to={'/blog_details'}>blog details</Link>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <Link to={'/'}>Contact</Link>
+                      <Link to={'/contact'}>Contact</Link>
                     </li>
                   </ul>
                 </nav>
