@@ -102,7 +102,7 @@ const TestimonialInner = () => {
                     <MdOutlineStarPurple500 />
                   </li>
                 </ul>
-                <p className='font-AlbertSans text-xl text-TextColor2-0 pt-6'>
+                <p className='font-AlbertSans text-base sm:text-xl text-TextColor2-0 pt-6'>
                   Osteoarthritis (OA) is a chronic joint condition characterized
                   by the gradual breakdown of cartilage, the smooth tissue that
                   cushions the ends of bones in joints. This degeneration leads
@@ -143,7 +143,7 @@ const TestimonialInner = () => {
                     <MdOutlineStarPurple500 />
                   </li>
                 </ul>
-                <p className='font-AlbertSans text-xl text-TextColor2-0 pt-6'>
+                <p className='font-AlbertSans text-base sm:text-xl text-TextColor2-0 pt-6'>
                   Hypertension, commonly known as high blood pressure, is a
                   chronic medical condition where the force of the blood against
                   the artery walls is consistently too high. This condition can
@@ -184,7 +184,7 @@ const TestimonialInner = () => {
                     <MdOutlineStarPurple500 />
                   </li>
                 </ul>
-                <p className='font-AlbertSans text-xl text-TextColor2-0 pt-6'>
+                <p className='font-AlbertSans text-base sm:text-xl text-TextColor2-0 pt-6'>
                   Diabetes Mellitus is a group of metabolic disorders
                   characterized by high blood sugar levels over a prolonged
                   period. This condition occurs either because the pancreas does
@@ -200,9 +200,9 @@ const TestimonialInner = () => {
                 </p>
               </div>
             </TabPanel>
-            <TabList className='flex items-center justify-center gap-6 mt-[56px]'>
-              <Tab className='bg-white bg-opacity-30 border-2 border-white rounded-2xl cursor-pointer outline-none pl-10 py-8 pr-10'>
-                <div className='flex flex-col sm:flex-row gap-5 lg:gap-3 xl:gap-5'>
+            <TabList className='flex flex-col md:flex-row md:items-center justify-center gap-6 mt-[56px]'>
+              <Tab className='bg-white bg-opacity-30 border-2 border-white rounded-2xl cursor-pointer outline-none px-10 md:px-4 xl:px-10 py-8'>
+                <div className='flex flex-col sm:flex-row md:flex-col lg:flex-row gap-5 lg:gap-3 xl:gap-5'>
                   <div>
                     <img src={testiImg} />
                   </div>
@@ -216,8 +216,8 @@ const TestimonialInner = () => {
                   </div>
                 </div>
               </Tab>
-              <Tab className='bg-white bg-opacity-30 border-2 border-white rounded-2xl cursor-pointer outline-none pl-10 py-8 pr-10'>
-                <div className='flex flex-col sm:flex-row gap-5 lg:gap-3 xl:gap-5'>
+              <Tab className='bg-white bg-opacity-30 border-2 border-white rounded-2xl cursor-pointer outline-none px-10 md:px-4 xl:px-10 py-8'>
+                <div className='flex flex-col sm:flex-row md:flex-col lg:flex-row gap-5 lg:gap-3 xl:gap-5'>
                   <div>
                     <img src={testiImg2} />
                   </div>
@@ -231,8 +231,8 @@ const TestimonialInner = () => {
                   </div>
                 </div>
               </Tab>
-              <Tab className='bg-white bg-opacity-30 border-2 border-white rounded-2xl cursor-pointer outline-none pl-10 py-8 pr-10'>
-                <div className='flex flex-col sm:flex-row gap-5 lg:gap-3 xl:gap-5'>
+              <Tab className='bg-white bg-opacity-30 border-2 border-white rounded-2xl cursor-pointer outline-none px-10 md:px-4 xl:px-10 py-8'>
+                <div className='flex flex-col sm:flex-row md:flex-col lg:flex-row gap-5 lg:gap-3 xl:gap-5'>
                   <div>
                     <img src={testiImg3} />
                   </div>
@@ -252,7 +252,7 @@ const TestimonialInner = () => {
       </section>
       <section className='bg-BodyBg-0 relative z-10 overflow-hidden'>
         <div className='Container'>
-           <Swiper {...settings}>
+          <Swiper {...settings}>
             {testiData.map(
               ({
                 id,

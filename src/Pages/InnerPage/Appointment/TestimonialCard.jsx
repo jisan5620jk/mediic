@@ -12,7 +12,7 @@ const TestimonialCard = ({
       <img
         src={testiQuote}
         draggable='false'
-        className='pt-14'
+        className='pt-7 sm:pt-14'
       />
       <ul className='flex gap-1 items-center mb-5 mt-9'>
         <li className='text-[#ffb609] text-2xl'>{testiRatingIcon}</li>
@@ -24,7 +24,7 @@ const TestimonialCard = ({
       <p className='font-AlbertSans sm:text-xl lg:text-lg xl:text-xl text-white'>
         {testiDesc}
       </p>
-      <div className='flex items-center gap-5 mt-12 lg:mt-[104px] 2xl:mt-[165px] pb-14'>
+      <div className='flex items-center gap-5 mt-12 lg:mt-[104px] 2xl:mt-[165px] pb-7 sm:pb-14'>
         <div>
           <img src={testiProfile} />
         </div>

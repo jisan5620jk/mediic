@@ -120,7 +120,7 @@ const Appoinment = () => {
                 </div>
               </Swiper>
             </div>
-            <div className='relative z-10'>
+            <div className='relative z-10 pt-10 lg:pt-0'>
               <div className='absolute -top-2 -right-[190px] xl:-right-40 2xl:-right-40'>
                 <img
                   src={Heart}

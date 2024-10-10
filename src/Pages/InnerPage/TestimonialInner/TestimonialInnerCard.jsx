@@ -16,7 +16,7 @@ const TestimonialCard = ({
         <li className='text-[#ffb609] text-2xl'>{testiRatingIcon}</li>
         <li className='text-[#ffb609] text-2xl'>{testiRatingIcon}</li>
       </ul>
-      <p className='font-AlbertSans text-xl text-TextColor2-0 italic pt-6 pb-12'>
+      <p className='font-AlbertSans text-base sm:text-xl text-TextColor2-0 italic pt-6 pb-12'>
         {testiDesc}
       </p>
       <div className='flex flex-col sm:flex-row gap-5 lg:gap-3 xl:gap-5'>
