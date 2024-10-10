@@ -17,15 +17,16 @@ const TeamDetailsMain = () => {
   return (
     <section className='bg-BodyBg-0 py-28'>
       <div className='Container'>
-        <div className='bg-white bg-opacity-20 border-2 rounded-3xl border-white grid grid-cols-2 items-center gap-10 lg:gap-20 overflow-hidden'>
+        <div className='bg-white bg-opacity-20 border-2 rounded-3xl border-white grid grid-cols-1 lg:grid-cols-2 items-center gap-10 xl:gap-12 2xl:gap-20 overflow-hidden'>
           <div>
             <img
               src={teamDetailsImg}
               draggable='false'
+              className='w-full'
             />
           </div>
-          <div>
-            <h2 className='font-AlbertSans font-bold text-4xl text-HeadingColor-0 mb-1'>
+          <div className='px-4 lg:px-0 pb-10 lg:py-6 xl:py-0 inline-block'>
+            <h2 className='font-AlbertSans font-bold text-3xl sm:text-4xl text-HeadingColor-0 mb-1'>
               Dr. Anjelina Jholi
             </h2>
             <p className='font-AlbertSans text-TextColor2-0'>
@@ -33,10 +34,11 @@ const TeamDetailsMain = () => {
             </p>
             <p className='font-AlbertSans text-TextColor2-0 mt-9 mb-10'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod <br /> tempor creative labore et dolore magna aliqua ipsum
-              suspendisse ultrices gravida commodo viverra accu eiusmod
+              eiusmod <br className='hidden 2xl:block' /> tempor creative labore
+              et dolore magna aliqua ipsum suspendisse ultrices gravida commodo
+              viverra accu eiusmod
             </p>
-            <div className='flex gap-10 items-center'>
+            <div className='flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-10 sm:items-center lg:items-start xl:items-center'>
               <div className='flex items-center gap-5'>
                 <div className='size-[60px] rounded-full border-2 border-PrimaryColor-0 flex justify-center items-center text-PrimaryColor-0 transition-all duration-500 group-hover:text-white group-hover:border-white'>
                   <FaPhoneAlt size={'26'} />
@@ -64,8 +66,8 @@ const TeamDetailsMain = () => {
                 </div>
               </div>
             </div>
-            <div className='flex items-center gap-6 my-[50px]'>
-              <h5 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0'>
+            <div className='flex flex-col sm:flex-row sm:items-center gap-6 my-10'>
+              <h5 className='font-AlbertSans font-semibold text-xl sm:text-2xl text-HeadingColor-0'>
                 Social Media :
               </h5>
               <ul className='flex gap-3'>
@@ -106,8 +108,8 @@ const TeamDetailsMain = () => {
             </div>
           </div>
         </div>
-        <div className='bg-white bg-opacity-20 border-2 rounded-3xl border-white p-10 my-10'>
-          <h2 className='font-AlbertSans font-bold text-4xl text-HeadingColor-0 mb-7'>
+        <div className='bg-white bg-opacity-20 border-2 rounded-3xl border-white p-4 sm:p-10 my-10'>
+          <h2 className='font-AlbertSans font-bold text-3xl sm:text-4xl text-HeadingColor-0 mb-7'>
             Biagraphy
           </h2>
           <p className='font-AlbertSans text-TextColor2-0'>
@@ -126,9 +128,9 @@ const TeamDetailsMain = () => {
             ads, media ads, and promotional events
           </p>
         </div>
-        <div className='grid grid-cols-2 gap-10 items-center'>
-          <div className='p-10 bg-white bg-opacity-20 border-2 rounded-3xl border-white'>
-            <h2 className='font-AlbertSans font-bold text-4xl text-HeadingColor-0 mb-7'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'>
+          <div className='p-4 sm:p-10 bg-white bg-opacity-20 border-2 rounded-3xl border-white'>
+            <h2 className='font-AlbertSans font-bold text-3xl sm:text-4xl text-HeadingColor-0 mb-7'>
               My Skills
             </h2>
             <div className='mb-[22px]'>
@@ -288,8 +290,8 @@ const TeamDetailsMain = () => {
               />
             </div>
           </div>
-          <div className='p-10 bg-white bg-opacity-20 border-2 rounded-3xl border-white'>
-            <h2 className='font-AlbertSans font-bold text-4xl text-HeadingColor-0 mb-7'>
+          <div className='p-4 sm:p-10 bg-white bg-opacity-20 border-2 rounded-3xl border-white'>
+            <h2 className='font-AlbertSans font-bold text-2xl sm:text-3xl md:text-4xl text-HeadingColor-0 mb-7'>
               Get a Consultation
             </h2>
             <form
