@@ -352,13 +352,13 @@ const Navbar = () => {
                           <Link to={'/about'}>about us</Link>
                         </li>
                         <li>
+                          <Link to={'/service'}>Our Service</Link>
+                        </li>
+                        <li>
                           <Link to={'/team'}>team member</Link>
                         </li>
                         <li>
                           <Link to={'/team_details'}>team details</Link>
-                        </li>
-                        <li>
-                          <Link to={'/testimonial'}>testimonial</Link>
                         </li>
                         <li>
                           <Link to={'/project'}>Project</Link>
@@ -370,7 +370,13 @@ const Navbar = () => {
                           <Link to={'/appointment'}>appointment</Link>
                         </li>
                         <li>
+                          <Link to={'/testimonial'}>testimonial</Link>
+                        </li>
+                        <li>
                           <Link to={'/faqs'}>faqs</Link>
+                        </li>
+                        <li>
+                          <Link to={'/contact'}>Contact Us</Link>
                         </li>
                       </ul>
                     </li>
@@ -392,10 +398,14 @@ const Navbar = () => {
                           <Link to={'/blog_grid'}>blog grid</Link>
                         </li>
                         <li>
-                          <Link to={'/'}>blog right sidebar</Link>
+                          <Link to={'/blog_left_sidebar'}>
+                            blog left sidebar
+                          </Link>
                         </li>
                         <li>
-                          <Link to={'/'}>blog left sidebar</Link>
+                          <Link to={'/blog_right_sidebar'}>
+                            blog right sidebar
+                          </Link>
                         </li>
                         <li>
                           <Link to={'/blog_details'}>blog details</Link>

@@ -23,6 +23,8 @@ import ProjectInner from '../Pages/InnerPage/ProjectInner/ProjectInner';
 import TestimonialInner from '../Pages/InnerPage/TestimonialInner/TestimonialInner';
 import FaqInner from '../Pages/InnerPage/Faq/FaqInner';
 import TeamDetails from '../Pages/InnerPage/TeamDetails/TeamDetails';
+import BlogLeftSidebar from '../Pages/InnerPage/BlogLeftSidebar/BlogLeftSidebar';
+import BlogRightSidebar from '../Pages/InnerPage/BlogRightSidebar/BlogRightSidebar';
 
 const router = createBrowserRouter([
   {
@@ -85,6 +87,14 @@ const router = createBrowserRouter([
       {
         path: '/blog_grid',
         element: <BlogGrid />,
+      },
+      {
+        path: '/blog_left_sidebar',
+        element: <BlogLeftSidebar />,
+      },
+      {
+        path: '/blog_right_sidebar',
+        element: <BlogRightSidebar />,
       },
       {
         path: '/blog_details',

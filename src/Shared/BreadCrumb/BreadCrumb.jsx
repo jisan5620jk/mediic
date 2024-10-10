@@ -11,7 +11,7 @@ const BreadCrumb = ({
     <div className='px-2 lg:px-4 xl:px-[30px] bg-BodyBg-0'>
       <div className="bg-[url('/images/breadcrumb.png')] bg-no-repeat bg-cover bg-center flex items-center justify-center h-[400px] sm:h-[420px] rounded-[30px]">
         <div className='Container text-center'>
-          <h1 className='font-AlbertSans font-extrabold text-4xl sm:text-[55px] text-white uppercase'>
+          <h1 className='font-AlbertSans font-extrabold text-2xl sm:text-4xl md:text-[55px] text-white uppercase'>
             {breadCrumbTitle}
           </h1>
           <ul className='flex flex-col md:flex-row gap-2 sm:gap-4 items-center justify-center mt-[22px]'>

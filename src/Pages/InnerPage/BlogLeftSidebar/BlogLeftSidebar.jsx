@@ -1,203 +1,113 @@
 import { Link } from 'react-router-dom';
 import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
-import blogDetailsThumb from '/images/service.jpg';
 import {
   FaArrowRight,
   FaArrowRightLong,
+  FaCircle,
   FaRegFolderOpen,
-  FaUserDoctor,
 } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
-import icon from '/images/dtls-icn.png';
-import icon2 from '/images/dtls-icn2.png';
+import blogThumb from '/images/blog.jpg';
+import blogThumb2 from '/images/blog2.jpg';
+import blogThumb3 from '/images/blog3.jpg';
+import blogThumb4 from '/images/blog4.jpg';
+import blogThumb5 from '/images/blog5.jpg';
+import blogThumb6 from '/images/blog6.jpg';
 import callIcon from '/images/call3..png';
 import itemthumb from '/images/blog4.jpg';
 import itemthumb2 from '/images/blog5.jpg';
 import itemthumb3 from '/images/blog6.jpg';
-import author1 from '/images/people4.png';
-import author2 from '/images/people3.png';
-import author3 from '/images/people5.png';
 import { IoSearch } from 'react-icons/io5';
-import { BiSolidShare } from 'react-icons/bi';
 import Subscribe from '../../../Component1/Subscribe/Subscribe';
+import { GoArrowRight } from 'react-icons/go';
+import BlogSidebarCard from './BlogSidebarCard';
 
-const BlogDetails = () => {
+const BlogSidebarData = [
+  {
+    id: 1,
+    blogThumb: blogThumb,
+    blogPostByIcon: <FaCircle />,
+    blogDateIcon: <FaCircle />,
+    blogDate: 'April 04, 2024',
+    blogPostBy: 'Admin',
+    blogUrl: '/blog_details',
+    blogTitle: 'Top 10 Popular Equipments for Medical Industre',
+    blogGridContent: 'Read More',
+    blogGridIcon: <GoArrowRight />,
+  },
+  {
+    id: 2,
+    blogThumb: blogThumb2,
+    blogPostByIcon: <FaCircle />,
+    blogDateIcon: <FaCircle />,
+    blogDate: 'April 14, 2024',
+    blogPostBy: 'Admin',
+    blogUrl: '/blog_details',
+    blogTitle: 'How to maintain Patient for Better Surgery',
+    blogGridContent: 'Read More',
+    blogGridIcon: <GoArrowRight />,
+  },
+  {
+    id: 3,
+    blogThumb: blogThumb3,
+    blogDate: 'April 24, 2024',
+    blogPostByIcon: <FaCircle />,
+    blogDateIcon: <FaCircle />,
+    blogPostBy: 'Admin',
+    blogUrl: '/blog_details',
+    blogTitle: 'Most Popular Advises for Kids Happy & Smile Life',
+    blogGridContent: 'Read More',
+    blogGridIcon: <GoArrowRight />,
+  },
+  {
+    id: 4,
+    blogThumb: blogThumb4,
+    blogDate: 'June 08, 2024',
+    blogPostByIcon: <FaCircle />,
+    blogDateIcon: <FaCircle />,
+    blogPostBy: 'Admin',
+    blogUrl: '/blog_details',
+    blogTitle: 'How to maintain Patient for Better Surgery',
+    blogGridContent: 'Read More',
+    blogGridIcon: <GoArrowRight />,
+  },
+  {
+    id: 5,
+    blogThumb: blogThumb5,
+    blogDate: 'June 19, 2024',
+    blogPostByIcon: <FaCircle />,
+    blogDateIcon: <FaCircle />,
+    blogPostBy: 'Admin',
+    blogUrl: '/blog_details',
+    blogTitle: 'How to maintain Patient for Better Surgery',
+    blogGridContent: 'Read More',
+    blogGridIcon: <GoArrowRight />,
+  },
+  {
+    id: 6,
+    blogThumb: blogThumb6,
+    blogDate: 'June 28, 2024',
+    blogPostByIcon: <FaCircle />,
+    blogDateIcon: <FaCircle />,
+    blogPostBy: 'Admin',
+    blogUrl: '/blog_details',
+    blogTitle: 'How to maintain Patient for Better Surgery',
+    blogGridContent: 'Read More',
+    blogGridIcon: <GoArrowRight />,
+  },
+];
+
+const BlogLeftSidebar = () => {
   return (
     <>
       <BreadCrumb
-        breadCrumbTitle={'Blog Details'}
+        breadCrumbTitle={'Blog Left Sidebar'}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={'Blog Details'}
+        breadCrumbLink={'Blog Left Sidebar'}
       />
       <section className='py-[120px] bg-BodyBg-0'>
         <div className='Container'>
           <div className='grid grid-cols-3 gap-[50px]'>
-            <div className='col-span-3 lg:col-span-2'>
-              <div className='rounded-[30px] overflow-hidden'>
-                <img
-                  src={blogDetailsThumb}
-                  draggable='false'
-                  className='w-full'
-                />
-              </div>
-              <h2 className='font-AlbertSans font-bold text-[28px] text-HeadingColor-0 capitalize mt-8'>
-                How Virtual Healthcare is Transforming Patient Care
-              </h2>
-              <p className='font-AlbertSans text-TextColor2-0 mt-5'>
-                Alternative innovation to ethical network environmental
-                whiteboard pursue compelling results premier methods
-                empowerment. Dramatically architect go forward opportunities
-                before user-centric partner Credibly implement exceptional
-              </p>
-              <p className='font-AlbertSans text-TextColor2-0 mt-7 mb-11'>
-                Continually fashion orthogonal leadership skills whereas
-                wireless metrics. Uniquely syndicate exceptio opportunities with
-                interdependent users. Globally enhance fully tested
-                meta-services rather than pan solutions. Proactively integrate
-                client-integrate go forward architectures and turnkey
-                meta-services. Interactively harness integrated ROI whereas
-                frictionless products.
-              </p>
-              <div className='grid grid-cols-1 sm:grid-cols-2 sm:items-center gap-8 mb-14'>
-                <div className='flex gap-6 rounded-2xl border-2 border-white bg-white bg-opacity-25 px-[30px] py-8'>
-                  <div className='size-20 rounded-full border-2 border-white bg-white bg-opacity-25 flex items-center justify-center'>
-                    <img
-                      src={icon}
-                      draggable='false'
-                    />
-                  </div>
-                  <div className='flex-1'>
-                    <h5 className='font-AlbertSans font-bold text-[22px] text-HeadingColor-0'>
-                      Make Appointment
-                    </h5>
-                    <p className='font-AlbertSans text-TextColor2-0 mt-1'>
-                      Ethical network environmental architect go forward opportu
-                      credibly implement
-                    </p>
-                  </div>
-                </div>
-                <div className='flex gap-6 rounded-2xl border-2 border-white bg-white bg-opacity-25 px-[30px] py-8'>
-                  <div className='size-20 rounded-full border-2 border-white bg-white bg-opacity-25 flex items-center justify-center'>
-                    <img
-                      src={icon2}
-                      draggable='false'
-                    />
-                  </div>
-                  <div className='flex-1'>
-                    <h5 className='font-AlbertSans font-bold text-[22px] text-HeadingColor-0'>
-                      Get Consultation
-                    </h5>
-                    <p className='font-AlbertSans text-TextColor2-0 mt-1'>
-                      Ethical network environmental architect go forward opportu
-                      credibly implement
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className='flex items-center gap-[64px] bg-PrimaryColor-0 rounded-2xl px-10 py-7'>
-                <div className='text-white relative before:absolute before:top-0 before:-right-8 before:w-[2px] before:h-[48px] before:bg-white before:bg-opacity-25'>
-                  <FaUserDoctor size={'50'} />
-                </div>
-                <h4 className='font-DMSans font-medium text-[22px] text-white italic'>
-                  Competently architect intermandated deliverables client niches
-                  continually underwhelm
-                </h4>
-              </div>
-              <div className='mt-[60px]'>
-                <h3 className='font-AlbertSans font-bold text-[28px] text-HeadingColor-0 capitalize mb-10'>
-                  All Comments
-                </h3>
-                <div className='flex flex-col sm:flex-row gap-6 pb-8'>
-                  <div className='size-[62px]'>
-                    <img
-                      draggable='false'
-                      src={author1}
-                      className='w-full'
-                    />
-                  </div>
-                  <div className='flex-1 relative'>
-                    <h5 className='font-AlbertSans font-semibold text-HeadingColor-0 text-xl'>
-                      Dr. David Alexon
-                    </h5>
-                    <p className='font-AlbertSans font-light text-TextColor2-0 mt-3'>
-                      Pretium nulla suspendisse porttitor nunc a sodales tempor
-                      mauris sed felis maximus, interdum metus vel tincidunt
-                      diam mam ac risus vitae sem vehicula egestas send velit
-                      nulla, viverra non commodo et sodales id dui. Lorem ipsum
-                      dolor sit amet, conse.
-                    </p>
-                    <Link to={'/'}>
-                      <button className='text-HeadingColor-0 text-sm rounded-full flex items-center gap-2 font-AlbertSans absolute top-2 right-0'>
-                        <BiSolidShare
-                          size={'18'}
-                          className='text-SecondaryColor-0'
-                        />
-                        Reply
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-                <div className='flex flex-col sm:flex-row gap-6 border-y-2 border-white border-opacity-80 py-10 md:ml-[90px]'>
-                  <div className='size-[62px]'>
-                    <img
-                      draggable='false'
-                      src={author2}
-                      className='w-full'
-                    />
-                  </div>
-                  <div className='flex-1 relative'>
-                    <h5 className='font-AlbertSans font-semibold text-HeadingColor-0 text-xl'>
-                      Dr. Michel Hemilton
-                    </h5>
-                    <p className='font-AlbertSans font-light text-TextColor2-0 mt-3'>
-                      Pretium nulla suspendisse porttitor nunc a sodales tempor
-                      mauris sed felis maximus, interdum metus vel tincidunt
-                      diam mam ac risus vitae sem vehicula egestas send velit
-                      nulla, viverra non commodo et sodales id dui.
-                    </p>
-                    <Link to={'/'}>
-                      <button className='text-HeadingColor-0 text-sm rounded-full flex items-center gap-2 font-AlbertSans absolute top-2 right-0'>
-                        <BiSolidShare
-                          size={'18'}
-                          className='text-SecondaryColor-0'
-                        />
-                        Reply
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-                <div className='flex flex-col sm:flex-row gap-6 pt-8'>
-                  <div className='size-[62px]'>
-                    <img
-                      draggable='false'
-                      src={author3}
-                      className='w-full'
-                    />
-                  </div>
-                  <div className='flex-1 relative'>
-                    <h5 className='font-AlbertSans font-semibold text-HeadingColor-0 text-xl'>
-                      Dr. Minhaz Khan
-                    </h5>
-                    <p className='font-AlbertSans font-light text-TextColor2-0 mt-3'>
-                      Pretium nulla suspendisse porttitor nunc a sodales tempor
-                      mauris sed felis maximus, interdum metus vel tincidunt
-                      diam mam ac risus vitae sem vehicula egestas send velit
-                      nulla, viverra non commodo et sodales id dui. Lorem ipsum
-                      dolor sit amet, conse.
-                    </p>
-                    <Link to={'/'}>
-                      <button className='text-HeadingColor-0 text-sm rounded-full flex items-center gap-2 font-AlbertSans absolute top-2 right-0'>
-                        <BiSolidShare
-                          size={'18'}
-                          className='text-SecondaryColor-0'
-                        />
-                        Reply
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div className='col-span-3 lg:col-span-1'>
               <div className='rounded-2xl px-4 sm:px-7 lg:px-4 xl:px-7 pt-7 pb-9 overflow-hidden bg-white bg-opacity-20 border-2 border-white border-opacity-80 mb-7'>
                 <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 pb-2 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0'>
@@ -422,6 +332,40 @@ const BlogDetails = () => {
                 </Link>
               </div>
             </div>
+            <div className='col-span-3 lg:col-span-2'>
+              <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-7'>
+                {BlogSidebarData.map(
+                  ({
+                    id,
+                    blogThumb,
+                    blogDateIcon,
+                    blogDate,
+                    blogPostBy,
+                    blogUrl,
+                    blogTitle,
+                    blogPostByIcon,
+                    blogGridContent,
+                    blogGridIcon,
+                  }) => {
+                    return (
+                      <div key={id}>
+                        <BlogSidebarCard
+                          blogThumb={blogThumb}
+                          blogDateIcon={blogDateIcon}
+                          blogDate={blogDate}
+                          blogPostBy={blogPostBy}
+                          blogPostByIcon={blogPostByIcon}
+                          blogUrl={blogUrl}
+                          blogTitle={blogTitle}
+                          blogGridContent={blogGridContent}
+                          blogGridIcon={blogGridIcon}
+                        />
+                      </div>
+                    );
+                  }
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -431,4 +375,4 @@ const BlogDetails = () => {
   );
 };
 
-export default BlogDetails;
+export default BlogLeftSidebar;

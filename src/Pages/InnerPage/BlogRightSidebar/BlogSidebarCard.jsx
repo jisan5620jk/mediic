@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
 
-const BlogGridCard = ({
+const BlogSidebarCard = ({
   blogThumb,
   blogDateIcon,
   blogDate,
@@ -59,4 +59,4 @@ const BlogGridCard = ({
   );
 };
 
-export default BlogGridCard;
+export default BlogSidebarCard;
