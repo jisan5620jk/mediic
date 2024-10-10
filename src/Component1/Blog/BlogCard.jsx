@@ -39,7 +39,7 @@ const BlogCard = ({
             </p>
           </div>
           <Link to={blogUrl}>
-            <button className='font-AlbertSans text-left font-semibold text-xl sm:text-[23px] md:text-[22px] lg:text-xl xl:text-[23px] 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-2'>
+            <button className='font-AlbertSans text-left font-semibold text-xl sm:text-[22px] md:text-[22px] lg:text-xl xl:text-[23px] 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-2'>
               {blogTitle}
             </button>
           </Link>
