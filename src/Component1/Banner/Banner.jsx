@@ -114,65 +114,53 @@ const Banner = () => {
         </div>
         <div className='absolute top-1/2 -translate-y-1/2 right-5 xl:right-10 hidden md:block'>
           <ul className='flex flex-col items-center gap-[26px]'>
-            <li>
-              <Link
-                to={'/'}
-                className='group'
-              >
-                <button className='text-white relative'>
+            <li className='group relative'>
+              <Link to={'/'}>
+                <button className='text-white'>
                   <FaSquareFacebook size={'20'} />
-                  <span className='absolute -left-16 -top-6 opacity-0 inline-block transition-all duration-500 group-hover:opacity-100 group-hover:-top-[35px] group-hover:-left-[85px]'>
-                    <span className='px-2 py-1 rounded bg-PrimaryColor-0 w-full text-white text-sm font-AlbertSans  relative z-10 before:absolute before:-bottom-[8px] before:-right-[5px] before:w-2 before:h-3 before:bg-PrimaryColor-0 before:[clip-path:polygon(0%_0%,_0%_0%,_100%_0%,_50%_100%)] before:-rotate-45'>
-                      Facebook
-                    </span>
-                  </span>
                 </button>
               </Link>
+              <span className='absolute -left-16 -top-6 opacity-0 inline-block transition-all duration-500 group-hover:opacity-100 group-hover:-top-[35px] group-hover:-left-[85px]'>
+                <span className='px-2 py-1 rounded bg-PrimaryColor-0 w-full text-white text-sm font-AlbertSans  relative z-10 before:absolute before:-bottom-[8px] before:-right-[5px] before:w-2 before:h-3 before:bg-PrimaryColor-0 before:[clip-path:polygon(0%_0%,_0%_0%,_100%_0%,_50%_100%)] before:-rotate-45'>
+                  Facebook
+                </span>
+              </span>
             </li>
-            <li>
-              <Link
-                to={'/'}
-                className='group'
-              >
-                <button className='text-white relative'>
+            <li className='group relative'>
+              <Link to={'/'}>
+                <button className='text-white'>
                   <FaLinkedinIn size={'20'} />
-                  <span className='absolute -left-16 -top-6 opacity-0 inline-block transition-all duration-500 group-hover:opacity-100 group-hover:-top-[35px] group-hover:-left-[85px]'>
-                    <span className='px-2 py-1 rounded bg-PrimaryColor-0 w-full text-white text-sm font-AlbertSans  relative z-10 before:absolute before:-bottom-[8px] before:-right-[5px] before:w-2 before:h-3 before:bg-PrimaryColor-0 before:[clip-path:polygon(0%_0%,_0%_0%,_100%_0%,_50%_100%)] before:-rotate-45'>
-                      LinkedIn
-                    </span>
-                  </span>
                 </button>
               </Link>
+              <span className='absolute -left-16 -top-6 opacity-0 inline-block transition-all duration-500 group-hover:opacity-100 group-hover:-top-[35px] group-hover:-left-[85px]'>
+                <span className='px-2 py-1 rounded bg-PrimaryColor-0 w-full text-white text-sm font-AlbertSans  relative z-10 before:absolute before:-bottom-[8px] before:-right-[5px] before:w-2 before:h-3 before:bg-PrimaryColor-0 before:[clip-path:polygon(0%_0%,_0%_0%,_100%_0%,_50%_100%)] before:-rotate-45'>
+                  LinkedIn
+                </span>
+              </span>
             </li>
-            <li>
-              <Link
-                to={'/'}
-                className='group'
-              >
-                <button className='text-white relative'>
+            <li className='group relative'>
+              <Link to={'/'}>
+                <button className='text-white'>
                   <FaPinterestP size={'20'} />
-                  <span className='absolute -left-16 -top-6 opacity-0 inline-block transition-all duration-500 group-hover:opacity-100 group-hover:-top-[35px] group-hover:-left-[85px]'>
-                    <span className='px-2 py-1 rounded bg-PrimaryColor-0 w-full text-white text-sm font-AlbertSans  relative z-10 before:absolute before:-bottom-[8px] before:-right-[5px] before:w-2 before:h-3 before:bg-PrimaryColor-0 before:[clip-path:polygon(0%_0%,_0%_0%,_100%_0%,_50%_100%)] before:-rotate-45'>
-                      Pinterest
-                    </span>
-                  </span>
                 </button>
               </Link>
+              <span className='absolute -left-16 -top-6 opacity-0 inline-block transition-all duration-500 group-hover:opacity-100 group-hover:-top-[35px] group-hover:-left-[85px]'>
+                <span className='px-2 py-1 rounded bg-PrimaryColor-0 w-full text-white text-sm font-AlbertSans  relative z-10 before:absolute before:-bottom-[8px] before:-right-[5px] before:w-2 before:h-3 before:bg-PrimaryColor-0 before:[clip-path:polygon(0%_0%,_0%_0%,_100%_0%,_50%_100%)] before:-rotate-45'>
+                  Pinterest
+                </span>
+              </span>
             </li>
-            <li>
-              <Link
-                to={'/'}
-                className='group'
-              >
-                <button className='text-white relative'>
+            <li className='group relative'>
+              <Link to={'/'}>
+                <button className='text-white'>
                   <FaInstagram size={'20'} />
-                  <span className='absolute -left-16 -top-6 opacity-0 inline-block transition-all duration-500 group-hover:opacity-100 group-hover:-top-[35px] group-hover:-left-[85px]'>
-                    <span className='px-2 py-1 rounded bg-PrimaryColor-0 w-full text-white text-sm font-AlbertSans  relative z-10 before:absolute before:-bottom-[8px] before:-right-[5px] before:w-2 before:h-3 before:bg-PrimaryColor-0 before:[clip-path:polygon(0%_0%,_0%_0%,_100%_0%,_50%_100%)] before:-rotate-45'>
-                      Instagram
-                    </span>
-                  </span>
                 </button>
               </Link>
+              <span className='absolute -left-16 -top-6 opacity-0 inline-block transition-all duration-500 group-hover:opacity-100 group-hover:-top-[35px] group-hover:-left-[85px]'>
+                <span className='px-2 py-1 rounded bg-PrimaryColor-0 w-full text-white text-sm font-AlbertSans  relative z-10 before:absolute before:-bottom-[8px] before:-right-[5px] before:w-2 before:h-3 before:bg-PrimaryColor-0 before:[clip-path:polygon(0%_0%,_0%_0%,_100%_0%,_50%_100%)] before:-rotate-45'>
+                  Instagram
+                </span>
+              </span>
             </li>
           </ul>
         </div>
