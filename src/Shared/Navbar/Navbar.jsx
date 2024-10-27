@@ -251,7 +251,6 @@ const Navbar = () => {
                 </button>
               </div>
             </form>
-            <div className='status'></div>
           </div>
           <div className='offcanvas_social'>
             <div className='social-icon'>
