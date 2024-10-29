@@ -1,9 +1,11 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from '../Main/Main';
 import Home1 from '../Pages/Home1/Home1';
 import ErrorPage from '../Shared/ErrorPage/ErrorPage';
+import Home2 from '../Pages/Home2/Home2';
 import Main2 from '../Main/Main2';
 import Main3 from '../Main/Main3';
+import Home3 from '../Pages/Home3/Home3';
 import AboutInner from '../Pages/InnerPage/AboutInner/AboutInner';
 import ProjectDetails from '../Pages/InnerPage/ProjectDetails/ProjectDetails';
 import ServiceInner from '../Pages/InnerPage/ServiceInner/ServiceInner';
@@ -23,8 +25,6 @@ import FaqInner from '../Pages/InnerPage/Faq/FaqInner';
 import TeamDetails from '../Pages/InnerPage/TeamDetails/TeamDetails';
 import BlogLeftSidebar from '../Pages/InnerPage/BlogLeftSidebar/BlogLeftSidebar';
 import BlogRightSidebar from '../Pages/InnerPage/BlogRightSidebar/BlogRightSidebar';
-import Home3 from '../Pages/Home3/Home3';
-import Home2 from '../Pages/Home2/Home2';
 
 function App() {
   return (
