@@ -92,7 +92,11 @@ const Portfolio = () => {
 
   return (
     <section className='portfolio mx-2 lg:mx-7 xl:mx-[50px] px-2 lg:px-7 xl:px-[50px]  bg-gradient-to-t from-BodyBg-0 from-25% py-[120px] relative rounded-b-[30px]'>
-      <div className='relative z-10'>
+      <div
+        className='relative z-10'
+        data-aos='fade-up'
+        data-aos-duration='1000'
+      >
         <Swiper
           {...settings}
           pagination={pagination}

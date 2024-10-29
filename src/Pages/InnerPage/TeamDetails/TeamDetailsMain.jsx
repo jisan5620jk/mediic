@@ -18,14 +18,21 @@ const TeamDetailsMain = () => {
     <section className='bg-BodyBg-0 py-28'>
       <div className='Container'>
         <div className='bg-white bg-opacity-20 border-2 rounded-3xl border-white grid grid-cols-1 lg:grid-cols-2 items-center gap-10 xl:gap-12 2xl:gap-20 overflow-hidden'>
-          <div>
+          <div
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <img
               src={teamDetailsImg}
               draggable='false'
               className='w-full'
             />
           </div>
-          <div className='px-4 lg:px-0 pb-10 lg:py-6 xl:py-0 inline-block'>
+          <div
+            className='px-4 lg:px-0 pb-10 lg:py-6 xl:py-0 inline-block'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <h2 className='font-AlbertSans font-bold text-3xl sm:text-4xl text-HeadingColor-0 mb-1'>
               Dr. Anjelina Jholi
             </h2>
@@ -108,7 +115,11 @@ const TeamDetailsMain = () => {
             </div>
           </div>
         </div>
-        <div className='bg-white bg-opacity-20 border-2 rounded-3xl border-white p-4 sm:p-10 my-10'>
+        <div
+          className='bg-white bg-opacity-20 border-2 rounded-3xl border-white p-4 sm:p-10 my-10'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        >
           <h2 className='font-AlbertSans font-bold text-3xl sm:text-4xl text-HeadingColor-0 mb-7'>
             Biagraphy
           </h2>
@@ -129,7 +140,11 @@ const TeamDetailsMain = () => {
           </p>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'>
-          <div className='p-4 sm:p-10 bg-white bg-opacity-20 border-2 rounded-3xl border-white'>
+          <div
+            className='p-4 sm:p-10 bg-white bg-opacity-20 border-2 rounded-3xl border-white'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <h2 className='font-AlbertSans font-bold text-3xl sm:text-4xl text-HeadingColor-0 mb-7'>
               My Skills
             </h2>
@@ -290,7 +305,11 @@ const TeamDetailsMain = () => {
               />
             </div>
           </div>
-          <div className='p-4 sm:p-10 bg-white bg-opacity-20 border-2 rounded-3xl border-white'>
+          <div
+            className='p-4 sm:p-10 bg-white bg-opacity-20 border-2 rounded-3xl border-white'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <h2 className='font-AlbertSans font-bold text-2xl sm:text-3xl md:text-4xl text-HeadingColor-0 mb-7'>
               Get a Consultation
             </h2>

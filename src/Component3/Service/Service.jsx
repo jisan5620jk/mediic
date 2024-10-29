@@ -86,7 +86,11 @@ const Service = () => {
   return (
     <section className='px-4 xl:px-10 bg-[url(/images/motivation-bg.jpg)] bg-cover bg-center bg-no-repeat pt-[240px] pb-[120px] relative'>
       <div className='text-center'>
-        <div className='inline-block mb-5'>
+        <div
+          className='inline-block mb-5'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        >
           <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-0 text-white text-[15px] font-semibold border border-white border-opacity-10 rounded-full font-AlbertSans px-[22px] py-2 uppercase'>
             <FaCircle size={'8'} />
             Hospital Motivation
@@ -97,7 +101,11 @@ const Service = () => {
         </h1>
       </div>
       <div className='Container'>
-        <div className='relative z-10 mt-[44px]'>
+        <div
+          className='relative z-10 mt-[44px]'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        >
           <Swiper {...settings}>
             {ServiceData.map(
               ({

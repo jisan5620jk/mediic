@@ -17,7 +17,11 @@ const About = () => {
       </div>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-14 items-center'>
-          <div className='relative z-10 rounded-[30px] overflow-hidden 2xl:mr-14'>
+          <div
+            className='relative z-10 rounded-[30px] overflow-hidden 2xl:mr-14'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <img
               src={aboutThumb}
               draggable='false'
@@ -52,7 +56,11 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className='relative'>
+          <div
+            className='relative'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <h5 className='font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-4'>
               About Company
             </h5>

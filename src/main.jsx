@@ -1,19 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import router from './Router/Router.jsx';
-import { RouterProvider } from 'react-router-dom';
-import Preloader from './Shared/Preloader/Preloader.jsx';
-// import { HelmetProvider } from "react-helmet-async";
-// import HelmetChanger from "./Shared/Helmet/Helmet.jsx";
+import { createRoot } from 'react-dom/client';
+import { HelmetProvider } from 'react-helmet-async';
+import App from './Router/App';
+import './index.css'
+import Preloader from './Shared/Preloader/Preloader';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const helmetContext = {}; // Define helmetContext here
+
+const container = document.getElementById('root');
+const root = createRoot(container);
+
+root.render(
   <React.StrictMode>
-    <React.StrictMode>
+    <HelmetProvider context={helmetContext}>
       <Preloader />
-      {/* <HelmetProvider context={HelmetChanger}> */}
-      <RouterProvider router={router} />
-      {/* </HelmetProvider> */}
-    </React.StrictMode>
+      <App />
+    </HelmetProvider>
   </React.StrictMode>
 );

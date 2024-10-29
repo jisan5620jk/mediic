@@ -49,7 +49,11 @@ const Service2 = () => {
           className='max-w-[inherit] w-[inherit]'
         />
       </div>
-      <div className='text-center'>
+      <div
+        className='text-center'
+        data-aos='fade-up'
+        data-aos-duration='1000'
+      >
         <div className='inline-block mb-5'>
           <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-30 text-PrimaryColor-0 text-[15px] font-semibold border border-white border-opacity-10 rounded-full font-AlbertSans px-[22px] py-2 uppercase'>
             <FaCircle size={'8'} />
@@ -62,7 +66,11 @@ const Service2 = () => {
       </div>
       <div className='Container'>
         <div className='flex md:hidden lg:flex flex-col lg:flex-row items-center justify-between gap-8 w-full relative z-10 mt-[44px]'>
-          <div className='service-box2'>
+          <div
+            className='service-box2'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <ServiceCard2
               serviceIcon={serviceIcon}
               serviceShape={serviceShape}
@@ -73,7 +81,11 @@ const Service2 = () => {
               btnIcon={btnIcon}
             />
           </div>
-          <div className='service-box2'>
+          <div
+            className='service-box2'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <ServiceCard2
               serviceIcon={serviceIcon5}
               serviceShape={serviceShape}
@@ -84,7 +96,11 @@ const Service2 = () => {
               btnIcon={btnIcon}
             />
           </div>
-          <div className='service-box2 active'>
+          <div
+            className='service-box2 active'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <ServiceCard2
               serviceIcon={serviceIcon2}
               serviceShape={serviceShape}
@@ -95,7 +111,11 @@ const Service2 = () => {
               btnIcon={btnIcon}
             />
           </div>
-          <div className='service-box2'>
+          <div
+            className='service-box2'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <ServiceCard2
               serviceIcon={serviceIcon3}
               serviceShape={serviceShape}
@@ -106,7 +126,11 @@ const Service2 = () => {
               btnIcon={btnIcon}
             />
           </div>
-          <div className='service-box2'>
+          <div
+            className='service-box2'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <ServiceCard2
               serviceIcon={serviceIcon4}
               serviceShape={serviceShape}
@@ -120,7 +144,11 @@ const Service2 = () => {
         </div>
         <div className='hidden md:flex lg:hidden flex-col lg:flex-row items-center justify-between gap-8 w-full relative z-10 mt-[44px]'>
           <div className='flex flex-col md:flex-row gap-8 items-center justify-between'>
-            <div className='service-box2'>
+            <div
+              className='service-box2'
+              data-aos='fade-up'
+              data-aos-duration='1000'
+            >
               <ServiceCard2
                 serviceIcon={serviceIcon}
                 serviceShape={serviceShape}
@@ -131,7 +159,11 @@ const Service2 = () => {
                 btnIcon={btnIcon}
               />
             </div>
-            <div className='service-box2'>
+            <div
+              className='service-box2'
+              data-aos='fade-up'
+              data-aos-duration='1000'
+            >
               <ServiceCard2
                 serviceIcon={serviceIcon5}
                 serviceShape={serviceShape}
@@ -144,7 +176,11 @@ const Service2 = () => {
             </div>
           </div>
           <div className='flex flex-col md:flex-row gap-8 items-center justify-between'>
-            <div className='service-box2 active'>
+            <div
+              className='service-box2 active'
+              data-aos='fade-up'
+              data-aos-duration='1000'
+            >
               <ServiceCard2
                 serviceIcon={serviceIcon2}
                 serviceShape={serviceShape}
@@ -155,7 +191,11 @@ const Service2 = () => {
                 btnIcon={btnIcon}
               />
             </div>
-            <div className='service-box2'>
+            <div
+              className='service-box2'
+              data-aos='fade-up'
+              data-aos-duration='1000'
+            >
               <ServiceCard2
                 serviceIcon={serviceIcon3}
                 serviceShape={serviceShape}
@@ -167,7 +207,11 @@ const Service2 = () => {
               />
             </div>
           </div>
-          <div className='service-box2'>
+          <div
+            className='service-box2'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <ServiceCard2
               serviceIcon={serviceIcon4}
               serviceShape={serviceShape}
@@ -179,7 +223,11 @@ const Service2 = () => {
             />
           </div>
         </div>
-        <div className='flex justify-center items-center gap-5 mt-14'>
+        <div
+          className='flex justify-center items-center gap-5 mt-14'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        >
           <span className='flex-1 w-full h-[1px] bg-TextColor-0'></span>
           <p className='font-AlbertSans text-TextColor2-0'>
             Click any of the avobe services to learn more View{' '}

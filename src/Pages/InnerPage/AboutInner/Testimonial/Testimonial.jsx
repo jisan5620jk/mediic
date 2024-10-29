@@ -91,18 +91,23 @@ const Testimonial = () => {
       <div className='px-2 xl:px-5 2xl:px-20'>
         <div className='Container'>
           <div className='grid grid-cols-1 lg:grid-cols-2 lg:items-center'>
-            <div>
-              <h5 className='font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-4'>
-                Our Testimonial
-              </h5>
-              <h1 className='font-AlbertSans font-bold capitalize text-HeadingColor-0 text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[40px] md:leading-[50px] lg:text-[42px] lg:leading-[52px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
-                Our Happy Patients
-              </h1>
-              <p className='font-DMSans text-TextColor2-0 mt-4 mb-9'>
-                Professional without enterprisee-commerce. Uniquely happy
-                clinets <br className='lg:hidden xl:block'/>
-                innovative technologies via team member.
-              </p>
+            <div
+              data-aos='fade-up'
+              data-aos-duration='1000'
+            >
+              <div>
+                <h5 className='font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-4'>
+                  Our Testimonial
+                </h5>
+                <h1 className='font-AlbertSans font-bold capitalize text-HeadingColor-0 text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[40px] md:leading-[50px] lg:text-[42px] lg:leading-[52px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
+                  Our Happy Patients
+                </h1>
+                <p className='font-DMSans text-TextColor2-0 mt-4 mb-9'>
+                  Professional without enterprisee-commerce. Uniquely happy
+                  clinets <br className='lg:hidden xl:block' />
+                  innovative technologies via team member.
+                </p>
+              </div>
               <div>
                 <Swiper
                   {...settings}
@@ -141,7 +146,11 @@ const Testimonial = () => {
                 </Swiper>
               </div>
             </div>
-            <div className='ml-8 relative rounded-[30px] overflow-hidden pt-10 lg:pt-0'>
+            <div
+              className='ml-8 relative rounded-[30px] overflow-hidden pt-10 lg:pt-0'
+              data-aos='fade-up'
+              data-aos-duration='1000'
+            >
               <div className='relative z-10'>
                 <img
                   src={testThumb}

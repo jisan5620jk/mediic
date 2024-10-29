@@ -101,7 +101,11 @@ const TeamInner = () => {
       />
       <section className='bg-BodyBg-0 bg-no-repeat bg-cover bg-center py-28 relative'>
         <div className='Container'>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7'>
+          <div
+            className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             {teamData.map(
               ({
                 id,

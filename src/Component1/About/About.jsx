@@ -19,7 +19,11 @@ const About = () => {
       </div>
       <div className='Container'>
         <div className='grid grid-cols-1 gap-8 lg:items-center lg:grid-cols-2 border-b border-BorderColor3-0 pb-7'>
-          <div className='flex items-center gap-7'>
+          <div
+            className='flex items-center gap-7'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <h1 className='font-AlbertSans font-bold uppercase text-HeadingColor-0 text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[40px] md:leading-[50px] lg:text-[42px] lg:leading-[52px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
               About Medical
             </h1>
@@ -29,7 +33,11 @@ const About = () => {
               className='animate-rotational'
             />
           </div>
-          <div className='flex lg:justify-end'>
+          <div
+            className='flex lg:justify-end'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <div className='flex items-center gap-8 '>
               <div>
                 <CountUp
@@ -46,7 +54,11 @@ const About = () => {
           </div>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-10 2xl:gap-16 mt-[60px] items-center'>
-          <div className='relative z-10'>
+          <div
+            className='relative z-10'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <img
               src={aboutThumb}
               draggable='false'
@@ -85,7 +97,11 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className='relative'>
+          <div
+            className='relative'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <h5 className='font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-4'>
               FINANCE CONSULTING
             </h5>

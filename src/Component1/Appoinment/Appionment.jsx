@@ -15,14 +15,22 @@ const Appoinment = () => {
           className='max-w-[inherit] w-[inherit]'
         />
       </div>
-      <div className='text-center mb-12'>
+      <div
+        className='text-center mb-12'
+        data-aos='fade-up'
+        data-aos-duration='1000'
+      >
         <h1 className='font-AlbertSans font-bold uppercase text-HeadingColor-0 text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[40px] md:leading-[50px] lg:text-[50px] lg:leading-[60px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
           Make Appionment
         </h1>
       </div>
       <div className='bg-[url(/images/appoinment.png)] bg-cover bg-no-repeat bg-center grid grid-cols-1 lg:grid-cols-2 pt-[110px] pb-[118px] lg:border-x-2 2xl:border-x-0 border-white rounded-[30px] relative z-10'>
         <div></div>
-        <div className='relative z-10 pr-5 2xl:pr-[230px] pl-5 lg:pl-0'>
+        <div
+          className='relative z-10 pr-5 2xl:pr-[230px] pl-5 lg:pl-0'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        >
           <div className='absolute -top-2 -left-[190px] xl:-left-40 2xl:-left-40'>
             <img
               src={Heart}
@@ -37,7 +45,7 @@ const Appoinment = () => {
             Make an Online Appoinemnt <br /> Booking For Treatment Patients
           </h1>
           <form
-            action='#'
+            action='https://formspree.io/f/xayrekgy'
             method='post'
             className='flex flex-col gap-y-5 mt-9'
           >

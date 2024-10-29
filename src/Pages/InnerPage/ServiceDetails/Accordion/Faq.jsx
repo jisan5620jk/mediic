@@ -25,7 +25,10 @@ const Faq = () => {
 
   return (
     <div className='w-full mx-auto'>
-      <div>
+      <div
+        data-aos='fade-up'
+        data-aos-duration='1000'
+      >
         {Faqs.map((faq, index) => (
           <FaqAccordion
             key={index}

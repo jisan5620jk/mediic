@@ -6,11 +6,11 @@ import { MdOutlineStarPurple500 } from 'react-icons/md';
 import TestimonialInnerCard from './TestimonialInnerCard';
 import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
 import { FaArrowRightLong } from 'react-icons/fa6';
-import Blog from '../../../Component1/Blog/Blog';
 import Subscribe from '../../../Component1/Subscribe/Subscribe';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import Blog from './Blog/Blog';
 
 const testiData = [
   {
@@ -74,7 +74,11 @@ const TestimonialInner = () => {
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={'Testimonial'}
       />
-      <section className='py-28 bg-BodyBg-0 relative z-10 overflow-hidden'>
+      <section
+        className='py-28 bg-BodyBg-0 relative z-10 overflow-hidden'
+        data-aos='fade-up'
+        data-aos-duration='1000'
+      >
         <div className='Container'>
           <Tabs>
             <TabPanel>
@@ -250,7 +254,11 @@ const TestimonialInner = () => {
           </Tabs>
         </div>
       </section>
-      <section className='bg-BodyBg-0 relative z-10 overflow-hidden'>
+      <section
+        className='bg-BodyBg-0 relative z-10 overflow-hidden'
+        data-aos='fade-up'
+        data-aos-duration='1000'
+      >
         <div className='Container'>
           <Swiper {...settings}>
             {testiData.map(

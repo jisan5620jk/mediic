@@ -9,20 +9,31 @@ const Counter = () => {
           <div className='grid gap-7 grid-cols-12 lg:items-center lg:justify-center'>
             <div className='col-span-12 md:col-span-12 lg:col-span-7'>
               <div className='flex items-center gap-6'>
-                <div className='hidden sm:block lg:hidden xl:block'>
+                <div
+                  className='hidden sm:block lg:hidden xl:block'
+                  data-aos='zoom-in'
+                  data-aos-duration='1000'
+                >
                   <img
                     src={counterImg}
                     draggable='false'
                   />
                 </div>
-                <h2 className='font-AlbertSans font-bold text-white text-2xl sm:text-2xl md:text-[34px] sm:leading-[40px]'>
+                <h2
+                  className='font-AlbertSans font-bold text-white text-2xl sm:text-2xl md:text-[34px] sm:leading-[40px]'
+                  data-aos='fade-up'
+                  data-aos-duration='1000'
+                >
                   Medical Achivement <br /> Health Protection
                 </h2>
               </div>
             </div>
             <div className='col-span-12 md:col-span-12 lg:col-span-5'>
               <div className='grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-4 xl:gap-20'>
-                <div>
+                <div
+                  data-aos='fade-down'
+                  data-aos-duration='1000'
+                >
                   <div>
                     <CountUp
                       start={-11}
@@ -35,7 +46,10 @@ const Counter = () => {
                     Satisfied Patients
                   </p>
                 </div>
-                <div>
+                <div
+                  data-aos='fade-left'
+                  data-aos-duration='1000'
+                >
                   <div>
                     <CountUp
                       start={-11}

@@ -25,6 +25,8 @@ const About = () => {
               src={aboutThumb}
               draggable='false'
               className='w-full 2xl:w-[inherit]'
+              data-aos='fade-up'
+              data-aos-duration='1000'
             />
             <div className='absolute bottom-0 left-0 rounded-[30px] overflow-hidden'>
               <img
@@ -41,7 +43,11 @@ const About = () => {
               />
             </div>
           </div>
-          <div className='relative z-30'>
+          <div
+            className='relative z-30'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <h5 className='font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-4'>
               About Company
             </h5>

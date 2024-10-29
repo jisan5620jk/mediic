@@ -19,7 +19,11 @@ const Skill = () => {
       </div>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-20 lg:gap-10 2xl:gap-16 items-center'>
-          <div className='col-span-1 lg:col-span-7'>
+          <div
+            className='col-span-1 lg:col-span-7'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <h5 className='font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-4'>
               SKILLS AND ABILITIES
             </h5>
@@ -30,7 +34,11 @@ const Skill = () => {
               help from our medical
             </h1>
           </div>
-          <div className='col-span-1 lg:col-span-5 relative'>
+          <div
+            className='col-span-1 lg:col-span-5 relative'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <div className='mb-[22px]'>
               <h6 className='font-AlbertSans font-medium text-lg text-HeadingColor-0 pb-3'>
                 Human Brain Surgery
@@ -112,7 +120,11 @@ const Skill = () => {
           </div>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mt-20'>
-          <div className='flex flex-col md:flex-row lg:flex-col xl:flex-row items-center sm:items-start md:items-center lg:items-start xl:items-center gap-10 p-7 bg-white bg-opacity-20 backdrop-filter backdrop-blur-md border-2 border-white rounded-[30px] group overflow-hidden transition-all duration-500 hover:border-PrimaryColor-0'>
+          <div
+            className='flex flex-col md:flex-row lg:flex-col xl:flex-row items-center sm:items-start md:items-center lg:items-start xl:items-center gap-10 p-7 bg-white bg-opacity-20 backdrop-filter backdrop-blur-md border-2 border-white rounded-[30px] group overflow-hidden transition-all duration-500 hover:border-PrimaryColor-0'
+            data-aos='fade-right'
+            data-aos-duration='1000'
+          >
             <div className='rounded-3xl overflow-hidden inline-block xl:flex-1 2xl:flex-none'>
               <img
                 src={skillThumb}
@@ -136,7 +148,11 @@ const Skill = () => {
               </Link>
             </div>
           </div>
-          <div className='flex flex-col md:flex-row lg:flex-col xl:flex-row items-center sm:items-start md:items-center lg:items-start xl:items-center gap-10 p-7 bg-white bg-opacity-20 backdrop-filter backdrop-blur-md border-2 border-white rounded-[30px] group overflow-hidden transition-all duration-500 hover:border-PrimaryColor-0'>
+          <div
+            className='flex flex-col md:flex-row lg:flex-col xl:flex-row items-center sm:items-start md:items-center lg:items-start xl:items-center gap-10 p-7 bg-white bg-opacity-20 backdrop-filter backdrop-blur-md border-2 border-white rounded-[30px] group overflow-hidden transition-all duration-500 hover:border-PrimaryColor-0'
+            data-aos='fade-left'
+            data-aos-duration='1000'
+          >
             <div className='rounded-3xl overflow-hidden inline-block xl:flex-1 2xl:flex-none'>
               <img
                 src={skillThumb2}

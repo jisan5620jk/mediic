@@ -89,7 +89,11 @@ const Appoinment = () => {
       <div className='bg-white bg-opacity-20 border-2 border-white border-opacity-80 rounded-[30px] py-[120px]'>
         <div className='Container'>
           <div className='grid grid-cols-1 lg:grid-cols-2 lg:items-center relative z-10'>
-            <div className='lg:mr-10 xl:mr-16 2xl:mr-[130px]'>
+            <div
+              className='lg:mr-10 xl:mr-16 2xl:mr-[130px]'
+              data-aos='fade-up'
+              data-aos-duration='1000'
+            >
               <Swiper
                 {...settings}
                 modules={[EffectCreative]}
@@ -120,7 +124,11 @@ const Appoinment = () => {
                 </div>
               </Swiper>
             </div>
-            <div className='relative z-10 pt-10 lg:pt-0'>
+            <div
+              className='relative z-10 pt-10 lg:pt-0'
+              data-aos='fade-up'
+              data-aos-duration='1000'
+            >
               <div className='absolute -top-2 -right-[190px] xl:-right-40 2xl:-right-40'>
                 <img
                   src={Heart}

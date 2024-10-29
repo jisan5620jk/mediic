@@ -110,7 +110,11 @@ const BlogGrid = () => {
                 blogGridIcon,
               }) => {
                 return (
-                  <div key={id}>
+                  <div
+                    key={id}
+                    data-aos='fade-up'
+                    data-aos-duration='1000'
+                  >
                     <BlogGridCard
                       blogThumb={blogThumb}
                       blogDateIcon={blogDateIcon}

@@ -93,13 +93,21 @@ const Service = () => {
   return (
     <section className='service px-5 2xl:px-20 bg-Secondarycolor-0 bg-cover bg-bottom bg-no-repeat py-[120px] relative'>
       <div className='grid grid-cols-12 md:items-center border-b border-BorderColor2-0 pb-7 gap-7 lg:gap-0'>
-        <div className='col-span-12 md:col-span-6 lg:col-span-4'>
+        <div
+          className='col-span-12 md:col-span-6 lg:col-span-4'
+          data-aos='fade-right'
+          data-aos-duration='1000'
+        >
           <h1 className='font-AlbertSans font-bold uppercase text-white text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[40px] md:leading-[50px] lg:text-[34px] lg:leading-[44px] xl:text-[48px] xl:leading-[58px] 2xl:text-[60px] 2xl:leading-[70px]'>
             Provide <br />
             Best Services
           </h1>
         </div>
-        <div className='col-span-12 md:col-span-6 lg:col-span-5 flex justify-start lg:justify-center'>
+        <div
+          className='col-span-12 md:col-span-6 lg:col-span-5 flex justify-start lg:justify-center'
+          data-aos='fade-down'
+          data-aos-duration='1000'
+        >
           <p className='font-DMSans text-lg text-TextColor-0'>
             Enthusiastically orchestrate competitive e-services whereas superior{' '}
             <br className='hidden 2xl:block' />
@@ -108,7 +116,11 @@ const Service = () => {
             tailers without seamless markets network .
           </p>
         </div>
-        <div className='col-span-12 lg:col-span-3 flex lg:justify-end'>
+        <div
+          className='col-span-12 lg:col-span-3 flex lg:justify-end'
+          data-aos='fade-left'
+          data-aos-duration='1000'
+        >
           <Link to={'/service_details'}>
             <button className='primary-btn mt-3 px-8'>
               View All Services
@@ -138,7 +150,11 @@ const Service = () => {
             }) => {
               return (
                 <SwiperSlide key={id}>
-                  <div className='pb-[60px] service-box'>
+                  <div
+                    className='pb-[60px] service-box'
+                    data-aos='fade-up'
+                    data-aos-duration='1000'
+                  >
                     <ServiceCard
                       serviceThumb={serviceThumb}
                       serviceShape={serviceShape}

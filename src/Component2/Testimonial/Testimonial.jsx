@@ -73,14 +73,22 @@ const Testimonial = () => {
           draggable='false'
         />
       </div>
-      <div className='text-center pb-11'>
+      <div
+        className='text-center pb-11'
+        data-aos='fade-up'
+        data-aos-duration='1000'
+      >
         <h1 className='font-AlbertSans font-bold uppercase text-white text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[40px] md:leading-[50px] lg:text-[50px] lg:leading-[60px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
           Testimonials
         </h1>
       </div>
       <div className='px-2 xl:px-5 2xl:px-20'>
         <div className='grid gap-[30px] grid-cols-6 lg:grid-cols-12 lg:items-center'>
-          <div className='col-span-6 lg:col-span-8 relative rounded-[30px] overflow-hidden'>
+          <div
+            className='col-span-6 lg:col-span-8 relative rounded-[30px] overflow-hidden'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <div className='relative z-10'>
               <img
                 src={testThumb}
@@ -103,7 +111,11 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-          <div className='col-span-6 lg:col-span-4'>
+          <div
+            className='col-span-6 lg:col-span-4'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <Swiper
               {...settings}
               modules={[EffectFlip]}

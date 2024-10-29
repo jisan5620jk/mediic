@@ -72,7 +72,11 @@ const Testimonial = () => {
         />
       </div>
       <div className='Container'>
-        <div className='-mb-[116px] border-b border-BorderColor2-0 pb-10'>
+        <div
+          className='-mb-[116px] border-b border-BorderColor2-0 pb-10'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        >
           <div className='inline-block mb-5'>
             <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-0 text-PrimaryColor-0 text-[15px] font-semibold border border-PrimaryColor-0 border-opacity-100 rounded-full font-AlbertSans px-[22px] py-2 uppercase'>
               <FaCircle size={'8'} />
@@ -84,7 +88,11 @@ const Testimonial = () => {
           </h1>
         </div>
         <div className='grid gap-8 lg:gap-0 grid-cols-6 lg:grid-cols-12 lg:items-center pt-5'>
-          <div className='col-span-6 lg:col-span-4 relative pt-[154px] lg:pt-36 2xl:pt-[140px]'>
+          <div
+            className='col-span-6 lg:col-span-4 relative pt-[154px] lg:pt-36 2xl:pt-[140px]'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <div className='relative z-10 rounded-[30px] overflow-hidden'>
               <img
                 src={testiThumb}
@@ -93,7 +101,11 @@ const Testimonial = () => {
               />
             </div>
           </div>
-          <div className='col-span-6 lg:col-span-8 lg:ml-7 xl:ml-20'>
+          <div
+            className='col-span-6 lg:col-span-8 lg:ml-7 xl:ml-20'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <Swiper
               {...settings}
               modules={[EffectFlip]}

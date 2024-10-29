@@ -74,7 +74,7 @@ const Blog = () => {
     },
   };
   return (
-    <section className='py-28 bg-white'>
+    <section className='py-28 bg-BodyBg-0'>
       <div className='Container'>
         <div className='grid grid-cols-1 gap-8 lg:items-center lg:grid-cols-2 border-b border-BorderColor3-0 pb-7'>
           <div
@@ -102,7 +102,11 @@ const Blog = () => {
             </Link>
           </div>
         </div>
-        <div className='mt-[56px]'>
+        <div
+          className='mt-[56px]'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        >
           <Swiper {...settings}>
             {BlogData.map(
               ({

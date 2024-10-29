@@ -8,14 +8,22 @@ const About = () => {
     <section className='py-[120px] bg-gradient-to-t from-BodyBg-0 from-25% relative z-10 px-2 xl:mx-10 rounded-b-[30px] -mb-[120px]'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-10 items-center bg-gradient-to-b from-BodyBg-0 from-60% rounded-[30px] border-2 border-white'>
-          <div className='relative z-10'>
+          <div
+            className='relative z-10'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <img
               src={aboutThumb}
               draggable='false'
               className='w-full rounded-[30px] overflow-hidden'
             />
           </div>
-          <div className='relative px-2 md:px-6 lg:px-0 pb-5 lg:pb-0'>
+          <div
+            className='relative px-2 md:px-6 lg:px-0 pb-5 lg:pb-0'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <div className='inline-block mb-5'>
               <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-30 text-PrimaryColor-0 text-[15px] font-semibold border border-white rounded-full font-AlbertSans px-[22px] py-2 uppercase'>
                 <FaCircle size={'8'} />

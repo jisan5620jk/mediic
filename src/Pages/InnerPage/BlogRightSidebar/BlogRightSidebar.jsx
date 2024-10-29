@@ -124,7 +124,11 @@ const BlogRightSidebar = () => {
                     blogGridIcon,
                   }) => {
                     return (
-                      <div key={id}>
+                      <div
+                        key={id}
+                        data-aos='fade-up'
+                        data-aos-duration='1000'
+                      >
                         <BlogSidebarCard
                           blogThumb={blogThumb}
                           blogDateIcon={blogDateIcon}
@@ -143,7 +147,11 @@ const BlogRightSidebar = () => {
               </div>
             </div>
             <div className='col-span-3 lg:col-span-1'>
-              <div className='rounded-2xl px-4 sm:px-7 lg:px-4 xl:px-7 pt-7 pb-9 overflow-hidden bg-white bg-opacity-20 border-2 border-white border-opacity-80 mb-7'>
+              <div
+                className='rounded-2xl px-4 sm:px-7 lg:px-4 xl:px-7 pt-7 pb-9 overflow-hidden bg-white bg-opacity-20 border-2 border-white border-opacity-80 mb-7'
+                data-aos='fade-up'
+                data-aos-duration='1000'
+              >
                 <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 pb-2 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0'>
                   Search
                 </h4>
@@ -164,7 +172,11 @@ const BlogRightSidebar = () => {
                   </button>
                 </div>
               </div>
-              <div className='rounded-2xl px-4 sm:px-7 lg:px-4 xl:px-7 pt-7 pb-6 overflow-hidden bg-white bg-opacity-30 border-2 border-white border-opacity-80 mb-7'>
+              <div
+                className='rounded-2xl px-4 sm:px-7 lg:px-4 xl:px-7 pt-7 pb-6 overflow-hidden bg-white bg-opacity-30 border-2 border-white border-opacity-80 mb-7'
+                data-aos='fade-up'
+                data-aos-duration='1000'
+              >
                 <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 pb-2 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0'>
                   Categories
                 </h4>
@@ -226,7 +238,11 @@ const BlogRightSidebar = () => {
                   </li>
                 </ul>
               </div>
-              <div className='rounded-2xl px-4 sm:px-7 lg:px-4 xl:px-7 pt-7 pb-6 overflow-hidden bg-white bg-opacity-20 border-2 border-white border-opacity-80 mb-7'>
+              <div
+                className='rounded-2xl px-4 sm:px-7 lg:px-4 xl:px-7 pt-7 pb-6 overflow-hidden bg-white bg-opacity-20 border-2 border-white border-opacity-80 mb-7'
+                data-aos='fade-up'
+                data-aos-duration='1000'
+              >
                 <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 pb-2 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0'>
                   Popular Post
                 </h4>
@@ -288,7 +304,11 @@ const BlogRightSidebar = () => {
                   </button>
                 </Link>
               </div>
-              <div className='rounded-2xl px-4 sm:px-7 lg:px-4 xl:px-7 pt-7 pb-6 overflow-hidden bg-white bg-opacity-20 border-2 border-white border-opacity-80 mb-7'>
+              <div
+                className='rounded-2xl px-4 sm:px-7 lg:px-4 xl:px-7 pt-7 pb-6 overflow-hidden bg-white bg-opacity-20 border-2 border-white border-opacity-80 mb-7'
+                data-aos='fade-up'
+                data-aos-duration='1000'
+              >
                 <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 pb-2 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0'>
                   Tags
                 </h4>
@@ -337,7 +357,11 @@ const BlogRightSidebar = () => {
                   </li>
                 </ul>
               </div>
-              <div className="rounded-2xl px-4 sm:px-9 lg:px-4 xl:px-9 overflow-hidden bg-[url('/images/company-bg.png')] bg-cover bg-no-repeat bg-center py-[50px]">
+              <div
+                className="rounded-2xl px-4 sm:px-9 lg:px-4 xl:px-9 overflow-hidden bg-[url('/images/company-bg.png')] bg-cover bg-no-repeat bg-center py-[50px]"
+                data-aos='fade-up'
+                data-aos-duration='1000'
+              >
                 <div className='relative before:absolute before:size-[90px] before:-top-[10px] before:-left-[10px] before:animate-rotational before:rounded-full before:border-[3px] before:border-dashed before:border-PrimaryColor-0 '>
                   <img
                     src={callIcon}

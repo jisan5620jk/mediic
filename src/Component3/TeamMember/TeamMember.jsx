@@ -66,7 +66,11 @@ const TeamMember = () => {
         />
       </div>
       <div className='Container'>
-        <div className='text-center'>
+        <div
+          className='text-center'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        >
           <div className='inline-block mb-5'>
             <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-30 text-PrimaryColor-0 text-[15px] font-semibold border border-white border-opacity-60 rounded-full font-AlbertSans px-[22px] py-2 uppercase'>
               <FaCircle size={'8'} />
@@ -91,7 +95,11 @@ const TeamMember = () => {
               socialIcon3,
             }) => {
               return (
-                <div key={id}>
+                <div
+                  key={id}
+                  data-aos='fade-up'
+                  data-aos-duration='1000'
+                >
                   <TeamCard
                     teamShape={teamShape}
                     teamThumb={teamThumb}

@@ -103,7 +103,11 @@ const ProjectInner = () => {
               }) => {
                 return (
                   <SwiperSlide key={id}>
-                    <div className='pb-[64px]'>
+                    <div
+                      className='pb-[64px]'
+                      data-aos='fade-up'
+                      data-aos-duration='1000'
+                    >
                       <ProjectCard
                         projectThumb={projectThumb}
                         projectSubTitle={projectSubTitle}

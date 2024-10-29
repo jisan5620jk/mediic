@@ -12,7 +12,11 @@ const WhyChoose = () => {
     <section className='py-[120px] bg-[url(/images/why-choose.jpg)] bg-no-repeat bg-center bg-cover relative'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'>
-          <div className='relative z-30'>
+          <div
+            className='relative z-30'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <img
               src={whyChooseThumb}
               draggable='false'
@@ -33,7 +37,11 @@ const WhyChoose = () => {
               />
             </div>
           </div>
-          <div className='relative z-30'>
+          <div
+            className='relative z-30'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <h5 className='font-AlbertSans font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-4'>
               why choose us?
             </h5>

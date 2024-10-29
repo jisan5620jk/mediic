@@ -71,7 +71,10 @@ const FaqInner = () => {
       <section className='bg-BodyBg-0 py-28'>
         <div className='Container'>
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
-            <div>
+            <div
+              data-aos='fade-up'
+              data-aos-duration='1000'
+            >
               <div>
                 <h3 className='font-AlbertSans text-HeadingColor-0 font-bold text-[28px]'>
                   General Questions
@@ -93,7 +96,10 @@ const FaqInner = () => {
                 </FaqAccordion>
               ))}
             </div>
-            <div>
+            <div
+              data-aos='fade-up'
+              data-aos-duration='1000'
+            >
               <div>
                 <h3 className='font-AlbertSans text-HeadingColor-0 font-bold text-[28px]'>
                   Other{`'s`} Questions
@@ -116,7 +122,11 @@ const FaqInner = () => {
               ))}
             </div>
           </div>
-          <div className='pt-28'>
+          <div
+            className='pt-28'
+            data-aos='fade-up'
+            data-aos-duration='1000'
+          >
             <div>
               <h3 className='font-AlbertSans text-HeadingColor-0 font-bold text-[28px]'>
                 Happy to Answer All Your Questions

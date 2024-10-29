@@ -35,7 +35,10 @@ const Brand = () => {
       <div className='Container relative z-10'>
         <Swiper {...settings}>
           <SwiperSlide>
-            <div>
+            <div
+              data-aos='fade-up'
+              data-aos-duration='1000'
+            >
               <img
                 src={brandThumb}
                 draggable='false'
@@ -44,7 +47,10 @@ const Brand = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div
+              data-aos='fade-up'
+              data-aos-duration='1000'
+            >
               <img
                 src={brandThumb2}
                 draggable='false'
@@ -53,7 +59,10 @@ const Brand = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div
+              data-aos='fade-up'
+              data-aos-duration='1000'
+            >
               <img
                 src={brandThumb3}
                 draggable='false'
@@ -62,7 +71,10 @@ const Brand = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div
+              data-aos='fade-up'
+              data-aos-duration='1000'
+            >
               <img
                 src={brandThumb4}
                 draggable='false'
@@ -71,7 +83,10 @@ const Brand = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div
+              data-aos='fade-up'
+              data-aos-duration='1000'
+            >
               <img
                 src={brandThumb5}
                 draggable='false'
@@ -80,7 +95,10 @@ const Brand = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div>
+            <div
+              data-aos='fade-up'
+              data-aos-duration='1000'
+            >
               <img
                 src={brandThumb}
                 draggable='false'

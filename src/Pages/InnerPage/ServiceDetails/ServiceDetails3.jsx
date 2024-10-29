@@ -28,23 +28,39 @@ const ServiceDetails3 = () => {
         <div className='Container'>
           <div className='grid grid-cols-3 gap-[50px] lg:gap-8 xl:gap-[50px]'>
             <div className='col-span-3 lg:col-span-2 h-[1276px] overflow-hidden overflow-y-scroll'>
-              <div className='rounded-[30px] overflow-hidden'>
+              <div
+                className='rounded-[30px] overflow-hidden'
+                data-aos='fade-up'
+                data-aos-duration='1000'
+              >
                 <img
                   src={serviceDetailsThumb}
                   draggable='false'
                   className='w-full'
                 />
               </div>
-              <h2 className='font-AlbertSans font-bold text-[28px] text-HeadingColor-0 capitalize mt-8'>
+              <h2
+                className='font-AlbertSans font-bold text-[28px] text-HeadingColor-0 capitalize mt-8'
+                data-aos='fade-up'
+                data-aos-duration='1000'
+              >
                 Delivering world class medical care
               </h2>
-              <p className='font-AlbertSans text-TextColor2-0 mt-5'>
+              <p
+                className='font-AlbertSans text-TextColor2-0 mt-5'
+                data-aos='fade-up'
+                data-aos-duration='1000'
+              >
                 Alternative innovation to ethical network environmental
                 whiteboard pursue compelling results premier methods
                 empowerment. Dramatically architect go forward opportunities
                 before user-centric partner Credibly implement exceptional
               </p>
-              <p className='font-AlbertSans text-TextColor2-0 mt-7 mb-11'>
+              <p
+                className='font-AlbertSans text-TextColor2-0 mt-7 mb-11'
+                data-aos='fade-up'
+                data-aos-duration='1000'
+              >
                 Continually fashion orthogonal leadership skills whereas
                 wireless metrics. Uniquely syndicate exceptio opportunities with
                 interdependent users. Globally enhance fully tested
@@ -54,7 +70,11 @@ const ServiceDetails3 = () => {
                 frictionless products.
               </p>
               <div className='grid grid-cols-1 md:grid-cols-2 sm:items-center gap-8 mb-14'>
-                <div className='flex flex-col sm:flex-row md:flex-col xl:flex-row gap-6 rounded-2xl border-2 border-white bg-white bg-opacity-25 px-[30px] py-8'>
+                <div
+                  className='flex flex-col sm:flex-row md:flex-col xl:flex-row gap-6 rounded-2xl border-2 border-white bg-white bg-opacity-25 px-[30px] py-8'
+                  data-aos='fade-up'
+                  data-aos-duration='1000'
+                >
                   <div className='size-20 rounded-full border-2 border-white bg-white bg-opacity-25 flex items-center justify-center'>
                     <img
                       src={icon}
@@ -71,7 +91,11 @@ const ServiceDetails3 = () => {
                     </p>
                   </div>
                 </div>
-                <div className='flex flex-col sm:flex-row md:flex-col xl:flex-row gap-6 rounded-2xl border-2 border-white bg-white bg-opacity-25 px-[30px] py-8'>
+                <div
+                  className='flex flex-col sm:flex-row md:flex-col xl:flex-row gap-6 rounded-2xl border-2 border-white bg-white bg-opacity-25 px-[30px] py-8'
+                  data-aos='fade-up'
+                  data-aos-duration='1000'
+                >
                   <div className='size-20 rounded-full border-2 border-white bg-white bg-opacity-25 flex items-center justify-center'>
                     <img
                       src={icon2}
@@ -89,7 +113,11 @@ const ServiceDetails3 = () => {
                   </div>
                 </div>
               </div>
-              <div className='flex flex-col sm:flex-row sm:items-center gap-8 sm:gap-[64px] bg-PrimaryColor-0 rounded-2xl px-4 sm:px-10 py-7'>
+              <div
+                className='flex flex-col sm:flex-row sm:items-center gap-8 sm:gap-[64px] bg-PrimaryColor-0 rounded-2xl px-4 sm:px-10 py-7'
+                data-aos='fade-up'
+                data-aos-duration='1000'
+              >
                 <div className='text-white relative before:absolute before:top-0 before:hidden sm:before:block before:-right-8 before:w-[2px] before:h-[48px] before:bg-white before:bg-opacity-25'>
                   <FaUserDoctor size={'50'} />
                 </div>
@@ -98,10 +126,18 @@ const ServiceDetails3 = () => {
                   continually underwhelm
                 </h4>
               </div>
-              <h2 className='font-AlbertSans font-bold text-[28px] text-HeadingColor-0 capitalize mt-24'>
+              <h2
+                className='font-AlbertSans font-bold text-[28px] text-HeadingColor-0 capitalize mt-24'
+                data-aos='fade-up'
+                data-aos-duration='1000'
+              >
                 What the Benifits?
               </h2>
-              <p className='font-AlbertSans text-TextColor2-0 mt-6 mb-11'>
+              <p
+                className='font-AlbertSans text-TextColor2-0 mt-6 mb-11'
+                data-aos='fade-up'
+                data-aos-duration='1000'
+              >
                 Methods empowerment. Dramatically architect go forward
                 opportunities credibly revolutionize front-end initiatives for
                 interoperable outsourcing. Conveniently repurpose market-driven
@@ -111,7 +147,11 @@ const ServiceDetails3 = () => {
               <Faq />
             </div>
             <div className='col-span-3 lg:col-span-1'>
-              <div className='rounded-2xl px-7 pt-7 pb-6 overflow-hidden bg-white bg-opacity-30 border-2 border-white border-opacity-80 mb-7'>
+              <div
+                className='rounded-2xl px-7 pt-7 pb-6 overflow-hidden bg-white bg-opacity-30 border-2 border-white border-opacity-80 mb-7'
+                data-aos='fade-up'
+                data-aos-duration='1000'
+              >
                 <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 pb-2 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0'>
                   Categories
                 </h4>
@@ -173,7 +213,11 @@ const ServiceDetails3 = () => {
                   </li>
                 </ul>
               </div>
-              <div className='rounded-2xl px-7 pt-7 pb-6 overflow-hidden bg-white bg-opacity-20 border-2 border-white border-opacity-80 mb-7'>
+              <div
+                className='rounded-2xl px-7 pt-7 pb-6 overflow-hidden bg-white bg-opacity-20 border-2 border-white border-opacity-80 mb-7'
+                data-aos='fade-up'
+                data-aos-duration='1000'
+              >
                 <h4 className='font-AlbertSans font-semibold text-2xl text-HeadingColor-0 pb-2 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0'>
                   Downloads
                 </h4>
@@ -214,7 +258,11 @@ const ServiceDetails3 = () => {
                   </li>
                 </ul>
               </div>
-              <div className="rounded-2xl px-9 overflow-hidden bg-[url('/images/company-bg.png')] bg-cover bg-no-repeat bg-center py-[50px]">
+              <div
+                className="rounded-2xl px-9 overflow-hidden bg-[url('/images/company-bg.png')] bg-cover bg-no-repeat bg-center py-[50px]"
+                data-aos='fade-up'
+                data-aos-duration='1000'
+              >
                 <div className='relative before:absolute before:size-[90px] before:-top-[10px] before:-left-[10px] before:animate-rotational before:rounded-full before:border-[3px] before:border-dashed before:border-PrimaryColor-0 '>
                   <img
                     src={callIcon}

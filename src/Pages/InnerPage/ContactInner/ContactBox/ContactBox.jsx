@@ -41,7 +41,11 @@ const ContactBox = () => {
               contactBoxDesc,
             }) => {
               return (
-                <div key={id}>
+                <div
+                  key={id}
+                  data-aos='fade-up'
+                  data-aos-duration='1000'
+                >
                   <ContactBoxCard
                     contactBoxIcon={contactBoxIcon}
                     contactBoxSubTitle={contactBoxSubTitle}
