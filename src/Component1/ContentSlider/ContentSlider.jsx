@@ -1,5 +1,5 @@
-import "./content-slider.css";
-import contentShape from "/images/star.png";
+import './content-slider.css';
+import contentShape from '/images/star.png';
 
 const ContentSlider = () => {
   return (
