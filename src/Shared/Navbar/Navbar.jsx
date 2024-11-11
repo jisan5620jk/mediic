@@ -35,7 +35,7 @@ const Navbar = () => {
 
   /* Method that will fix header after a specific scrollable */
   const isSticky = () => {
-    const header = document.querySelector('.header-area');
+    const header = document.querySelector('.header-sticky');
     const scrollTop = window.scrollY;
     scrollTop >= 250
       ? header.classList.add('is-sticky')
@@ -292,10 +292,7 @@ const Navbar = () => {
         ref={bodyOverlayRef}
         className='body-overlay'
       ></div>
-      <div
-        id='header-sticky'
-        className='header-area py-5 lg:py-0'
-      >
+      <div className='header-area header-sticky py-5 lg:py-0'>
         <div className='px-2 lg:px-[30px]'>
           <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
             <div className='col-span-3'>

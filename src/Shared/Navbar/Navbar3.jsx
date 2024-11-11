@@ -24,6 +24,24 @@ import { CgMenuGridO } from 'react-icons/cg';
 import { LiaTimesSolid } from 'react-icons/lia';
 
 const Navbar3 = () => {
+  //sticky
+
+  useEffect(() => {
+    window.addEventListener('scroll', isSticky);
+    return () => {
+      window.removeEventListener('scroll', isSticky);
+    };
+  });
+
+  /* Method that will fix header after a specific scrollable */
+  const isSticky = () => {
+    const header = document.querySelector('.header-sticky');
+    const scrollTop = window.scrollY;
+    scrollTop >= 250
+      ? header.classList.add('is-sticky')
+      : header.classList.remove('is-sticky');
+  };
+
   //Menu Sidebar
 
   const menuSideBarRef = useRef(null);
@@ -274,10 +292,7 @@ const Navbar3 = () => {
         ref={bodyOverlayRef}
         className='body-overlay'
       ></div>
-      <div
-        id='header-sticky'
-        className='header-area3 py-5 lg:py-0'
-      >
+      <div className='header-area3 header-sticky py-5 lg:py-0'>
         <div className='px-2 lg:px-[30px]'>
           <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
             <div className='col-span-3'>
