@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
+import { useLocation } from "react-router-dom";
 
 const ScrollToTop = () => {
   const [showScroll, setShowScroll] = useState(false);
@@ -22,6 +23,11 @@ const ScrollToTop = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <div className="relative">

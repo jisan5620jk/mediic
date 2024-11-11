@@ -376,6 +376,18 @@
   width: 100%;
 }
 
+
+.is-sticky {
+  @apply fixed top-0 left-0 w-full z-[99999] shadow-lg bg-white backdrop-blur-md animate-headerSlideDown;
+}
+
+@media (min-width: 320px) and (max-width: 991px){
+  
+.is-sticky {
+  @apply overflow-y-auto;
+}
+}
+
 nav.main-menu-content {
   padding: 20px 0;
 }

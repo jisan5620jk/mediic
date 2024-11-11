@@ -24,6 +24,24 @@ import { CgMenuGridO } from 'react-icons/cg';
 import { LiaTimesSolid } from 'react-icons/lia';
 
 const Navbar = () => {
+  //sticky
+
+  useEffect(() => {
+    window.addEventListener('scroll', isSticky);
+    return () => {
+      window.removeEventListener('scroll', isSticky);
+    };
+  });
+
+  /* Method that will fix header after a specific scrollable */
+  const isSticky = () => {
+    const header = document.querySelector('.header-area');
+    const scrollTop = window.scrollY;
+    scrollTop >= 250
+      ? header.classList.add('is-sticky')
+      : header.classList.remove('is-sticky');
+  };
+
   //Menu Sidebar
 
   const menuSideBarRef = useRef(null);
@@ -166,21 +184,21 @@ const Navbar = () => {
   const searchInputRef = useRef(null); // Reference for the search input
   const [isSubmitting, setIsSubmitting] = useState(false); // State to track form submission
 
- const handleSubmit = (event) => {
-   event.preventDefault(); // Prevent default form submission
-   setIsSubmitting(true); // Set submitting state
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent default form submission
+    setIsSubmitting(true); // Set submitting state
 
-   // Simulate a submission with a timeout (replace with your actual submission logic)
-   setTimeout(() => {
-     setIsSubmitting(false); // Reset submitting state
-     // Optionally clear the input field or close the overlay
-     if (searchInputRef.current) {
-       searchInputRef.current.value = ''; // Clear the input
-     }
-     bodyOverlay3Ref.current.classList.remove('apply'); // Close overlay on submit (optional)
-     searchContentRef.current.classList.remove('opened'); // Close search content (optional)
-   }, 2000); // Simulate a delay of 2 seconds
- };;
+    // Simulate a submission with a timeout (replace with your actual submission logic)
+    setTimeout(() => {
+      setIsSubmitting(false); // Reset submitting state
+      // Optionally clear the input field or close the overlay
+      if (searchInputRef.current) {
+        searchInputRef.current.value = ''; // Clear the input
+      }
+      bodyOverlay3Ref.current.classList.remove('apply'); // Close overlay on submit (optional)
+      searchContentRef.current.classList.remove('opened'); // Close search content (optional)
+    }, 2000); // Simulate a delay of 2 seconds
+  };
 
   return (
     <>
