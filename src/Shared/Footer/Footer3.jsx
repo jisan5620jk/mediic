@@ -19,12 +19,17 @@ const Footer = () => {
       <div className='Container'>
         <div className='grid gap-y-7 grid-cols-12'>
           <div className='col-span-12 md:col-span-6 lg:col-span-4'>
-            <Link to={'/'}>
-              <img
-                src={footerLogo}
-                draggable={false}
-              />
-            </Link>
+            <div className='inline-block'>
+              <Link
+                to={'/'}
+                title='Mediic'
+              >
+                <img
+                  src={footerLogo}
+                  draggable={false}
+                />
+              </Link>
+            </div>
             <p className='font-AlbertSans text-white mt-7 mb-11'>
               Evolve professional intellectual capital from
               <br className='hidden sm:block' /> professional capital without

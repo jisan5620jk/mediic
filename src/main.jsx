@@ -1,10 +1,10 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
-import App from './Router/App';
 import Preloader from './Shared/Preloader/Preloader';
-import './index.css'
-
+import './index.css';
+import { RouterProvider } from 'react-router-dom';
+import router from './Router/router';
 
 const helmetContext = {}; // Define helmetContext here
 
@@ -15,7 +15,7 @@ root.render(
   <React.StrictMode>
     <HelmetProvider context={helmetContext}>
       <Preloader />
-      <App />
+      <RouterProvider router={router} />
     </HelmetProvider>
   </React.StrictMode>
 );

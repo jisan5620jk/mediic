@@ -13,6 +13,7 @@
     "aos": "^2.3.4",
     "fslightbox-react": "^1.7.6",
     "gsap": "^3.12.5",
+    "lenis": "^1.1.16",
     "react": "^18.3.1",
     "react-animated-progress-bar": "^1.1.2",
     "react-countup": "^6.5.3",

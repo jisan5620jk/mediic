@@ -489,7 +489,6 @@ const BlogDetails = () => {
           </div>
         </div>
       </section>
-
       <Subscribe />
     </>
   );

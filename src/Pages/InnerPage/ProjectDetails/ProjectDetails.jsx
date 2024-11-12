@@ -23,7 +23,7 @@ const ProjectDetails = () => {
       <section className='project-details py-[120px] bg-BodyBg-0'>
         <div className='Container'>
           <div className='grid grid-cols-3 gap-[50px] lg:gap-8 xl:gap-[50px]'>
-            <div className='col-span-3 lg:col-span-2 h-[1276px] overflow-hidden overflow-y-scroll'>
+            <div className='col-span-3 lg:col-span-2'>
               <div
                 className='rounded-[30px] overflow-hidden'
                 data-aos='fade-up'

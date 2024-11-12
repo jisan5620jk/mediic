@@ -121,7 +121,7 @@ const Skill = () => {
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mt-20'>
           <div
-            className='flex flex-col md:flex-row lg:flex-col xl:flex-row items-center sm:items-start md:items-center lg:items-start xl:items-center gap-10 p-7 bg-white bg-opacity-20 backdrop-filter backdrop-blur-md border-2 border-white rounded-[30px] group overflow-hidden transition-all duration-500 hover:border-PrimaryColor-0'
+            className='flex flex-col md:flex-row lg:flex-col xl:flex-row items-center sm:items-start md:items-center lg:items-start xl:items-center gap-10 p-7 bg-white bg-opacity-20 backdrop-filter backdrop-blur-md rounded-[30px] group overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:border-2 before:border-white before:rounded-[30px] before:transition-all before:ease-linear before:duration-500 hover:before:border-PrimaryColor-0'
             data-aos='fade-right'
             data-aos-duration='1000'
           >
@@ -149,7 +149,7 @@ const Skill = () => {
             </div>
           </div>
           <div
-            className='flex flex-col md:flex-row lg:flex-col xl:flex-row items-center sm:items-start md:items-center lg:items-start xl:items-center gap-10 p-7 bg-white bg-opacity-20 backdrop-filter backdrop-blur-md border-2 border-white rounded-[30px] group overflow-hidden transition-all duration-500 hover:border-PrimaryColor-0'
+            className='flex flex-col md:flex-row lg:flex-col xl:flex-row items-center sm:items-start md:items-center lg:items-start xl:items-center gap-10 p-7 bg-white bg-opacity-20 backdrop-filter backdrop-blur-md rounded-[30px] group overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:border-2 before:border-white before:rounded-[30px] before:transition-all before:ease-linear before:duration-500 hover:before:border-PrimaryColor-0'
             data-aos='fade-left'
             data-aos-duration='1000'
           >

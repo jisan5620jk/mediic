@@ -18,12 +18,17 @@ const Footer = () => {
       <div className='Container'>
         <div className='grid gap-y-7 grid-cols-12'>
           <div className='col-span-12 md:col-span-6 lg:col-span-5'>
-            <Link to={'/'}>
-              <img
-                src={footerLogo}
-                draggable={false}
-              />
-            </Link>
+            <div className='inline-block'>
+              <Link
+                to={'/'}
+                title='Mediic'
+              >
+                <img
+                  src={footerLogo}
+                  draggable={false}
+                />
+              </Link>
+            </div>
             <p className='font-AlbertSans xl:text-lg 2xl:text-xl font-medium text-white mt-[52px] mb-7'>
               Completely promote interdependent systems for{' '}
               <br className='hidden sm:block' /> Latest update news this

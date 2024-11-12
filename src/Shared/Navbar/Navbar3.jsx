@@ -441,7 +441,7 @@ const Navbar3 = () => {
                   </button>
                 </div>
                 <div className='header-btn hidden lg:block'>
-                  <Link to={'/'}>
+                  <Link to={'/appointment'}>
                     get Appiontment<span></span>
                     <span></span>
                     <span></span>
