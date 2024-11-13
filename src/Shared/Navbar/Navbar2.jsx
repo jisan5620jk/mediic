@@ -474,7 +474,10 @@ const Navbar2 = () => {
             </div>
           </div>
         </div>
-        <div className='sidebar-content'>
+        <div
+          className='sidebar-content'
+          data-lenis-prevent
+        >
           <div
             ref={sidebarContentRef}
             className='sidebar'

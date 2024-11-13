@@ -137,24 +137,6 @@ body {
   transform: scale(1);
 }
 
-.is-sticky {
-  @apply fixed top-0 left-0 w-full z-[99999] shadow-lg bg-white backdrop-blur-md animate-headerSlideDown;
-}
-
-.navbar2.is-sticky {
-  @apply fixed top-0 left-0 w-full z-[99999] shadow-lg bg-HeadingColor-0 backdrop-blur-md animate-headerSlideDown;
-}
-
-@media (min-width: 320px) and (max-width: 991px) {
-  .is-sticky {
-    @apply relative top-0 left-0 w-full z-[99999] shadow-lg bg-white backdrop-blur-md animate-headerSlideDown;
-  }
-
-  .navbar2.is-sticky {
-    @apply relative top-0 left-0 w-full z-[99999] shadow-lg bg-HeadingColor-0 backdrop-blur-md animate-headerSlideDown;
-  }
-}
-
 /* Progress Bar */
 
 .progress-bar-rect-wrap-container {

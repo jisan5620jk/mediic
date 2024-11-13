@@ -347,24 +347,14 @@
 
 /* Header Sticky */
 
-.header-area.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  width: 100%;
-  z-index: 98;
-  visibility: visible;
-  background-color: #00000063;
-  backdrop-filter: blur(8px);
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  -webkit-animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
-  -khtml-animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
-  -moz-animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
-  -ms-animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
-  -o-animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
-  animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
+.is-sticky {
+  @apply !fixed top-0 left-0 w-full overflow-hidden z-50 shadow-shade bg-white backdrop-blur-md animate-headerSlideDown;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  .is-sticky {
+    @apply overflow-y-auto;
+  }
 }
 
 /* Header Main Menu */
@@ -374,16 +364,6 @@
   position: relative;
   z-index: 50;
   width: 100%;
-}
-
-.is-sticky {
-  @apply !fixed top-0 left-0 w-full z-[99999] shadow-shade bg-white backdrop-blur-md animate-headerSlideDown;
-}
-
-@media (min-width: 320px) and (max-width: 991px) {
-  .is-sticky {
-    @apply overflow-y-auto;
-  }
 }
 
 nav.main-menu-content {
@@ -967,9 +947,6 @@ nav.main-menu-content > ul > li > a:hover > span {
 }
 
 .sidebar {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   position: fixed;
   top: 0;
   right: -100%;
@@ -984,14 +961,14 @@ nav.main-menu-content > ul > li > a:hover > span {
   visibility: hidden;
   transition: 0.45s ease-in-out;
   overflow-y: scroll;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .sidebar.opened {
   opacity: 1;
   visibility: visible;
-}
-
-.sidebar.opened {
   right: 0;
   -webkit-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -moz-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
