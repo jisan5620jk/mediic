@@ -201,7 +201,7 @@ const Navbar = () => {
   };
 
   return (
-    <>
+    <nav data-lenis-prevent>
       <div className='offcanvas-area'>
         <div
           ref={offcanvasRef}
@@ -474,10 +474,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div
-          className='sidebar-content'
-          data-lenis-prevent
-        >
+        <div className='sidebar-content'>
           <div
             ref={sidebarContentRef}
             className='sidebar'
@@ -653,7 +650,7 @@ const Navbar = () => {
           </form>
         </div>
       </div>
-    </>
+    </nav>
   );
 };
 

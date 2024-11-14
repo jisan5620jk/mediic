@@ -6,14 +6,13 @@ import Cursor from '../Shared/Cursor/Cursor';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import HelmetChanger from '../Shared/Helmet/Helmet';
+import { useEffect } from 'react';
 
 const Main = () => {
-  window.onload = function () {
+  useEffect(() => {
     AOS.init();
     AOS.refresh();
-  };
-
-
+  }, []);
 
   return (
     <>

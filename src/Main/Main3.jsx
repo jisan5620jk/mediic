@@ -10,12 +10,13 @@ import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useEffect } from 'react';
 
 const Main3 = () => {
-  window.onload = function () {
-    AOS.init();
-    AOS.refresh();
-  };
+ useEffect(() => {
+   AOS.init();
+   AOS.refresh();
+ }, []);  
 
   const lenis = new Lenis();
 

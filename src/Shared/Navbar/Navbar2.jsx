@@ -200,7 +200,7 @@ const Navbar2 = () => {
     }, 2000); // Simulate a delay of 2 seconds
   };
   return (
-    <>
+    <nav data-lenis-prevent>
       <div className='offcanvas-area'>
         <div
           ref={offcanvasRef}
@@ -653,7 +653,7 @@ const Navbar2 = () => {
           </form>
         </div>
       </div>
-    </>
+    </nav>
   );
 };
 
