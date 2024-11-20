@@ -31,7 +31,7 @@ const Brand = () => {
     },
   };
   return (
-    <div className='bg-BodyBg-0'>
+    <div className='bg-BodyBg-0 pb-28'>
       <div className='Container relative z-10'>
         <Swiper {...settings}>
           <SwiperSlide>

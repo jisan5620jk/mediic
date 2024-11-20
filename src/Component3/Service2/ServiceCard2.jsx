@@ -22,14 +22,14 @@ const ServiceCard2 = ({
           draggable='false'
         />
       </div>
-      <div className='service-icon ml-[14px] lg:ml-0 transition-all duration-500'>
+      <div className='service-icon ml-[14px] lg:ml-0 2xl:ml-[14px] transition-all duration-500'>
         <img
           src={serviceIcon}
           draggable='false'
           className='transition-all duration-500 group-hover:[transform:rotateY(180deg)]'
         />
       </div>
-      <div className='service-title absolute bottom-[130px] -left-2 lg:-left-9 inline-block transition-all duration-500'>
+      <div className='service-title absolute bottom-[130px] -left-2 lg:-left-9 xl:-left-[26px] 2xl:-left-[10px] inline-block transition-all duration-500'>
         <h4 className='w-[204px] -rotate-90 transition-all duration-500 font-AlbertSans font-bold text-[22px] text-HeadingColor-0 uppercase'>
           {serviceTitle}
         </h4>
