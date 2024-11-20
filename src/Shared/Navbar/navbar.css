@@ -358,7 +358,7 @@
 
 @media (min-width: 320px) and (max-width: 991px) {
   .is-sticky {
-    @apply overflow-y-auto;
+    @apply overflow-y-auto overflow-x-hidden;
   }
 }
 

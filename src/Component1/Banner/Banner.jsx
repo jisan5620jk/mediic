@@ -85,7 +85,7 @@ const Banner = () => {
                 </div>
               </div>
               <div>
-                <Link to={'/appiontment'}>
+                <Link to={'/appointment'}>
                   <button className='primary-btn'>
                     Free Consultation
                     <GoArrowRight

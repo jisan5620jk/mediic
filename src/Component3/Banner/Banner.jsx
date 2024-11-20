@@ -27,7 +27,7 @@ const Banner = () => {
                   BETTER CARE FOR <br /> YOUR{' '}
                   <span className='text-PrimaryColor-0'>HEALTH</span>
                 </h1>
-                <Link to={'/appiontment'}>
+                <Link to={'/about'}>
                   <button className='primary-btn3 '>
                     Research More <span></span>
                     <span></span>

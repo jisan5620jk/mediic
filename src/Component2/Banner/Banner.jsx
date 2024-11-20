@@ -11,7 +11,7 @@ const Banner = () => {
             Bringing you the <br /> Best Healthcare
           </h1>
           <div className='pt-8 inline-block'>
-            <Link to={'/appiontment'}>
+            <Link to={'/appointment'}>
               <button className='primary-btn'>
                 Free Consultation
                 <GoArrowRight

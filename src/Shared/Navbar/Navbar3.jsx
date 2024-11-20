@@ -316,7 +316,7 @@ const Navbar3 = () => {
                       >
                         Home
                       </Link>
-                      <div className='submenu has-homemenu mega-menu'>
+                      <div className='submenu has-homemenu mega-menu !hidden lg:!block'>
                         <div className='grid grid-cols-1 lg:grid-cols-4 lg:gap-3'>
                           <div className='homemenu'>
                             <div className='homemenu-thumb'>
@@ -355,6 +355,17 @@ const Navbar3 = () => {
                           </div>
                         </div>
                       </div>
+                      <ul className='submenu lg:hidden'>
+                        <li>
+                          <Link to={'/'}>Home Page One</Link>
+                        </li>
+                        <li>
+                          <Link to={'/home2'}>Home Page Two</Link>
+                        </li>
+                        <li>
+                          <Link to={'/home3'}>Home Page Three</Link>
+                        </li>
+                      </ul>
                     </li>
                     <li>
                       <Link to={'/about'}>About</Link>
