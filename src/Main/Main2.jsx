@@ -1,9 +1,9 @@
 import { Outlet } from 'react-router-dom';
 import Navbar2 from '../Shared/Navbar/Navbar2';
-import ScrollToTop from '../Shared/ScrollToTop/ScrollToTop';
 import Footer from '../Shared/Footer/Footer';
 import Cursor from '../Shared/Cursor/Cursor';
 import HelmetChanger from '../Shared/Helmet/Helmet';
+import BackToTop from '../Shared/BackToTop/BackToTop';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Lenis from 'lenis';
@@ -33,7 +33,7 @@ const Main2 = () => {
       <HelmetChanger title={'Home Two'} />
       <Navbar2 />
       <Cursor />
-      <ScrollToTop />
+      <BackToTop />
       <div>
         <Outlet />
       </div>
