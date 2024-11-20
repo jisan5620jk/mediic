@@ -159,7 +159,7 @@ const Footer = () => {
                 >
                   <button className='flex items-center gap-2 font-AlbertSans font-medium -ml-5 hover:ml-0 text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-[18px]'>
                     <FaAnglesRight className='text-xs text-PrimaryColor-0' />
-                    Appiontment
+                    Appointment
                   </button>
                 </Link>
               </li>
