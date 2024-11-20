@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom';
-import Navbar3 from '../Shared/Navbar/Navbar3';
 import Footer3 from '../Shared/Footer/Footer3';
 import Cursor from '../Shared/Cursor/Cursor';
 import HelmetChanger from '../Shared/Helmet/Helmet';
@@ -11,6 +10,7 @@ import 'lenis/dist/lenis.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect } from 'react';
+import Navbar from '../Shared/Navbar/Navbar';
 
 const Main4 = () => {
   useEffect(() => {
@@ -31,7 +31,7 @@ const Main4 = () => {
   return (
     <>
       <HelmetChanger title={'Inner Page'} />
-      <Navbar3 />
+      <Navbar />
       <Cursor />
       <BackToTop />
       <div>
