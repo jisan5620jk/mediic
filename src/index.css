@@ -182,19 +182,18 @@ body {
 
 /* Project Inner */
 
-.swiper-slide-active  .project-inner-box .project-inner-thumb::before {
+.swiper-slide-active .project-inner-box .project-inner-thumb::before {
   height: 50%;
 }
 
-.swiper-slide-active  .project-inner-box .project-inner-content {
+.swiper-slide-active .project-inner-box .project-inner-content {
   margin-top: -120px;
 }
 
-.swiper-slide-active  .project-inner-box .project-inner-btn {
- opacity: 1;
- margin-right: -8px;
+.swiper-slide-active .project-inner-box .project-inner-btn {
+  opacity: 1;
+  margin-right: -8px;
 }
-
 
 /* Pagination */
 
@@ -611,7 +610,7 @@ span.swiper-pagination-bullet::before {
   border-color: #83a8ff;
 }
 
-.faq-inner-button[aria-expanded='true']{
+.faq-inner-button[aria-expanded='true'] {
   border-radius: 16px 16px 0 0;
   border-bottom: transparent;
   padding-bottom: 30px;

@@ -351,7 +351,6 @@
   @apply !fixed top-0 left-0 w-full z-50 shadow-shade bg-white backdrop-blur-md animate-headerSlideDown;
 }
 
-
 .is-sticky .menu-sidebar {
   display: none;
 }
