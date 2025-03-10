@@ -3,25 +3,17 @@ import { GoArrowRight } from 'react-icons/go';
 import { HiOutlineMailOpen } from 'react-icons/hi';
 import { MdCall } from 'react-icons/md';
 import Heart from '/images/banner-heart.png';
-import circleShape from '/images/crcle-bg.png';
 
-const Appoinment = () => {
+const Appointment = () => {
   return (
-    <section className='px-5 2xl:px-20 bg-BodyBg-0 pt-[106px] relative z-10 overflow-hidden'>
-      <div className='absolute -z-10 -top-1/2 left-1/2 -translate-x-1/2'>
-        <img
-          src={circleShape}
-          draggable='false'
-          className='max-w-[inherit] w-[inherit]'
-        />
-      </div>
+    <section className='px-5 2xl:px-20 bg-BodyBg-0 pt-[106px] pb-[120px] relative z-10 overflow-hidden'>
       <div
         className='text-center mb-12'
         data-aos='fade-up'
         data-aos-duration='1000'
       >
         <h1 className='font-AlbertSans font-bold uppercase text-HeadingColor-0 text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[40px] md:leading-[50px] lg:text-[50px] lg:leading-[60px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
-          Make Appionment
+          Make Appointment
         </h1>
       </div>
       <div className='bg-[url(/images/appoinment.png)] bg-cover bg-no-repeat bg-center grid grid-cols-1 lg:grid-cols-2 pt-[110px] pb-[118px] lg:border-x-2 2xl:border-x-0 border-white rounded-[30px] relative z-10'>
@@ -45,7 +37,7 @@ const Appoinment = () => {
             Make an Online Appoinemnt <br /> Booking For Treatment Patients
           </h1>
           <form
-            action='https://formspree.io/f/xayrekgy'
+            action='#'
             method='post'
             className='flex flex-col gap-y-5 mt-9'
           >
@@ -150,4 +142,4 @@ const Appoinment = () => {
   );
 };
 
-export default Appoinment;
+export default Appointment;

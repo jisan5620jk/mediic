@@ -1,5 +1,5 @@
 import About from '../../Component1/About/About';
-import Appoinment from '../../Component1/Appoinment/Appionment';
+import Appointment from '../../Component1/Appointment/Appointment';
 import Banner from '../../Component1/Banner/Banner';
 import Blog from '../../Component1/Blog/Blog';
 import Brand from '../../Component1/Brand/Brand';
@@ -20,7 +20,7 @@ const Home1 = () => {
       <About />
       <ContentSlider />
       <Service />
-      <Appoinment />
+      <Appointment />
       <TeamMember />
       <Testimonial />
       <Brand />
